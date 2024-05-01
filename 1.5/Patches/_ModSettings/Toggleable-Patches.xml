@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- ================ Perspective Doors ================ -->
+	<Operation Class="ModSettingsFramework.PatchOperationModOption">
+		<defaultValue>True</defaultValue>
+		<label>Enable Perspective Doors</label>
+		<tooltip>text.todo (Default: True)</tooltip>
+		<id>RB_PerspectiveDoors</id>
+		<category>RB_Core</category>
+		<order>0</order>
+		<operations>
+			<!-- ================================ Change Graphics Class for Vanilla Doors ====================== -->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Door" or defName="Autodoor" or defName="AnimalFlap"]/graphicData/graphicClass</xpath>
+				<value>
+					<graphicClass>Graphic_Multi</graphicClass>
+				</value>
+			</li>
+			<!-- ================================ Change Graphics Class for Anomaly Doors ====================== -->
+			<li Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Anomaly">
+				<xpath>Defs/ThingDef[defName="SecurityDoor"]/graphicData/graphicClass</xpath>
+				<value>
+					<graphicClass>Graphic_Multi</graphicClass>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>
