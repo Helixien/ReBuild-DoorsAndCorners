@@ -16,9 +16,41 @@
 					<graphicClass>Graphic_Multi</graphicClass>
 				</value>
 			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Door"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Things/Building/RB_Door/DoorSimple_Mover</texPath>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Autodoor"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Things/Building/RB_Door/Autodoor_Mover</texPath>
+				</value>
+			</li>
+			<!-- ================================ Change Graphics Class for Ideology Doors ====================== -->
+			<li Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Ideology">
+				<xpath>Defs/ThingStyleDef[defName="Techist_Autodoor"]/graphicData/graphicClass</xpath>
+				<value>
+					<graphicClass>Graphic_Multi</graphicClass>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Ideology">
+				<xpath>Defs/ThingStyleDef[defName="Techist_Autodoor"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Things/Building/BuildingStyles/Techist/RB_Autodoor/TechistAutodoor_Mover</texPath>
+				</value>
+			</li>
 			<!-- ================================ Change Graphics Class for Anomaly Doors ====================== -->
 			<li Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Anomaly">
 				<xpath>Defs/ThingDef[defName="SecurityDoor"]/graphicData/graphicClass</xpath>
+				<value>
+					<graphicClass>Graphic_Multi</graphicClass>
+				</value>
+			</li>
+			<!-- ================================ Change Graphics Class for VFE - Settlers ====================== -->
+			<li Class="PatchOperationReplace" MayRequire="oskarpotocki.vanillafactionsexpanded.settlersmodule">
+				<xpath>Defs/ThingDef[defName="DoorSaloon"]/graphicData/graphicClass</xpath>
 				<value>
 					<graphicClass>Graphic_Multi</graphicClass>
 				</value>

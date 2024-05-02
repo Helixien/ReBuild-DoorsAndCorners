@@ -1,14 +1,21 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <loadFolders>
 	<v1.5>
 		<li>/</li>
 		<li>1.5</li>
-		<li IfModActive="dubwise.dubsbadhygiene">1.5/LoadFolders/dubwise.dubsbadhygiene</li>
+		<li IfModActive="oskarpotocki.vanillafactionsexpanded.settlersmodule">1.5/LoadFolders/VFE-Settlers</li>
+		<li IfModActive="vanillaexpanded.vtexvariations">1.5/LoadFolders/vanillaexpanded.vtexvariations</li>
+	</v1.5>
+</loadFolders>
+
+
+
+
+<!--		<li IfModActive="dubwise.dubsbadhygiene">1.5/LoadFolders/dubwise.dubsbadhygiene</li>
 		<li IfModActive="dubwise.dubsbadhygiene.lite">1.5/LoadFolders/dubwise.dubsbadhygiene</li>
 		<li IfModActive="rd.earlytimes">1.5/LoadFolders/rd.earlytimes</li>
-		<li IfModActive="oskarpotocki.vanillafactionsexpanded.settlersmodule">1.5/LoadFolders/oskarpotocki.vanillafactionsexpanded.settlersmodule</li>
+
 		<li IfModActive="kentington.saveourship2">1.5/LoadFolders/kentington.saveourship2</li>
-		<li IfModActive="vanillaexpanded.vtexvariations">1.5/LoadFolders/vanillaexpanded.vtexvariations</li>
+
 		<li IfModActive="wemd.reinforceddoors">1.5/LoadFolders/wemd.reinforceddoors</li>
 		<li IfModActive="Ludeon.RimWorld.Ideology">1.5/LoadFolders/Ludeon.RimWorld.Ideology</li>
 		<li IfModActive="jecrell.doorsexpanded">1.5/LoadFolders/jecrell.doorsexpanded</li>
@@ -24,6 +31,4 @@
 		<li IfModActive="vanillaexpanded.vfearchitect">1.5/LoadFolders/vanillaexpanded.vfearchitect</li>
 		<li IfModActive="heis.edo.themed.expansion">1.5/LoadFolders/heis.edo.themed.expansion</li>
 		<li IfModActive="vanillaexpanded.vfea">1.5/LoadFolders/vanillaexpanded.vfea</li>
-		<li IfModActive="qx.astramilitarum">1.5/LoadFolders/qx.astramilitarum</li>
-	</v1.5>
-</loadFolders>
+		<li IfModActive="qx.astramilitarum">1.5/LoadFolders/qx.astramilitarum</li>-->
