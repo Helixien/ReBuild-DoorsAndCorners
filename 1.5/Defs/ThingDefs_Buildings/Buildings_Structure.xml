@@ -112,7 +112,7 @@
 				<enabled>false</enabled>
 			</damageData>
 		</graphicData>
-		<uiIconPath>Things/Building/OrnateDoor/OrnateDoor_MenuIcon_south</uiIconPath>
+		<uiIconPath>Things/Building/LargeOrnateDoor/LargeOrnateDoor_MenuIcon</uiIconPath>
 		<useBlueprintGraphicAsGhost>true</useBlueprintGraphicAsGhost>
 		<size>(3, 1)</size>
 		<rotatable>true</rotatable>
