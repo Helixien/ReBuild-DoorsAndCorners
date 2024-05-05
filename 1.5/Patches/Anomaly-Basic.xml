@@ -2,7 +2,7 @@
 <Patch>
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>Ludeon.RimWorld.Anomaly</li>
+			<li>Anomaly</li>
 		</mods>
 		<match Class="PatchOperationSequence">
 			<operations>
