@@ -3,6 +3,9 @@
 	<ThingDef ParentName="BuildingBase">
 		<defName>RB_CobblestoneWall</defName>
 		<label>cobblestone wall</label>
+		<description>An impassable wall. Capable of holding up a roof.</description>
+		<thingClass>Building</thingClass>
+		<category>Building</category>
 		<graphicData>
 			<texPath>Things/Building/Linked/RB_CobblestoneWall</texPath>
 			<graphicClass>Graphic_Appearances</graphicClass>
@@ -22,20 +25,14 @@
 				<edgeRight>Damage/Edge</edgeRight>
 			</damageData>
 		</graphicData>
-		<uiIconPath>Things/Building/Linked/RB_CobblestoneWall/CombblestoneWall_Menuicon</uiIconPath>
+		<uiIconPath>Things/Building/Linked/RB_CobblestoneWall_Menuicon</uiIconPath>
 		<statBases>
-			<MaxHitPoints>300</MaxHitPoints>
-			<WorkToBuild>135</WorkToBuild>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToBuild>85</WorkToBuild>
 			<Flammability>1.0</Flammability>
-			<MeditationFocusStrength>0.22</MeditationFocusStrength>
-			<Beauty>-2</Beauty>
+			<MeditationFocusStrength>0.11</MeditationFocusStrength>
 		</statBases>
-		<building>
-			<blueprintGraphicData>
-				<texPath>Things/Building/Linked/RB_CobblestoneWall/CombblestoneWall_Atlas_Blueprint</texPath>
-			</blueprintGraphicData>
-			<paintable>true</paintable>
-		</building>
+		<costStuffCount>3</costStuffCount>
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>Impassable</passability>
@@ -50,19 +47,33 @@
 		<neverMultiSelect>true</neverMultiSelect>
 		<useStuffTerrainAffordance>true</useStuffTerrainAffordance>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<!-- Best affordance needed for stone -->
 		<holdsRoof>true</holdsRoof>
 		<designationCategory>Structure</designationCategory>
+		<uiOrder>1999</uiOrder>
 		<staticSunShadowHeight>1.0</staticSunShadowHeight>
 		<blockLight>true</blockLight>
 		<canOverlapZones>false</canOverlapZones>
 		<fertility>0</fertility>
-		<costStuffCount>1</costStuffCount>
 		<stuffCategories>
 			<li>Stony</li>
 		</stuffCategories>
-		<!--		<stuffCategories Inherit="False">
-			<li>VFEM_StoneChunks</li>
-		</stuffCategories>-->
+		<building>
+			<paintable>true</paintable>
+			<isInert>true</isInert>
+			<isPlaceOverableWall>false</isPlaceOverableWall>
+			<ai_chillDestination>false</ai_chillDestination>
+			<supportsWallAttachments>true</supportsWallAttachments>
+			<blueprintGraphicData>
+				<texPath>Things/Building/Linked/RB_CobblestoneWall_Atlas_Blueprint</texPath>
+			</blueprintGraphicData>
+			<relatedBuildCommands>
+				<li>Door</li>
+				<li>Autodoor</li>
+				<li>OrnateDoor</li>
+				<li MayRequire="Ludeon.RimWorld.Anomaly">SecurityDoor</li>
+			</relatedBuildCommands>
+		</building>
 		<comps>
 			<li Class="CompProperties_MeditationFocus">
 				<statDef>MeditationFocusStrength</statDef>
@@ -74,7 +85,7 @@
 		<damageMultipliers>
 			<li>
 				<damageDef>Bomb</damageDef>
-				<multiplier>2</multiplier>
+				<multiplier>3</multiplier>
 			</li>
 			<li>
 				<damageDef>Thump</damageDef>
