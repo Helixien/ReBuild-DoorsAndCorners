@@ -14,8 +14,8 @@
 					<drawSize>(3,2)</drawSize>
 				</value>
 			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName="Wall"]/building/relatedBuildCommands</xpath>
+			<li Class="PatchOperationInsert">
+				<xpath>/Defs/ThingDef[defName="Wall"]/building/relatedBuildCommands/li[4]</xpath>
 				<value>
 					<li>RB_LargeOrnateDoor</li>
 				</value>

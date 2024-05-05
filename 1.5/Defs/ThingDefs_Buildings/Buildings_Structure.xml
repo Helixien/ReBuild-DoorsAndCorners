@@ -71,6 +71,7 @@
 				<li>Door</li>
 				<li>Autodoor</li>
 				<li>OrnateDoor</li>
+				<li>RB_LargeOrnateDoor</li>
 				<li MayRequire="Ludeon.RimWorld.Anomaly">SecurityDoor</li>
 			</relatedBuildCommands>
 		</building>
@@ -93,57 +94,57 @@
 			</li>
 		</damageMultipliers>
 	</ThingDef>
-  <ThingDef ParentName="DoorBase">
-    <defName>RB_LargeOrnateDoor</defName>
-    <label>large ornate door</label>
-    <description>Divides rooms. An intricately-carved door, decorated with gold. This large, heavy door requires adjacent walls to function.</description>
-    <thingClass>Building_MultiTileDoor</thingClass>
-    <statBases>
-      <WorkToBuild>18000</WorkToBuild>
-      <MaxHitPoints>300</MaxHitPoints>
-      <Beauty>35</Beauty>
-    </statBases>
-    <graphicData>
-      <texPath>Things/Building/LargeOrnateDoor/LargeOrnateDoor3x1_Mover</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>CutoutComplex</shaderType>
-      <damageData>
-        <enabled>false</enabled>
-      </damageData>
-    </graphicData>
-    <uiIconPath>Things/Building/OrnateDoor/OrnateDoor_MenuIcon_south</uiIconPath>
-    <useBlueprintGraphicAsGhost>true</useBlueprintGraphicAsGhost>
-    <size>(3, 1)</size>
-    <rotatable>true</rotatable>
-    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
-    <costStuffCount>75</costStuffCount>
-    <costList>
-      <Gold>75</Gold>
-    </costList>
-    <building>
-      <blueprintClass>Blueprint_Build</blueprintClass>
-      <blueprintGraphicData>
-        <texPath>Things/Building/OrnateDoor/OrnateDoor_MenuIcon</texPath>
-        <graphicClass>Graphic_Multi</graphicClass>
-        <shaderType>EdgeDetect</shaderType>
-        <drawSize>(2.6, 3.1)</drawSize>
-      </blueprintGraphicData>
-      <doorTopGraphic>
-        <texPath>Things/Building/LargeOrnateDoor/LargeOrnateDoor3x1_Top</texPath>
-        <graphicClass>Graphic_Multi</graphicClass>
-        <drawSize>(4,2)</drawSize>
-      </doorTopGraphic>
-      <doorSupportGraphic>
-        <texPath>Things/Building/LargeOrnateDoor/LargeOrnateDoor3x1_Support</texPath>
-        <graphicClass>Graphic_Multi</graphicClass>
-        <drawSize>(4,2)</drawSize>
-      </doorSupportGraphic>
-    </building>
-    <researchPrerequisites>
-      <li>ComplexFurniture</li>
-    </researchPrerequisites>
-    <placeWorkers>
-      <li>PlaceWorker_MultiCellDoor</li>
-    </placeWorkers>
-  </ThingDef>
+	<ThingDef ParentName="DoorBase">
+		<defName>RB_LargeOrnateDoor</defName>
+		<label>large ornate door</label>
+		<description>Divides rooms. An intricately-carved door, decorated with gold. This large, heavy door requires adjacent walls to function.</description>
+		<thingClass>Building_MultiTileDoor</thingClass>
+		<statBases>
+			<WorkToBuild>18000</WorkToBuild>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Beauty>35</Beauty>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Building/LargeOrnateDoor/LargeOrnateDoor3x1_Mover</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<damageData>
+				<enabled>false</enabled>
+			</damageData>
+		</graphicData>
+		<uiIconPath>Things/Building/OrnateDoor/OrnateDoor_MenuIcon_south</uiIconPath>
+		<useBlueprintGraphicAsGhost>true</useBlueprintGraphicAsGhost>
+		<size>(3, 1)</size>
+		<rotatable>true</rotatable>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		<costStuffCount>75</costStuffCount>
+		<costList>
+			<Gold>75</Gold>
+		</costList>
+		<building>
+			<blueprintClass>Blueprint_Build</blueprintClass>
+			<blueprintGraphicData>
+				<texPath>Things/Building/OrnateDoor/OrnateDoor_MenuIcon</texPath>
+				<graphicClass>Graphic_Multi</graphicClass>
+				<shaderType>EdgeDetect</shaderType>
+				<drawSize>(2.6, 3.1)</drawSize>
+			</blueprintGraphicData>
+			<doorTopGraphic>
+				<texPath>Things/Building/LargeOrnateDoor/LargeOrnateDoor3x1_Top</texPath>
+				<graphicClass>Graphic_Multi</graphicClass>
+				<drawSize>(4,2)</drawSize>
+			</doorTopGraphic>
+			<doorSupportGraphic>
+				<texPath>Things/Building/LargeOrnateDoor/LargeOrnateDoor3x1_Support</texPath>
+				<graphicClass>Graphic_Multi</graphicClass>
+				<drawSize>(4,2)</drawSize>
+			</doorSupportGraphic>
+		</building>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<placeWorkers>
+			<li>PlaceWorker_MultiCellDoor</li>
+		</placeWorkers>
+	</ThingDef>
 </Defs>
