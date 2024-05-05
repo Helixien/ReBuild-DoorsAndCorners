@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 	<!-- ================ Perspective Doors ================ -->
-	<Operation Class="ModSettingsFramework.PatchOperationModOption">
+<!--	<Operation Class="ModSettingsFramework.PatchOperationModOption">
 		<defaultValue>True</defaultValue>
 		<label>Enable Perspective Doors</label>
 		<tooltip>text.todo (Default: True)</tooltip>
@@ -9,7 +9,7 @@
 		<category>RB_Core</category>
 		<order>0</order>
 		<operations>
-			<!-- ================================ Change Graphics Class for Vanilla Doors ====================== -->
+			<!{1}** ================================ Change Graphics Class for Vanilla Doors ====================== **{1}>
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="Door" or defName="Autodoor" or defName="AnimalFlap"]/graphicData/graphicClass</xpath>
 				<value>
@@ -28,7 +28,7 @@
 					<texPath>Things/Building/RB_Door/Autodoor_Mover</texPath>
 				</value>
 			</li>
-			<!-- ================================ Change Graphics Class for Ideology Doors ====================== -->
+			<!{1}** ================================ Change Graphics Class for Ideology Doors ====================== **{1}>
 			<li Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Ideology">
 				<xpath>Defs/ThingStyleDef[defName="Techist_Autodoor"]/graphicData/graphicClass</xpath>
 				<value>
@@ -41,14 +41,14 @@
 					<texPath>Things/Building/BuildingStyles/Techist/RB_Autodoor/TechistAutodoor_Mover</texPath>
 				</value>
 			</li>
-			<!-- ================================ Change Graphics Class for Anomaly Doors ====================== -->
+			<!{1}** ================================ Change Graphics Class for Anomaly Doors ====================== **{1}>
 			<li Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Anomaly">
 				<xpath>Defs/ThingDef[defName="SecurityDoor"]/graphicData/graphicClass</xpath>
 				<value>
 					<graphicClass>Graphic_Multi</graphicClass>
 				</value>
 			</li>
-			<!-- ================================ Change Graphics Class for VFE - Settlers ====================== -->
+			<!{1}** ================================ Change Graphics Class for VFE - Settlers ====================== **{1}>
 			<li Class="PatchOperationReplace" MayRequire="oskarpotocki.vanillafactionsexpanded.settlersmodule">
 				<xpath>Defs/ThingDef[defName="DoorSaloon"]/graphicData/graphicClass</xpath>
 				<value>
@@ -56,7 +56,7 @@
 				</value>
 			</li>
 		</operations>
-	</Operation>
+	</Operation>-->
 	<!-- ================ New wall atlas texture ================ -->
 	<Operation Class="ModSettingsFramework.PatchOperationModOption">
 		<defaultValue>True</defaultValue>
@@ -69,7 +69,7 @@
 			<li Class="PatchOperationReplace">
 				<xpath>/Defs/ThingDef[@Name="Wall"]/graphicData/texPath</xpath>
 				<value>
-					<texPath>Things/Building/Linked/RG_Wall</texPath>
+					<texPath>Things/Building/Linked/RB_Wall</texPath>
 				</value>
 			</li>
 		</operations>
