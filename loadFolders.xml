@@ -12,8 +12,10 @@
 		<li IfModActive="VanillaExpanded.VFEArt">Mods/VanillaExpanded.VFEArt</li>
 		<li IfModActive="VanillaExpanded.VFEMedical">Mods/VanillaExpanded.VFEMedical</li>
 		<li IfModActive="VanillaExpanded.VFESpacer">Mods/VanillaExpanded.VFESpacer</li>
+		<li IfModActive="OskarPotocki.VanillaFactionsExpanded.SettlersModule">Mods/VanillaExpanded.Settlers</li>
 		<li IfModActive="VanillaExpanded.VTEXVariations">Mods/VanillaExpanded.VTEXVariations</li>
-		<li IfModActive="rimeffect.core">Mods/PerspectiveDoorSupport.Original/rimeffect.core</li>
+		<li IfModActive="RimEffect.Core">Mods/RimEffect.Core</li>
+		<li IfModActive="RimEffectReborn.Core">Mods/RimEffect.Core</li>
 		
 		
 		<!-- ================ Original OwlChemist Perspective Doors Supported Mods (Not updated with new textures) ================ -->
