@@ -74,20 +74,18 @@
 					<graphicClass>Graphic_Multi</graphicClass>
 				</value>
 			</li>
-<!-- 		pending textures
 			<li MayRequire="RimEffect.ExtendedCut" Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName="RE_PrefabDoorColonial" or defName="PrefabDoorHeavy" or defName="PrefabDoorHeavy"]/graphicData/graphicClass</xpath>
+				<xpath>Defs/ThingDef[defName="RE_PrefabDoorColonial" or defName="RE_PrefabAutoDoorIndustrial"]/graphicData/graphicClass</xpath>
 				<value>
 					<graphicClass>Graphic_Multi</graphicClass>
 				</value>
 			</li>
 			<li MayRequire="RimEffectReborn.ExtendedCut" Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName="RE_PrefabDoorColonial" or defName="PrefabDoorHeavy" or defName="PrefabDoorHeavy"]/graphicData/graphicClass</xpath>
+				<xpath>Defs/ThingDef[defName="RE_PrefabDoorColonial" or defName="RE_PrefabAutoDoorIndustrial"]/graphicData/graphicClass</xpath>
 				<value>
 					<graphicClass>Graphic_Multi</graphicClass>
 				</value>
 			</li>
- -->
  
 		<!-- ================ Original OwlChemist Perspective Doors Supported Mods (Not updated with new textures) ================ -->
 			<li MayRequire="aoba.fortress.neolithic" Class="PatchOperationReplace">
