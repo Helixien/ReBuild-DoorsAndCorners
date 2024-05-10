@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="AutoDoorGlass"]/graphicData/texPath</xpath>
+					<value>
+						<texPath>Things/Building/Other/AutodoorGlass_Mover</texPath>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="AutoDoorGlass"]/uiIconPath</xpath>
+					<value>
+						<uiIconPath>Things/Building/Other/AutodoorGlass_MenuIcon</uiIconPath>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="DoorGlass"]/uiIconPath</xpath>
+					<value>
+						<uiIconPath>Things/Building/Other/DoorGlass_MenuIcon</uiIconPath>
+					</value>
+				</li>
+			</operations>
+	</Operation>
+</Patch>

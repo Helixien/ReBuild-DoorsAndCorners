@@ -25,5 +25,14 @@
 		<li>Ludeon.RimWorld.Biotech</li>
 		<li>Ludeon.RimWorld.Anomaly</li>
 		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+		<li>NanoCE.GlassLights</li>
+		<li>Neronix17.Outland.Core</li>
+		<li>Sarg.AlphaMemes</li>
+		<li>VanillaExpanded.VFEA</li>
+		<li>VanillaExpanded.VFEArchitect</li>
+		<li>VanillaExpanded.VFEArt</li>
+		<li>VanillaExpanded.VFEMedical</li>
+		<li>VanillaExpanded.VFESpacer</li>
+		<li>VanillaExpanded.VTEXVariations</li>
 	</loadAfter>
 </ModMetaData>

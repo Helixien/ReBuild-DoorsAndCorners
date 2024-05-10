@@ -35,7 +35,11 @@
 			<paintable>true</paintable>
 			<relatedBuildCommands>
 				<li>Door</li>
+				<li>RB_DoubleDoor</li>
+				<li>RB_TripleDoor</li>
 				<li>Autodoor</li>
+				<li>RB_DoubleAutodoor</li>
+				<li>RB_TripleAutodoor</li>
 				<li>OrnateDoor</li>
 				<li>RB_LargeOrnateDoor</li>
 				<li MayRequire="Ludeon.RimWorld.Anomaly">SecurityDoor</li>
@@ -60,14 +64,15 @@
 			</li>
 		</damageMultipliers>
 	</ThingDef>
-	<!-- ================================ Cobblestone Wall ====================== -->
+	<!-- ================================ Rustic Wall ====================== -->
 	<ThingDef ParentName="RB_WallBase">
-		<defName>RB_CobblestoneWall</defName>
-		<label>cobblestone wall</label>
+		<defName>RB_RusticWall</defName>
+		<label>rustic wall</label>
 		<description>An impassable wall. Capable of holding up a roof.</description>
 		<graphicData>
-			<texPath>Things/Building/Linked/RB_CobblestoneWall</texPath>
+			<texPath>Things/Building/Linked/RB_RusticWall</texPath>
 			<graphicClass>Graphic_Appearances</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
 			<linkType>CornerFiller</linkType>
 			<linkFlags>
 				<li>Wall</li>
@@ -84,7 +89,17 @@
 				<edgeRight>Damage/Edge</edgeRight>
 			</damageData>
 		</graphicData>
-		<uiIconPath>Things/Building/Linked/RB_CobblestoneWall_Menuicon</uiIconPath>
+		<uiIconPath>Things/Building/Linked/RB_RusticWall/RB_RusticWall_Smooth_MenuIcon</uiIconPath>
+		<uiIconPathsStuff>
+			<li>
+				<appearance>Planks</appearance>
+				<iconPath>Things/Building/Linked/RB_RusticWall/RB_RusticWall_Planks_MenuIcon</iconPath>
+			</li>
+			<li>
+				<appearance>Bricks</appearance>
+				<iconPath>Things/Building/Linked/RB_RusticWall/RB_RusticWall_Bricks_MenuIcon</iconPath>
+			</li>
+		</uiIconPathsStuff>
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
 			<WorkToBuild>85</WorkToBuild>
@@ -92,17 +107,14 @@
 			<MeditationFocusStrength>0.11</MeditationFocusStrength>
 		</statBases>
 		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
 			<li>Stony</li>
 		</stuffCategories>
 		<costStuffCount>3</costStuffCount>
 		<uiOrder>1999</uiOrder>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<useStuffTerrainAffordance>true</useStuffTerrainAffordance>
-		<building>
-			<blueprintGraphicData Inherit="false">
-				<texPath>Things/Building/Linked/RB_CobblestoneWall_Atlas_Blueprint</texPath>
-			</blueprintGraphicData>
-		</building>
 		<comps>
 			<li Class="CompProperties_MeditationFocus">
 				<statDef>MeditationFocusStrength</statDef>
@@ -122,55 +134,7 @@
 			</li>
 		</damageMultipliers>
 	</ThingDef>
-	<!-- ================================ Modern Wall ====================== -->
-	<ThingDef ParentName="RB_WallBase">
-		<defName>RB_ModernWall</defName>
-		<label>modern wall</label>
-		<description>An impassable, modern wall with some layers of armor. More resistant to explosives and breaching tools.</description>
-		<graphicData>
-			<texPath>ArmoredWall/ArmoredWall_Atlas</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<linkType>CornerFiller</linkType>
-			<linkFlags>
-				<li>Wall</li>
-				<li>Rock</li>
-			</linkFlags>
-			<damageData>
-				<cornerTL>Damage/Corner</cornerTL>
-				<cornerTR>Damage/Corner</cornerTR>
-				<cornerBL>Damage/Corner</cornerBL>
-				<cornerBR>Damage/Corner</cornerBR>
-				<edgeTop>Damage/Edge</edgeTop>
-				<edgeBot>Damage/Edge</edgeBot>
-				<edgeLeft>Damage/Edge</edgeLeft>
-				<edgeRight>Damage/Edge</edgeRight>
-			</damageData>
-		</graphicData>
-		<uiIconPath>ArmoredWall/ArmoredWall_MenuIcon</uiIconPath>
-		<statBases>
-			<MaxHitPoints>450</MaxHitPoints>
-			<WorkToBuild>235</WorkToBuild>
-			<MeditationFocusStrength>0.22</MeditationFocusStrength>
-		</statBases>
-		<stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>
-		<costStuffCount>7</costStuffCount>
-		<researchPrerequisites>
-			<li>Fabrication</li>
-		</researchPrerequisites>
-		<uiOrder>2001</uiOrder>
-		<damageMultipliers Inherit="false">
-			<li>
-				<damageDef>Bomb</damageDef>
-				<multiplier>0.95</multiplier>
-			</li>
-			<li>
-				<damageDef>Thump</damageDef>
-				<multiplier>0.95</multiplier>
-			</li>
-		</damageMultipliers>
-	</ThingDef>
+	<!-- ================================ Triple wide Ornate Door ====================== -->
 	<ThingDef ParentName="DoorBase">
 		<defName>RB_LargeOrnateDoor</defName>
 		<label>large ornate door</label>
@@ -220,6 +184,145 @@
 		<researchPrerequisites>
 			<li>ComplexFurniture</li>
 		</researchPrerequisites>
+		<placeWorkers>
+			<li>PlaceWorker_MultiCellDoor</li>
+		</placeWorkers>
+	</ThingDef>
+	<!-- ================================ Double and Triple wide basegame doors ====================== -->
+	<!-- Simple Doors -->
+	<ThingDef ParentName="DoorBase">
+		<defName>RB_DoubleDoor</defName>
+		<label>double door</label>
+		<description>Divides rooms. Simple doors must be manually opened, which slows people down. The amount of slowdown depends on what the door is made of.</description>
+		<thingClass>Building_MultiTileDoor</thingClass>
+		<statBases>
+			<WorkToBuild>1200</WorkToBuild>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Building/Door/DoubleDoorSimple_Mover</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<damageData>
+				<enabled>false</enabled>
+			</damageData>
+		</graphicData>
+		<uiIconPath>Things/Building/Door/DoubleDoorSimple_MenuIcon</uiIconPath>
+		<useBlueprintGraphicAsGhost>true</useBlueprintGraphicAsGhost>
+		<size>(2, 1)</size>
+		<rotatable>true</rotatable>
+		<costStuffCount>50</costStuffCount>
+		<building>
+			<blueprintClass>Blueprint_Build</blueprintClass>
+			<blueprintGraphicData>
+				<texPath>Things/Building/Door/DoubleDoorSimple_MenuIcon</texPath>
+				<graphicClass>Graphic_Multi</graphicClass>
+				<shaderType>EdgeDetect</shaderType>
+				<drawSize>(2, 2)</drawSize>
+			</blueprintGraphicData>
+		</building>
+		<designationHotKey>Misc1</designationHotKey>
+		<placeWorkers>
+			<li>PlaceWorker_MultiCellDoor</li>
+		</placeWorkers>
+	</ThingDef>
+	<ThingDef ParentName="DoorBase">
+		<defName>RB_TripleDoor</defName>
+		<label>triple door</label>
+		<description>Divides rooms. Simple doors must be manually opened, which slows people down. The amount of slowdown depends on what the door is made of.</description>
+		<thingClass>Building_MultiTileDoor</thingClass>
+		<statBases>
+			<WorkToBuild>1800</WorkToBuild>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Building/Door/TripleDoorSimple_Mover</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<damageData>
+				<enabled>false</enabled>
+			</damageData>
+		</graphicData>
+		<uiIconPath>Things/Building/Door/TripleDoorSimple_MenuIcon</uiIconPath>
+		<useBlueprintGraphicAsGhost>true</useBlueprintGraphicAsGhost>
+		<size>(3, 1)</size>
+		<rotatable>true</rotatable>
+		<costStuffCount>75</costStuffCount>
+		<building>
+			<blueprintClass>Blueprint_Build</blueprintClass>
+			<blueprintGraphicData>
+				<texPath>Things/Building/Door/TripleDoorSimple_MenuIcon</texPath>
+				<graphicClass>Graphic_Multi</graphicClass>
+				<shaderType>EdgeDetect</shaderType>
+				<drawSize>(3, 3)</drawSize>
+			</blueprintGraphicData>
+		</building>
+		<designationHotKey>Misc1</designationHotKey>
+		<placeWorkers>
+			<li>PlaceWorker_MultiCellDoor</li>
+		</placeWorkers>
+	</ThingDef>
+	<!-- Autodoors -->
+	<ThingDef ParentName="DoorBase">
+		<defName>RB_DoubleAutodoor</defName>
+		<label>double autodoor</label>
+		<description>Divides rooms. Powered operation allows people to move through the door without slowing down.</description>
+		<thingClass>Building_MultiTileDoor</thingClass>
+		<statBases>
+			<WorkToBuild>1400</WorkToBuild>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Building/Door/DoubleAutodoor_Mover</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<damageData>
+				<enabled>false</enabled>
+			</damageData>
+		</graphicData>
+		<uiIconPath>Things/Building/Door/DoubleAutodoor_MenuIcon</uiIconPath>
+		<useBlueprintGraphicAsGhost>true</useBlueprintGraphicAsGhost>
+		<size>(2, 1)</size>
+		<rotatable>true</rotatable>
+		<costStuffCount>50</costStuffCount>
+		<building>
+			<blueprintClass>Blueprint_Build</blueprintClass>
+			<blueprintGraphicData>
+				<texPath>Things/Building/Door/DoubleAutodoor_MenuIcon</texPath>
+				<graphicClass>Graphic_Multi</graphicClass>
+				<shaderType>EdgeDetect</shaderType>
+				<drawSize>(2, 2)</drawSize>
+			</blueprintGraphicData>
+		</building>
+		<designationHotKey>Misc1</designationHotKey>
+		<placeWorkers>
+			<li>PlaceWorker_MultiCellDoor</li>
+		</placeWorkers>
+	</ThingDef>
+	<ThingDef ParentName="DoorBase">
+		<defName>RB_TripleAutodoor</defName>
+		<label>triple autodoor</label>
+		<description>Divides rooms. Powered operation allows people to move through the door without slowing down.</description>
+		<thingClass>Building_MultiTileDoor</thingClass>
+		<statBases>
+			<WorkToBuild>2100</WorkToBuild>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Building/Door/TripleAutodoor_Mover</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<damageData>
+				<enabled>false</enabled>
+			</damageData>
+		</graphicData>
+		<uiIconPath>Things/Building/Door/TripleAutodoor_MenuIcon</uiIconPath>
+		<useBlueprintGraphicAsGhost>true</useBlueprintGraphicAsGhost>
+		<size>(3, 1)</size>
+		<rotatable>true</rotatable>
+		<costStuffCount>75</costStuffCount>
+		<building>
+			<blueprintClass>Blueprint_Build</blueprintClass>
+			<blueprintGraphicData>
+				<texPath>Things/Building/Door/TripleAutodoor_MenuIcon</texPath>
+				<graphicClass>Graphic_Multi</graphicClass>
+				<shaderType>EdgeDetect</shaderType>
+				<drawSize>(3, 3)</drawSize>
+			</blueprintGraphicData>
+		</building>
+		<designationHotKey>Misc1</designationHotKey>
 		<placeWorkers>
 			<li>PlaceWorker_MultiCellDoor</li>
 		</placeWorkers>

@@ -1,0 +1,17 @@
+<loadFolders>
+	<v1.5>
+		<li>/</li>
+		<li>1.5</li>
+		<li IfModActive="Ludeon.RimWorld.Anomaly">Mods/Ludeon.RimWorld.Anomaly</li>
+		<li IfModActive="Ludeon.RimWorld.Ideology">Mods/Ludeon.RimWorld.Ideology</li>
+		<li IfModActive="NanoCE.GlassLights">Mods/NanoCE.GlassLights</li>
+		<li IfModActive="Neronix17.Outland.Core">Mods/Neronix17.Outland.Core</li>
+		<li IfModActive="Sarg.AlphaMemes">Mods/Sarg.AlphaMemes</li>
+		<li IfModActive="VanillaExpanded.VFEA">Mods/VanillaExpanded.VFEA</li>
+		<li IfModActive="VanillaExpanded.VFEArchitect">Mods/VanillaExpanded.VFEArchitect</li>
+		<li IfModActive="VanillaExpanded.VFEArt">Mods/VanillaExpanded.VFEArt</li>
+		<li IfModActive="VanillaExpanded.VFEMedical">Mods/VanillaExpanded.VFEMedical</li>
+		<li IfModActive="VanillaExpanded.VFESpacer">Mods/VanillaExpanded.VFESpacer</li>
+		<li IfModActive="VanillaExpanded.VTEXVariations">Mods/VanillaExpanded.VTEXVariations</li>
+	</v1.5>
+</loadFolders>

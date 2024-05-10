@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="SecurityDoor"]/building/doorTopGraphic/drawSize</xpath>
+					<value>
+						<drawSize>(3,2)</drawSize>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="SecurityDoor"]/building/doorSupportGraphic/drawSize</xpath>
+					<value>
+						<drawSize>(3,2)</drawSize>
+					</value>
+				</li>
+			</operations>
+	</Operation>
+</Patch>
