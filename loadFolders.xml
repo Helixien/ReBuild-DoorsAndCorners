@@ -13,5 +13,24 @@
 		<li IfModActive="VanillaExpanded.VFEMedical">Mods/VanillaExpanded.VFEMedical</li>
 		<li IfModActive="VanillaExpanded.VFESpacer">Mods/VanillaExpanded.VFESpacer</li>
 		<li IfModActive="VanillaExpanded.VTEXVariations">Mods/VanillaExpanded.VTEXVariations</li>
+		<li IfModActive="rimeffect.core">Mods/PerspectiveDoorSupport.Original/rimeffect.core</li>
+		
+		
+		<!-- ================ Original OwlChemist Perspective Doors Supported Mods (Not updated with new textures) ================ -->
+		<li IfModActive="aoba.fortress.neolithic">Mods/PerspectiveDoorSupport.Original/aoba.fortress.neolithic</li>
+		<li IfModActive="cp.uncle.boris.used.furniture">Mods/PerspectiveDoorSupport.Original/cp.uncle.boris.used.furniture</li>
+		<li IfModActive="dankpyon.medieval.overhaul">Mods/PerspectiveDoorSupport.Original/dankpyon.medieval.overhaul</li>
+		<li IfModActive="dubwise.dubsbadhygiene">Mods/PerspectiveDoorSupport.Original/dubwise.dubsbadhygiene</li>
+		<li IfModActive="dubwise.dubsbadhygiene.lite">Mods/PerspectiveDoorSupport.Original/dubwise.dubsbadhygiene</li>
+		<li IfModActive="erin.japanesefurniture">Mods/PerspectiveDoorSupport.Original/erin.japanesefurniture</li>
+		<li IfModActive="heis.edo.themed.expansion">Mods/PerspectiveDoorSupport.Original/heis.edo.themed.expansion</li>
+		<li IfModActive="japanstyle.velcroboy333">Mods/PerspectiveDoorSupport.Original/japanstyle.velcroboy333</li>
+		<li IfModActive="jecrell.doorsexpanded">Mods/PerspectiveDoorSupport.Original/jecrell.doorsexpanded</li>
+		<li IfModActive="kentington.saveourship2">Mods/PerspectiveDoorSupport.Original/kentington.saveourship2</li>
+		<li IfModActive="mlie.concrete">Mods/PerspectiveDoorSupport.Original/mlie.concrete</li>
+		<li IfModActive="qx.astramilitarum">Mods/PerspectiveDoorSupport.Original/qx.astramilitarum</li>
+		<li IfModActive="rd.earlytimes">Mods/PerspectiveDoorSupport.Original/rd.earlytimes</li>
+		<li IfModActive="solaris.furniturebase">Mods/PerspectiveDoorSupport.Original/solaris.furniturebase</li>
+		<li IfModActive="wemd.reinforceddoors">Mods/PerspectiveDoorSupport.Original/wemd.reinforceddoors</li>
 	</v1.5>
 </loadFolders>

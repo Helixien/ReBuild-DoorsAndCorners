@@ -27,7 +27,7 @@
 	<Operation Class="ModSettingsFramework.PatchOperationModOption">
 		<defaultValue>True</defaultValue>
 		<label>Enable perspective doors</label>
-		<tooltip>Enable perspective doors. Adds a slight depth to door textures and a different east/west view. Currently Supports Basegame, Ideology, Glass and Lights, VFE Ancients, VFE Architect, and VTE Variations (Default: True)</tooltip>
+		<tooltip>Enable perspective doors. Adds a slight depth to door textures and a different east/west view.(Default: True)</tooltip>
 		<id>RB_PerspectiveDoors</id>
 		<category>RB_Core</category>
 		<order>1</order>
@@ -58,6 +58,98 @@
 			</li>
 			<li MayRequire="VanillaExpanded.VFEArchitect" Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="VFEArch_SingleDoor" or defName="VFEArch_SingleDoor_Flipped" or defName="VFEArch_ArmoredDoor"]/graphicData/graphicClass</xpath>
+				<value>
+					<graphicClass>Graphic_Multi</graphicClass>
+				</value>
+			</li>
+			<li MayRequire="rimeffect.core" Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="RE_PrefabAutodoor"]/graphicData/graphicClass</xpath>
+				<value>
+					<graphicClass>Graphic_Multi</graphicClass>
+				</value>
+			</li>
+			
+		<!-- ================ Original OwlChemist Perspective Doors Supported Mods (Not updated with new textures) ================ -->
+			<li MayRequire="aoba.fortress.neolithic" Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="FT_PalisadeDoor"]/graphicData/graphicClass</xpath>
+				<value>
+					<graphicClass>Graphic_Multi</graphicClass>
+				</value>
+			</li>
+			<li MayRequire="cp.uncle.boris.used.furniture" Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="RH_Armored_Door" or defName="RH2_CamoNettingFlap" or defName="RH_ChainlinkFence_Door"]/graphicData/graphicClass</xpath>
+				<value>
+					<graphicClass>Graphic_Multi</graphicClass>
+				</value>
+			</li>
+			<li MayRequire="dankpyon.medieval.overhaul" Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="DankPyon_RusticDoor" or defName="DankPyon_Gate"]/graphicData/graphicClass</xpath>
+				<value>
+					<graphicClass>Graphic_Multi</graphicClass>
+				</value>
+			</li>
+			<li MayRequire="dubwise.dubsbadhygiene" Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="ToiletStallDoor"]/graphicData/graphicClass</xpath>
+				<value>
+					<graphicClass>Graphic_Multi</graphicClass>
+				</value>
+			</li>
+			<li MayRequire="dubwise.dubsbadhygiene.lite" Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="ToiletStallDoor"]/graphicData/graphicClass</xpath>
+				<value>
+					<graphicClass>Graphic_Multi</graphicClass>
+				</value>
+			</li>
+			<li MayRequire="erin.japanesefurniture" Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Erin_Fusuma"]/graphicData/graphicClass</xpath>
+				<value>
+					<graphicClass>Graphic_Multi</graphicClass>
+				</value>
+			</li>
+			<li MayRequire="japanstyle.velcroboy333" Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="VBY_FusumaBase"]/graphicData/graphicClass</xpath>
+				<value>
+					<graphicClass>Graphic_Multi</graphicClass>
+				</value>
+			</li>
+			<li MayRequire="jecrell.doorsexpanded" Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="PH_DoorDouble" or defName="PH_DoorTriple" or defName="PH_AutodoorDouble" or defName="PH_AutodoorTriple" or defName="HeronCurtainTribal" or defName="HeronCurtainTribalDouble" or defName="HeronCurtainTribalTriple" or defName="PH_DoorJail"]/graphicData/graphicClass</xpath>
+				<value>
+					<graphicClass>Graphic_Multi</graphicClass>
+				</value>
+			</li>
+			<li MayRequire="kentington.saveourship2" Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="ShipAirlock" or defName="ShipAirlockMech" or defName="ShipAirlockWrecked" or defName="ShipAirlockArchotech"]/graphicData/graphicClass</xpath>
+				<value>
+					<graphicClass>Graphic_Multi</graphicClass>
+				</value>
+			</li>
+			<li MayRequire="mlie.concrete" Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[@Name="RFC_DoorBase"]/graphicData/graphicClass</xpath>
+				<value>
+					<graphicClass>Graphic_Multi</graphicClass>
+				</value>
+			</li>
+			<li MayRequire="qx.astramilitarum" Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="ImperiumDoor" or defName="ImperiumAutodoor"]/graphicData/graphicClass</xpath>
+				<value>
+					<graphicClass>Graphic_Multi</graphicClass>
+				</value>
+			</li>
+			<li MayRequire="rd.earlytimes" Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="MedTimes_Gate"]/graphicData/graphicClass</xpath>
+				<value>
+					<graphicClass>Graphic_Multi</graphicClass>
+				</value>
+			</li>
+			<li MayRequire="solaris.furniturebase" Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="RGK_DoorOld"]/graphicData/graphicClass</xpath>
+				<value>
+					<graphicClass>Graphic_Multi</graphicClass>
+				</value>
+			</li>
+			<li MayRequire="wemd.reinforceddoors" Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="WDReinforcedDoor" or defName="WDReinforcedAutodoor"]/graphicData/graphicClass</xpath>
 				<value>
 					<graphicClass>Graphic_Multi</graphicClass>
 				</value>
