@@ -20,20 +20,6 @@
 					<li>RB_LargeOrnateDoor</li>
 				</value>
 			</li>
-			<li Class="PatchOperationInsert">
-				<xpath>/Defs/ThingDef[defName="Wall"]/building/relatedBuildCommands/li[2]</xpath>
-				<value>
-					<li>RB_DoubleAutodoor</li>
-					<li>RB_TripleAutodoor</li>
-				</value>
-			</li>
-			<li Class="PatchOperationInsert">
-				<xpath>/Defs/ThingDef[defName="Wall"]/building/relatedBuildCommands/li[1]</xpath>
-				<value>
-					<li>RB_DoubleDoor</li>
-					<li>RB_TripleDoor</li>
-				</value>
-			</li>
 		</operations>
 	</Operation>
 </Patch>

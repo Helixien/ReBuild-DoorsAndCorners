@@ -2,37 +2,34 @@
 	<v1.5>
 		<li>/</li>
 		<li>1.5</li>
-		<li IfModActive="Ludeon.RimWorld.Anomaly">Mods/Ludeon.RimWorld.Anomaly</li>
-		<li IfModActive="Ludeon.RimWorld.Ideology">Mods/Ludeon.RimWorld.Ideology</li>
-		<li IfModActive="NanoCE.GlassLights">Mods/NanoCE.GlassLights</li>
-		<li IfModActive="Neronix17.Outland.Core">Mods/Neronix17.Outland.Core</li>
-		<li IfModActive="Sarg.AlphaMemes">Mods/Sarg.AlphaMemes</li>
-		<li IfModActive="VanillaExpanded.VFEA">Mods/VanillaExpanded.VFEA</li>
-		<li IfModActive="VanillaExpanded.VFEArchitect">Mods/VanillaExpanded.VFEArchitect</li>
-		<li IfModActive="VanillaExpanded.VFEArt">Mods/VanillaExpanded.VFEArt</li>
-		<li IfModActive="VanillaExpanded.VFEMedical">Mods/VanillaExpanded.VFEMedical</li>
-		<li IfModActive="VanillaExpanded.VFESpacer">Mods/VanillaExpanded.VFESpacer</li>
-		<li IfModActive="OskarPotocki.VanillaFactionsExpanded.SettlersModule">Mods/VanillaExpanded.Settlers</li>
-		<li IfModActive="VanillaExpanded.VTEXVariations">Mods/VanillaExpanded.VTEXVariations</li>
-		<li IfModActive="RimEffect.Core">Mods/RimEffect.Core</li>
-		<li IfModActive="RimEffectReborn.Core">Mods/RimEffect.Core</li>
-		
-		
+		<!-- ================ DLCs ================ -->
+		<li IfModActive="Ludeon.RimWorld.Anomaly">1.5/LoadFolders/Anomaly</li>
+		<li IfModActive="Ludeon.RimWorld.Ideology">1.5/LoadFolders/Ideology</li>
+		<!-- ================ Mod Support - VES - (Textures only) ================ -->
+		<li IfModActive="OskarPotocki.VanillaFactionsExpanded.SettlersModule">1.5/LoadFolders/VFE-Settlers</li>
+		<li IfModActive="VanillaExpanded.VFEA">1.5/LoadFolders/_Support/VFE-Ancients</li>
+		<li IfModActive="VanillaExpanded.VFESpacer">1.5/LoadFolders/_Support/VFUE-Spacer</li>
+		<li IfModActive="VanillaExpanded.VFEMedical">1.5/LoadFolders/_Support/VFUE-Medical</li>
+		<li IfModActive="VanillaExpanded.VFEArt">1.5/LoadFolders/_Support/VFUE-Art</li>
+		<li IfModActive="VanillaExpanded.VFEArchitect">1.5/LoadFolders/_Support/VFUE-Architect</li>
+		<li IfModActive="VanillaExpanded.VTEXVariations">1.5/LoadFolders/_Support/VTEX-Variations</li>
+		<!-- ================ Mod Support - (Textures only) ================ -->
+		<li IfModActive="RimEffect.Core,RimEffectReborn.Core">1.5/LoadFolders/_Support/RimEffect-Core</li>
+		<li IfModActive="Neronix17.Outland.Core">1.5/LoadFolders/_Support/Outland-Core</li>
+		<li IfModActive="NanoCE.GlassLights">1.5/LoadFolders/_Support/Glass-Lights</li>
+		<li IfModActive="Sarg.AlphaMemes">1.5/LoadFolders/_Support/AlphaMemes</li>
 		<!-- ================ Original OwlChemist Perspective Doors Supported Mods (Not updated with new textures) ================ -->
-		<li IfModActive="aoba.fortress.neolithic">Mods/PerspectiveDoorSupport.Original/aoba.fortress.neolithic</li>
-		<li IfModActive="cp.uncle.boris.used.furniture">Mods/PerspectiveDoorSupport.Original/cp.uncle.boris.used.furniture</li>
-		<li IfModActive="dankpyon.medieval.overhaul">Mods/PerspectiveDoorSupport.Original/dankpyon.medieval.overhaul</li>
-		<li IfModActive="dubwise.dubsbadhygiene">Mods/PerspectiveDoorSupport.Original/dubwise.dubsbadhygiene</li>
-		<li IfModActive="dubwise.dubsbadhygiene.lite">Mods/PerspectiveDoorSupport.Original/dubwise.dubsbadhygiene</li>
-		<li IfModActive="erin.japanesefurniture">Mods/PerspectiveDoorSupport.Original/erin.japanesefurniture</li>
-		<li IfModActive="heis.edo.themed.expansion">Mods/PerspectiveDoorSupport.Original/heis.edo.themed.expansion</li>
-		<li IfModActive="japanstyle.velcroboy333">Mods/PerspectiveDoorSupport.Original/japanstyle.velcroboy333</li>
-		<li IfModActive="jecrell.doorsexpanded">Mods/PerspectiveDoorSupport.Original/jecrell.doorsexpanded</li>
-		<li IfModActive="kentington.saveourship2">Mods/PerspectiveDoorSupport.Original/kentington.saveourship2</li>
-		<li IfModActive="mlie.concrete">Mods/PerspectiveDoorSupport.Original/mlie.concrete</li>
-		<li IfModActive="qx.astramilitarum">Mods/PerspectiveDoorSupport.Original/qx.astramilitarum</li>
-		<li IfModActive="rd.earlytimes">Mods/PerspectiveDoorSupport.Original/rd.earlytimes</li>
-		<li IfModActive="solaris.furniturebase">Mods/PerspectiveDoorSupport.Original/solaris.furniturebase</li>
-		<li IfModActive="wemd.reinforceddoors">Mods/PerspectiveDoorSupport.Original/wemd.reinforceddoors</li>
+		<li IfModActive="aoba.fortress.neolithic">1.5/LoadFolders/_Support/PD-OriginalSupport/Fortifications-Neolith</li>
+		<li IfModActive="cp.uncle.boris.used.furniture">1.5/LoadFolders/_Support/PD-OriginalSupport/UB-UsedFurniture</li>
+		<li IfModActive="dankpyon.medieval.overhaul">1.5/LoadFolders/_Support/PD-OriginalSupport/MedievalOverhaul</li>
+		<li IfModActive="dubwise.dubsbadhygiene,dubwise.dubsbadhygiene.lite">1.5/LoadFolders/_Support/PD-OriginalSupport/DubsBadHygiene</li>
+		<li IfModActive="erin.japanesefurniture">1.5/LoadFolders/_Support/PD-OriginalSupport/ErinsJapanese Furniture</li>
+		<li IfModActive="heis.edo.themed.expansion">1.5/LoadFolders/_Support/PD-OriginalSupport/EdoThemedExpansion</li>
+		<li IfModActive="japanstyle.velcroboy333">1.5/LoadFolders/_Support/PD-OriginalSupport/V-JapaneseRevival</li>
+		<li IfModActive="jecrell.doorsexpanded">1.5/LoadFolders/_Support/PD-OriginalSupport/DoorsExpanded</li>
+		<li IfModActive="kentington.saveourship2">1.5/LoadFolders/_Support/PD-OriginalSupport/SaveOurShip2</li>
+		<li IfModActive="mlie.concrete">1.5/LoadFolders/_Support/PD-OriginalSupport/ConcreteC</li>
+		<li IfModActive="qx.astramilitarum">1.5/LoadFolders/_Support/PD-OriginalSupport/AstraMilitarum</li>
+		<li IfModActive="wemd.reinforceddoors">1.5/LoadFolders/_Support/PD-OriginalSupport/ReinforcedDoors</li>
 	</v1.5>
 </loadFolders>

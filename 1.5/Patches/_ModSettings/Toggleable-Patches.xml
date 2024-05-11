@@ -33,140 +33,127 @@
 		<order>1</order>
 		<operations>
 			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName="Door" or defName="Autodoor" or defName="AnimalFlap" or defName="RB_DoubleDoor" or defName="RB_TripleDoor" or defName="RB_DoubleAutodoor" or defName="RB_TripleAutodoor"]/graphicData/graphicClass</xpath>
+				<xpath>Defs/ThingDef[defName="Door" or defName="Autodoor" or defName="AnimalFlap"]/graphicData/graphicClass</xpath>
 				<value>
 					<graphicClass>Graphic_Multi</graphicClass>
 				</value>
 			</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology" Class="PatchOperationReplace">
+			<li Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Ideology">
 				<xpath>Defs/ThingStyleDef[defName="Techist_Autodoor"]/graphicData/graphicClass</xpath>
 				<value>
 					<graphicClass>Graphic_Multi</graphicClass>
 				</value>
 			</li>
-			<li MayRequire="NanoCE.GlassLights" Class="PatchOperationReplace">
+			<li Class="PatchOperationReplace" MayRequire="NanoCE.GlassLights">
 				<xpath>Defs/ThingDef[defName="DoorGlass" or defName="AutoDoorGlass"]/graphicData/graphicClass</xpath>
 				<value>
 					<graphicClass>Graphic_Multi</graphicClass>
 				</value>
 			</li>
-			<li MayRequire="VanillaExpanded.VFEA" Class="PatchOperationReplace">
+			<li Class="PatchOperationReplace" MayRequire="VanillaExpanded.VFEA">
 				<xpath>Defs/ThingDef[defName="VFEA_VaultDoor"]/graphicData/graphicClass</xpath>
 				<value>
 					<graphicClass>Graphic_Multi</graphicClass>
 				</value>
 			</li>
-			<li MayRequire="VanillaExpanded.VFEArchitect" Class="PatchOperationReplace">
+			<li Class="PatchOperationReplace" MayRequire="VanillaExpanded.VFEArchitect">
 				<xpath>Defs/ThingDef[defName="VFEArch_SingleDoor" or defName="VFEArch_SingleDoor_Flipped" or defName="VFEArch_ArmoredDoor"]/graphicData/graphicClass</xpath>
 				<value>
 					<graphicClass>Graphic_Multi</graphicClass>
 				</value>
 			</li>
-			<li MayRequire="RimEffect.Core" Class="PatchOperationReplace">
+			<li Class="PatchOperationReplace" MayRequireAnyOf="RimEffect.Core,RimEffectReborn.Core">
 				<xpath>Defs/ThingDef[defName="RE_PrefabAutodoor"]/graphicData/graphicClass</xpath>
 				<value>
 					<graphicClass>Graphic_Multi</graphicClass>
 				</value>
 			</li>
-			<li MayRequire="RimEffectReborn.Core" Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName="RE_PrefabAutodoor"]/graphicData/graphicClass</xpath>
-				<value>
-					<graphicClass>Graphic_Multi</graphicClass>
-				</value>
-			</li>
-			<li MayRequire="RimEffect.ExtendedCut" Class="PatchOperationReplace">
+			<li Class="PatchOperationReplace" MayRequireAnyOf="RimEffect.ExtendedCut,RimEffectReborn.ExtendedCut">>
 				<xpath>Defs/ThingDef[defName="RE_PrefabDoorColonial" or defName="RE_PrefabAutoDoorIndustrial"]/graphicData/graphicClass</xpath>
 				<value>
 					<graphicClass>Graphic_Multi</graphicClass>
 				</value>
 			</li>
-			<li MayRequire="RimEffectReborn.ExtendedCut" Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName="RE_PrefabDoorColonial" or defName="RE_PrefabAutoDoorIndustrial"]/graphicData/graphicClass</xpath>
-				<value>
-					<graphicClass>Graphic_Multi</graphicClass>
-				</value>
-			</li>
- 
-		<!-- ================ Original OwlChemist Perspective Doors Supported Mods (Not updated with new textures) ================ -->
-			<li MayRequire="aoba.fortress.neolithic" Class="PatchOperationReplace">
+			<!-- ================ Original OwlChemist Perspective Doors Supported Mods (Not updated with new textures) ================ -->
+			<li Class="PatchOperationReplace" MayRequire="aoba.fortress.neolithic">
 				<xpath>Defs/ThingDef[defName="FT_PalisadeDoor"]/graphicData/graphicClass</xpath>
 				<value>
 					<graphicClass>Graphic_Multi</graphicClass>
 				</value>
 			</li>
-			<li MayRequire="cp.uncle.boris.used.furniture" Class="PatchOperationReplace">
+			<li Class="PatchOperationReplace" MayRequire="cp.uncle.boris.used.furniture" >
 				<xpath>Defs/ThingDef[defName="RH_Armored_Door" or defName="RH2_CamoNettingFlap" or defName="RH_ChainlinkFence_Door"]/graphicData/graphicClass</xpath>
 				<value>
 					<graphicClass>Graphic_Multi</graphicClass>
 				</value>
 			</li>
-			<li MayRequire="dankpyon.medieval.overhaul" Class="PatchOperationReplace">
+			<li Class="PatchOperationReplace" MayRequire="dankpyon.medieval.overhaul">
 				<xpath>Defs/ThingDef[defName="DankPyon_RusticDoor" or defName="DankPyon_Gate"]/graphicData/graphicClass</xpath>
 				<value>
 					<graphicClass>Graphic_Multi</graphicClass>
 				</value>
 			</li>
-			<li MayRequire="dubwise.dubsbadhygiene" Class="PatchOperationReplace">
+			<li Class="PatchOperationReplace" MayRequire="dubwise.dubsbadhygiene">
 				<xpath>Defs/ThingDef[defName="ToiletStallDoor"]/graphicData/graphicClass</xpath>
 				<value>
 					<graphicClass>Graphic_Multi</graphicClass>
 				</value>
 			</li>
-			<li MayRequire="dubwise.dubsbadhygiene.lite" Class="PatchOperationReplace">
+			<li Class="PatchOperationReplace" MayRequire="dubwise.dubsbadhygiene.lite">
 				<xpath>Defs/ThingDef[defName="ToiletStallDoor"]/graphicData/graphicClass</xpath>
 				<value>
 					<graphicClass>Graphic_Multi</graphicClass>
 				</value>
 			</li>
-			<li MayRequire="erin.japanesefurniture" Class="PatchOperationReplace">
+			<li Class="PatchOperationReplace" MayRequire="erin.japanesefurniture">
 				<xpath>Defs/ThingDef[defName="Erin_Fusuma"]/graphicData/graphicClass</xpath>
 				<value>
 					<graphicClass>Graphic_Multi</graphicClass>
 				</value>
 			</li>
-			<li MayRequire="japanstyle.velcroboy333" Class="PatchOperationReplace">
+			<li Class="PatchOperationReplace" MayRequire="japanstyle.velcroboy333">
 				<xpath>Defs/ThingDef[defName="VBY_FusumaBase"]/graphicData/graphicClass</xpath>
 				<value>
 					<graphicClass>Graphic_Multi</graphicClass>
 				</value>
 			</li>
-			<li MayRequire="jecrell.doorsexpanded" Class="PatchOperationReplace">
+			<li Class="PatchOperationReplace" MayRequire="jecrell.doorsexpanded">
 				<xpath>Defs/ThingDef[defName="PH_DoorDouble" or defName="PH_DoorTriple" or defName="PH_AutodoorDouble" or defName="PH_AutodoorTriple" or defName="HeronCurtainTribal" or defName="HeronCurtainTribalDouble" or defName="HeronCurtainTribalTriple" or defName="PH_DoorJail"]/graphicData/graphicClass</xpath>
 				<value>
 					<graphicClass>Graphic_Multi</graphicClass>
 				</value>
 			</li>
-			<li MayRequire="kentington.saveourship2" Class="PatchOperationReplace">
+			<li Class="PatchOperationReplace" MayRequire="kentington.saveourship2">
 				<xpath>Defs/ThingDef[defName="ShipAirlock" or defName="ShipAirlockMech" or defName="ShipAirlockWrecked" or defName="ShipAirlockArchotech"]/graphicData/graphicClass</xpath>
 				<value>
 					<graphicClass>Graphic_Multi</graphicClass>
 				</value>
 			</li>
-			<li MayRequire="mlie.concrete" Class="PatchOperationReplace">
+			<li Class="PatchOperationReplace" MayRequire="mlie.concrete">
 				<xpath>Defs/ThingDef[@Name="RFC_DoorBase"]/graphicData/graphicClass</xpath>
 				<value>
 					<graphicClass>Graphic_Multi</graphicClass>
 				</value>
 			</li>
-			<li MayRequire="qx.astramilitarum" Class="PatchOperationReplace">
+			<li Class="PatchOperationReplace" MayRequire="qx.astramilitarum">
 				<xpath>Defs/ThingDef[defName="ImperiumDoor" or defName="ImperiumAutodoor"]/graphicData/graphicClass</xpath>
 				<value>
 					<graphicClass>Graphic_Multi</graphicClass>
 				</value>
 			</li>
-			<li MayRequire="rd.earlytimes" Class="PatchOperationReplace">
+			<li Class="PatchOperationReplace" MayRequire="rd.earlytimes">
 				<xpath>Defs/ThingDef[defName="MedTimes_Gate"]/graphicData/graphicClass</xpath>
 				<value>
 					<graphicClass>Graphic_Multi</graphicClass>
 				</value>
 			</li>
-			<li MayRequire="solaris.furniturebase" Class="PatchOperationReplace">
+			<li Class="PatchOperationReplace" MayRequire="solaris.furniturebase">
 				<xpath>Defs/ThingDef[defName="RGK_DoorOld"]/graphicData/graphicClass</xpath>
 				<value>
 					<graphicClass>Graphic_Multi</graphicClass>
 				</value>
 			</li>
-			<li MayRequire="wemd.reinforceddoors" Class="PatchOperationReplace">
+			<li Class="PatchOperationReplace" MayRequire="wemd.reinforceddoors">
 				<xpath>Defs/ThingDef[defName="WDReinforcedDoor" or defName="WDReinforcedAutodoor"]/graphicData/graphicClass</xpath>
 				<value>
 					<graphicClass>Graphic_Multi</graphicClass>
