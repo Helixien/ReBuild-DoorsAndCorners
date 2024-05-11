@@ -37,7 +37,7 @@
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName="Wall"]</xpath>
+				<xpath>/Defs/ThingDef[defName="Wall"]/uiOrder</xpath>
 				<value>
 					<uiOrder>2000</uiOrder>
 				</value>
