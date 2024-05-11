@@ -141,7 +141,8 @@
 		<description>A ornated, impassable wall. Capable of holding up a roof, but more fragile than a normal wall.</description>
 		<graphicData>
 			<texPath>Things/Building/Linked/RB_OrnateWall</texPath>
-			<graphicClass>CutoutComplex</graphicClass>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
 			<linkType>CornerFiller</linkType>
 			<linkFlags>
 				<li>Wall</li>
@@ -158,15 +159,15 @@
 				<edgeRight>Damage/Edge</edgeRight>
 			</damageData>
 		</graphicData>
-		<uiIconPath>Things/Building/Linked/OrnateWallSmooth_MenuIcon</uiIconPath>
+		<uiIconPath>Things/Building/Linked/RB_OrnateWallSmooth_MenuIcon</uiIconPath>
 		<uiIconPathsStuff>
 			<li>
 				<appearance>Planks</appearance>
-				<iconPath>Things/Building/Linked/OrnateWallPlanks_MenuIcon</iconPath>
+				<iconPath>Things/Building/Linked/RB_OrnateWallPlanks_MenuIcon</iconPath>
 			</li>
 			<li>
 				<appearance>Bricks</appearance>
-				<iconPath>Things/Building/Linked/OrnateWallBricks_MenuIcon</iconPath>
+				<iconPath>Things/Building/Linked/RB_OrnateWallBricks_MenuIcon</iconPath>
 			</li>
 		</uiIconPathsStuff>
 		<statBases>
@@ -176,10 +177,15 @@
 			<MeditationFocusStrength>0.32</MeditationFocusStrength>
 			<Beauty>4</Beauty>
 		</statBases>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
 		<costStuffCount>12</costStuffCount>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<useStuffTerrainAffordance>true</useStuffTerrainAffordance>
-		<comps Inherit="False">
+		<comps Inherit="false">
 			<li Class="CompProperties_MeditationFocus">
 				<statDef>MeditationFocusStrength</statDef>
 				<focusTypes>
@@ -188,7 +194,7 @@
 				</focusTypes>
 			</li>
 		</comps>
-		<damageMultipliers>
+		<damageMultipliers Inherit="false">
 			<li>
 				<damageDef>Bomb</damageDef>
 				<multiplier>4</multiplier>
