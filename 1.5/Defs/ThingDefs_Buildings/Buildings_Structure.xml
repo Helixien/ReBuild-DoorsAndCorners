@@ -35,11 +35,7 @@
 			<paintable>true</paintable>
 			<relatedBuildCommands>
 				<li>Door</li>
-				<li>RB_DoubleDoor</li>
-				<li>RB_TripleDoor</li>
 				<li>Autodoor</li>
-				<li>RB_DoubleAutodoor</li>
-				<li>RB_TripleAutodoor</li>
 				<li>OrnateDoor</li>
 				<li>RB_LargeOrnateDoor</li>
 				<li MayRequire="Ludeon.RimWorld.Anomaly">SecurityDoor</li>

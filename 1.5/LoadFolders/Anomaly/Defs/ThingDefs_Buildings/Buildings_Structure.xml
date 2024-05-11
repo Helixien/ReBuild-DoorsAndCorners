@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ================================ Containment Wall ====================== -->
+	<ThingDef ParentName="BuildingBase">
+		<defName>RB_ContainmentWall</defName>
+		<label>containment wall</label>
+		<description>An impassable, heavy wall with multiple layers of armor. Nearly completely resistant to explosives and any breaching tools.</description>
+		<graphicData>
+			<texPath>Things/Building/Linked/RB_ContainmentWall_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<linkType>CornerFiller</linkType>
+			<linkFlags>
+				<li>Wall</li>
+				<li>Rock</li>
+			</linkFlags>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+				<edgeTop>Damage/Edge</edgeTop>
+				<edgeBot>Damage/Edge</edgeBot>
+				<edgeLeft>Damage/Edge</edgeLeft>
+				<edgeRight>Damage/Edge</edgeRight>
+			</damageData>
+		</graphicData>
+		<uiIconPath>Things/Building/Linked/RB_ContainmentWall_MenuIcon</uiIconPath>
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<WorkToBuild>405</WorkToBuild>
+			<MeditationFocusStrength>0.05</MeditationFocusStrength>
+		</statBases>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>8</costStuffCount>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<designationCategory>Anomaly</designationCategory>
+		<comps Inherit="false"/>
+		<damageMultipliers>
+			<li>
+				<damageDef>Bomb</damageDef>
+				<multiplier>1.5</multiplier>
+			</li>
+			<li>
+				<damageDef>Thump</damageDef>
+				<multiplier>1.5</multiplier>
+			</li>
+		</damageMultipliers>
+	</ThingDef>
+</Defs>
