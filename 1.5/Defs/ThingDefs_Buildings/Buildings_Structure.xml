@@ -182,6 +182,7 @@
 		<costList>
 			<Gold>2</Gold>
 		</costList>
+		<uiOrder>2001</uiOrder>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<useStuffTerrainAffordance>true</useStuffTerrainAffordance>
 		<comps Inherit="false">
@@ -228,7 +229,7 @@
 		<size>(3, 1)</size>
 		<rotatable>true</rotatable>
 		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
-		<costStuffCount>75</costStuffCount>
+		<costStuffCount>100</costStuffCount>
 		<costList>
 			<Gold>75</Gold>
 		</costList>
