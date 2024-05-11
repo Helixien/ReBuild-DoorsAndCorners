@@ -15,19 +15,6 @@
 					<drawSize>(3,2)</drawSize>
 				</value>
 			</li>
-			<!-- ================================ Changes Bioferrite Plate ====================== -->
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/TerrainDef[defName="BioferritePlate"]</xpath>
-				<value>
-					<designationCategory>Anomaly</designationCategory>
-				</value>
-			</li>
-			<li Class="PatchOperationReplace">
-				<xpath>/Defs/TerrainDef[defName="BioferritePlate"]</xpath>
-				<value>
-					<uiOrder>5</uiOrder>
-				</value>
-			</li>
 		</operations>
 	</Operation>
 </Patch>

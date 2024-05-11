@@ -35,9 +35,7 @@
 			<li>Metallic</li>
 		</stuffCategories>
 		<costStuffCount>8</costStuffCount>
-		<uiOrder>0</uiOrder>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-		<designationCategory>Anomaly</designationCategory>
 		<building>
 			<relatedBuildCommands Inherit="false">
 				<li>Autodoor</li>
