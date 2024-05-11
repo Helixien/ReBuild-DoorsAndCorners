@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<!-- ================================ Containment Wall ====================== -->
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="RB_WallBase">
 		<defName>RB_ContainmentWall</defName>
 		<label>containment wall</label>
 		<description>An impassable, heavy wall with multiple layers of armor. Nearly completely resistant to explosives and any breaching tools.</description>
