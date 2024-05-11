@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ================================ Fine Wooden Floor Base ====================== -->
+	<TerrainDef Abstract="True" ParentName="FloorBase" Name="RB_FinePlankWoodBase">
+		<renderPrecedence>250</renderPrecedence>
+		<description>Exquisite wooden tiles, made with no compromises, for expressing economic status. Slow to construct.</description>
+		<texturePath>Terrain/Surfaces/TileWoodFine</texturePath>
+		<burnedDef>RB_BurnedFineWoodPlankFloor</burnedDef>
+		<pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughSoftLight</pollutionShaderType>
+		<pollutionOverlayTexturePath>Terrain/Surfaces/PollutionFloorSmooth</pollutionOverlayTexturePath>
+		<isPaintable>true</isPaintable>
+		<statBases>
+			<WorkToBuild>385</WorkToBuild>
+			<Beauty>2</Beauty>
+			<Flammability>0.22</Flammability>
+			<CleaningTimeFactor>0.9</CleaningTimeFactor>
+		</statBases>
+		<tags>
+			<li>FineFloor</li>
+		</tags>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		<constructEffect>ConstructWood</constructEffect>
+		<uiOrder>2001</uiOrder>
+	</TerrainDef>
+	<!-- ================================ Fine Wooden Floor ====================== -->
+	<TerrainDef ParentName="RB_FinePlankWoodBase">
+		<defName>RB_FinePlankWood</defName>
+		<label>fine wood floor</label>
+		<color>(108,78,55)</color>
+		<costList>
+			<WoodLog>15</WoodLog>
+		</costList>
+	</TerrainDef>
+	<!-- ================================ Burned Fine Wooden Floor ====================== -->
+	<TerrainDef ParentName="BurnedFloorBase">
+		<defName>RB_BurnedFineWoodPlankFloor</defName>
+		<label>burned wood floor</label>
+		<renderPrecedence>251</renderPrecedence>
+		<description>Burned-out fine wood plank flooring.</description>
+		<texturePath>Terrain/Surfaces/BurnedFineWoodFloor</texturePath>
+		<edgeType>FadeRough</edgeType>
+	</TerrainDef>
+</Defs>
