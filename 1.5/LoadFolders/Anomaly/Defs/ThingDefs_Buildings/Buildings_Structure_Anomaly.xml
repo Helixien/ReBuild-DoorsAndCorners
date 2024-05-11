@@ -43,7 +43,7 @@
 			</relatedBuildCommands>
 		</building>
 		<comps Inherit="false"/>
-		<damageMultipliers>
+		<damageMultipliers Inherit="false">
 			<li>
 				<damageDef>Bomb</damageDef>
 				<multiplier>1.5</multiplier>
