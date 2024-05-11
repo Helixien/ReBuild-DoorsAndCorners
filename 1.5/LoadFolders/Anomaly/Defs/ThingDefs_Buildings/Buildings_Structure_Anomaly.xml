@@ -29,6 +29,7 @@
 			<MaxHitPoints>500</MaxHitPoints>
 			<WorkToBuild>405</WorkToBuild>
 			<MeditationFocusStrength>0.05</MeditationFocusStrength>
+			<ContainmentStrength>10</ContainmentStrength>
 		</statBases>
 		<stuffCategories>
 			<li>Metallic</li>
