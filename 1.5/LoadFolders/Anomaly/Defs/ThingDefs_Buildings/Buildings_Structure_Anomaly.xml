@@ -4,7 +4,7 @@
 	<ThingDef ParentName="RB_WallBase">
 		<defName>RB_ContainmentWall</defName>
 		<label>containment wall</label>
-		<description>An impassable, heavy wall with multiple layers of armor. Nearly completely resistant to explosives and any breaching tools.</description>
+		<description>An impassable, heavy wall with layers of specialized armor for containing entities. Extremely resistant to any entity.</description>
 		<graphicData>
 			<texPath>Things/Building/Linked/RB_ContainmentWall_Atlas</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -34,6 +34,7 @@
 			<li>Metallic</li>
 		</stuffCategories>
 		<costStuffCount>8</costStuffCount>
+		<uiOrder>0</uiOrder>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<designationCategory>Anomaly</designationCategory>
 		<building>

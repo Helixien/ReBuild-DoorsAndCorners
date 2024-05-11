@@ -179,6 +179,9 @@
 			<li>Stony</li>
 		</stuffCategories>
 		<costStuffCount>12</costStuffCount>
+		<costList>
+			<Gold>2</Gold>
+		</costList>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<useStuffTerrainAffordance>true</useStuffTerrainAffordance>
 		<comps Inherit="false">
