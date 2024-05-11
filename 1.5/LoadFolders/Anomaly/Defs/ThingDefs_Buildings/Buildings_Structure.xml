@@ -36,6 +36,12 @@
 		<costStuffCount>8</costStuffCount>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<designationCategory>Anomaly</designationCategory>
+		<building>
+			<relatedBuildCommands Inherit="false">
+				<li>Autodoor</li>
+				<li>SecurityDoor</li>
+			</relatedBuildCommands>
+		</building>
 		<comps Inherit="false"/>
 		<damageMultipliers>
 			<li>
