@@ -141,7 +141,7 @@
 		<description>A ornated, impassable wall. Capable of holding up a roof, but more fragile than a normal wall.</description>
 		<graphicData>
 			<texPath>Things/Building/Linked/RB_OrnateWall</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
+			<graphicClass>Graphic_Appearances</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<linkType>CornerFiller</linkType>
 			<linkFlags>
