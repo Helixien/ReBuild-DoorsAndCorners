@@ -18,7 +18,7 @@
 			<li Class="PatchOperationReplace">
 				<xpath>/Defs/ThingDef[@Name="Wall"]/uiIconPath</xpath>
 				<value>
-					<uiIconPath>Things/Building/Linked/RB_AlternativeWall/WallSmooth_MenuIcon</uiIconPath>
+					<uiIconPath>Things/Building/Linked/RB_Alternative_WallSmooth_MenuIcon</uiIconPath>
 				</value>
 			</li>
 		</operations>
