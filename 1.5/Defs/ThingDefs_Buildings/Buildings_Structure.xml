@@ -68,7 +68,6 @@
 		<graphicData>
 			<texPath>Things/Building/Linked/RB_RusticWall</texPath>
 			<graphicClass>Graphic_Appearances</graphicClass>
-			<shaderType>CutoutComplex</shaderType>
 			<linkType>CornerFiller</linkType>
 			<linkFlags>
 				<li>Wall</li>
@@ -91,6 +90,10 @@
 				<appearance>Bricks</appearance>
 				<iconPath>Things/Building/Linked/RB_RusticWall_Bricks_MenuIcon</iconPath>
 			</li>
+			<li>
+				<appearance>Woody</appearance>
+				<iconPath>Things/Building/Linked/RB_RusticWall_Planks_MenuIcon</iconPath>
+			</li>
 		</uiIconPathsStuff>
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
@@ -100,6 +103,7 @@
 		</statBases>
 		<stuffCategories>
 			<li>Metallic</li>
+			<li>Woody</li>
 			<li>Stony</li>
 		</stuffCategories>
 		<costStuffCount>3</costStuffCount>
