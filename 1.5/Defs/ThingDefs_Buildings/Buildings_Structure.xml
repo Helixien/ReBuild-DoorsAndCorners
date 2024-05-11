@@ -85,15 +85,11 @@
 				<edgeRight>Damage/Edge</edgeRight>
 			</damageData>
 		</graphicData>
-		<uiIconPath>Things/Building/Linked/RB_RusticWall/RB_RusticWall_Smooth_MenuIcon</uiIconPath>
+		<uiIconPath>Things/Building/Linked/RB_RusticWall_Smooth_MenuIcon</uiIconPath>
 		<uiIconPathsStuff>
 			<li>
-				<appearance>Planks</appearance>
-				<iconPath>Things/Building/Linked/RB_RusticWall/RB_RusticWall_Planks_MenuIcon</iconPath>
-			</li>
-			<li>
 				<appearance>Bricks</appearance>
-				<iconPath>Things/Building/Linked/RB_RusticWall/RB_RusticWall_Bricks_MenuIcon</iconPath>
+				<iconPath>Things/Building/Linked/RB_RusticWall_Bricks_MenuIcon</iconPath>
 			</li>
 		</uiIconPathsStuff>
 		<statBases>
@@ -104,7 +100,6 @@
 		</statBases>
 		<stuffCategories>
 			<li>Metallic</li>
-			<li>Woody</li>
 			<li>Stony</li>
 		</stuffCategories>
 		<costStuffCount>3</costStuffCount>
