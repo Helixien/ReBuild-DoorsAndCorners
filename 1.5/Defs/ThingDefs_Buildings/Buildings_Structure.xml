@@ -267,4 +267,59 @@
 			</li>
 		</comps>
 	</ThingDef>
+	<!-- ================================ Fireplace - Overwall ====================== -->
+	<ThingDef ParentName="BuildingBase">
+		<defName>RB_OverwallFireplace</defName>
+		<label>fireplace</label>
+		<description>A wall-mounted wooden torch for lighting an area. It is not as bright as a regular torch lamp, but it can be mounted on walls. Produces a small amount of heat.</description>
+		<graphicData>
+			<texPath>Things/Building/Misc/OverwallFireplace/OverwallFireplace</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			      <drawSize>(3,3)</drawSize>
+			<damageData>
+				<enabled>false</enabled>
+			</damageData>
+		</graphicData>
+		
+		    <size>(2,1)</size>
+		<rotatable>true</rotatable>
+		<uiIconPath>Things/Building/Misc/WallTorch/WallTorch_MenuIcon</uiIconPath>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+    <passability>Impassable</passability>
+		<terrainAffordanceNeeded IsNull="True"/>
+      <stuffCategories>
+      <li>Stony</li>
+    </stuffCategories>
+	
+    <costStuffCount>120</costStuffCount>
+	    <designationCategory>Temperature</designationCategory>
+		<building>
+			<canPlaceOverWall>true</canPlaceOverWall>
+		</building>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+		</statBases>
+		
+		    <inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+		<placeWorkers>
+			<li>VanillaFurnitureExpanded.PlaceWorker_OnWall</li>
+			      <li>PlaceWorker_GlowRadius</li>
+			      <li>PlaceWorker_Heater</li>
+		</placeWorkers>
+		<comps Inherit="False">
+			<li Class="CompProperties_Glower">
+				<glowRadius>12</glowRadius>
+				<glowColor>(255,140,43,0)</glowColor>
+			</li>
+			<li Class="CompProperties_FireOverlay">
+				<fireSize>0.4</fireSize>
+				<offsetNorth>(0,0,0)</offsetNorth>
+				<offsetSouth>(0,0,0.55)</offsetSouth>
+				<offsetWest>(0.45,0,0.35)</offsetWest>
+				<offsetEast>(-0.45,0,0.35)</offsetEast>
+			</li>
+		</comps>
+	</ThingDef>
 </Defs>
