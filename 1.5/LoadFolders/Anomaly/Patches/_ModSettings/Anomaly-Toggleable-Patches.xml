@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- ================ New wall atlas texture ================ -->
+	<Operation Class="ModSettingsFramework.PatchOperationModOption">
+		<defaultValue>True</defaultValue>
+		<label>Entities cannot open security doors</label>
+		<tooltip>Toggle this option to forbid entities from opening security doors (Default: True)</tooltip>
+		<id>RB_EntitiesCannotOpenSecurityDoors</id>
+		<category>RB_Core</category>
+		<order>3</order>
+	</Operation>
+</Patch>

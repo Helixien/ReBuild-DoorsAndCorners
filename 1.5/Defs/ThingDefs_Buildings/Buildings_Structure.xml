@@ -335,6 +335,7 @@
 			<li>
 				<compClass>CompGatherSpot</compClass>
 			</li>
+			
 			<li Class="CompProperties_MeditationFocus">
 				<statDef>MeditationFocusStrength</statDef>
 				<focusTypes>
@@ -360,6 +361,16 @@
 						<explanationKeyAbstract>MeditationFocusPerFlameAbstract</explanationKeyAbstract>
 					</li>
 				</offsets>
+			</li>
+			<li Class="ReBuildDoorsAndCorners.CompProperties_FireplaceOverlay">
+				<graphicData>
+					<texPath>Things/Building/Misc/OverwallFireplace/OverwallFireplaceBurning</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(3,3)</drawSize>
+					<damageData>
+						<enabled>false</enabled>
+					</damageData>
+				</graphicData>
 			</li>
 		</comps>
 	</ThingDef>
