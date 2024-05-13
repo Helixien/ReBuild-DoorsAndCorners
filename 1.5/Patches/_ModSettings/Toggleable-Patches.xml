@@ -68,8 +68,20 @@
 					<graphicClass>Graphic_Multi</graphicClass>
 				</value>
 			</li>
-			<li Class="PatchOperationReplace" MayRequireAnyOf="RimEffect.ExtendedCut,RimEffectReborn.ExtendedCut">>
+			<li Class="PatchOperationReplace" MayRequireAnyOf="RimEffect.ExtendedCut,RimEffectReborn.ExtendedCut">
 				<xpath>Defs/ThingDef[defName="RE_PrefabDoorColonial" or defName="RE_PrefabAutoDoorIndustrial"]/graphicData/graphicClass</xpath>
+				<value>
+					<graphicClass>Graphic_Multi</graphicClass>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace" MayRequire="Sarg.AlphaMemes">
+				<xpath>Defs/ThingStyleDef[defName="AM_SteampunkRevival_Autodoor"]/graphicData/graphicClass</xpath>
+				<value>
+					<graphicClass>Graphic_Multi</graphicClass>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Anomaly,Sarg.AlphaMemes">
+				<xpath>Defs/ThingStyleDef[defName="AM_HoraxianDoor" or defName="AM_HoraxianAutodoor" or defName="AM_CubicDoor" or defName="AM_CubicAutodoor"]/graphicData/graphicClass</xpath>
 				<value>
 					<graphicClass>Graphic_Multi</graphicClass>
 				</value>
