@@ -161,4 +161,13 @@
 			</li>
 		</operations>
 	</Operation>
+	
+	<Operation Class="ModSettingsFramework.PatchOperationModOption">
+		<defaultValue>True</defaultValue>
+		<label>Colonists don't drop items at door locations</label>
+		<tooltip>Toggle this option to prevent colonists from dropping items at door locations and blocking them from being closed (Default: True)</tooltip>
+		<id>RB_ColonistsDontDropItemsAtDoors</id>
+		<category>RB_Core</category>
+		<order>2</order>
+	</Operation>
 </Patch>
