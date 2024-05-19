@@ -86,6 +86,12 @@
 					<graphicClass>Graphic_Multi</graphicClass>
 				</value>
 			</li>
+			<li Class="PatchOperationReplace" MayRequire="GT.Sam.BasicDoubleDoors">
+				<xpath>Defs/ThingStyleDef[defName="BDD_DoubleDoor" or defName="BDD_AutoDoor"]/graphicData/graphicClass</xpath>
+				<value>
+					<graphicClass>Graphic_Multi</graphicClass>
+				</value>
+			</li>
 			<!-- ================ Original OwlChemist Perspective Doors Supported Mods (Not updated with new textures) ================ -->
 			<li Class="PatchOperationReplace" MayRequire="aoba.fortress.neolithic">
 				<xpath>Defs/ThingDef[defName="FT_PalisadeDoor"]/graphicData/graphicClass</xpath>

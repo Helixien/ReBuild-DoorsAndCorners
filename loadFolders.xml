@@ -19,6 +19,7 @@
 		<li IfModActive="NanoCE.GlassLights">1.5/LoadFolders/_Support/Glass-Lights</li>
 		<li IfModActive="Sarg.AlphaMemes">1.5/LoadFolders/_Support/AlphaMemes</li>
 		<li IfModActive="Aoba.Fortress.Industrial">1.5/LoadFolders/_Support/Fortress-Industrial</li>
+		<li IfModActive="GT.Sam.BasicDoubleDoors">1.5/LoadFolders/_Support/BasicDoubleDoors</li>
 		<!-- ================ Original OwlChemist Perspective Doors Supported Mods (Not updated with new textures) ================ -->
 		<li IfModActive="aoba.fortress.neolithic">1.5/LoadFolders/_Support/PD-OriginalSupport/Fortifications-Neolith</li>
 		<li IfModActive="cp.uncle.boris.used.furniture">1.5/LoadFolders/_Support/PD-OriginalSupport/UB-UsedFurniture</li>
