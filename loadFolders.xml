@@ -13,6 +13,7 @@
 		<li IfModActive="VanillaExpanded.VFEArt">1.5/LoadFolders/_Support/VFUE-Art</li>
 		<li IfModActive="VanillaExpanded.VFEArchitect">1.5/LoadFolders/_Support/VFUE-Architect</li>
 		<li IfModActive="VanillaExpanded.VTEXVariations">1.5/LoadFolders/_Support/VTEX-Variations</li>
+		<li IfModActive="VanillaExpanded.VGeneticsE">1.5/LoadFolders/_Support/VE-Genetics</li>
 		<!-- ================ Mod Support - (Textures only) ================ -->
 		<li IfModActive="RimEffect.Core,RimEffectReborn.Core">1.5/LoadFolders/_Support/RimEffect-Core</li>
 		<li IfModActive="Neronix17.Outland.Core">1.5/LoadFolders/_Support/Outland-Core</li>
