@@ -70,7 +70,7 @@
 	<!-- ================= Misc Tiles ================= -->
 	<TerrainDef ParentName="FloorBase">
 		<defName>RB_SterileGrateTile</defName>
-		<label>grate sterile tile</label>
+		<label>sterile grate tile</label>
 		<renderPrecedence>243</renderPrecedence>
 		<description>Sterile grate tiles with special cleanliness-enhancing properties. Extra-clean rooms improve outcomes in hospitals and research labs. This tile is very slow to build, but very quick to clean.</description>
 		<texturePath>Terrain/Surfaces/GrateTile</texturePath>
