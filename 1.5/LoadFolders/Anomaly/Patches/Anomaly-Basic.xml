@@ -15,6 +15,12 @@
 					<drawSize>(3,2)</drawSize>
 				</value>
 			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/TerrainDef[defName="BioferritePlate"]/uiOrder</xpath>
+				<value>
+					<uiOrder>2052</uiOrder>
+				</value>
+			</li>
 		</operations>
 	</Operation>
 </Patch>
