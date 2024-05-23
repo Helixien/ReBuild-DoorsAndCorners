@@ -99,7 +99,7 @@
 					<graphicClass>Graphic_Multi</graphicClass>
 				</value>
 			</li>
-			<li Class="PatchOperationReplace" MayRequire="cp.uncle.boris.used.furniture" >
+			<li Class="PatchOperationReplace" MayRequire="cp.uncle.boris.used.furniture">
 				<xpath>Defs/ThingDef[defName="RH_Armored_Door" or defName="RH2_CamoNettingFlap" or defName="RH_ChainlinkFence_Door"]/graphicData/graphicClass</xpath>
 				<value>
 					<graphicClass>Graphic_Multi</graphicClass>
@@ -179,10 +179,10 @@
 			</li>
 		</operations>
 	</Operation>
-	
+	<!-- ================ Door Clearance ================ -->
 	<Operation Class="ModSettingsFramework.PatchOperationModOption">
 		<defaultValue>True</defaultValue>
-		<label>Colonists don't drop items at door locations</label>
+		<label>Enable door clearance</label>
 		<tooltip>Toggle this option to prevent colonists from dropping items at door locations and blocking them from being closed (Default: True)</tooltip>
 		<id>RB_ColonistsDontDropItemsAtDoors</id>
 		<category>RB_Core</category>

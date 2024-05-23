@@ -267,53 +267,23 @@
 			</li>
 		</comps>
 	</ThingDef>
-	<!-- ================================ Fireplace - Overwall ====================== -->
-	<ThingDef ParentName="BuildingBase">
-		<defName>RB_OverwallFireplace</defName>
-		<label>wall fireplace</label>
-		<description>A stone fireplace build into an existing wall. As with all heat sources, it must be placed indoors so it has a closed space to heat. Refuelable with wood.</description>
-		<graphicData>
-			<texPath>Things/Building/Misc/OverwallFireplace/OverwallFireplace</texPath>
-			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(3,3)</drawSize>
-			<damageData>
-				<enabled>false</enabled>
-			</damageData>
-		</graphicData>
-		<size>(2,1)</size>
-		<uiIconPath>Things/Building/Misc/OverwallFireplace/OverwallFireplace_MenuIcon</uiIconPath>
-		<uiIconScale>1</uiIconScale>
-		<statBases>
-			<MaxHitPoints>120</MaxHitPoints>
-			<WorkToBuild>400</WorkToBuild>
-			<Flammability>0</Flammability>
-			<Beauty>8</Beauty>
-		</statBases>
+	<!-- ================================ Fireplace - Base ====================== -->
+	<ThingDef Name="RB_Fireplace" ParentName="BuildingBase" Abstract="True">
 		<passability>PassThroughOnly</passability>
 		<tickerType>Normal</tickerType>
 		<drawerType>RealtimeOnly</drawerType>
-		<blockWind>true</blockWind>
-		<fillPercent>0.75</fillPercent>
 		<canOverlapZones>false</canOverlapZones>
-		<castEdgeShadows>false</castEdgeShadows>
+		<blockWind>true</blockWind>
+		<blockLight>false</blockLight>
 		<defaultPlacingRot>South</defaultPlacingRot>
+		<designationCategory>Temperature</designationCategory>
+		<researchPrerequisites>
+			<li>Stonecutting</li>
+		</researchPrerequisites>
 		<stuffCategories>
 			<li>Stony</li>
 		</stuffCategories>
-		<costStuffCount>25</costStuffCount>
-		<terrainAffordanceNeeded IsNull="True"/>
-		<designationCategory>Temperature</designationCategory>
-		<building>
-			<isInert>true</isInert>
-			<isEdifice>false</isEdifice>
-			<canPlaceOverWall>true</canPlaceOverWall>
-		</building>
 		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
-		<placeWorkers>
-			<li>VanillaFurnitureExpanded.PlaceWorker_OnWall</li>
-			<li>PlaceWorker_GlowRadius</li>
-			<li>ReBuildDoorsAndCorners.PlaceWorker_Fireplace</li>
-		</placeWorkers>
 		<comps Inherit="False">
 			<li Class="CompProperties_Refuelable">
 				<fuelConsumptionRate>12.0</fuelConsumptionRate>
@@ -382,8 +352,44 @@
 			</li>
 		</comps>
 	</ThingDef>
+	<!-- ================================ Fireplace - Wall Mounted ====================== -->
+	<ThingDef ParentName="RB_Fireplace">
+		<defName>RB_OverwallFireplace</defName>
+		<label>wall-mounted fireplace</label>
+		<description>A stone fireplace build into an existing wall. As with all heat sources, it must be placed indoors so it has a closed space to heat. Refuelable with wood.</description>
+		<graphicData>
+			<texPath>Things/Building/Misc/OverwallFireplace/OverwallFireplace</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,3)</drawSize>
+			<damageData>
+				<enabled>false</enabled>
+			</damageData>
+		</graphicData>
+		<size>(2,1)</size>
+		<uiIconPath>Things/Building/Misc/OverwallFireplace/OverwallFireplace_MenuIcon</uiIconPath>
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<WorkToBuild>400</WorkToBuild>
+			<Flammability>0</Flammability>
+			<Beauty>8</Beauty>
+		</statBases>
+		<fillPercent>0.75</fillPercent>
+		<castEdgeShadows>false</castEdgeShadows>
+		<costStuffCount>25</costStuffCount>
+		<terrainAffordanceNeeded IsNull="True"/>
+		<building>
+			<isInert>true</isInert>
+			<isEdifice>false</isEdifice>
+			<canPlaceOverWall>true</canPlaceOverWall>
+		</building>
+		<placeWorkers>
+			<li>VanillaFurnitureExpanded.PlaceWorker_OnWall</li>
+			<li>PlaceWorker_GlowRadius</li>
+			<li>ReBuildDoorsAndCorners.PlaceWorker_Fireplace</li>
+		</placeWorkers>
+	</ThingDef>
 	<!-- ================================ Fireplace - Normal ====================== -->
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="RB_Fireplace">
 		<defName>RB_Fireplace</defName>
 		<label>fireplace</label>
 		<description>A stone fireplace. As with all heat sources, it must be placed indoors so it has a closed space to heat. Refuelable with wood.</description>
@@ -394,105 +400,29 @@
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(3,3)</drawSize>
 		</graphicData>
-		<size>(2,1)</size>
-		<uiIconPath>Things/Building/Misc/Fireplace/Fireplace_north</uiIconPath>
-		<uiIconScale>1</uiIconScale>
+		<size>(3,2)</size>
+		<uiIconPath>Things/Building/Misc/Fireplace/Fireplace_south</uiIconPath>
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
 			<WorkToBuild>800</WorkToBuild>
 			<Flammability>0</Flammability>
 			<Beauty>8</Beauty>
 		</statBases>
-		<passability>PassThroughOnly</passability>
-		<tickerType>Normal</tickerType>
-		<drawerType>RealtimeOnly</drawerType>
-		<blockWind>true</blockWind>
 		<fillPercent>0.75</fillPercent>
-		<canOverlapZones>false</canOverlapZones>
-		<castEdgeShadows>false</castEdgeShadows>
+		<pathCost>90</pathCost>
+		<castEdgeShadows>true</castEdgeShadows>
 		<holdsRoof>true</holdsRoof>
-		<researchPrerequisites>
-			<li>Stonecutting</li>
-		</researchPrerequisites>
 		<costStuffCount>65</costStuffCount>
 		<terrainAffordanceNeeded IsNull="True"/>
-		<designationCategory>Temperature</designationCategory>
+		<specialDisplayRadius>6.9</specialDisplayRadius> <!-- must be kept in sync with roof hold-up radius -->
 		<building>
 			<isInert>true</isInert>
 			<isEdifice>true</isEdifice>
 			<canPlaceOverWall>false</canPlaceOverWall>
 		</building>
-		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 		<placeWorkers>
 			<li>PlaceWorker_GlowRadius</li>
 			<li>PlaceWorker_Heater</li>
 		</placeWorkers>
-		<comps Inherit="False">
-			<li Class="CompProperties_Refuelable">
-				<fuelConsumptionRate>12.0</fuelConsumptionRate>
-				<fuelCapacity>40.0</fuelCapacity>
-				<fuelConsumptionPerTickInRain>0.0009</fuelConsumptionPerTickInRain>
-				<fuelFilter>
-					<thingDefs>
-						<li>WoodLog</li>
-					</thingDefs>
-				</fuelFilter>
-				<initialFuelPercent>1</initialFuelPercent>
-				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
-			</li>
-			<li Class="VanillaFurnitureExpanded.CompProperties_GlowerExtended">
-				<spawnGlowerInFacedCell>true</spawnGlowerInFacedCell>
-				<colorOptions>
-					<li>
-						<glowRadius>12</glowRadius>
-						<glowColor>255,140,43,0)</glowColor>
-					</li>
-				</colorOptions>
-			</li>
-			<li Class="CompProperties_HeatPusher">
-				<compClass>CompHeatPusherPowered</compClass>
-				<heatPerSecond>25</heatPerSecond>
-				<heatPushMaxTemperature>32</heatPushMaxTemperature>
-			</li>
-			<li>
-				<compClass>CompGatherSpot</compClass>
-			</li>
-			<li Class="CompProperties_MeditationFocus">
-				<statDef>MeditationFocusStrength</statDef>
-				<focusTypes>
-					<li>Flame</li>
-				</focusTypes>
-				<offsets>
-					<li Class="FocusStrengthOffset_Lit">
-						<offset>0.1</offset>
-					</li>
-					<li Class="FocusStrengthOffset_BuildingDefsLit">
-						<defs>
-							<li>Campfire</li>
-							<li>TorchLamp</li>
-							<li MayRequire="Ludeon.RimWorld.Royalty">Brazier</li>
-							<li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
-							<li MayRequire="Ludeon.RimWorld.Ideology">Darktorch</li>
-							<li MayRequire="Ludeon.RimWorld.Ideology">DarktorchFungus</li>
-						</defs>
-						<offsetPerBuilding>0.02</offsetPerBuilding>
-						<radius>7.9</radius>
-						<maxBuildings>4</maxBuildings>
-						<explanationKey>MeditationFocusPerFlame</explanationKey>
-						<explanationKeyAbstract>MeditationFocusPerFlameAbstract</explanationKeyAbstract>
-					</li>
-				</offsets>
-			</li>
-			<li Class="ReBuildDoorsAndCorners.CompProperties_FireplaceOverlay">
-				<graphicData>
-					<texPath>Things/Building/Misc/Fireplace/FireplaceBurning</texPath>
-					<graphicClass>Graphic_Multi</graphicClass>
-					<drawSize>(3,3)</drawSize>
-					<damageData>
-						<enabled>false</enabled>
-					</damageData>
-				</graphicData>
-			</li>
-		</comps>
 	</ThingDef>
 </Defs>
