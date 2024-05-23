@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using VanillaFurnitureExpanded;
 using Verse;
 
 namespace ReBuildDoorsAndCorners
@@ -15,19 +16,19 @@ namespace ReBuildDoorsAndCorners
 
     public class CompFireplaceOverlay : ThingComp
     {
-        public CompGlower glower;
+        public CompGlowerExtended glower;
         public Graphic cachedGraphic;
         public Graphic Graphic => cachedGraphic ??= Props.graphicData.GraphicColoredFor(parent);
         public override void PostSpawnSetup(bool respawningAfterLoad)
         {
             base.PostSpawnSetup(respawningAfterLoad);
-            glower = parent.GetComp<CompGlower>();
+            glower = parent.GetComp<CompGlowerExtended>();
         }
         public CompProperties_FireplaceOverlay Props => base.props as CompProperties_FireplaceOverlay;
         public override void PostDraw()
         {
             base.PostDraw();
-            if (glower.Glows)
+            if (glower.compGlower?.Glows ?? false)
             {
                 Graphic.Draw(parent.DrawPos + new Vector3(0, 1, 0), parent.Rotation, parent);
             }

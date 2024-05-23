@@ -312,7 +312,7 @@
 		<placeWorkers>
 			<li>VanillaFurnitureExpanded.PlaceWorker_OnWall</li>
 			<li>PlaceWorker_GlowRadius</li>
-			<li>PlaceWorker_Heater</li>
+			<li>ReBuildDoorsAndCorners.PlaceWorker_Fireplace</li>
 		</placeWorkers>
 		<comps Inherit="False">
 			<li Class="CompProperties_Refuelable">
@@ -337,7 +337,7 @@
 				</colorOptions>
 			</li>
 			<li Class="CompProperties_HeatPusher">
-				<compClass>CompHeatPusherPowered</compClass>
+				<compClass>ReBuildDoorsAndCorners.CompFireplace</compClass>
 				<heatPerSecond>25</heatPerSecond>
 				<heatPushMaxTemperature>32</heatPushMaxTemperature>
 			</li>
