@@ -265,7 +265,7 @@
 	</ThingDef>
 	<!-- ================================ Ballistic Glass Wall ====================== -->
 	<ThingDef ParentName="RB_WallBase">
-		<defName>RB_Ballistic GlassWall</defName>
+		<defName>RB_BallisticGlassWall</defName>
 		<label>ballistic glass wall</label>
 		<description>text.todo</description>
 		<graphicData>

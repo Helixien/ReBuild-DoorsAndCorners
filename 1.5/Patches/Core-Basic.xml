@@ -36,7 +36,7 @@
 					<li>RB_LargeOrnateDoor</li>
 				</value>
 			</li>
-				<li Class="PatchOperationAdd">
+			<li Class="PatchOperationAdd">
 				<xpath>/Defs/ThingDef[defName="Wall"]/building/relatedBuildCommands</xpath>
 				<value>
 					<li MayRequire="Ludeon.RimWorld.Anomaly">RB_LargeSecurityDoor</li>
@@ -56,10 +56,10 @@
 				</value>
 			</li>
 			<li Class="PatchOperationInsert">
-				<xpath>/Defs/ThingDef[defName="ElectricSmelter"]/recipes[1]</xpath>
+				<xpath>/Defs/ThingDef[defName="ElectricSmelter"]/recipes/li[1]</xpath>
 				<value>
-					<li>RB_Make_GlassFromChunks</li>
 					<li>RB_Make_BallisticGlassFromChunks</li>
+					<li>RB_Make_GlassFromChunks</li>
 				</value>
 			</li>
 		</operations>
