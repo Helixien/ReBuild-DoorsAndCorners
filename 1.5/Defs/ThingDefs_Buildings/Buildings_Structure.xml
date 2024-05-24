@@ -204,6 +204,61 @@
 			</li>
 		</damageMultipliers>
 	</ThingDef>
+	<!-- ================================ Glass Wall ====================== -->
+	<ThingDef ParentName="RB_WallBase">
+		<defName>RB_GlassWall</defName>
+		<label>glass wall</label>
+		<description>An impassable glass wall. Capable of holding up a roof, but far more fragile than a normal wall. Lets through light.</description>
+		<graphicData>
+			<texPath>Things/Building/Linked/RB_GlassWall/RB_GlassWall_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<linkType>CornerFiller</linkType>
+			<linkFlags>
+				<li>Wall</li>
+				<li>Rock</li>
+			</linkFlags>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+				<edgeTop>Damage/Edge</edgeTop>
+				<edgeBot>Damage/Edge</edgeBot>
+				<edgeLeft>Damage/Edge</edgeLeft>
+				<edgeRight>Damage/Edge</edgeRight>
+			</damageData>
+		</graphicData>
+		<uiIconPath>Things/Building/Linked/RB_GlassWall_MenuIcon</uiIconPath>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToBuild>135</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<MeditationFocusStrength>0.24</MeditationFocusStrength>
+		</statBases>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>2</costStuffCount>
+		<uiOrder>2002</uiOrder>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<blockLight>false</blockLight>
+		<building>
+			<isPlaceOverableWall>true</isPlaceOverableWall>
+			<ai_chillDestination>true</ai_chillDestination>
+			<supportsWallAttachments>false</supportsWallAttachments>
+		</building>
+		<damageMultipliers Inherit="false">
+			<li>
+				<damageDef>Bomb</damageDef>
+				<multiplier>4</multiplier>
+			</li>
+			<li>
+				<damageDef>Thump</damageDef>
+				<multiplier>5</multiplier>
+			</li>
+		</damageMultipliers>
+	</ThingDef>
 	<!-- ================================ Triple wide Ornate Door ====================== -->
 	<ThingDef ParentName="DoorBase">
 		<defName>RB_LargeOrnateDoor</defName>
