@@ -240,6 +240,9 @@
 			<li>Metallic</li>
 		</stuffCategories>
 		<costStuffCount>2</costStuffCount>
+		<costList>
+			<RB_Glass>3</RB_Glass>
+		</costList>
 		<uiOrder>2002</uiOrder>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<blockLight>false</blockLight>
@@ -256,6 +259,64 @@
 			<li>
 				<damageDef>Thump</damageDef>
 				<multiplier>5</multiplier>
+			</li>
+		</damageMultipliers>
+	</ThingDef>
+	<!-- ================================ Ballistic Glass Wall ====================== -->
+	<ThingDef ParentName="RB_WallBase">
+		<defName>RB_Ballistic GlassWall</defName>
+		<label>ballistic glass wall</label>
+		<description>text.todo</description>
+		<graphicData>
+			<texPath>Things/Building/Linked/RB_GlassWall/RB_GlassWall_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<linkType>CornerFiller</linkType>
+			<linkFlags>
+				<li>Wall</li>
+				<li>Rock</li>
+			</linkFlags>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+				<edgeTop>Damage/Edge</edgeTop>
+				<edgeBot>Damage/Edge</edgeBot>
+				<edgeLeft>Damage/Edge</edgeLeft>
+				<edgeRight>Damage/Edge</edgeRight>
+			</damageData>
+		</graphicData>
+		<uiIconPath>Things/Building/Linked/RB_GlassWall_MenuIcon</uiIconPath>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToBuild>135</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<MeditationFocusStrength>0.24</MeditationFocusStrength>
+		</statBases>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>3</costStuffCount>
+		<costList>
+			<RB_BallisticGlass>3</RB_BallisticGlass>
+		</costList>
+		<uiOrder>2003</uiOrder>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<blockLight>false</blockLight>
+		<building>
+			<isPlaceOverableWall>true</isPlaceOverableWall>
+			<ai_chillDestination>true</ai_chillDestination>
+			<supportsWallAttachments>false</supportsWallAttachments>
+		</building>
+		<damageMultipliers Inherit="false">
+			<li>
+				<damageDef>Bomb</damageDef>
+				<multiplier>1</multiplier>
+			</li>
+			<li>
+				<damageDef>Thump</damageDef>
+				<multiplier>2</multiplier>
 			</li>
 		</damageMultipliers>
 	</ThingDef>
