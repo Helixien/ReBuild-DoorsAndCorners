@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using RimWorld;
+using UnityEngine;
 using VanillaFurnitureExpanded;
 using Verse;
 
@@ -16,21 +17,21 @@ namespace ReBuildDoorsAndCorners
 
     public class CompFireplaceOverlay : ThingComp
     {
-        public CompGlowerExtended glower;
+        public CompRefuelable compRefuelable;
         public Graphic cachedGraphic;
         public Graphic Graphic => cachedGraphic ??= Props.graphicData.GraphicColoredFor(parent);
         public override void PostSpawnSetup(bool respawningAfterLoad)
         {
             base.PostSpawnSetup(respawningAfterLoad);
-            glower = parent.GetComp<CompGlowerExtended>();
+            compRefuelable = parent.GetComp<CompRefuelable>();
         }
         public CompProperties_FireplaceOverlay Props => base.props as CompProperties_FireplaceOverlay;
         public override void PostDraw()
         {
             base.PostDraw();
-            if (glower.compGlower?.Glows ?? false)
+            if (compRefuelable.HasFuel)
             {
-                Graphic.Draw(parent.DrawPos + new Vector3(0, 1, 0), parent.Rotation, parent);
+                Graphic.Draw(parent.DrawPos + new Vector3(0, 0.001f, 0), parent.Rotation, parent);
             }
         }
     }
