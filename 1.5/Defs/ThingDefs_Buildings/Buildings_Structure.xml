@@ -39,6 +39,7 @@
 				<li>OrnateDoor</li>
 				<li>RB_LargeOrnateDoor</li>
 				<li MayRequire="Ludeon.RimWorld.Anomaly">SecurityDoor</li>
+				<li MayRequire="Ludeon.RimWorld.Anomaly">RB_LargeSecurityDoor</li>
 			</relatedBuildCommands>
 		</building>
 		<comps>
