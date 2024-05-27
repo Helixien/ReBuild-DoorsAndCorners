@@ -251,6 +251,11 @@
 			<isPlaceOverableWall>true</isPlaceOverableWall>
 			<ai_chillDestination>true</ai_chillDestination>
 			<supportsWallAttachments>false</supportsWallAttachments>
+			<relatedBuildCommands Inherit="False">
+				<li>Door</li>
+				<li>Autodoor</li>
+				<li>RB_GlassAutodoor</li>
+			</relatedBuildCommands>
 		</building>
 		<damageMultipliers Inherit="false">
 			<li>
@@ -308,7 +313,12 @@
 		<building>
 			<isPlaceOverableWall>true</isPlaceOverableWall>
 			<ai_chillDestination>true</ai_chillDestination>
-			<supportsWallAttachments>false</supportsWallAttachments>
+			<relatedBuildCommands Inherit="False">
+				<li>Autodoor</li>
+				<li>RB_BallisticGlassAutodoor</li>
+				<li MayRequire="Ludeon.RimWorld.Anomaly">SecurityDoor</li>
+				<li MayRequire="Ludeon.RimWorld.Anomaly">RB_LargeSecurityDoor</li>
+			</relatedBuildCommands>
 		</building>
 		<damageMultipliers Inherit="false">
 			<li>
@@ -379,6 +389,11 @@
 			<isPlaceOverableWall>true</isPlaceOverableWall>
 			<ai_chillDestination>true</ai_chillDestination>
 			<supportsWallAttachments>false</supportsWallAttachments>
+			<relatedBuildCommands Inherit="False">
+				<li>Door</li>
+				<li>Autodoor</li>
+				<li>RB_GlassAutodoor</li>
+			</relatedBuildCommands>
 		</building>
 		<damageMultipliers Inherit="false">
 			<li>
