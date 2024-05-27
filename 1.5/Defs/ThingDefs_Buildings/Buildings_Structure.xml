@@ -98,8 +98,8 @@
 		</uiIconPathsStuff>
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
-			<WorkToBuild>85</WorkToBuild>
-			<Flammability>1.0</Flammability>
+			<WorkToBuild>75</WorkToBuild>
+			<Flammability>1.2</Flammability>
 			<MeditationFocusStrength>0.11</MeditationFocusStrength>
 		</statBases>
 		<stuffCategories>
@@ -168,7 +168,7 @@
 		</uiIconPathsStuff>
 		<statBases>
 			<MaxHitPoints>300</MaxHitPoints>
-			<WorkToBuild>375</WorkToBuild>
+			<WorkToBuild>325</WorkToBuild>
 			<Flammability>1.0</Flammability>
 			<MeditationFocusStrength>0.32</MeditationFocusStrength>
 			<Beauty>4</Beauty>
@@ -197,11 +197,11 @@
 		<damageMultipliers Inherit="false">
 			<li>
 				<damageDef>Bomb</damageDef>
-				<multiplier>4</multiplier>
+				<multiplier>2</multiplier>
 			</li>
 			<li>
 				<damageDef>Thump</damageDef>
-				<multiplier>5</multiplier>
+				<multiplier>3</multiplier>
 			</li>
 		</damageMultipliers>
 	</ThingDef>
@@ -234,8 +234,8 @@
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
 			<WorkToBuild>135</WorkToBuild>
-			<Flammability>1.0</Flammability>
-			<MeditationFocusStrength>0.24</MeditationFocusStrength>
+			<Flammability>0.5</Flammability>
+			<MeditationFocusStrength>0.22</MeditationFocusStrength>
 		</statBases>
 		<stuffCategories>
 			<li>Metallic</li>
@@ -290,10 +290,10 @@
 		</graphicData>
 		<uiIconPath>Things/Building/Linked/RB_GlassWall_MenuIcon</uiIconPath>
 		<statBases>
-			<MaxHitPoints>200</MaxHitPoints>
-			<WorkToBuild>135</WorkToBuild>
-			<Flammability>1.0</Flammability>
-			<MeditationFocusStrength>0.24</MeditationFocusStrength>
+			<MaxHitPoints>300</MaxHitPoints>
+			<WorkToBuild>185</WorkToBuild>
+			<Flammability>0.2</Flammability>
+			<MeditationFocusStrength>0.22</MeditationFocusStrength>
 		</statBases>
 		<stuffCategories>
 			<li>Metallic</li>
@@ -313,7 +313,7 @@
 		<damageMultipliers Inherit="false">
 			<li>
 				<damageDef>Bomb</damageDef>
-				<multiplier>1</multiplier>
+				<multiplier>2</multiplier>
 			</li>
 			<li>
 				<damageDef>Thump</damageDef>
@@ -359,8 +359,8 @@
 		</uiIconPathsStuff>
 		<statBases>
 			<MaxHitPoints>250</MaxHitPoints>
-			<WorkToBuild>185</WorkToBuild>
-			<Flammability>1.0</Flammability>
+			<WorkToBuild>155</WorkToBuild>
+			<Flammability>0.8</Flammability>
 			<MeditationFocusStrength>0.22</MeditationFocusStrength>
 		</statBases>
 		<stuffCategories>
@@ -372,7 +372,7 @@
 		<costList>
 			<RB_Glass>2</RB_Glass>
 		</costList>
-		<uiOrder>2003</uiOrder>
+		<uiOrder>2004</uiOrder>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<blockLight>false</blockLight>
 		<building>
@@ -387,9 +387,89 @@
 			</li>
 			<li>
 				<damageDef>Thump</damageDef>
-				<multiplier>4</multiplier>
+				<multiplier>3</multiplier>
 			</li>
 		</damageMultipliers>
+	</ThingDef>
+	<!-- ================================ Glass Autodoor ====================== -->
+	<ThingDef ParentName="DoorBase">
+		<defName>RB_GlassAutodoor</defName>
+		<label>glass autodoor</label>
+		<description>Divides rooms. Powered operation allows people to move through the door without slowing down. Lets through light.</description>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToBuild>900</WorkToBuild>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Building/Door/RB_GlassAutodoor_Mover</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<damageData>
+				<enabled>false</enabled>
+			</damageData>
+		</graphicData>
+		<uiIconPath>Things/Building/Door/RB_GlassAutodoor_MenuIcon</uiIconPath>
+		<useBlueprintGraphicAsGhost>true</useBlueprintGraphicAsGhost>
+		<blockLight>false</blockLight>
+		<costList>
+			<Steel>10</Steel>
+			<RB_Glass>10</RB_Glass>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<costStuffCount>25</costStuffCount>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>50</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Styleable"/>
+		</comps>
+		<designationHotKey>Misc2</designationHotKey>
+		<researchPrerequisites>
+			<li>Autodoors</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+	</ThingDef>
+	<!-- ================================ Ballistic Glass Autodoor ====================== -->
+	<ThingDef ParentName="DoorBase">
+		<defName>RB_BallisticGlassAutodoor</defName>
+		<label>ballistic glass autodoor</label>
+		<description>Divides rooms. Powered operation allows people to move through the door without slowing down. Lets through light.</description>
+		<statBases>
+			<MaxHitPoints>160</MaxHitPoints>
+			<WorkToBuild>1200</WorkToBuild>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Building/Door/RB_BallisticGlassAutodoor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<damageData>
+				<enabled>false</enabled>
+			</damageData>
+		</graphicData>
+		<uiIconPath>Things/Building/Door/RB_BallisticGlassAutodoor_MenuIcon</uiIconPath>
+		<useBlueprintGraphicAsGhost>true</useBlueprintGraphicAsGhost>
+		<blockLight>false</blockLight>
+		<costList>
+			<Steel>8</Steel>
+			<RB_BallisticGlass>12</RB_BallisticGlass>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<costStuffCount>25</costStuffCount>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>50</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Styleable"/>
+		</comps>
+		<designationHotKey>Misc2</designationHotKey>
+		<researchPrerequisites>
+			<li>Autodoors</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 	</ThingDef>
 	<!-- ================================ Triple wide Ornate Door ====================== -->
 	<ThingDef ParentName="DoorBase">
@@ -601,7 +681,8 @@
 		<holdsRoof>true</holdsRoof>
 		<costStuffCount>65</costStuffCount>
 		<terrainAffordanceNeeded IsNull="True"/>
-		<specialDisplayRadius>6.9</specialDisplayRadius> <!-- must be kept in sync with roof hold-up radius -->
+		<specialDisplayRadius>6.9</specialDisplayRadius>
+		<!-- must be kept in sync with roof hold-up radius -->
 		<building>
 			<isInert>true</isInert>
 			<isEdifice>true</isEdifice>
