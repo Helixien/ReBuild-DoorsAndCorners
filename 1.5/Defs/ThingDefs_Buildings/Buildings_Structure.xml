@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
+	<!-- ================================ Walls ====================== -->
 	<!-- ================================ ReBuild Wall Base ====================== -->
 	<ThingDef Name="RB_WallBase" ParentName="BuildingBase" Abstract="True">
 		<thingClass>Building</thingClass>
@@ -268,10 +269,10 @@
 			</li>
 		</damageMultipliers>
 	</ThingDef>
-	<!-- ================================ Ballistic Glass Wall ====================== -->
+	<!-- ================================ Reinforced Glass Wall ====================== -->
 	<ThingDef ParentName="RB_WallBase">
-		<defName>RB_BallisticGlassWall</defName>
-		<label>ballistic glass wall</label>
+		<defName>RB_ReinforcedGlassWall</defName>
+		<label>reinforced glass wall</label>
 		<description>An impassable reinforced glass wall. Capable of holding up a roof and just as durable as a normal wall. Lets through light.</description>
 		<graphicData>
 			<texPath>Things/Building/Linked/RB_GlassWall/RB_GlassWall_Atlas</texPath>
@@ -331,7 +332,7 @@
 			</li>
 		</damageMultipliers>
 	</ThingDef>
-	<!-- ================================ Clerestory Glass Wall ====================== -->
+	<!-- ================================ Clerestory Wall ====================== -->
 	<ThingDef ParentName="RB_WallBase">
 		<defName>RB_ClerestoryWall</defName>
 		<label>clerestory wall</label>
@@ -406,6 +407,7 @@
 			</li>
 		</damageMultipliers>
 	</ThingDef>
+	<!-- ================================ Doors ====================== -->
 	<!-- ================================ Glass Autodoor ====================== -->
 	<ThingDef ParentName="DoorBase">
 		<defName>RB_GlassAutodoor</defName>
