@@ -267,7 +267,7 @@
 	<ThingDef ParentName="RB_WallBase">
 		<defName>RB_BallisticGlassWall</defName>
 		<label>ballistic glass wall</label>
-		<description>text.todo</description>
+		<description>An impassable reinforced glass wall. Capable of holding up a roof and just as durable as a normal wall. Lets through light.</description>
 		<graphicData>
 			<texPath>Things/Building/Linked/RB_GlassWall/RB_GlassWall_Atlas</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -325,7 +325,7 @@
 	<ThingDef ParentName="RB_WallBase">
 		<defName>RB_ClerestoryWall</defName>
 		<label>clerestory wall</label>
-		<description>An impassable glass wall. Capable of holding up a roof, but far more fragile than a normal wall. Lets through light.</description>
+		<description>An impassable half-glass wall. Capable of holding up a roof, but more fragile than a normal wall. Lets through light.</description>
 		<graphicData>
 			<texPath>Things/Building/Linked/RB_ClerestoryWall</texPath>
 			<graphicClass>Graphic_Appearances</graphicClass>
