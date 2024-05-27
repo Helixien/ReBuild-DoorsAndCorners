@@ -206,132 +206,6 @@
 			</li>
 		</damageMultipliers>
 	</ThingDef>
-	<!-- ================================ Glass Wall ====================== -->
-	<ThingDef ParentName="RB_WallBase">
-		<defName>RB_GlassWall</defName>
-		<label>glass wall</label>
-		<description>An impassable glass wall. Capable of holding up a roof, but far more fragile than a normal wall. Lets through light.</description>
-		<graphicData>
-			<texPath>Things/Building/Linked/RB_GlassWall/RB_GlassWall_Atlas</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>CutoutComplex</shaderType>
-			<linkType>CornerFiller</linkType>
-			<linkFlags>
-				<li>Wall</li>
-				<li>Rock</li>
-			</linkFlags>
-			<damageData>
-				<cornerTL>Damage/Corner</cornerTL>
-				<cornerTR>Damage/Corner</cornerTR>
-				<cornerBL>Damage/Corner</cornerBL>
-				<cornerBR>Damage/Corner</cornerBR>
-				<edgeTop>Damage/Edge</edgeTop>
-				<edgeBot>Damage/Edge</edgeBot>
-				<edgeLeft>Damage/Edge</edgeLeft>
-				<edgeRight>Damage/Edge</edgeRight>
-			</damageData>
-		</graphicData>
-		<uiIconPath>Things/Building/Linked/RB_GlassWall_MenuIcon</uiIconPath>
-		<statBases>
-			<MaxHitPoints>200</MaxHitPoints>
-			<WorkToBuild>135</WorkToBuild>
-			<Flammability>0.5</Flammability>
-			<MeditationFocusStrength>0.22</MeditationFocusStrength>
-		</statBases>
-		<stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>
-		<costStuffCount>2</costStuffCount>
-		<costList>
-			<RB_Glass>3</RB_Glass>
-		</costList>
-		<uiOrder>2002</uiOrder>
-		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-		<blockLight>false</blockLight>
-		<building>
-			<isPlaceOverableWall>true</isPlaceOverableWall>
-			<ai_chillDestination>true</ai_chillDestination>
-			<supportsWallAttachments>false</supportsWallAttachments>
-			<relatedBuildCommands Inherit="False">
-				<li>Door</li>
-				<li>Autodoor</li>
-				<li>RB_GlassAutodoor</li>
-			</relatedBuildCommands>
-		</building>
-		<damageMultipliers Inherit="false">
-			<li>
-				<damageDef>Bomb</damageDef>
-				<multiplier>4</multiplier>
-			</li>
-			<li>
-				<damageDef>Thump</damageDef>
-				<multiplier>5</multiplier>
-			</li>
-		</damageMultipliers>
-	</ThingDef>
-	<!-- ================================ Reinforced Glass Wall ====================== -->
-	<ThingDef ParentName="RB_WallBase">
-		<defName>RB_ReinforcedGlassWall</defName>
-		<label>reinforced glass wall</label>
-		<description>An impassable reinforced glass wall. Capable of holding up a roof and just as durable as a normal wall. Lets through light.</description>
-		<graphicData>
-			<texPath>Things/Building/Linked/RB_GlassWall/RB_GlassWall_Atlas</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>CutoutComplex</shaderType>
-			<linkType>CornerFiller</linkType>
-			<linkFlags>
-				<li>Wall</li>
-				<li>Rock</li>
-			</linkFlags>
-			<damageData>
-				<cornerTL>Damage/Corner</cornerTL>
-				<cornerTR>Damage/Corner</cornerTR>
-				<cornerBL>Damage/Corner</cornerBL>
-				<cornerBR>Damage/Corner</cornerBR>
-				<edgeTop>Damage/Edge</edgeTop>
-				<edgeBot>Damage/Edge</edgeBot>
-				<edgeLeft>Damage/Edge</edgeLeft>
-				<edgeRight>Damage/Edge</edgeRight>
-			</damageData>
-		</graphicData>
-		<uiIconPath>Things/Building/Linked/RB_GlassWall_MenuIcon</uiIconPath>
-		<statBases>
-			<MaxHitPoints>300</MaxHitPoints>
-			<WorkToBuild>185</WorkToBuild>
-			<Flammability>0.2</Flammability>
-			<MeditationFocusStrength>0.22</MeditationFocusStrength>
-		</statBases>
-		<stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>
-		<costStuffCount>3</costStuffCount>
-		<costList>
-			<RB_BallisticGlass>3</RB_BallisticGlass>
-		</costList>
-		<uiOrder>2003</uiOrder>
-		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-		<blockLight>false</blockLight>
-		<building>
-			<isPlaceOverableWall>true</isPlaceOverableWall>
-			<ai_chillDestination>true</ai_chillDestination>
-			<relatedBuildCommands Inherit="False">
-				<li>Autodoor</li>
-				<li>RB_BallisticGlassAutodoor</li>
-				<li MayRequire="Ludeon.RimWorld.Anomaly">SecurityDoor</li>
-				<li MayRequire="Ludeon.RimWorld.Anomaly">RB_LargeSecurityDoor</li>
-			</relatedBuildCommands>
-		</building>
-		<damageMultipliers Inherit="false">
-			<li>
-				<damageDef>Bomb</damageDef>
-				<multiplier>2</multiplier>
-			</li>
-			<li>
-				<damageDef>Thump</damageDef>
-				<multiplier>2</multiplier>
-			</li>
-		</damageMultipliers>
-	</ThingDef>
 	<!-- ================================ Clerestory Wall ====================== -->
 	<ThingDef ParentName="RB_WallBase">
 		<defName>RB_ClerestoryWall</defName>
@@ -383,7 +257,7 @@
 		<costList>
 			<RB_Glass>2</RB_Glass>
 		</costList>
-		<uiOrder>2004</uiOrder>
+		<uiOrder>2002</uiOrder>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<blockLight>false</blockLight>
 		<building>
@@ -404,6 +278,132 @@
 			<li>
 				<damageDef>Thump</damageDef>
 				<multiplier>3</multiplier>
+			</li>
+		</damageMultipliers>
+	</ThingDef>
+	<!-- ================================ Glass Wall ====================== -->
+	<ThingDef ParentName="RB_WallBase">
+		<defName>RB_GlassWall</defName>
+		<label>glass wall</label>
+		<description>An impassable glass wall. Capable of holding up a roof, but far more fragile than a normal wall. Lets through light.</description>
+		<graphicData>
+			<texPath>Things/Building/Linked/RB_GlassWall/RB_GlassWall_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<linkType>CornerFiller</linkType>
+			<linkFlags>
+				<li>Wall</li>
+				<li>Rock</li>
+			</linkFlags>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+				<edgeTop>Damage/Edge</edgeTop>
+				<edgeBot>Damage/Edge</edgeBot>
+				<edgeLeft>Damage/Edge</edgeLeft>
+				<edgeRight>Damage/Edge</edgeRight>
+			</damageData>
+		</graphicData>
+		<uiIconPath>Things/Building/Linked/RB_GlassWall_MenuIcon</uiIconPath>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToBuild>135</WorkToBuild>
+			<Flammability>0.5</Flammability>
+			<MeditationFocusStrength>0.22</MeditationFocusStrength>
+		</statBases>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>2</costStuffCount>
+		<costList>
+			<RB_Glass>3</RB_Glass>
+		</costList>
+		<uiOrder>2003</uiOrder>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<blockLight>false</blockLight>
+		<building>
+			<isPlaceOverableWall>true</isPlaceOverableWall>
+			<ai_chillDestination>true</ai_chillDestination>
+			<supportsWallAttachments>false</supportsWallAttachments>
+			<relatedBuildCommands Inherit="False">
+				<li>Door</li>
+				<li>Autodoor</li>
+				<li>RB_GlassAutodoor</li>
+			</relatedBuildCommands>
+		</building>
+		<damageMultipliers Inherit="false">
+			<li>
+				<damageDef>Bomb</damageDef>
+				<multiplier>4</multiplier>
+			</li>
+			<li>
+				<damageDef>Thump</damageDef>
+				<multiplier>5</multiplier>
+			</li>
+		</damageMultipliers>
+	</ThingDef>
+	<!-- ================================ Reinforced Glass Wall ====================== -->
+	<ThingDef ParentName="RB_WallBase">
+		<defName>RB_ReinforcedGlassWall</defName>
+		<label>reinforced glass wall</label>
+		<description>An impassable reinforced glass wall. Capable of holding up a roof and just as durable as a normal wall. Lets through light.</description>
+		<graphicData>
+			<texPath>Things/Building/Linked/RB_ReinforcedGlassWall/RB_ReinforcedGlassWall_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<linkType>CornerFiller</linkType>
+			<linkFlags>
+				<li>Wall</li>
+				<li>Rock</li>
+			</linkFlags>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+				<edgeTop>Damage/Edge</edgeTop>
+				<edgeBot>Damage/Edge</edgeBot>
+				<edgeLeft>Damage/Edge</edgeLeft>
+				<edgeRight>Damage/Edge</edgeRight>
+			</damageData>
+		</graphicData>
+		<uiIconPath>Things/Building/Linked/RB_ReinforcedGlassWall_MenuIcon</uiIconPath>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<WorkToBuild>185</WorkToBuild>
+			<Flammability>0.2</Flammability>
+			<MeditationFocusStrength>0.22</MeditationFocusStrength>
+		</statBases>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>3</costStuffCount>
+		<costList>
+			<RB_BallisticGlass>3</RB_BallisticGlass>
+		</costList>
+		<uiOrder>2004</uiOrder>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<blockLight>false</blockLight>
+		<building>
+			<isPlaceOverableWall>true</isPlaceOverableWall>
+			<ai_chillDestination>true</ai_chillDestination>
+			<relatedBuildCommands Inherit="False">
+				<li>Autodoor</li>
+				<li>RB_BallisticGlassAutodoor</li>
+				<li MayRequire="Ludeon.RimWorld.Anomaly">SecurityDoor</li>
+				<li MayRequire="Ludeon.RimWorld.Anomaly">RB_LargeSecurityDoor</li>
+			</relatedBuildCommands>
+		</building>
+		<damageMultipliers Inherit="false">
+			<li>
+				<damageDef>Bomb</damageDef>
+				<multiplier>2</multiplier>
+			</li>
+			<li>
+				<damageDef>Thump</damageDef>
+				<multiplier>2</multiplier>
 			</li>
 		</damageMultipliers>
 	</ThingDef>
