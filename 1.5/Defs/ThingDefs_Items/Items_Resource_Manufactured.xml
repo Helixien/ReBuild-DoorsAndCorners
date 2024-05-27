@@ -35,7 +35,7 @@
 		<label>ballistic glass</label>
 		<description>Toughened, multi-layered transparent armor capable of withstanding bullets and explosions, crucial for protecting high-value targets and ensuring safety in hostile environments.</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/RB_Glass</texPath>
+			<texPath>Things/Item/Resource/RB_BallisticGlass</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>

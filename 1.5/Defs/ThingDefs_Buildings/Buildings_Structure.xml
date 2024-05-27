@@ -321,6 +321,76 @@
 			</li>
 		</damageMultipliers>
 	</ThingDef>
+	<!-- ================================ Clerestory Glass Wall ====================== -->
+	<ThingDef ParentName="RB_WallBase">
+		<defName>RB_ClerestoryWall</defName>
+		<label>clerestory wall</label>
+		<description>An impassable glass wall. Capable of holding up a roof, but far more fragile than a normal wall. Lets through light.</description>
+		<graphicData>
+			<texPath>Things/Building/Linked/RB_ClerestoryWall</texPath>
+			<graphicClass>Graphic_Appearances</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<linkType>CornerFiller</linkType>
+			<linkFlags>
+				<li>Wall</li>
+				<li>Rock</li>
+			</linkFlags>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+				<edgeTop>Damage/Edge</edgeTop>
+				<edgeBot>Damage/Edge</edgeBot>
+				<edgeLeft>Damage/Edge</edgeLeft>
+				<edgeRight>Damage/Edge</edgeRight>
+			</damageData>
+		</graphicData>
+		<uiIconPath>Things/Building/Linked/RB_ClerestoryWall_Smooth_MenuIcon</uiIconPath>
+		<uiIconPathsStuff>
+			<li>
+				<appearance>Bricks</appearance>
+				<iconPath>Things/Building/Linked/RB_ClerestoryWall_Bricks_MenuIcon</iconPath>
+			</li>
+			<li>
+				<appearance>Planks</appearance>
+				<iconPath>Things/Building/Linked/RB_ClerestoryWall_Planks_MenuIcon</iconPath>
+			</li>
+		</uiIconPathsStuff>
+		<statBases>
+			<MaxHitPoints>250</MaxHitPoints>
+			<WorkToBuild>185</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<MeditationFocusStrength>0.22</MeditationFocusStrength>
+		</statBases>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>3</costStuffCount>
+		<costList>
+			<RB_Glass>2</RB_Glass>
+		</costList>
+		<uiOrder>2003</uiOrder>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<blockLight>false</blockLight>
+		<building>
+			<isPlaceOverableWall>true</isPlaceOverableWall>
+			<ai_chillDestination>true</ai_chillDestination>
+			<supportsWallAttachments>false</supportsWallAttachments>
+		</building>
+		<damageMultipliers Inherit="false">
+			<li>
+				<damageDef>Bomb</damageDef>
+				<multiplier>3</multiplier>
+			</li>
+			<li>
+				<damageDef>Thump</damageDef>
+				<multiplier>4</multiplier>
+			</li>
+		</damageMultipliers>
+	</ThingDef>
 	<!-- ================================ Triple wide Ornate Door ====================== -->
 	<ThingDef ParentName="DoorBase">
 		<defName>RB_LargeOrnateDoor</defName>
