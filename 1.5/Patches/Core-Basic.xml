@@ -29,6 +29,19 @@
 					</comps>
 				</value>
 			</li>
+			<!-- ================================ Door Patches ====================== -->
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="Autodoor"]</xpath>
+				<value>
+					<uiOrder>2011</uiOrder>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="OrnateDoor"]</xpath>
+				<value>
+					<uiOrder>2014</uiOrder>
+				</value>
+			</li>
 			<!-- ================================ Wall Patches ====================== -->
 			<li Class="PatchOperationInsert">
 				<xpath>/Defs/ThingDef[defName="Wall"]/building/relatedBuildCommands/li[4]</xpath>

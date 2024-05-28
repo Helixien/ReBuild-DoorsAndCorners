@@ -29,6 +29,7 @@
 			<Plasteel>75</Plasteel>
 			<ComponentIndustrial>3</ComponentIndustrial>
 		</costList>
+		<uiOrder>2016</uiOrder>
 		<stuffCategories Inherit="False"/>
 		<useStuffTerrainAffordance>false</useStuffTerrainAffordance>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
