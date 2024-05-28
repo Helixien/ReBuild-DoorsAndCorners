@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	<!-- ================================ Make glass - Base ====================== -->
 	<RecipeDef Name="RB_Make_GlassBase" Abstract="True">
 		<workSpeedStat>SmeltingSpeed</workSpeedStat>
 		<effectWorking>Smelt</effectWorking>

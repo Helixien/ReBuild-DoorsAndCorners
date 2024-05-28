@@ -257,6 +257,9 @@
 		<costList>
 			<RB_Glass>2</RB_Glass>
 		</costList>
+		<researchPrerequisites>
+			<li>Electricity</li>
+		</researchPrerequisites>
 		<uiOrder>2002</uiOrder>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<blockLight>false</blockLight>
@@ -332,6 +335,9 @@
 		<costList>
 			<RB_Glass>2</RB_Glass>
 		</costList>
+		<researchPrerequisites>
+			<li>Electricity</li>
+		</researchPrerequisites>
 		<uiOrder>2002</uiOrder>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<blockLight>false</blockLight>
@@ -395,6 +401,9 @@
 		<costList>
 			<RB_Glass>3</RB_Glass>
 		</costList>
+		<researchPrerequisites>
+			<li>Electricity</li>
+		</researchPrerequisites>
 		<uiOrder>2003</uiOrder>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<blockLight>false</blockLight>
@@ -458,6 +467,9 @@
 		<costList>
 			<RB_BallisticGlass>3</RB_BallisticGlass>
 		</costList>
+		<researchPrerequisites>
+			<li>Electricity</li>
+		</researchPrerequisites>
 		<uiOrder>2003</uiOrder>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<blockLight>false</blockLight>
@@ -508,12 +520,15 @@
 			<li>Woody</li>
 			<li>Stony</li>
 		</stuffCategories>
+		<costStuffCount>25</costStuffCount>
 		<costList>
 			<Steel>10</Steel>
 			<RB_Glass>10</RB_Glass>
 			<ComponentIndustrial>2</ComponentIndustrial>
 		</costList>
-		<costStuffCount>25</costStuffCount>
+		<researchPrerequisites>
+			<li>Electricity</li>
+		</researchPrerequisites>
 		<uiOrder>2012</uiOrder>
 		<comps>
 			<li Class="CompProperties_Power">
