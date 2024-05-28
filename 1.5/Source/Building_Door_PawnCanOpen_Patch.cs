@@ -10,7 +10,7 @@ namespace ReBuildDoorsAndCorners
     {
         public static void Postfix(ref bool __result, Pawn p, Building_Door __instance)
         {
-            if (__result && p.IsEntity && __instance.def == ThingDefOf.SecurityDoor 
+            if (__result && p.IsEntity && (__instance.def == ThingDefOf.SecurityDoor || __instance.def == RB_DefOf.RB_LargeSecurityDoor) 
                 && ReBuildDoorsAndCornersMod.modInstance.GetModOptionState(ReBuildDoorsAndCornersMod.RB_EntitiesCannotOpenSecurityDoors))
             {
                 __result = false;

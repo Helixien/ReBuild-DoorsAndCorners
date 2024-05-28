@@ -36,10 +36,30 @@
 					<li>RB_LargeOrnateDoor</li>
 				</value>
 			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="Wall"]/building/relatedBuildCommands</xpath>
+				<value>
+					<li MayRequire="Ludeon.RimWorld.Anomaly">RB_LargeSecurityDoor</li>
+				</value>
+			</li>
 			<li Class="PatchOperationReplace">
 				<xpath>/Defs/ThingDef[defName="Wall"]/uiOrder</xpath>
 				<value>
 					<uiOrder>2000</uiOrder>
+				</value>
+			</li>
+			<!-- ================================ Smelter ====================== -->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="ElectricSmelter"]/description</xpath>
+				<value>
+					<description>Extracts usable metal from slag chunks and other mixed metal items, as well as refines stone chunks into glass. Consumes a lot of power.</description>
+				</value>
+			</li>
+			<li Class="PatchOperationInsert">
+				<xpath>/Defs/ThingDef[defName="ElectricSmelter"]/recipes/li[1]</xpath>
+				<value>
+					<li>RB_Make_BallisticGlassFromChunks</li>
+					<li>RB_Make_GlassFromChunks</li>
 				</value>
 			</li>
 		</operations>

@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RecipeDef Name="RB_Make_GlassBase" Abstract="True">
+		<workSpeedStat>SmeltingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+	</RecipeDef>
+	<!-- ================================ Make glass ====================== -->
+	<RecipeDef ParentName="RB_Make_GlassBase">
+		<defName>RB_Make_GlassFromChunks</defName>
+		<label>make glass from chunks</label>
+		<description>Refine stone chunks into basic glass.</description>
+		<jobString>Making glass.</jobString>
+		<workAmount>800</workAmount>
+		<smeltingWorkAmount>2200</smeltingWorkAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>StoneChunks</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<RB_Glass>6</RB_Glass>
+		</products>
+		<fixedIngredientFilter>
+			<categories>
+				<li>StoneChunks</li>
+			</categories>
+		</fixedIngredientFilter>
+	</RecipeDef>
+	<!-- ================================ Make ballistic glass ====================== -->
+	<RecipeDef ParentName="RB_Make_GlassBase">
+		<defName>RB_Make_BallisticGlassFromChunks</defName>
+		<label>make ballistic glass from chunks</label>
+		<description>Refine stone chunks and plasteel into ballistic glass.</description>
+		<jobString>Making ballistic glass.</jobString>
+		<workAmount>1200</workAmount>
+		<smeltingWorkAmount>2600</smeltingWorkAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>StoneChunks</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<RB_BallisticGlass>3</RB_BallisticGlass>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Plasteel</li>
+			</thingDefs>
+			<categories>
+				<li>StoneChunks</li>
+			</categories>
+		</fixedIngredientFilter>
+	</RecipeDef>
+</Defs>

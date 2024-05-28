@@ -2,6 +2,6 @@
 <Defs>
 	<DesignatorDropdownGroupDef>
 		<defName>RB_Floor_Tile_GrateMetal</defName>
-		<label>metal tile</label>
+		<label>metal grate tile</label>
 	</DesignatorDropdownGroupDef>
 </Defs>

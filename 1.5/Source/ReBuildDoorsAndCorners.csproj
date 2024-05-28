@@ -51,6 +51,10 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
+    <Reference Include="VFECore">
+      <HintPath>..\..\..\VanillaExpandedFramework\1.5\Assemblies\VFECore.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Krafs.Publicizer" Version="2.*">
@@ -67,9 +71,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Building_Door_PawnCanOpen_Patch.cs" />
+    <Compile Include="CompFireplace.cs" />
     <Compile Include="CompProperties_FireplaceOverlay.cs" />
     <Compile Include="GenPlace_PlaceSpotQualityAt_Patch.cs" />
     <Compile Include="HaulAIUtility_HaulablePlaceValidator_Patch.cs" />
+    <Compile Include="PlaceWorker_Fireplace.cs" />
     <Compile Include="RB_DefOf.cs" />
     <Compile Include="ReBuildDoorsAndCornersMod.cs" />
     <Compile Include="Thing_TakeDamage_Patch.cs" />
