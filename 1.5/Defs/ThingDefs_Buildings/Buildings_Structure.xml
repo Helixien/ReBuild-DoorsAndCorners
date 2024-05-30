@@ -66,7 +66,7 @@
 	<ThingDef ParentName="RB_WallBase">
 		<defName>RB_RusticWall</defName>
 		<label>rustic wall</label>
-		<description>A cheap impassable wall. Capable of holding up a roof.</description>
+		<description>A simplistic, weak and impassable wall. Capable of holding up a roof.</description>
 		<graphicData>
 			<texPath>Things/Building/Linked/RB_RusticWall</texPath>
 			<graphicClass>Graphic_Appearances</graphicClass>
@@ -135,7 +135,7 @@
 	<ThingDef ParentName="RB_WallBase">
 		<defName>RB_OrnateWall</defName>
 		<label>ornate wall</label>
-		<description>A ornated, impassable wall. Capable of holding up a roof, but more fragile than a normal wall.</description>
+		<description>An intricate and impassable wall, decorated with gold. Capable of holding up a roof, but more fragile than a normal wall.</description>
 		<graphicData>
 			<texPath>Things/Building/Linked/RB_OrnateWall</texPath>
 			<graphicClass>Graphic_Appearances</graphicClass>
@@ -291,7 +291,7 @@
 	<ThingDef ParentName="RB_WallBase">
 		<defName>RB_ReinforcedClerestoryWall</defName>
 		<label>reinforced clerestory wall</label>
-		<description>An impassable half-glass wall. Capable of holding up a roof, but more fragile than a normal wall. Lets through light.</description>
+		<description>An impassable half-glass wall. Capable of holding up a roof. Lets through light.</description>
 		<graphicData>
 			<texPath>Things/Building/Linked/RB_ReinforcedClerestoryWall</texPath>
 			<graphicClass>Graphic_Appearances</graphicClass>
@@ -339,7 +339,7 @@
 			<RB_Glass>2</RB_Glass>
 		</costList>
 		<researchPrerequisites>
-      <li>Fabrication</li>
+			<li>Fabrication</li>
 		</researchPrerequisites>
 		<uiOrder>2002</uiOrder>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
@@ -435,7 +435,7 @@
 	<ThingDef ParentName="RB_WallBase">
 		<defName>RB_ReinforcedGlassWall</defName>
 		<label>reinforced glass wall</label>
-		<description>An impassable reinforced glass wall. Capable of holding up a roof and just as durable as a normal wall. Lets through light.</description>
+		<description>An impassable reinforced glass wall. Capable of holding up a roof. Lets through light.</description>
 		<graphicData>
 			<texPath>Things/Building/Linked/RB_ReinforcedGlassWall/RB_ReinforcedGlassWall_Atlas</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -471,7 +471,7 @@
 			<RB_BallisticGlass>3</RB_BallisticGlass>
 		</costList>
 		<researchPrerequisites>
-      <li>Fabrication</li>
+			<li>Fabrication</li>
 		</researchPrerequisites>
 		<uiOrder>2003</uiOrder>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
@@ -573,9 +573,6 @@
 		<costList>
 			<Gold>75</Gold>
 		</costList>
-		<researchPrerequisites>
-			<li MayRequire="VanillaExpanded.VFECore">MF_RoyalFurniture</li>
-		</researchPrerequisites>
 		<uiOrder>2014</uiOrder>
 		<building>
 			<blueprintClass>Blueprint_Build</blueprintClass>
@@ -598,6 +595,7 @@
 		</building>
 		<researchPrerequisites>
 			<li>ComplexFurniture</li>
+			<li MayRequire="VanillaExpanded.VFECore">MF_RoyalFurniture</li>
 		</researchPrerequisites>
 		<placeWorkers>
 			<li>PlaceWorker_MultiCellDoor</li>
