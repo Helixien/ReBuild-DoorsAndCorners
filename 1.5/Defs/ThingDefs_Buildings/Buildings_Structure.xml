@@ -780,4 +780,41 @@
 			<li>PlaceWorker_Heater</li>
 		</placeWorkers>
 	</ThingDef>
+	<!-- ================================ Wall Armour ====================== -->
+	<ThingDef ParentName="RB_WallBase">
+		<defName>RB_OverwallArmour</defName>
+		<label>wall armour</label>
+		<description>A durable, reinforced armor that seamlessly integrates with existing walls. Provides enhanced protection against external threats while maintaining structural integrity. It will protect the wall under it from damage until destroyed.</description>
+		<graphicData>
+			<texPath>Things/Building/Linked/RB_OverwallArmor/RB_OverwallArmor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<linkType>CornerFiller</linkType>
+			<linkFlags>
+				<li>Wall</li>
+				<li>Rock</li>
+			</linkFlags>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+				<edgeTop>Damage/Edge</edgeTop>
+				<edgeBot>Damage/Edge</edgeBot>
+				<edgeLeft>Damage/Edge</edgeLeft>
+				<edgeRight>Damage/Edge</edgeRight>
+			</damageData>
+		</graphicData>
+		<uiIconPath>Things/Building/Linked/RB_OverwallArmor_MenuIcon</uiIconPath>
+		<statBases>
+			<MaxHitPoints>750</MaxHitPoints>
+			<WorkToBuild>350</WorkToBuild>
+			<Flammability>0.2</Flammability>
+		</statBases>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<building>
+			<canPlaceOverWall>true</canPlaceOverWall>
+		</building>
+	</ThingDef>
 </Defs>
