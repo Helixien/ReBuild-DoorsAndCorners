@@ -183,6 +183,9 @@
 		<costList>
 			<Gold>2</Gold>
 		</costList>
+		<researchPrerequisites>
+			<li MayRequire="VanillaExpanded.VFECore">MF_RoyalFurniture</li>
+		</researchPrerequisites>
 		<uiOrder>2001</uiOrder>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<useStuffTerrainAffordance>true</useStuffTerrainAffordance>
@@ -336,7 +339,7 @@
 			<RB_Glass>2</RB_Glass>
 		</costList>
 		<researchPrerequisites>
-			<li>Electricity</li>
+      <li>Fabrication</li>
 		</researchPrerequisites>
 		<uiOrder>2002</uiOrder>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
@@ -468,7 +471,7 @@
 			<RB_BallisticGlass>3</RB_BallisticGlass>
 		</costList>
 		<researchPrerequisites>
-			<li>Electricity</li>
+      <li>Fabrication</li>
 		</researchPrerequisites>
 		<uiOrder>2003</uiOrder>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
@@ -526,9 +529,6 @@
 			<RB_Glass>10</RB_Glass>
 			<ComponentIndustrial>2</ComponentIndustrial>
 		</costList>
-		<researchPrerequisites>
-			<li>Electricity</li>
-		</researchPrerequisites>
 		<uiOrder>2012</uiOrder>
 		<comps>
 			<li Class="CompProperties_Power">
@@ -541,6 +541,7 @@
 		<designationHotKey>Misc2</designationHotKey>
 		<researchPrerequisites>
 			<li>Autodoors</li>
+			<li>Electricity</li>
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 	</ThingDef>
@@ -572,6 +573,9 @@
 		<costList>
 			<Gold>75</Gold>
 		</costList>
+		<researchPrerequisites>
+			<li MayRequire="VanillaExpanded.VFECore">MF_RoyalFurniture</li>
+		</researchPrerequisites>
 		<uiOrder>2014</uiOrder>
 		<building>
 			<blueprintClass>Blueprint_Build</blueprintClass>
