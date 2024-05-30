@@ -8,6 +8,7 @@
 	<packageId>ReBuild.COTR.DoorsAndCorners</packageId>
 	<url/>
 	<modVersion IgnoreIfNoMatchingField="True">1.0-Miller-rev1</modVersion>
+	<modIconPath IgnoreIfNoMatchingField="True">UI/RB_ModIcon</modIconPath>
 	<description>text.todo</description>
 	<modDependencies>
 		<li>
