@@ -245,6 +245,8 @@
 				<iconPath>Things/Building/Linked/RB_ClerestoryWall_Planks_MenuIcon</iconPath>
 			</li>
 		</uiIconPathsStuff>
+		<filthLeaving>RB_Filth_GlassShards</filthLeaving>
+		<soundImpactDefault>RB_BulletImpact_Glass</soundImpactDefault>
 		<statBases>
 			<MaxHitPoints>250</MaxHitPoints>
 			<WorkToBuild>155</WorkToBuild>
@@ -324,6 +326,8 @@
 				<iconPath>Things/Building/Linked/RB_ReinforcedClerestoryWall_Planks_MenuIcon</iconPath>
 			</li>
 		</uiIconPathsStuff>
+		<filthLeaving>RB_Filth_BallisticGlassShards</filthLeaving>
+		<soundImpactDefault>RB_BulletImpact_Glass</soundImpactDefault>
 		<statBases>
 			<MaxHitPoints>250</MaxHitPoints>
 			<WorkToBuild>155</WorkToBuild>
@@ -393,6 +397,8 @@
 			</damageData>
 		</graphicData>
 		<uiIconPath>Things/Building/Linked/RB_GlassWall_MenuIcon</uiIconPath>
+		<filthLeaving>RB_Filth_GlassShards</filthLeaving>
+		<soundImpactDefault>RB_BulletImpact_Glass</soundImpactDefault>
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
 			<WorkToBuild>135</WorkToBuild>
@@ -460,6 +466,8 @@
 			</damageData>
 		</graphicData>
 		<uiIconPath>Things/Building/Linked/RB_ReinforcedGlassWall_MenuIcon</uiIconPath>
+		<filthLeaving>RB_Filth_BallisticGlassShards</filthLeaving>
+		<soundImpactDefault>RB_BulletImpact_Glass</soundImpactDefault>
 		<statBases>
 			<MaxHitPoints>300</MaxHitPoints>
 			<WorkToBuild>185</WorkToBuild>
@@ -529,7 +537,6 @@
 		</stuffCategories>
 		<costStuffCount>25</costStuffCount>
 		<costList>
-
 			<RB_Glass>5</RB_Glass>
 			<ComponentIndustrial>2</ComponentIndustrial>
 		</costList>

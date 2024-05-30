@@ -35,4 +35,9 @@
 		<li>VanillaExpanded.VFESpacer</li>
 		<li>VanillaExpanded.VTEXVariations</li>
 	</loadAfter>
+	<incompatibleWith>
+		<li>tikubonn.DontBlockDoor</li>
+		<li>Owlchemist.DoorClearance</li>
+		<li>Owlchemist.PerspectiveDoors</li>
+	</incompatibleWith>
 </ModMetaData>

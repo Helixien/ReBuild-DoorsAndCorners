@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ================================ Glass Filth Base ====================== -->
+	<ThingDef ParentName="BaseFilth" Name="RB_GlassShardsBase" Abstract="True">
+		<filth>
+			<disappearsInDays>45~50</disappearsInDays>
+			<cleaningWorkToReduceThickness>25</cleaningWorkToReduceThickness>
+		</filth>
+	</ThingDef>
+	<!-- ================================ Glass Shards ====================== -->
+	<ThingDef ParentName="RB_GlassShardsBase">
+		<defName>RB_Filth_GlassShards</defName>
+		<label>glass shards</label>
+		<graphicData>
+			<texPath>Things/Filth/RB_BrokenGlass</texPath>
+		</graphicData>
+	</ThingDef>
+	<!-- ================================ Ballistic Glass Shards ====================== -->
+	<ThingDef ParentName="RB_GlassShardsBase">
+		<defName>RB_Filth_BallisticGlassShards</defName>
+		<label>glass shards</label>
+		<graphicData>
+			<texPath>Things/Filth/RB_BallisticBrokenGlass</texPath>
+		</graphicData>
+	</ThingDef>
+</Defs>
