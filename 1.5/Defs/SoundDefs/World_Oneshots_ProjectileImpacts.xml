@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<SoundDef>
+		<defName>RB_BulletImpact_Glass</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>Impact/Bullet_Glass</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>6.956522~22.82609</volumeRange>
+				<pitchRange>0.9152174~1.084783</pitchRange>
+				<repeatMode>Any</repeatMode>
+			</li>
+		</subSounds>
+	</SoundDef>
+</Defs>

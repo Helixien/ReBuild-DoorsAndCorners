@@ -4,7 +4,7 @@
 	<Operation Class="ModSettingsFramework.PatchOperationModOption">
 		<defaultValue>True</defaultValue>
 		<label>Enable alternative wall textures</label>
-		<tooltip>Enable new alternative textures for vanilla walls. If disables, you will still get HD textures, they just stay true to the vanilla style. (Default: True)</tooltip>
+		<tooltip>Enable the new alternative metal textures for vanilla walls. If disables, you will still get HD textures, it just stays true to the vanilla style. (Default: True)</tooltip>
 		<id>RB_NewWallAtlasTextures</id>
 		<category>RB_Core</category>
 		<order>0</order>
@@ -33,7 +33,7 @@
 		<order>1</order>
 		<operations>
 			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName="Door" or defName="Autodoor" or defName="AnimalFlap"]/graphicData/graphicClass</xpath>
+				<xpath>Defs/ThingDef[defName="Door" or defName="Autodoor" or defName="AnimalFlap" or defName="RB_GlassAutodoor"]/graphicData/graphicClass</xpath>
 				<value>
 					<graphicClass>Graphic_Multi</graphicClass>
 				</value>
