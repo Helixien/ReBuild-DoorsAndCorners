@@ -333,6 +333,9 @@
 				<li>RB_GlassAutodoor</li>
 			</relatedBuildCommands>
 		</building>
+		<comps>
+			<li Class="ReBuildDoorsAndCorners.CompProperties_GlassWall"></li>
+		</comps>
 		<damageMultipliers Inherit="false">
 			<li>
 				<damageDef>Bomb</damageDef>
@@ -396,6 +399,9 @@
 				<li MayRequire="Ludeon.RimWorld.Anomaly">RB_LargeSecurityDoor</li>
 			</relatedBuildCommands>
 		</building>
+		<comps>
+			<li Class="ReBuildDoorsAndCorners.CompProperties_GlassWall"></li>
+		</comps>
 		<damageMultipliers Inherit="false">
 			<li>
 				<damageDef>Bomb</damageDef>

@@ -72,9 +72,12 @@
   <ItemGroup>
     <Compile Include="Building_Door_PawnCanOpen_Patch.cs" />
     <Compile Include="CompFireplace.cs" />
+    <Compile Include="CompGlassWall.cs" />
     <Compile Include="CompProperties_FireplaceOverlay.cs" />
     <Compile Include="GenPlace_PlaceSpotQualityAt_Patch.cs" />
+    <Compile Include="GlowGrid_GroundGlowAt_Patch.cs" />
     <Compile Include="HaulAIUtility_HaulablePlaceValidator_Patch.cs" />
+    <Compile Include="MapComponent_Rebuild.cs" />
     <Compile Include="PlaceWorker_Fireplace.cs" />
     <Compile Include="RB_DefOf.cs" />
     <Compile Include="ReBuildDoorsAndCornersMod.cs" />
