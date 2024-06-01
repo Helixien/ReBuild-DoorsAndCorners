@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<!-- ================================ Wall Lamp Patches ====================== -->
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/StyleCategoryDef[defName="VIES_Sophian"]/thingDefStyles</xpath>
+				<value>
+					<li>
+						<thingDef>WallLamp</thingDef>
+						<styleDef>RB_Sophian_WallLamp</styleDef>
+					</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>
