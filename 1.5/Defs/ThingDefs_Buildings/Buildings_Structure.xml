@@ -268,7 +268,7 @@
 		<uiOrder>2002</uiOrder>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<blockLight>false</blockLight>
-		<specialDisplayRadius>2.9</specialDisplayRadius>
+		<specialDisplayRadius>3.9</specialDisplayRadius>
 		<building>
 			<isPlaceOverableWall>true</isPlaceOverableWall>
 			<ai_chillDestination>true</ai_chillDestination>
@@ -349,7 +349,7 @@
 		<uiOrder>2002</uiOrder>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<blockLight>false</blockLight>
-		<specialDisplayRadius>2.9</specialDisplayRadius>
+		<specialDisplayRadius>3.9</specialDisplayRadius>
 		<building>
 			<isPlaceOverableWall>true</isPlaceOverableWall>
 			<ai_chillDestination>true</ai_chillDestination>
@@ -418,7 +418,7 @@
 		<uiOrder>2003</uiOrder>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<blockLight>false</blockLight>
-		<specialDisplayRadius>2.9</specialDisplayRadius>
+		<specialDisplayRadius>3.9</specialDisplayRadius>
 		<building>
 			<isPlaceOverableWall>true</isPlaceOverableWall>
 			<ai_chillDestination>true</ai_chillDestination>
@@ -490,7 +490,7 @@
 		<uiOrder>2003</uiOrder>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<blockLight>false</blockLight>
-		<specialDisplayRadius>2.9</specialDisplayRadius>
+		<specialDisplayRadius>3.9</specialDisplayRadius>
 		<building>
 			<isPlaceOverableWall>true</isPlaceOverableWall>
 			<ai_chillDestination>true</ai_chillDestination>
