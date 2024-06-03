@@ -77,10 +77,15 @@
     <Compile Include="GenPlace_PlaceSpotQualityAt_Patch.cs" />
     <Compile Include="GlowGrid_GroundGlowAt_Patch.cs" />
     <Compile Include="HaulAIUtility_HaulablePlaceValidator_Patch.cs" />
+    <Compile Include="ImpactSoundUtility_PlayImpactSound_Patch.cs" />
     <Compile Include="MapComponent_Rebuild.cs" />
+    <Compile Include="Need_Outdoors_NeedInterval_Patch.cs" />
     <Compile Include="PlaceWorker_Fireplace.cs" />
+    <Compile Include="PlaceWorker_OnWall.cs" />
     <Compile Include="RB_DefOf.cs" />
     <Compile Include="ReBuildDoorsAndCornersMod.cs" />
+    <Compile Include="ThingExtension.cs" />
+    <Compile Include="Thing_TakeDamage_Patch.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

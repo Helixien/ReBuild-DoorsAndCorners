@@ -442,6 +442,12 @@
 				<multiplier>5</multiplier>
 			</li>
 		</damageMultipliers>
+		<modExtensions>
+			<li Class="ReBuildDoorsAndCorners.ThingExtension">
+				<soundImpactMeleeOverride>RB_BulletImpact_Glass</soundImpactMeleeOverride>
+				<soundImpactBulletOverride>RB_BulletImpact_Glass</soundImpactBulletOverride>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<!-- ================================ Reinforced Glass Wall ====================== -->
 	<ThingDef ParentName="RB_WallBase">
@@ -787,7 +793,7 @@
 		</placeWorkers>
 	</ThingDef>
 	<!-- ================================ Wall Armour ====================== -->
-	<ThingDef ParentName="RB_WallBase">
+	<ThingDef ParentName="BuildingBase">
 		<defName>RB_OverwallArmour</defName>
 		<label>wall armour</label>
 		<description>A durable, reinforced armor that seamlessly integrates with existing walls. Provides enhanced protection against external threats while maintaining structural integrity. It will protect the wall under it from damage until destroyed.</description>
@@ -821,6 +827,14 @@
 		</stuffCategories>
 		<building>
 			<canPlaceOverWall>true</canPlaceOverWall>
+			<isEdifice>false</isEdifice>
 		</building>
+		<placeWorkers>
+			<li>ReBuildDoorsAndCorners.PlaceWorker_OnWall</li>
+		</placeWorkers>
+		<comps>
+			<li Class="VanillaFurnitureExpanded.CompProperties_MountableOnWall"/>
+		</comps>
+		<designationCategory>Structure</designationCategory>
 	</ThingDef>
 </Defs>

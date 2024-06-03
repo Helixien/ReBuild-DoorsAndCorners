@@ -24,10 +24,16 @@ namespace ReBuildDoorsAndCorners
             }
         }
 
+        public static Map curMap;
+        public static MapComponent_Rebuild curComp;
         public static bool HasNoNaturalLight(bool roofed, IntVec3 c, GlowGrid glowGrid)
         {
-            var comp = glowGrid.map.GetComponent<MapComponent_Rebuild>();
-            if (comp.cellsNearbyGlassWalls.Contains(c))
+            if (curMap != glowGrid.map)
+            {
+                curMap = glowGrid.map;
+                curComp = glowGrid.map.GetComponent<MapComponent_Rebuild>();
+            }
+            if (curComp.cellsNearbyGlassWalls.Contains(c))
             {
                 return false;
             }
