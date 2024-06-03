@@ -39,7 +39,7 @@ namespace ReBuildDoorsAndCorners
         public override void DesignateSingleCell(IntVec3 c)
         {
             var comp = base.Map.GetComponent<MapComponent_Rebuild>();
-            foreach (var cell in GenAdj.CellsAdjacentCardinal(c, Rot4.South, IntVec2.One).Append(c))
+            foreach (var cell in GenAdj.CellsAdjacent8Way(c, Rot4.South, IntVec2.One).Append(c))
             {
                 if (c == cell || cell.GetTerrain(Map).natural)
                 {

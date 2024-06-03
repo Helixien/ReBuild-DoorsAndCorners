@@ -78,7 +78,8 @@ namespace ReBuildDoorsAndCorners
                 {
                     return true;
                 }
-                else if (GenAdj.CellsAdjacent8Way(cell, Rot4.South, IntVec2.One).Any(x => x.GetTerrain(map).natural is false && curComp.customTerrainEdges.ContainsKey(x)))
+                else if (GenAdj.CellsAdjacent8Way(cell, Rot4.South, IntVec2.One)
+                    .Any(x => x.GetTerrain(map).natural is false && curComp.customTerrainEdges.ContainsKey(x)))
                 {
                     return true;
                 }
