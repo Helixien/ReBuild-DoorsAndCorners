@@ -843,11 +843,12 @@
 			<supportsWallAttachments>false</supportsWallAttachments>
 			<canPlaceOverWall>true</canPlaceOverWall>
 			<isEdifice>false</isEdifice>
-			<paintable>true</paintable>
+			<paintable>false</paintable>
 			<ai_chillDestination>false</ai_chillDestination>
 			<relatedBuildCommands>
 				<li>Wall</li>
-				<li>RB_GlassWall</li>
+				<li>RB_ReinforcedClerestoryWall</li>
+				<li>RB_ReinforcedGlassWall</li>
 			</relatedBuildCommands>
 		</building>
 		<placeWorkers>
