@@ -838,8 +838,7 @@
 		<costList>
 			<Steel>10</Steel>
 		</costList>
-		<uiOrder>2003</uiOrder>
-
+		<uiOrder>2004</uiOrder>
 		<building Inherit="False">
 			<supportsWallAttachments>false</supportsWallAttachments>
 			<canPlaceOverWall>true</canPlaceOverWall>
