@@ -430,7 +430,7 @@
 			</relatedBuildCommands>
 		</building>
 		<comps>
-			<li Class="ReBuildDoorsAndCorners.CompProperties_GlassWall"></li>
+			<li Class="ReBuildDoorsAndCorners.CompProperties_GlassWall"/>
 		</comps>
 		<damageMultipliers Inherit="false">
 			<li>
@@ -508,7 +508,7 @@
 			</relatedBuildCommands>
 		</building>
 		<comps>
-			<li Class="ReBuildDoorsAndCorners.CompProperties_GlassWall"></li>
+			<li Class="ReBuildDoorsAndCorners.CompProperties_GlassWall"/>
 		</comps>
 		<damageMultipliers Inherit="false">
 			<li>
@@ -817,6 +817,15 @@
 			</damageData>
 		</graphicData>
 		<uiIconPath>Things/Building/Linked/RB_OverwallArmor_MenuIcon</uiIconPath>
+		<holdsRoof>false</holdsRoof>
+		<placingDraggableDimensions>1</placingDraggableDimensions>
+		<tickerType>Never</tickerType>
+		<rotatable>false</rotatable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<useStuffTerrainAffordance>false</useStuffTerrainAffordance>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<designationCategory>Structure</designationCategory>
+		<canOverlapZones>false</canOverlapZones>
 		<statBases>
 			<MaxHitPoints>750</MaxHitPoints>
 			<WorkToBuild>350</WorkToBuild>
@@ -825,16 +834,38 @@
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
-		<building>
+		<costStuffCount>15</costStuffCount>
+		<costList>
+			<Steel>10</Steel>
+		</costList>
+		<uiOrder>2003</uiOrder>
+
+		<building Inherit="False">
+			<supportsWallAttachments>false</supportsWallAttachments>
 			<canPlaceOverWall>true</canPlaceOverWall>
 			<isEdifice>false</isEdifice>
+			<paintable>true</paintable>
+			<ai_chillDestination>false</ai_chillDestination>
+			<relatedBuildCommands>
+				<li>Wall</li>
+				<li>RB_GlassWall</li>
+			</relatedBuildCommands>
 		</building>
 		<placeWorkers>
 			<li>ReBuildDoorsAndCorners.PlaceWorker_OnWall</li>
 		</placeWorkers>
-		<comps>
+		<comps Inherit="False">
 			<li Class="VanillaFurnitureExpanded.CompProperties_MountableOnWall"/>
 		</comps>
-		<designationCategory>Structure</designationCategory>
+		<damageMultipliers>
+			<li>
+				<damageDef>Bomb</damageDef>
+				<multiplier>-1</multiplier>
+			</li>
+			<li>
+				<damageDef>Thump</damageDef>
+				<multiplier>-1</multiplier>
+			</li>
+		</damageMultipliers>
 	</ThingDef>
 </Defs>
