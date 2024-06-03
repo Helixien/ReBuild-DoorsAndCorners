@@ -63,11 +63,27 @@ namespace ReBuildDoorsAndCorners
                 curMap = map;
                 curComp = map.GetComponent<MapComponent_Rebuild>();
             }
-            if (curComp.customTerrainEdges.TryGetValue(cell, out var edge))
+            if (TryGetCustomEdge(cell, map, out var edge))
             {
                 return edge;
             }
             return type;
+        }
+
+        private static bool TryGetCustomEdge(IntVec3 cell, Map map, out TerrainEdgeType edge)
+        {
+            if (curComp.customTerrainEdges.TryGetValue(cell, out edge))
+            {
+                if (cell.GetTerrain(map).natural is false)
+                {
+                    return true;
+                }
+                else if (GenAdj.CellsAdjacent8Way(cell, Rot4.South, IntVec2.One).Any(x => x.GetTerrain(map).natural is false && curComp.customTerrainEdges.ContainsKey(x)))
+                {
+                    return true;
+                }
+            }
+            return false;
         }
 
         public static Dictionary<CellTerrain, IntVec3> mappedTerrains = new Dictionary<CellTerrain, IntVec3>();
@@ -80,7 +96,7 @@ namespace ReBuildDoorsAndCorners
                 curMap = map;
                 curComp = map.GetComponent<MapComponent_Rebuild>();
             }
-            if (curComp.customTerrainEdges.TryGetValue(cell, out var edge))
+            if (TryGetCustomEdge(cell, map, out var edge))
             {
                 if (edge == TerrainEdgeType.Hard) return material;
                 bool polluted = cellTerrain.polluted && cellTerrain.snowCoverage < 0.4f 

@@ -39,10 +39,13 @@ namespace ReBuildDoorsAndCorners
         public override void DesignateSingleCell(IntVec3 c)
         {
             var comp = base.Map.GetComponent<MapComponent_Rebuild>();
-            foreach (var cell in GenAdj.CellsAdjacent8Way(c, Rot4.South, IntVec2.One))
+            foreach (var cell in GenAdj.CellsAdjacentCardinal(c, Rot4.South, IntVec2.One).Append(c))
             {
-                comp.customTerrainEdges[cell] = curEdgeType;
-                base.Map.mapDrawer.SectionAt(cell).dirtyFlags = MapMeshFlagDefOf.Terrain;
+                if (c == cell || cell.GetTerrain(Map).natural)
+                {
+                    comp.customTerrainEdges[cell] = curEdgeType;
+                    base.Map.mapDrawer.SectionAt(cell).dirtyFlags = MapMeshFlagDefOf.Terrain;
+                }
             }
         }
 
@@ -58,6 +61,12 @@ namespace ReBuildDoorsAndCorners
                 }));
             }
             Find.WindowStack.Add(new FloatMenu(floatList));
+        }
+
+        public override void SelectedUpdate()
+        {
+            base.SelectedUpdate();
+            GenUI.RenderMouseoverBracket();
         }
     }
 }

@@ -9,4 +9,5 @@
 	<RE.TerrainEdgeTypeHard>Hard</RE.TerrainEdgeTypeHard>
 	<RE.TerrainEdgeTypeFade>Fade</RE.TerrainEdgeTypeFade>
 	<RE.TerrainEdgeTypeFadeRough>Fade (rough)</RE.TerrainEdgeTypeFadeRough>
+	<RE.WallArmorMustBePlacedOnWall>Wall armor requires pre-existing wall to be constructed.</RE.WallArmorMustBePlacedOnWall>
 </LanguageData>

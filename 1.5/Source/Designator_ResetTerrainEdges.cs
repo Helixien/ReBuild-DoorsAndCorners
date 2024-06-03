@@ -39,7 +39,12 @@ namespace ReBuildDoorsAndCorners
                 comp.customTerrainEdges.Remove(cell);
                 base.Map.mapDrawer.SectionAt(cell).dirtyFlags = MapMeshFlagDefOf.Terrain;
             }
+        }
 
+        public override void SelectedUpdate()
+        {
+            base.SelectedUpdate();
+            GenUI.RenderMouseoverBracket();
         }
     }
 }
