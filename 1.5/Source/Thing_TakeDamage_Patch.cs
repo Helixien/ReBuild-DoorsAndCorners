@@ -19,7 +19,6 @@ namespace ReBuildDoorsAndCorners
                     copy.SetAmount(damageToApply);
                     armor.TakeDamage(copy);
                     var newDamage = dinfo.Amount - damageToApply;
-                    Log.Message("newDamage: " + newDamage);
                     if (newDamage > 0)
                     {
                         dinfo.SetAmount(newDamage);
@@ -30,12 +29,6 @@ namespace ReBuildDoorsAndCorners
                     }
                 }
             }
-            Log.Message("dinfo: " + dinfo + " - " + __instance + " - " + __instance.HitPoints); ;
-        }
-
-        public static void Postfix(Thing __instance, DamageInfo dinfo)
-        {
-            Log.Message("2 dinfo: " + dinfo + " - " + __instance + " - " + __instance.HitPoints);
         }
     }
 }

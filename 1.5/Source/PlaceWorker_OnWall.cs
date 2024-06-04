@@ -14,7 +14,7 @@ namespace ReBuildDoorsAndCorners
                     return true;
                 }
             }
-            return false;
+            return "RE.WallArmorMustBePlacedOnWall".Translate();
         }
     }
 }

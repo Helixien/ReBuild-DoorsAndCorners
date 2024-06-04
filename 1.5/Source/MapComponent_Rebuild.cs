@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using Verse;
+using static Verse.TerrainDef;
 
 namespace ReBuildDoorsAndCorners
 {
@@ -8,7 +9,6 @@ namespace ReBuildDoorsAndCorners
     {
         public HashSet<CompGlassWall> glassWalls = new HashSet<CompGlassWall>();
         public HashSet<IntVec3> cellsNearbyGlassWalls = new HashSet<IntVec3>();
-
         public MapComponent_Rebuild(Map map) : base(map)
         {
         }
