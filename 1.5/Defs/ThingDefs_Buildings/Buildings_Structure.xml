@@ -135,7 +135,7 @@
 	<ThingDef ParentName="RB_WallBase">
 		<defName>RB_OrnateWall</defName>
 		<label>ornate wall</label>
-		<description>An intricate and impassable wall, decorated with gold. Capable of holding up a roof, but more fragile than a normal wall.</description>
+		<description>An intricate and impassable wall, decorated with gold. Capable of holding up a roof, but more fragile than a normal wall. Dignity-focused psycaster will receive a meditation bonus when meditating near them.</description>
 		<graphicData>
 			<texPath>Things/Building/Linked/RB_OrnateWall</texPath>
 			<graphicClass>Graphic_Appearances</graphicClass>
@@ -213,7 +213,7 @@
 	<ThingDef ParentName="RB_WallBase">
 		<defName>RB_ClerestoryWall</defName>
 		<label>clerestory wall</label>
-		<description>An impassable half-glass wall. Capable of holding up a roof, but more fragile than a normal wall. Lets through light.</description>
+		<description>An impassable half-glass wall. Capable of holding up a roof, but more fragile than a normal wall. Does not block light, providing a growing bonus to plants near them. Slowly refills peoples outdoor need.</description>
 		<graphicData>
 			<texPath>Things/Building/Linked/RB_ClerestoryWall</texPath>
 			<graphicClass>Graphic_Appearances</graphicClass>
@@ -294,7 +294,7 @@
 	<ThingDef ParentName="RB_WallBase">
 		<defName>RB_ReinforcedClerestoryWall</defName>
 		<label>reinforced clerestory wall</label>
-		<description>An impassable half-glass wall. Capable of holding up a roof. Lets through light.</description>
+		<description>An impassable half-glass wall. Capable of holding up a roof. Does not block light, providing a growing bonus to plants near them. Slowly refills peoples outdoor need.</description>
 		<graphicData>
 			<texPath>Things/Building/Linked/RB_ReinforcedClerestoryWall</texPath>
 			<graphicClass>Graphic_Appearances</graphicClass>
@@ -375,7 +375,7 @@
 	<ThingDef ParentName="RB_WallBase">
 		<defName>RB_GlassWall</defName>
 		<label>glass wall</label>
-		<description>An impassable glass wall. Capable of holding up a roof, but far more fragile than a normal wall. Lets through light.</description>
+		<description>An impassable glass wall. Capable of holding up a roof, but far more fragile than a normal wall. Does not block light, providing a growing bonus to plants near them. Slowly refills peoples outdoor need.</description>
 		<graphicData>
 			<texPath>Things/Building/Linked/RB_GlassWall/RB_GlassWall_Atlas</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -453,7 +453,7 @@
 	<ThingDef ParentName="RB_WallBase">
 		<defName>RB_ReinforcedGlassWall</defName>
 		<label>reinforced glass wall</label>
-		<description>An impassable reinforced glass wall. Capable of holding up a roof. Lets through light.</description>
+		<description>An impassable reinforced glass wall. Capable of holding up a roof. Does not block light, providing a growing bonus to plants near them. Slowly refills peoples outdoor need.</description>
 		<graphicData>
 			<texPath>Things/Building/Linked/RB_ReinforcedGlassWall/RB_ReinforcedGlassWall_Atlas</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -526,7 +526,7 @@
 	<ThingDef ParentName="DoorBase">
 		<defName>RB_GlassAutodoor</defName>
 		<label>glass autodoor</label>
-		<description>Divides rooms. Powered operation allows people to move through the door without slowing down. Lets through light.</description>
+		<description>Divides rooms. Powered operation allows people to move through the door without slowing down. Does not block light.</description>
 		<graphicData>
 			<texPath>Things/Building/Door/RB_GlassAutodoor_Mover</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -795,8 +795,8 @@
 	<!-- ================================ Wall Armour ====================== -->
 	<ThingDef ParentName="BuildingBase">
 		<defName>RB_OverwallArmour</defName>
-		<label>wall armour</label>
-		<description>A durable, reinforced armor that seamlessly integrates with existing walls. Provides enhanced protection against external threats while maintaining structural integrity. It will protect the wall under it from damage until destroyed.</description>
+		<label>wall armor</label>
+		<description>A durable, reinforced armor that seamlessly integrates with existing walls. Provides enhanced protection against external threats while maintaining structural integrity. It will protect the wall under it from damage until destroyed. Must be constructed on an existing wall.</description>
 		<graphicData>
 			<texPath>Things/Building/Linked/RB_OverwallArmor/RB_OverwallArmor</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
