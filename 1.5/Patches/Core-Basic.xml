@@ -206,14 +206,6 @@
 				</value>
 			</li>
 			
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/DesignationCategoryDef[defName="Zone"]/specialDesignatorClasses</xpath>
-				<value>
-					<li>ReBuildDoorsAndCorners.Designator_SetTerrainEdges</li>
-					<li>ReBuildDoorsAndCorners.Designator_ResetTerrainEdges</li>
-				</value>
-			</li>
-			
 		</operations>
 	</Operation>
 </Patch>

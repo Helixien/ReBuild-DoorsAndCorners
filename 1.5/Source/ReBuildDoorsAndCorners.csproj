@@ -74,8 +74,6 @@
     <Compile Include="CompFireplace.cs" />
     <Compile Include="CompGlassWall.cs" />
     <Compile Include="CompProperties_FireplaceOverlay.cs" />
-    <Compile Include="Designator_ResetTerrainEdges.cs" />
-    <Compile Include="Designator_SetTerrainEdges.cs" />
     <Compile Include="GenPlace_PlaceSpotQualityAt_Patch.cs" />
     <Compile Include="GlowGrid_GroundGlowAt_Patch.cs" />
     <Compile Include="HaulAIUtility_HaulablePlaceValidator_Patch.cs" />
@@ -86,7 +84,6 @@
     <Compile Include="PlaceWorker_OnWall.cs" />
     <Compile Include="RB_DefOf.cs" />
     <Compile Include="ReBuildDoorsAndCornersMod.cs" />
-    <Compile Include="SectionLayer_Terrain_Regenerate_Patch.cs" />
     <Compile Include="ThingExtension.cs" />
     <Compile Include="Thing_TakeDamage_Patch.cs" />
   </ItemGroup>

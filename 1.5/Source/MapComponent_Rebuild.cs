@@ -9,7 +9,6 @@ namespace ReBuildDoorsAndCorners
     {
         public HashSet<CompGlassWall> glassWalls = new HashSet<CompGlassWall>();
         public HashSet<IntVec3> cellsNearbyGlassWalls = new HashSet<IntVec3>();
-        public Dictionary<IntVec3, TerrainEdgeType> customTerrainEdges = new Dictionary<IntVec3, TerrainEdgeType>();
         public MapComponent_Rebuild(Map map) : base(map)
         {
         }
@@ -29,16 +28,6 @@ namespace ReBuildDoorsAndCorners
                         }
                     }
                 }
-            }
-        }
-
-        public override void ExposeData()
-        {
-            base.ExposeData();
-            Scribe_Collections.Look(ref customTerrainEdges, "customTerrainEdges", LookMode.Value, LookMode.Value);
-            if (Scribe.mode == LoadSaveMode.PostLoadInit)
-            {
-                customTerrainEdges ??= new Dictionary<IntVec3, TerrainEdgeType>();
             }
         }
     }
