@@ -273,6 +273,9 @@
 			<isPlaceOverableWall>true</isPlaceOverableWall>
 			<ai_chillDestination>true</ai_chillDestination>
 			<supportsWallAttachments>false</supportsWallAttachments>
+			<blueprintGraphicData>
+				<texPath>Things/Building/Linked/RB_ClerestoryWall/RB_ClerestoryWall_Blueprint_Atlas</texPath>
+			</blueprintGraphicData>
 			<relatedBuildCommands Inherit="False">
 				<li>Door</li>
 				<li>Autodoor</li>
@@ -354,6 +357,9 @@
 			<isPlaceOverableWall>true</isPlaceOverableWall>
 			<ai_chillDestination>true</ai_chillDestination>
 			<supportsWallAttachments>false</supportsWallAttachments>
+			<blueprintGraphicData>
+				<texPath>Things/Building/Linked/RB_ClerestoryWall/RB_ClerestoryWall_Blueprint_Atlas</texPath>
+			</blueprintGraphicData>
 			<relatedBuildCommands Inherit="False">
 				<li>Door</li>
 				<li>Autodoor</li>
@@ -423,6 +429,9 @@
 			<isPlaceOverableWall>true</isPlaceOverableWall>
 			<ai_chillDestination>true</ai_chillDestination>
 			<supportsWallAttachments>false</supportsWallAttachments>
+			<blueprintGraphicData>
+				<texPath>Things/Building/Linked/RB_GlassWall/RB_GlassWall_Blueprint_Atlas</texPath>
+			</blueprintGraphicData>
 			<relatedBuildCommands Inherit="False">
 				<li>Door</li>
 				<li>Autodoor</li>
@@ -500,6 +509,9 @@
 		<building>
 			<isPlaceOverableWall>true</isPlaceOverableWall>
 			<ai_chillDestination>true</ai_chillDestination>
+			<blueprintGraphicData>
+				<texPath>Things/Building/Linked/RB_GlassWall/RB_GlassWall_Blueprint_Atlas</texPath>
+			</blueprintGraphicData>
 			<relatedBuildCommands Inherit="False">
 				<li>Autodoor</li>
 				<li>RB_GlassAutodoor</li>
@@ -817,7 +829,7 @@
 			</damageData>
 		</graphicData>
 		<uiIconPath>Things/Building/Linked/RB_OverwallArmor_MenuIcon</uiIconPath>
-				<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
 		<holdsRoof>false</holdsRoof>
 		<placingDraggableDimensions>1</placingDraggableDimensions>
 		<tickerType>Never</tickerType>
