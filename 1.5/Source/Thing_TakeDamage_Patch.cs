@@ -9,9 +9,9 @@ namespace ReBuildDoorsAndCorners
     {
         public static void Prefix(Thing __instance, ref DamageInfo dinfo)
         {
-            if (__instance.Spawned && __instance.def != RB_DefOf.RB_OverwallArmour)
+            if (__instance.Spawned && __instance.def != RB_DefOf.RB_OverwallArmor)
             {
-                var armor = __instance.Position.GetFirstThing(__instance.Map, RB_DefOf.RB_OverwallArmour);
+                var armor = __instance.Position.GetFirstThing(__instance.Map, RB_DefOf.RB_OverwallArmor);
                 if (armor != null)
                 {
                     var damageToApply = Mathf.Min(armor.HitPoints, dinfo.Amount);
