@@ -876,11 +876,11 @@
 		<damageMultipliers>
 			<li>
 				<damageDef>Bomb</damageDef>
-				<multiplier>-1</multiplier>
+				<multiplier>0.25</multiplier>
 			</li>
 			<li>
 				<damageDef>Thump</damageDef>
-				<multiplier>-1</multiplier>
+				<multiplier>0.25</multiplier>
 			</li>
 		</damageMultipliers>
 	</ThingDef>
