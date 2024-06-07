@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<DesignatorDropdownGroupDef>
+		<defName>RB_Floor_Tile_GrateMetal</defName>
+		<label>metal grate tile</label>
+	</DesignatorDropdownGroupDef>
+	<DesignatorDropdownGroupDef>
+		<defName>RB_Floor_Tile_StuddedMetal</defName>
+		<label>metal studded tile</label>
+	</DesignatorDropdownGroupDef>
+</Defs>

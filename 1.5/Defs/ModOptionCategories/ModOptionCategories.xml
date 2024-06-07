@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ModSettingsFramework.ModOptionCategoryDef Name="RB_ModOptionsBase" Abstract="True">
+		<modSettingsName>ReBuild: Doors and Corners</modSettingsName>
+		<modPackageSettingsID>ReBuild.COTR.DoorsAndCorners</modPackageSettingsID>
+	</ModSettingsFramework.ModOptionCategoryDef>
+	<ModSettingsFramework.ModOptionCategoryDef ParentName="RB_ModOptionsBase">
+		<defName>RB_Core</defName>
+		<label>General</label>
+		<order>0</order>
+	</ModSettingsFramework.ModOptionCategoryDef>
+</Defs>
