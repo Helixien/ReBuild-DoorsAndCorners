@@ -8,7 +8,7 @@
 		<!-- ================ Mod Support - VES - (New Content) ================ -->
 		<li IfModActive="VanillaExpanded.Ideo.SophianStyle">1.5/LoadFolders/VanillaIdeologyExpanded-SophianStyle</li>
 		<!-- ================ Mod Support - VES - (Textures only) ================ -->
-		<li IfModActive="OskarPotocki.VanillaFactionsExpanded.SettlersModule">1.5/LoadFolders/VFE-Settlers</li>
+		<li IfModActive="OskarPotocki.VanillaFactionsExpanded.SettlersModule">1.5/LoadFolders/_Support/VFE-Settlers</li>
 		<li IfModActive="VanillaExpanded.VFEA">1.5/LoadFolders/_Support/VFE-Ancients</li>
 		<li IfModActive="VanillaExpanded.VFESpacer">1.5/LoadFolders/_Support/VFUE-Spacer</li>
 		<li IfModActive="VanillaExpanded.VFEMedical">1.5/LoadFolders/_Support/VFUE-Medical</li>
@@ -24,7 +24,7 @@
 		<li IfModActive="Aoba.Fortress.Industrial">1.5/LoadFolders/_Support/Fortress-Industrial</li>
 		<li IfModActive="GT.Sam.BasicDoubleDoors">1.5/LoadFolders/_Support/BasicDoubleDoors</li>
 		<!-- ================ Original OwlChemist Perspective Doors Supported Mods (Not updated with new textures) ================ -->
-		<li IfModActive="aoba.fortress.neolithic">1.5/LoadFolders/_Support/PD-OriginalSupport/Fortifications-Neolith</li>
+		<li IfModActive="aoba.fortress.neolithic">1.5/LoadFolders/_Support/PD-OriginalSupport/Fortifications-Neolithic</li>
 		<li IfModActive="cp.uncle.boris.used.furniture">1.5/LoadFolders/_Support/PD-OriginalSupport/UB-UsedFurniture</li>
 		<li IfModActive="dankpyon.medieval.overhaul">1.5/LoadFolders/_Support/PD-OriginalSupport/MedievalOverhaul</li>
 		<li IfModActive="dubwise.dubsbadhygiene,dubwise.dubsbadhygiene.lite">1.5/LoadFolders/_Support/PD-OriginalSupport/DubsBadHygiene</li>
