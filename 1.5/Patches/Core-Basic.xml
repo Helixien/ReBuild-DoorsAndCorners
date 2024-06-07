@@ -89,7 +89,7 @@
 				<match Class="PatchOperationSequence">
 					<operations>
 						<li Class="PatchOperationAdd">
-							<xpath>/Defs/ThingDef[defName="OrnateDoor"]/prerequisites</xpath>
+							<xpath>/Defs/ThingDef[defName="OrnateDoor"]/researchPrerequisites</xpath>
 							<value>
 								<li>MF_RoyalFurniture</li>
 							</value>
