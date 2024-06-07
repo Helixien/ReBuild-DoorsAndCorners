@@ -32,8 +32,8 @@ namespace ReBuildDoorsAndCorners
         {
             if (need.pawn.GetRoom() is Room room && room.UsesOutdoorTemperature is false)
             {
-                var comp = need.pawn.Map.GetComponent<MapComponent_Rebuild>();
-                if (room.BorderCells.Any(x => comp.cellsNearbyGlassWalls.Contains(x)))
+                var comp = need.pawn.Map?.GetComponent<MapComponent_Rebuild>();
+                if (comp != null && room.BorderCells.Any(x => comp.cellsNearbyGlassWalls.Contains(x)))
                 {
                     value = 1.6f;
                 }
