@@ -268,7 +268,7 @@
 		<uiOrder>2002</uiOrder>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<blockLight>false</blockLight>
-		<specialDisplayRadius>3.9</specialDisplayRadius>
+		<specialDisplayRadius>2.9</specialDisplayRadius>
 		<building>
 			<isPlaceOverableWall>true</isPlaceOverableWall>
 			<ai_chillDestination>true</ai_chillDestination>
@@ -352,7 +352,7 @@
 		<uiOrder>2002</uiOrder>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<blockLight>false</blockLight>
-		<specialDisplayRadius>3.9</specialDisplayRadius>
+		<specialDisplayRadius>2.9</specialDisplayRadius>
 		<building>
 			<isPlaceOverableWall>true</isPlaceOverableWall>
 			<ai_chillDestination>true</ai_chillDestination>
@@ -664,7 +664,7 @@
 		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 		<comps Inherit="False">
 			<li Class="CompProperties_Refuelable">
-				<fuelConsumptionRate>12.0</fuelConsumptionRate>
+				<fuelConsumptionRate>10.0</fuelConsumptionRate>
 				<fuelCapacity>40.0</fuelCapacity>
 				<fuelConsumptionPerTickInRain>0.0009</fuelConsumptionPerTickInRain>
 				<fuelFilter>
@@ -686,8 +686,8 @@
 			</li>
 			<li Class="CompProperties_HeatPusher">
 				<compClass>ReBuildDoorsAndCorners.CompFireplace</compClass>
-				<heatPerSecond>25</heatPerSecond>
-				<heatPushMaxTemperature>32</heatPushMaxTemperature>
+				<heatPerSecond>15</heatPerSecond>
+				<heatPushMaxTemperature>25</heatPushMaxTemperature>
 			</li>
 			<li>
 				<compClass>CompGatherSpot</compClass>
