@@ -856,7 +856,7 @@
 			<supportsWallAttachments>false</supportsWallAttachments>
 			<canPlaceOverWall>true</canPlaceOverWall>
 			<isEdifice>false</isEdifice>
-			<paintable>false</paintable>
+			<paintable>true</paintable>
 			<ai_chillDestination>false</ai_chillDestination>
 			<blueprintGraphicData>
 				<texPath>Things/Building/Linked/RB_OverwallArmor/RB_OverwallArmor_Blueprint_Atlas</texPath>

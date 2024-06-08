@@ -9,4 +9,14 @@
 		<label>General</label>
 		<order>0</order>
 	</ModSettingsFramework.ModOptionCategoryDef>
+	<ModSettingsFramework.ModOptionCategoryDef ParentName="RB_ModOptionsBase">
+		<defName>RB_Walls</defName>
+		<label>Walls</label>
+		<order>10</order>
+	</ModSettingsFramework.ModOptionCategoryDef>
+	<ModSettingsFramework.ModOptionCategoryDef ParentName="RB_ModOptionsBase">
+		<defName>RB_Doors</defName>
+		<label>Doors</label>
+		<order>20</order>
+	</ModSettingsFramework.ModOptionCategoryDef>
 </Defs>
