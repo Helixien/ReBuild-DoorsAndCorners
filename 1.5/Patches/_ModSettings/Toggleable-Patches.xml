@@ -237,31 +237,31 @@
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName="Morbid_WallLamp"]/graphicData/texPath</xpath>
+				<xpath>Defs/ThingStyleDef[defName="Morbid_WallLamp"]/graphicData/texPath</xpath>
 				<value>
 					<texPath>Things/Building/BuildingStyles/RB_Morbid/WallLamp</texPath>
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName="Totemic_WallLamp"]/graphicData/texPath</xpath>
+				<xpath>Defs/ThingStyleDef[defName="Totemic_WallLamp"]/graphicData/texPath</xpath>
 				<value>
 					<texPath>Things/Building/BuildingStyles/RB_Totemic/WallLamp</texPath>
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName="Spikecore_WallLamp"]/graphicData/texPath</xpath>
+				<xpath>Defs/ThingStyleDef[defName="Spikecore_WallLamp"]/graphicData/texPath</xpath>
 				<value>
 					<texPath>Things/Building/BuildingStyles/RB_Spikecore/WallLamp</texPath>
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName="Rustic_WallLamp"]/graphicData/texPath</xpath>
+				<xpath>Defs/ThingStyleDef[defName="Rustic_WallLamp"]/graphicData/texPath</xpath>
 				<value>
 					<texPath>Things/Building/BuildingStyles/RB_Rustic/WallLamp</texPath>
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName="Techist_WallLamp"]/graphicData/texPath</xpath>
+				<xpath>Defs/ThingStyleDef[defName="Techist_WallLamp"]/graphicData/texPath</xpath>
 				<value>
 					<texPath>Things/Building/BuildingStyles/RB_Techist/WallLamp</texPath>
 				</value>
