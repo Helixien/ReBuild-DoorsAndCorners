@@ -273,6 +273,7 @@
 				<li>Autodoor</li>
 				<li>RB_GlassAutodoor</li>
 			</relatedBuildCommands>
+			<soundMeleeHitOverride>RB_BulletImpact_Glass</soundMeleeHitOverride>
 		</building>
 		<comps>
 			<li Class="ReBuildDoorsAndCorners.CompProperties_GlassWall">
@@ -290,6 +291,11 @@
 				<multiplier>3</multiplier>
 			</li>
 		</damageMultipliers>
+		<modExtensions>
+			<li Class="ReBuildDoorsAndCorners.ThingExtension">
+				<soundImpactBulletOverride>RB_BulletImpact_Glass</soundImpactBulletOverride>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<!-- ================================ Reinforced Clerestory Wall ====================== -->
 	<ThingDef ParentName="RB_WallBase">
@@ -363,6 +369,7 @@
 				<li>Autodoor</li>
 				<li>RB_GlassAutodoor</li>
 			</relatedBuildCommands>
+			<soundMeleeHitOverride>RB_BulletImpact_Glass</soundMeleeHitOverride>
 		</building>
 		<comps>
 			<li Class="ReBuildDoorsAndCorners.CompProperties_GlassWall">
@@ -380,6 +387,11 @@
 				<multiplier>3</multiplier>
 			</li>
 		</damageMultipliers>
+		<modExtensions>
+			<li Class="ReBuildDoorsAndCorners.ThingExtension">
+				<soundImpactBulletOverride>RB_BulletImpact_Glass</soundImpactBulletOverride>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<!-- ================================ Glass Wall ====================== -->
 	<ThingDef ParentName="RB_WallBase">
@@ -441,6 +453,7 @@
 				<li>Autodoor</li>
 				<li>RB_GlassAutodoor</li>
 			</relatedBuildCommands>
+			<soundMeleeHitOverride>RB_BulletImpact_Glass</soundMeleeHitOverride>
 		</building>
 		<comps>
 			<li Class="ReBuildDoorsAndCorners.CompProperties_GlassWall">
@@ -460,7 +473,6 @@
 		</damageMultipliers>
 		<modExtensions>
 			<li Class="ReBuildDoorsAndCorners.ThingExtension">
-				<soundImpactMeleeOverride>RB_BulletImpact_Glass</soundImpactMeleeOverride>
 				<soundImpactBulletOverride>RB_BulletImpact_Glass</soundImpactBulletOverride>
 			</li>
 		</modExtensions>
@@ -525,6 +537,7 @@
 				<li MayRequire="Ludeon.RimWorld.Anomaly">SecurityDoor</li>
 				<li MayRequire="Ludeon.RimWorld.Anomaly">RB_LargeSecurityDoor</li>
 			</relatedBuildCommands>
+			<soundMeleeHitOverride>RB_BulletImpact_Glass</soundMeleeHitOverride>
 		</building>
 		<comps>
 			<li Class="ReBuildDoorsAndCorners.CompProperties_GlassWall">
@@ -542,6 +555,11 @@
 				<multiplier>2</multiplier>
 			</li>
 		</damageMultipliers>
+		<modExtensions>
+			<li Class="ReBuildDoorsAndCorners.ThingExtension">
+				<soundImpactBulletOverride>RB_BulletImpact_Glass</soundImpactBulletOverride>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<!-- ================================ Doors ====================== -->
 	<!-- ================================ Glass Autodoor ====================== -->
@@ -588,12 +606,6 @@
 			<li Class="CompProperties_Breakdownable"/>
 			<li Class="CompProperties_Styleable"/>
 		</comps>
-		<modExtensions>
-			<li Class="ReBuildDoorsAndCorners.ThingExtension">
-				<soundImpactMeleeOverride>RB_BulletImpact_Glass</soundImpactMeleeOverride>
-				<soundImpactBulletOverride>RB_BulletImpact_Glass</soundImpactBulletOverride>
-			</li>
-		</modExtensions>
 	</ThingDef>
 	<!-- ================================ Reinforced Glass Autodoor ====================== -->
 	<ThingDef ParentName="DoorBase">
@@ -639,12 +651,6 @@
 			<li Class="CompProperties_Breakdownable"/>
 			<li Class="CompProperties_Styleable"/>
 		</comps>
-		<modExtensions>
-			<li Class="ReBuildDoorsAndCorners.ThingExtension">
-				<soundImpactMeleeOverride>RB_BulletImpact_Glass</soundImpactMeleeOverride>
-				<soundImpactBulletOverride>RB_BulletImpact_Glass</soundImpactBulletOverride>
-			</li>
-		</modExtensions>
 	</ThingDef>
 	<!-- ================================ Triple wide Ornate Door ====================== -->
 	<ThingDef ParentName="DoorBase">
