@@ -571,6 +571,12 @@
 			<ComponentIndustrial>2</ComponentIndustrial>
 		</costList>
 		<uiOrder>2012</uiOrder>
+
+		<researchPrerequisites>
+			<li>Autodoors</li>
+			<li>Electricity</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 		<comps>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
@@ -579,12 +585,12 @@
 			<li Class="CompProperties_Breakdownable"/>
 			<li Class="CompProperties_Styleable"/>
 		</comps>
-		<designationHotKey>Misc2</designationHotKey>
-		<researchPrerequisites>
-			<li>Autodoors</li>
-			<li>Electricity</li>
-		</researchPrerequisites>
-		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		<modExtensions>
+			<li Class="ReBuildDoorsAndCorners.ThingExtension">
+				<soundImpactMeleeOverride>RB_BulletImpact_Glass</soundImpactMeleeOverride>
+				<soundImpactBulletOverride>RB_BulletImpact_Glass</soundImpactBulletOverride>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<!-- ================================ Triple wide Ornate Door ====================== -->
 	<ThingDef ParentName="DoorBase">
