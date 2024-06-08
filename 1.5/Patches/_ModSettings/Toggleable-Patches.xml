@@ -87,7 +87,7 @@
 				</value>
 			</li>
 			<li Class="PatchOperationReplace" MayRequire="GT.Sam.BasicDoubleDoors">
-				<xpath>Defs/ThingStyleDef[defName="BDD_DoubleDoor" or defName="BDD_AutoDoor"]/graphicData/graphicClass</xpath>
+				<xpath>Defs/ThingDef[defName="BDD_DoubleDoor" or defName="BDD_AutoDoor"]/graphicData/graphicClass</xpath>
 				<value>
 					<graphicClass>Graphic_Multi</graphicClass>
 				</value>
@@ -210,6 +210,12 @@
 					<texPath>Things/Building/Furniture/RB_WallLamp/WallLamp</texPath>
 				</value>
 			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="WallLamp"]/uiIconPath</xpath>
+				<value>
+					<uiIconPath>Things/Building/Furniture/RB_WallLamp/WallLamp_MenuIcon</uiIconPath>
+				</value>
+			</li>
 			<li Class="PatchOperationAdd">
 				<xpath>/Defs/ThingDef[defName="WallLamp"]</xpath>
 				<value>
@@ -243,9 +249,21 @@
 				</value>
 			</li>
 			<li Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Ideology">
+				<xpath>Defs/ThingStyleDef[defName="Morbid_WallLamp"]/uiIconPath</xpath>
+				<value>
+					<uiIconPath>Things/Building/BuildingStyles/RB_Morbid/WallLamp/WallLampMorbid_MenuIcon</uiIconPath>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Ideology">
 				<xpath>Defs/ThingStyleDef[defName="Totemic_WallLamp"]/graphicData/texPath</xpath>
 				<value>
 					<texPath>Things/Building/BuildingStyles/RB_Totemic/WallLamp/WallLampTotemic</texPath>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Ideology">
+				<xpath>Defs/ThingStyleDef[defName="Totemic_WallLamp"]/uiIconPath</xpath>
+				<value>
+					<uiIconPath>Things/Building/BuildingStyles/RB_Totemic/WallLamp/WallLampTotemic_MenuIcon</uiIconPath>
 				</value>
 			</li>
 			<li Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Ideology">
@@ -255,15 +273,33 @@
 				</value>
 			</li>
 			<li Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Ideology">
+				<xpath>Defs/ThingStyleDef[defName="Spikecore_WallLamp"]/uiIconPath</xpath>
+				<value>
+					<uiIconPath>Things/Building/BuildingStyles/RB_Spikecore/WallLamp/WallLampSpikecore_MenuIcon</uiIconPath>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Ideology">
 				<xpath>Defs/ThingStyleDef[defName="Rustic_WallLamp"]/graphicData/texPath</xpath>
 				<value>
 					<texPath>Things/Building/BuildingStyles/RB_Rustic/WallLamp/WallLampRustic</texPath>
 				</value>
 			</li>
 			<li Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Ideology">
+				<xpath>Defs/ThingStyleDef[defName="Rustic_WallLamp"]/uiIconPath</xpath>
+				<value>
+					<uiIconPath>Things/Building/BuildingStyles/RB_Rustic/WallLamp/WallLampRustic_MenuIcon</uiIconPath>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Ideology">
 				<xpath>Defs/ThingStyleDef[defName="Techist_WallLamp"]/graphicData/texPath</xpath>
 				<value>
 					<texPath>Things/Building/BuildingStyles/RB_Techist/WallLamp/WallLampTechist</texPath>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Ideology">
+				<xpath>Defs/ThingStyleDef[defName="Techist_WallLamp"]/uiIconPath</xpath>
+				<value>
+					<uiIconPath>Things/Building/BuildingStyles/RB_Techist/WallLamp/WallLampTechist_MenuIcon</uiIconPath>
 				</value>
 			</li>
 			<!-- ================ Sophian Wall light patches ================ -->
