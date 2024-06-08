@@ -230,37 +230,37 @@
 				</value>
 			</li>
 			<!-- ================ Ideology Patches ================ -->
-			<li Class="PatchOperationAdd">
+			<li Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Ideology">
 				<xpath>/Defs/ThingStyleDef[@Name="WallLampStyleBase"]/graphicData</xpath>
 				<value>
 					<shaderType>CutoutComplex</shaderType>
 				</value>
 			</li>
-			<li Class="PatchOperationReplace">
+			<li Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Ideology">
 				<xpath>Defs/ThingStyleDef[defName="Morbid_WallLamp"]/graphicData/texPath</xpath>
 				<value>
 					<texPath>Things/Building/BuildingStyles/RB_Morbid/WallLamp/WallLampMorbid</texPath>
 				</value>
 			</li>
-			<li Class="PatchOperationReplace">
+			<li Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Ideology">
 				<xpath>Defs/ThingStyleDef[defName="Totemic_WallLamp"]/graphicData/texPath</xpath>
 				<value>
 					<texPath>Things/Building/BuildingStyles/RB_Totemic/WallLamp/WallLampTotemic</texPath>
 				</value>
 			</li>
-			<li Class="PatchOperationReplace">
+			<li Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Ideology">
 				<xpath>Defs/ThingStyleDef[defName="Spikecore_WallLamp"]/graphicData/texPath</xpath>
 				<value>
 					<texPath>Things/Building/BuildingStyles/RB_Spikecore/WallLamp/WallLampSpikecore</texPath>
 				</value>
 			</li>
-			<li Class="PatchOperationReplace">
+			<li Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Ideology">
 				<xpath>Defs/ThingStyleDef[defName="Rustic_WallLamp"]/graphicData/texPath</xpath>
 				<value>
 					<texPath>Things/Building/BuildingStyles/RB_Rustic/WallLamp/WallLampRustic</texPath>
 				</value>
 			</li>
-			<li Class="PatchOperationReplace">
+			<li Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Ideology">
 				<xpath>Defs/ThingStyleDef[defName="Techist_WallLamp"]/graphicData/texPath</xpath>
 				<value>
 					<texPath>Things/Building/BuildingStyles/RB_Techist/WallLamp/WallLampTechist</texPath>
