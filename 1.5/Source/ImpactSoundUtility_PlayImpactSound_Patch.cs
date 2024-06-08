@@ -10,11 +10,6 @@ namespace ReBuildDoorsAndCorners
     [HarmonyPatch(typeof(ImpactSoundUtility), "PlayImpactSound")]
     public static class ImpactSoundUtility_PlayImpactSound_Patch
     {
-        public static void Prefix(Thing hitThing, ImpactSoundTypeDef ist)
-        {
-            Log.Message("Hitting thing: " + hitThing + " - impact type: " + ist);
-        }
-
         public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> codeInstructions)
         {
             var impactBulletField = AccessTools.Field(typeof(StuffProperties), "soundImpactBullet");

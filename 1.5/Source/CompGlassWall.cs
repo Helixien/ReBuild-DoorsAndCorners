@@ -5,15 +5,6 @@ using Verse.Sound;
 
 namespace ReBuildDoorsAndCorners
 {
-    [HarmonyPatch(typeof(SoundStarter), "PlayOneShot")]
-    public static class SoundStarter_PlayOneShot_Patch
-    {
-        public static void Postfix(SoundDef soundDef, SoundInfo info)
-        {
-            Log.Message("Playing sound: " + soundDef + " - " + new StackTrace());
-        }
-    }
-
     public class CompProperties_GlassWall : CompProperties
     {
         public float? naturalLightRadius;
