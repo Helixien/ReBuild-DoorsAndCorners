@@ -275,7 +275,10 @@
 			</relatedBuildCommands>
 		</building>
 		<comps>
-			<li Class="ReBuildDoorsAndCorners.CompProperties_GlassWall"/>
+			<li Class="ReBuildDoorsAndCorners.CompProperties_GlassWall">
+				<naturalLightRadius>3</naturalLightRadius>
+				<needOutdoorsRefillRate>1.6</needOutdoorsRefillRate>
+			</li>
 		</comps>
 		<damageMultipliers Inherit="false">
 			<li>
@@ -362,7 +365,10 @@
 			</relatedBuildCommands>
 		</building>
 		<comps>
-			<li Class="ReBuildDoorsAndCorners.CompProperties_GlassWall"/>
+			<li Class="ReBuildDoorsAndCorners.CompProperties_GlassWall">
+				<naturalLightRadius>3</naturalLightRadius>
+				<needOutdoorsRefillRate>1.6</needOutdoorsRefillRate>
+			</li>
 		</comps>
 		<damageMultipliers Inherit="false">
 			<li>
@@ -437,7 +443,10 @@
 			</relatedBuildCommands>
 		</building>
 		<comps>
-			<li Class="ReBuildDoorsAndCorners.CompProperties_GlassWall"/>
+			<li Class="ReBuildDoorsAndCorners.CompProperties_GlassWall">
+				<naturalLightRadius>3</naturalLightRadius>
+				<needOutdoorsRefillRate>1.6</needOutdoorsRefillRate>
+			</li>
 		</comps>
 		<damageMultipliers Inherit="false">
 			<li>
@@ -518,7 +527,10 @@
 			</relatedBuildCommands>
 		</building>
 		<comps>
-			<li Class="ReBuildDoorsAndCorners.CompProperties_GlassWall"/>
+			<li Class="ReBuildDoorsAndCorners.CompProperties_GlassWall">
+				<naturalLightRadius>3</naturalLightRadius>
+				<needOutdoorsRefillRate>1.6</needOutdoorsRefillRate>
+			</li>
 		</comps>
 		<damageMultipliers Inherit="false">
 			<li>

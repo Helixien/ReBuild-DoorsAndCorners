@@ -6,7 +6,6 @@ using Verse;
 
 namespace ReBuildDoorsAndCorners
 {
-
     [HarmonyPatch(typeof(ImpactSoundUtility), "PlayImpactSound")]
     public static class ImpactSoundUtility_PlayImpactSound_Patch
     {

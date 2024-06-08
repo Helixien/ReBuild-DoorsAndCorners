@@ -35,7 +35,12 @@ namespace ReBuildDoorsAndCorners
                 var comp = need.pawn.Map?.GetComponent<MapComponent_Rebuild>();
                 if (comp != null && room.BorderCells.Any(x => comp.cellsNearbyGlassWalls.Contains(x)))
                 {
-                    value = 1.6f;
+                    var wallGlass = comp.glassWalls.Where(x => room.BorderCells.Contains(x.parent.Position) && x.Props.needOutdoorsRefillRate.HasValue)
+                        .GroupBy(i => i.parent.def).OrderByDescending(g => g.Count()).FirstOrDefault()?.FirstOrDefault();
+                    if (wallGlass != null)
+                    {
+                        value = wallGlass.Props.needOutdoorsRefillRate.Value;
+                    }
                 }
             }
             return result;
