@@ -238,7 +238,6 @@
 			</li>
 		</uiIconPathsStuff>
 		<filthLeaving>RB_Filth_GlassShards</filthLeaving>
-		<soundImpactDefault>RB_BulletImpact_Glass</soundImpactDefault>
 		<statBases>
 			<MaxHitPoints>250</MaxHitPoints>
 			<WorkToBuild>155</WorkToBuild>
@@ -273,7 +272,7 @@
 				<li>Autodoor</li>
 				<li>RB_GlassAutodoor</li>
 			</relatedBuildCommands>
-			<soundMeleeHitOverride>RB_BulletImpact_Glass</soundMeleeHitOverride>
+			<soundMeleeHitOverride>RB_MeleeImpact_Glass</soundMeleeHitOverride>
 		</building>
 		<comps>
 			<li Class="ReBuildDoorsAndCorners.CompProperties_GlassWall">
@@ -334,7 +333,6 @@
 			</li>
 		</uiIconPathsStuff>
 		<filthLeaving>RB_Filth_BallisticGlassShards</filthLeaving>
-		<soundImpactDefault>RB_BulletImpact_Glass</soundImpactDefault>
 		<statBases>
 			<MaxHitPoints>250</MaxHitPoints>
 			<WorkToBuild>155</WorkToBuild>
@@ -369,7 +367,7 @@
 				<li>Autodoor</li>
 				<li>RB_GlassAutodoor</li>
 			</relatedBuildCommands>
-			<soundMeleeHitOverride>RB_BulletImpact_Glass</soundMeleeHitOverride>
+			<soundMeleeHitOverride>RB_MeleeImpact_Glass</soundMeleeHitOverride>
 		</building>
 		<comps>
 			<li Class="ReBuildDoorsAndCorners.CompProperties_GlassWall">
@@ -420,7 +418,6 @@
 		</graphicData>
 		<uiIconPath>Things/Building/Linked/RB_GlassWall_MenuIcon</uiIconPath>
 		<filthLeaving>RB_Filth_GlassShards</filthLeaving>
-		<soundImpactDefault>RB_BulletImpact_Glass</soundImpactDefault>
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
 			<WorkToBuild>135</WorkToBuild>
@@ -453,7 +450,7 @@
 				<li>Autodoor</li>
 				<li>RB_GlassAutodoor</li>
 			</relatedBuildCommands>
-			<soundMeleeHitOverride>RB_BulletImpact_Glass</soundMeleeHitOverride>
+			<soundMeleeHitOverride>RB_MeleeImpact_Glass</soundMeleeHitOverride>
 		</building>
 		<comps>
 			<li Class="ReBuildDoorsAndCorners.CompProperties_GlassWall">
@@ -504,7 +501,6 @@
 		</graphicData>
 		<uiIconPath>Things/Building/Linked/RB_ReinforcedGlassWall_MenuIcon</uiIconPath>
 		<filthLeaving>RB_Filth_BallisticGlassShards</filthLeaving>
-		<soundImpactDefault>RB_BulletImpact_Glass</soundImpactDefault>
 		<statBases>
 			<MaxHitPoints>300</MaxHitPoints>
 			<WorkToBuild>185</WorkToBuild>
@@ -537,7 +533,7 @@
 				<li MayRequire="Ludeon.RimWorld.Anomaly">SecurityDoor</li>
 				<li MayRequire="Ludeon.RimWorld.Anomaly">RB_LargeSecurityDoor</li>
 			</relatedBuildCommands>
-			<soundMeleeHitOverride>RB_BulletImpact_Glass</soundMeleeHitOverride>
+			<soundMeleeHitOverride>RB_MeleeImpact_Glass</soundMeleeHitOverride>
 		</building>
 		<comps>
 			<li Class="ReBuildDoorsAndCorners.CompProperties_GlassWall">
@@ -598,6 +594,9 @@
 			<li>Electricity</li>
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		<building>
+			<soundMeleeHitOverride>RB_MeleeImpact_Glass</soundMeleeHitOverride>
+		</building>
 		<comps>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
@@ -606,6 +605,11 @@
 			<li Class="CompProperties_Breakdownable"/>
 			<li Class="CompProperties_Styleable"/>
 		</comps>
+		<modExtensions>
+			<li Class="ReBuildDoorsAndCorners.ThingExtension">
+				<soundImpactBulletOverride>RB_BulletImpact_Glass</soundImpactBulletOverride>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<!-- ================================ Reinforced Glass Autodoor ====================== -->
 	<ThingDef ParentName="DoorBase">
@@ -643,6 +647,9 @@
 			<li>Fabrication</li>
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		<building>
+			<soundMeleeHitOverride>RB_MeleeImpact_Glass</soundMeleeHitOverride>
+		</building>
 		<comps>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
@@ -651,6 +658,11 @@
 			<li Class="CompProperties_Breakdownable"/>
 			<li Class="CompProperties_Styleable"/>
 		</comps>
+		<modExtensions>
+			<li Class="ReBuildDoorsAndCorners.ThingExtension">
+				<soundImpactBulletOverride>RB_BulletImpact_Glass</soundImpactBulletOverride>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<!-- ================================ Triple wide Ornate Door ====================== -->
 	<ThingDef ParentName="DoorBase">
