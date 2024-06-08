@@ -292,6 +292,7 @@
 		</damageMultipliers>
 		<modExtensions>
 			<li Class="ReBuildDoorsAndCorners.ThingExtension">
+				<soundImpactMeleeOverride>RB_MeleeImpact_Glass</soundImpactMeleeOverride>
 				<soundImpactBulletOverride>RB_BulletImpact_Glass</soundImpactBulletOverride>
 			</li>
 		</modExtensions>
@@ -387,6 +388,7 @@
 		</damageMultipliers>
 		<modExtensions>
 			<li Class="ReBuildDoorsAndCorners.ThingExtension">
+				<soundImpactMeleeOverride>RB_MeleeImpact_Glass</soundImpactMeleeOverride>
 				<soundImpactBulletOverride>RB_BulletImpact_Glass</soundImpactBulletOverride>
 			</li>
 		</modExtensions>
@@ -470,6 +472,7 @@
 		</damageMultipliers>
 		<modExtensions>
 			<li Class="ReBuildDoorsAndCorners.ThingExtension">
+				<soundImpactMeleeOverride>RB_MeleeImpact_Glass</soundImpactMeleeOverride>
 				<soundImpactBulletOverride>RB_BulletImpact_Glass</soundImpactBulletOverride>
 			</li>
 		</modExtensions>
@@ -553,6 +556,7 @@
 		</damageMultipliers>
 		<modExtensions>
 			<li Class="ReBuildDoorsAndCorners.ThingExtension">
+				<soundImpactMeleeOverride>RB_MeleeImpact_Glass</soundImpactMeleeOverride>
 				<soundImpactBulletOverride>RB_BulletImpact_Glass</soundImpactBulletOverride>
 			</li>
 		</modExtensions>
@@ -607,6 +611,7 @@
 		</comps>
 		<modExtensions>
 			<li Class="ReBuildDoorsAndCorners.ThingExtension">
+				<soundImpactMeleeOverride>RB_MeleeImpact_Glass</soundImpactMeleeOverride>
 				<soundImpactBulletOverride>RB_BulletImpact_Glass</soundImpactBulletOverride>
 			</li>
 		</modExtensions>
@@ -660,6 +665,7 @@
 		</comps>
 		<modExtensions>
 			<li Class="ReBuildDoorsAndCorners.ThingExtension">
+				<soundImpactMeleeOverride>RB_MeleeImpact_Glass</soundImpactMeleeOverride>
 				<soundImpactBulletOverride>RB_BulletImpact_Glass</soundImpactBulletOverride>
 			</li>
 		</modExtensions>
