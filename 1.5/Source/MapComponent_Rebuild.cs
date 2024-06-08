@@ -18,9 +18,9 @@ namespace ReBuildDoorsAndCorners
             cellsNearbyGlassWalls = new HashSet<IntVec3>();
             foreach (var wall in glassWalls)
             {
-                if (wall.parent.OccupiedRect().ExpandedBy(1).EdgeCells.Any(x => x.Roofed(map) is false))
+                if (wall.Props.naturalLightRadius.HasValue && wall.parent.OccupiedRect().ExpandedBy(1).EdgeCells.Any(x => x.Roofed(map) is false))
                 {
-                    foreach (var cell in GenRadial.RadialCellsAround(wall.parent.Position, 3, true))
+                    foreach (var cell in GenRadial.RadialCellsAround(wall.parent.Position, wall.Props.naturalLightRadius.Value, true))
                     {
                         if (cell.InBounds(map) && cell.Roofed(map))
                         {

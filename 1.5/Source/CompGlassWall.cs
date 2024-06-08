@@ -4,6 +4,8 @@ namespace ReBuildDoorsAndCorners
 {
     public class CompProperties_GlassWall : CompProperties
     {
+        public float? naturalLightRadius;
+        public float? needOutdoorsRefillRate;
         public CompProperties_GlassWall()
         {
             this.compClass = typeof(CompGlassWall);
@@ -12,6 +14,7 @@ namespace ReBuildDoorsAndCorners
 
     public class CompGlassWall : ThingComp
     {
+        public CompProperties_GlassWall Props => base.props as CompProperties_GlassWall;
         public override void PostSpawnSetup(bool respawningAfterLoad)
         {
             base.PostSpawnSetup(respawningAfterLoad);
