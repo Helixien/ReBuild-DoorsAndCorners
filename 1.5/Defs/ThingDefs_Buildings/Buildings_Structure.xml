@@ -112,14 +112,6 @@
 		<uiOrder>1999</uiOrder>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<useStuffTerrainAffordance>true</useStuffTerrainAffordance>
-		<comps>
-			<li Class="CompProperties_MeditationFocus">
-				<statDef>MeditationFocusStrength</statDef>
-				<focusTypes>
-					<li>Minimal</li>
-				</focusTypes>
-			</li>
-		</comps>
 		<damageMultipliers Inherit="false">
 			<li>
 				<damageDef>Bomb</damageDef>
