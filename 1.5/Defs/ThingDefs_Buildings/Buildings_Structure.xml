@@ -562,7 +562,7 @@
 	<ThingDef ParentName="DoorBase">
 		<defName>RB_GlassAutodoor</defName>
 		<label>glass autodoor</label>
-		<description>Divides rooms. Powered operation allows people to move through the door without slowing down. Does not block light.</description>
+		<description>Divides rooms. Powered operation allows people to move through the door without slowing down.</description>
 		<graphicData>
 			<texPath>Things/Building/Door/RB_GlassAutodoor_Mover</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -615,7 +615,7 @@
 	<ThingDef ParentName="DoorBase">
 		<defName>RB_ReinforcedGlassAutodoor</defName>
 		<label>reinforced glass autodoor</label>
-		<description>Divides rooms. Powered operation allows people to move through the door without slowing down. Does not block light.</description>
+		<description>Divides rooms. Powered operation allows people to move through the door without slowing down.</description>
 		<graphicData>
 			<texPath>Things/Building/Door/RB_ReinforcedGlassAutodoor_Mover</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
