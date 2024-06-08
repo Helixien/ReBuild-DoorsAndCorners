@@ -674,9 +674,8 @@
 	<ThingDef ParentName="DoorBase">
 		<defName>RB_DoubleAutodoor</defName>
 		<label>double autodoor</label>
-
 		<description>Divides rooms. Powered operation allows people to move through the door without slowing down.</description>
-				<thingClass>Building_MultiTileDoor</thingClass>
+		<thingClass>ReBuildDoorsAndCorners.Building_MultiTileDoorStuffColor</thingClass>
 		<graphicData>
 			<texPath>Things/Building/Door/RB_DoubleAutodoor_Mover</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -698,10 +697,10 @@
 		<costStuffCount>50</costStuffCount>
 		<uiOrder>2014</uiOrder>
 		<building>
-      <upperMoverGraphic>
-        <texPath>Things/Building/Door/RB_DoubleAutodoor_UpperMover</texPath>
-        <graphicClass>Graphic_Single</graphicClass>
-      </upperMoverGraphic>
+		<upperMoverGraphic>
+			<texPath>Things/Building/Door/RB_DoubleAutodoor_UpperMover</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</upperMoverGraphic>
 			<blueprintGraphicData>
 				<texPath>Things/Building/Door/RB_DoubleAutodoor_MenuIcon</texPath>
 				<graphicClass>Graphic_Multi</graphicClass>

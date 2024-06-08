@@ -71,6 +71,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Building_Door_PawnCanOpen_Patch.cs" />
+    <Compile Include="Building_MultiTileDoorStuffColor.cs" />
+    <Compile Include="Building_MultiTileDoor_DrawAt_Patch.cs" />
     <Compile Include="CompFireplace.cs" />
     <Compile Include="CompGlassWall.cs" />
     <Compile Include="CompProperties_FireplaceOverlay.cs" />
@@ -84,6 +86,7 @@
     <Compile Include="PlaceWorker_OnWall.cs" />
     <Compile Include="RB_DefOf.cs" />
     <Compile Include="ReBuildDoorsAndCornersMod.cs" />
+    <Compile Include="LordJob_Ritual_Constructor_Patch.cs" />
     <Compile Include="ThingExtension.cs" />
     <Compile Include="Thing_TakeDamage_Patch.cs" />
   </ItemGroup>

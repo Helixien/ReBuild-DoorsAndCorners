@@ -6,6 +6,7 @@ namespace ReBuildDoorsAndCorners
     [DefOf]
     public static class RB_DefOf
     {
-        [MayRequireAnomaly] public static ThingDef RB_LargeSecurityDoor, RB_OverwallArmor;
+        [MayRequireAnomaly] public static ThingDef RB_LargeSecurityDoor;
+        public static ThingDef RB_OverwallArmor, RB_OverwallFireplace;
     }
 }

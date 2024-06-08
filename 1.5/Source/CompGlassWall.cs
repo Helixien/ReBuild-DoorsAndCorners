@@ -1,7 +1,4 @@
-﻿using HarmonyLib;
-using System.Diagnostics;
-using Verse;
-using Verse.Sound;
+﻿using Verse;
 
 namespace ReBuildDoorsAndCorners
 {
