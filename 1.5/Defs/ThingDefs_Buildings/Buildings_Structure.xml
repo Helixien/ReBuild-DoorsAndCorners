@@ -575,10 +575,60 @@
 			<ComponentIndustrial>2</ComponentIndustrial>
 		</costList>
 		<uiOrder>2012</uiOrder>
-
 		<researchPrerequisites>
 			<li>Autodoors</li>
 			<li>Electricity</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>50</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Styleable"/>
+		</comps>
+		<modExtensions>
+			<li Class="ReBuildDoorsAndCorners.ThingExtension">
+				<soundImpactMeleeOverride>RB_BulletImpact_Glass</soundImpactMeleeOverride>
+				<soundImpactBulletOverride>RB_BulletImpact_Glass</soundImpactBulletOverride>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<!-- ================================ Reinforced Glass Autodoor ====================== -->
+	<ThingDef ParentName="DoorBase">
+		<defName>RB_ReinforcedGlassAutodoor</defName>
+		<label>reinforced glass autodoor</label>
+		<description>Divides rooms. Powered operation allows people to move through the door without slowing down. Does not block light.</description>
+		<graphicData>
+			<texPath>Things/Building/Door/RB_ReinforcedGlassAutodoor_Mover</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<damageData>
+				<enabled>false</enabled>
+			</damageData>
+		</graphicData>
+		<uiIconPath>Things/Building/Door/RB_ReinforcedGlassAutodoor_MenuIcon</uiIconPath>
+		<useBlueprintGraphicAsGhost>true</useBlueprintGraphicAsGhost>
+		<blockLight>false</blockLight>
+		<statBases>
+			<MaxHitPoints>160</MaxHitPoints>
+			<WorkToBuild>1100</WorkToBuild>
+		</statBases>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>25</costStuffCount>
+		<costList>
+			<RB_BallisticGlass>5</RB_BallisticGlass>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<uiOrder>2013</uiOrder>
+		<researchPrerequisites>
+			<li>Autodoors</li>
+			<li>Fabrication</li>
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 		<comps>
