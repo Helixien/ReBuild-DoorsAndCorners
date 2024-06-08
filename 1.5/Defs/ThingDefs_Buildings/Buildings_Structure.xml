@@ -670,6 +670,61 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
+	<!-- ================================ Double Auto Door ====================== -->
+	<ThingDef ParentName="DoorBase">
+		<defName>RB_DoubleAutodoor</defName>
+		<label>double autodoor</label>
+
+		<description>Divides rooms. Powered operation allows people to move through the door without slowing down.</description>
+				<thingClass>Building_MultiTileDoor</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Door/RB_DoubleAutodoor_Mover</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<damageData>
+				<enabled>false</enabled>
+			</damageData>
+		</graphicData>
+		<size>(2, 1)</size>
+		<uiIconPath>Things/Building/Door/RB_DoubleAutodoor_MenuIcon</uiIconPath>
+		<useBlueprintGraphicAsGhost>true</useBlueprintGraphicAsGhost>
+
+		<statBases>
+			<WorkToBuild>2200</WorkToBuild>
+		</statBases>
+		<costList>
+			<Steel>80</Steel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+		</costList>
+		<costStuffCount>50</costStuffCount>
+		<uiOrder>2014</uiOrder>
+		<building>
+      <upperMoverGraphic>
+        <texPath>Things/Building/Door/RB_DoubleAutodoor_UpperMover</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+      </upperMoverGraphic>
+			<blueprintGraphicData>
+				<texPath>Things/Building/Door/RB_DoubleAutodoor_MenuIcon</texPath>
+				<graphicClass>Graphic_Multi</graphicClass>
+				<shaderType>EdgeDetect</shaderType>
+			</blueprintGraphicData>
+		</building>
+		<researchPrerequisites>
+			<li>Autodoors</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>50</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Styleable"/>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_MultiCellDoor</li>
+		</placeWorkers>
+
+	</ThingDef>
 	<!-- ================================ Triple wide Ornate Door ====================== -->
 	<ThingDef ParentName="DoorBase">
 		<defName>RB_LargeOrnateDoor</defName>
