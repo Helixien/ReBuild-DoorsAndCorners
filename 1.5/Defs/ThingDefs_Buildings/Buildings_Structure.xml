@@ -679,6 +679,7 @@
 		<graphicData>
 			<texPath>Things/Building/Door/RB_DoubleAutodoor_Mover</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.05, 1)</drawSize>
 			<damageData>
 				<enabled>false</enabled>
 			</damageData>
@@ -686,7 +687,7 @@
 		<size>(2, 1)</size>
 		<uiIconPath>Things/Building/Door/RB_DoubleAutodoor_MenuIcon</uiIconPath>
 		<useBlueprintGraphicAsGhost>true</useBlueprintGraphicAsGhost>
-
+		<rotatable>true</rotatable>
 		<statBases>
 			<WorkToBuild>2200</WorkToBuild>
 		</statBases>
@@ -697,20 +698,25 @@
 		<costStuffCount>50</costStuffCount>
 		<uiOrder>2014</uiOrder>
 		<building>
+      <poweredDoorOpenSpeedFactor>3</poweredDoorOpenSpeedFactor>
+      <unpoweredDoorOpenSpeedFactor>5</unpoweredDoorOpenSpeedFactor>
+      <unpoweredDoorCloseSpeedFactor>5</unpoweredDoorCloseSpeedFactor>
 		<upperMoverGraphic>
 			<texPath>Things/Building/Door/RB_DoubleAutodoor_UpperMover</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</upperMoverGraphic>
+		      <blueprintClass>Blueprint_Build</blueprintClass>
 			<blueprintGraphicData>
 				<texPath>Things/Building/Door/RB_DoubleAutodoor_MenuIcon</texPath>
 				<graphicClass>Graphic_Multi</graphicClass>
 				<shaderType>EdgeDetect</shaderType>
+				        <drawSize>(2.6, 3.1)</drawSize>
 			</blueprintGraphicData>
 		</building>
 		<researchPrerequisites>
 			<li>Autodoors</li>
 		</researchPrerequisites>
-		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		<constructionSkillPrerequisite>7</constructionSkillPrerequisite>
 		<comps>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>

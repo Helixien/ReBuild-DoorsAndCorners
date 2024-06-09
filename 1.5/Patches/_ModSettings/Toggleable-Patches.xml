@@ -33,7 +33,13 @@
 		<order>10</order>
 		<operations>
 			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName="Door" or defName="Autodoor" or defName="AnimalFlap" or defName="RB_GlassAutodoor" or defName="RB_ReinforcedGlassAutodoor"]/graphicData/graphicClass</xpath>
+				<xpath>Defs/ThingDef[defName="Door" or defName="Autodoor" or defName="AnimalFlap" or defName="RB_GlassAutodoor" or defName="RB_ReinforcedGlassAutodoor" or defName="RB_DoubleAutodoor"]/graphicData/graphicClass</xpath>
+				<value>
+					<graphicClass>Graphic_Multi</graphicClass>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="RB_DoubleAutodoor"]/building/upperMoverGraphic/graphicClass</xpath>
 				<value>
 					<graphicClass>Graphic_Multi</graphicClass>
 				</value>
