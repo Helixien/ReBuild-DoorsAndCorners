@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ================================ Floor Lamp	====================== -->
+	<ThingDef ParentName="BuildingBase">
+		<defName>RB_FloorLamp</defName>
+		<label>floor lamp</label>
+		<description>text.todo</description>
+		<rotatable>false</rotatable>
+		<graphicData>
+			<texPath>Things/Building/Furniture/FloorLamp/RB_FloorLamp</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<damageData>
+				<enabled>false</enabled>
+			</damageData>
+		</graphicData>
+		<uiIconPath>Things/Building/Furniture/FloorLamp/RB_FloorLamp_MenuIcon</uiIconPath>
+		<thingClass>Building</thingClass>
+		<category>Building</category>
+		<altitudeLayer>FloorCoverings</altitudeLayer>
+		<fillPercent>0</fillPercent>
+		<pathCost>0</pathCost>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>15</costStuffCount>
+		<costList>
+			<Steel>5</Steel>
+		</costList>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		<statBases>
+			<WorkToBuild>350</WorkToBuild>
+			<MaxHitPoints>25</MaxHitPoints>
+		</statBases>
+		<designationCategory>Floors</designationCategory>
+		<uiOrder>2800</uiOrder>
+		<passability>Standable</passability>
+		<terrainAffordanceNeeded IsNull="True"/>
+		<researchPrerequisites>
+			<li>Electricity</li>
+		</researchPrerequisites>
+		<blocksAltitudes>
+			<li>FloorCoverings</li>
+		</blocksAltitudes>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<placeWorkers>
+			<li>PlaceWorker_GlowRadius</li>
+		</placeWorkers>
+		<building>
+			<isEdifice>false</isEdifice>
+		</building>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>20</basePowerConsumption>
+				<powerUpgrades>
+					<li>
+						<researchProject>ColoredLights</researchProject>
+						<factor>0.5</factor>
+					</li>
+				</powerUpgrades>
+			</li>
+			<li Class="CompProperties_Styleable"/>
+			<li Class="CompProperties_Glower">
+				<glowRadius>8</glowRadius>
+				<glowColor>(214,148,94,0)</glowColor>
+				<colorPickerEnabled>true</colorPickerEnabled>
+				<darklightToggle>true</darklightToggle>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>
