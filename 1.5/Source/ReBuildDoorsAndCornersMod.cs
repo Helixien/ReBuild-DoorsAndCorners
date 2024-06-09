@@ -1,4 +1,6 @@
 ﻿using HarmonyLib;
+using RimWorld;
+using UnityEngine;
 using Verse;
 
 namespace ReBuildDoorsAndCorners
@@ -12,6 +14,9 @@ namespace ReBuildDoorsAndCorners
         {
             new Harmony("ReBuildDoorsAndCornersMod").PatchAll();
             modInstance = pack;
+            var field = Traverse.Create(typeof(Building_MultiTileDoor)).Field("MoverDrawScale");
+            var vec = field.GetValue<Vector3>();
+            field.SetValue(new Vector3(vec.x + 0.03f, vec.y, vec.z));
         }
     }
 }
