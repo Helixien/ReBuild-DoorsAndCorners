@@ -7,6 +7,7 @@
 		<li IfModActive="Ludeon.RimWorld.Ideology">1.5/LoadFolders/Ideology</li>
 		<!-- ================ Mod Support - VES - (New Content) ================ -->
 		<li IfModActive="VanillaExpanded.Ideo.SophianStyle">1.5/LoadFolders/VanillaIdeologyExpanded-SophianStyle</li>
+		<li IfModActive="VanillaExpanded.Temperature">1.5/LoadFolders/VanillaTemperatureExpanded</li>
 		<!-- ================ Mod Support - VES - (Textures only) ================ -->
 		<li IfModActive="OskarPotocki.VanillaFactionsExpanded.SettlersModule">1.5/LoadFolders/_Support/VFE-Settlers</li>
 		<li IfModActive="VanillaExpanded.VFEA">1.5/LoadFolders/_Support/VFE-Ancients</li>

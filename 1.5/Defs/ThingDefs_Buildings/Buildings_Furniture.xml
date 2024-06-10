@@ -1,29 +1,45 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ================================ Floor Lamp	====================== -->
-	<ThingDef ParentName="BuildingBase">
-		<defName>RB_FloorLamp</defName>
-		<label>floor lamp</label>
-		<description>text.todo</description>
-		<rotatable>false</rotatable>
+	<!-- ================================ Floor Structures Base ====================== -->
+	<ThingDef ParentName="BuildingBase" Name="RB_BaseFloorStructure" Abstract="True">
+		<thingClass>Building</thingClass>
 		<graphicData>
-			<texPath>Things/Building/Furniture/RB_FloorLamp/FloorLamp</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<damageData>
 				<enabled>false</enabled>
 			</damageData>
 		</graphicData>
-		<uiIconPath>Things/Building/Furniture/RB_FloorLamp/FloorLamp_MenuIcon</uiIconPath>
-		<thingClass>Building</thingClass>
 		<category>Building</category>
 		<altitudeLayer>FloorCoverings</altitudeLayer>
+		<rotatable>false</rotatable>
+		<castEdgeShadows>false</castEdgeShadows>
+		<canOverlapZones>true</canOverlapZones>
+		<blockWind>false</blockWind>
 		<fillPercent>0</fillPercent>
 		<pathCost>0</pathCost>
+		<designationCategory>Floors</designationCategory>
+		<passability>Standable</passability>
+		<terrainAffordanceNeeded IsNull="True"/>
+		<blocksAltitudes>
+			<li>FloorCoverings</li>
+		</blocksAltitudes>
+		<building>
+			<isEdifice>false</isEdifice>
+		</building>
+	</ThingDef>
+	<!-- ================================ Floor Lamp ====================== -->
+	<ThingDef ParentName="RB_BaseFloorStructure">
+		<defName>RB_FloorLamp</defName>
+		<label>floor lamp</label>
+		<description>text.todo</description>
+		<graphicData>
+			<texPath>Things/Building/Furniture/RB_FloorLamp/FloorLamp</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<uiIconPath>Things/Building/Furniture/RB_FloorLamp/FloorLamp_MenuIcon</uiIconPath>
 		<stuffCategories>
 			<li>Metallic</li>
-			<li>Woody</li>
-			<li>Stony</li>
 		</stuffCategories>
 		<costStuffCount>15</costStuffCount>
 		<costList>
@@ -34,22 +50,15 @@
 			<WorkToBuild>350</WorkToBuild>
 			<MaxHitPoints>25</MaxHitPoints>
 		</statBases>
-		<designationCategory>Floors</designationCategory>
 		<uiOrder>2800</uiOrder>
-		<passability>Standable</passability>
-		<terrainAffordanceNeeded IsNull="True"/>
 		<researchPrerequisites>
 			<li>Electricity</li>
 		</researchPrerequisites>
-		<blocksAltitudes>
-			<li>FloorCoverings</li>
-		</blocksAltitudes>
 		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 		<placeWorkers>
 			<li>PlaceWorker_GlowRadius</li>
 		</placeWorkers>
 		<building>
-			<isEdifice>false</isEdifice>
 			<paintable>true</paintable>
 		</building>
 		<comps>

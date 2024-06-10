@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ================================ Floor Heater ====================== -->
+	<ThingDef ParentName="RB_BaseFloorStructure">
+		<defName>RB_ACUnitFloor</defName>
+		<label>floor AC unit</label>
+		<description>text.todo</description>
+		<thingClass>VanillaTemperatureExpanded.Buildings.Building_AcUnit</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Furniture/RB_ACUnitFloor/ACUnitFloor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIconPath>Things/Building/Furniture/RB_ACUnitFloor/ACUnitFloor_MenuIcon</uiIconPath>
+		<tickerType>Rare</tickerType>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>20</costStuffCount>
+		<costList>
+			<Steel>60</Steel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+		</costList>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		<statBases>
+			<WorkToBuild>1800</WorkToBuild>
+			<MaxHitPoints>60</MaxHitPoints>
+			<Flammability>0.7</Flammability>
+		</statBases>
+		<uiOrder>2801</uiOrder>
+		<researchPrerequisites>
+			<li>VTE_HVAC</li>
+		</researchPrerequisites>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<placeWorkers>
+			<li>VanillaTemperatureExpanded.Placeworker_AcUnit</li>
+		</placeWorkers>
+		<building>
+			<isInert>true</isInert>
+			<paintable>true</paintable>
+		</building>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>100</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+			<li Class="VanillaFurnitureExpanded.CompProperties_MountableOnWall"/>
+			<li Class="CompProperties_TempControl">
+				<compClass>VanillaTemperatureExpanded.Comps.CompAcTempControl</compClass>
+				<energyPerSecond>-21</energyPerSecond>
+			</li>
+			<li Class="VanillaTemperatureExpanded.CompProperties_ResourceTrader_AC">
+				<compClass>VanillaTemperatureExpanded.CompResourceTrader_AC</compClass>
+				<pipeNet>VTE_EfficiencyNet</pipeNet>
+				<consumptionPerTick>1</consumptionPerTick>
+				<idleConsumptionPerTick>1</idleConsumptionPerTick>
+			</li>
+		</comps>
+	</ThingDef>
+
+</Defs>
