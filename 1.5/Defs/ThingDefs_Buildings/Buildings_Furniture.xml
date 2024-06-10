@@ -7,14 +7,14 @@
 		<description>text.todo</description>
 		<rotatable>false</rotatable>
 		<graphicData>
-			<texPath>Things/Building/Furniture/FloorLamp/RB_FloorLamp</texPath>
+			<texPath>Things/Building/Furniture/RB_FloorLamp/FloorLamp</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<damageData>
 				<enabled>false</enabled>
 			</damageData>
 		</graphicData>
-		<uiIconPath>Things/Building/Furniture/FloorLamp/RB_FloorLamp_MenuIcon</uiIconPath>
+		<uiIconPath>Things/Building/Furniture/RB_FloorLamp/FloorLamp_MenuIcon</uiIconPath>
 		<thingClass>Building</thingClass>
 		<category>Building</category>
 		<altitudeLayer>FloorCoverings</altitudeLayer>
@@ -50,6 +50,7 @@
 		</placeWorkers>
 		<building>
 			<isEdifice>false</isEdifice>
+			<paintable>true</paintable>
 		</building>
 		<comps>
 			<li Class="CompProperties_Power">
