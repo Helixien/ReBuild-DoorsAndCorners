@@ -31,7 +31,7 @@
 	<ThingDef ParentName="RB_BaseFloorStructure">
 		<defName>RB_FloorLamp</defName>
 		<label>floor lamp</label>
-		<description>text.todo</description>
+		<description>A floor-mounted lamp that lights an area using electricity. It is less powerful than a standing lamp, but can be build on any floor.</description>
 		<graphicData>
 			<texPath>Things/Building/Furniture/RB_FloorLamp/FloorLamp</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
