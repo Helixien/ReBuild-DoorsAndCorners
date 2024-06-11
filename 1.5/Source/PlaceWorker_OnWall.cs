@@ -1,4 +1,5 @@
-﻿using Verse;
+﻿using VanillaFurnitureExpanded;
+using Verse;
 
 namespace ReBuildDoorsAndCorners
 {
@@ -9,7 +10,7 @@ namespace ReBuildDoorsAndCorners
             if (loc.InBounds(map))
             {
                 var edifice = loc.GetEdifice(map);
-                if (edifice != null && ((edifice?.def.defName.ToLower().Contains("wall") ?? false) || edifice.def.IsSmoothed))
+                if (edifice != null && edifice.def.IsWall())
                 {
                     return true;
                 }
