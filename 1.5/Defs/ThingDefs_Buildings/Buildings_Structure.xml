@@ -909,6 +909,9 @@
 			<isEdifice>false</isEdifice>
 			<canPlaceOverWall>true</canPlaceOverWall>
 		</building>
+		<comps>
+			<li Class="VanillaFurnitureExpanded.CompProperties_MountableOnWall"/>
+		</comps>
 		<placeWorkers>
 			<li>VanillaFurnitureExpanded.PlaceWorker_OnWall</li>
 			<li>PlaceWorker_GlowRadius</li>
