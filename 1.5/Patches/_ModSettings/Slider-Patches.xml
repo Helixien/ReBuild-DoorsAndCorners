@@ -10,5 +10,6 @@
 		<xpath>Defs/ThingDef[defName="RB_OverwallArmor"]/statBases/MaxHitPoints</xpath>
 		<range>100~1000</range>
 		<defaultValue>500</defaultValue>
+		<roundToDecimalPlaces>0</roundToDecimalPlaces>
 	</Operation>
 </Patch>

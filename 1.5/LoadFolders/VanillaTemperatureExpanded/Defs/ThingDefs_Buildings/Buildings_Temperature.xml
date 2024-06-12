@@ -45,7 +45,6 @@
 			</li>
 			<li Class="CompProperties_Flickable"/>
 			<li Class="CompProperties_Breakdownable"/>
-			<li Class="VanillaFurnitureExpanded.CompProperties_MountableOnWall"/>
 			<li Class="CompProperties_TempControl">
 				<compClass>VanillaTemperatureExpanded.Comps.CompAcTempControl</compClass>
 				<energyPerSecond>-21</energyPerSecond>
