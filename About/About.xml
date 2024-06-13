@@ -39,6 +39,7 @@ ReBuild is designed to be as lightweight as possible, adding the minimum of new 
 		<li>VanillaExpanded.VFEMedical</li>
 		<li>VanillaExpanded.VFESpacer</li>
 		<li>VanillaExpanded.VTEXVariations</li>
+		<li>dubwise.dubsskylights</li>
 	</loadAfter>
 	<incompatibleWith>
 		<li>tikubonn.DontBlockDoor</li>
