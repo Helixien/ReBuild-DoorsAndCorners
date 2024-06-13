@@ -259,7 +259,7 @@
 		<uiOrder>2002</uiOrder>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<blockLight>false</blockLight>
-		<castEdgeShadows>false</castEdgeShadows>
+		<staticSunShadowHeight>0.5</staticSunShadowHeight>
 		<specialDisplayRadius>2.9</specialDisplayRadius>
 		<building>
 			<isPlaceOverableWall>true</isPlaceOverableWall>
@@ -356,7 +356,7 @@
 		<uiOrder>2002</uiOrder>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<blockLight>false</blockLight>
-		<castEdgeShadows>false</castEdgeShadows>
+		<staticSunShadowHeight>0.5</staticSunShadowHeight>
 		<specialDisplayRadius>2.9</specialDisplayRadius>
 		<building>
 			<isPlaceOverableWall>true</isPlaceOverableWall>
@@ -441,7 +441,7 @@
 		<uiOrder>2003</uiOrder>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<blockLight>false</blockLight>
-		<castEdgeShadows>false</castEdgeShadows>
+		<staticSunShadowHeight>0</staticSunShadowHeight>
 		<specialDisplayRadius>3.9</specialDisplayRadius>
 		<building>
 			<isPlaceOverableWall>true</isPlaceOverableWall>
@@ -526,7 +526,7 @@
 		<uiOrder>2003</uiOrder>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<blockLight>false</blockLight>
-		<castEdgeShadows>false</castEdgeShadows>
+		<staticSunShadowHeight>0</staticSunShadowHeight>
 		<specialDisplayRadius>3.9</specialDisplayRadius>
 		<building>
 			<isPlaceOverableWall>true</isPlaceOverableWall>
