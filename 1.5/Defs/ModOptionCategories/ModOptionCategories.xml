@@ -19,4 +19,9 @@
 		<label>Doors</label>
 		<order>20</order>
 	</ModSettingsFramework.ModOptionCategoryDef>
+	<ModSettingsFramework.ModOptionCategoryDef ParentName="RB_ModOptionsBase">
+		<defName>RB_Integration</defName>
+		<label>Integration</label>
+		<order>30</order>
+	</ModSettingsFramework.ModOptionCategoryDef>
 </Defs>
