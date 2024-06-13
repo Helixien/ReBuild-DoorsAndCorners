@@ -332,8 +332,9 @@
 			</li>
 		</operations>
 	</Operation>
+	<!-- ================ Integrations ================ -->
 	<!-- ================ Dubs Skylights ================ -->
-	<Operation Class="ModSettingsFramework.PatchOperationModOption">
+	<Operation Class="ModSettingsFramework.PatchOperationModOption" MayRequire="dubwise.dubsskylights">
 		<defaultValue>True</defaultValue>
 		<label>Replace Dubs Skylights glass</label>
 		<tooltip>Replaces Dubs Skylights glass with ReBuild glass, removes Dubs glass recipes.(Default: True)</tooltip>
@@ -341,14 +342,11 @@
 		<category>RB_Integration</category>
 		<order>30</order>
 		<operations>
-			<li Class="PatchOperationRemove" MayRequire="dubwise.dubsskylights">
-				<xpath>/Defs/RecipeDef[defName="SmeltGlass"]</xpath>
-			</li>
-			<li Class="PatchOperationRemove" MayRequire="dubwise.dubsskylights">
-				<xpath>/Defs/RecipeDef[defName="SmeltGlass4x"]</xpath>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/RecipeDef[defName="SmeltGlass" or defName="SmeltGlass4x"]</xpath>
 			</li>
 			<!-- 1x1 -->
-			<li Class="PatchOperationReplace" MayRequire="dubwise.dubsskylights">
+			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="SkyLightA"]/costList</xpath>
 				<value>
 					<costList>
@@ -357,7 +355,7 @@
 				</value>
 			</li>
 			<!-- 2x2 -->
-			<li Class="PatchOperationReplace" MayRequire="dubwise.dubsskylights">
+			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="SkyLightD"]/costList</xpath>
 				<value>
 					<costList>
@@ -366,7 +364,7 @@
 				</value>
 			</li>
 			<!-- 3x3 -->
-			<li Class="PatchOperationReplace" MayRequire="dubwise.dubsskylights">
+			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="SkyLightB"]/costList</xpath>
 				<value>
 					<costList>
@@ -375,7 +373,7 @@
 				</value>
 			</li>
 			<!-- 1x4 -->
-			<li Class="PatchOperationReplace" MayRequire="dubwise.dubsskylights">
+			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="SkyLightC"]/costList</xpath>
 				<value>
 					<costList>
@@ -384,5 +382,5 @@
 				</value>
 			</li>
 		</operations>
-	</Operation>		
+	</Operation>
 </Patch>
