@@ -34,6 +34,10 @@
 		<placeWorkers>
 			<li>VanillaTemperatureExpanded.Placeworker_AcUnit</li>
 		</placeWorkers>
+		<blocksAltitudes>
+			<li>FloorCoverings</li>
+			<li>Building</li>
+		</blocksAltitudes>
 		<building>
 			<isInert>true</isInert>
 			<paintable>true</paintable>
@@ -62,5 +66,4 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
-
 </Defs>
