@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- ================ Integrations ================ -->
+	<!-- ================ Dubs Skylights ================ -->
+	<Operation Class="ModSettingsFramework.PatchOperationModOption">
+		<defaultValue>True</defaultValue>
+		<label>Dubs Skylights</label>
+		<tooltip>Replaces Dubs Skylights glass with ReBuilds, removes unneeded recipes.(Default: True)</tooltip>
+		<id>RB_DaC_SoS2</id>
+		<category>RB_Integration</category>
+		<order>30</order>
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/RecipeDef[defName="SmeltGlass" or defName="SmeltGlass4x"]</xpath>
+			</li>
+			<!-- 1x1 -->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="SkyLightA"]/costList</xpath>
+				<value>
+					<costList>
+						<RB_Glass>1</RB_Glass>
+					</costList>
+				</value>
+			</li>
+			<!-- 2x2 -->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="SkyLightD"]/costList</xpath>
+				<value>
+					<costList>
+						<RB_Glass>4</RB_Glass>
+					</costList>
+				</value>
+			</li>
+			<!-- 3x3 -->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="SkyLightB"]/costList</xpath>
+				<value>
+					<costList>
+						<RB_Glass>9</RB_Glass>
+					</costList>
+				</value>
+			</li>
+			<!-- 1x4 -->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="SkyLightC"]/costList</xpath>
+				<value>
+					<costList>
+						<RB_Glass>4</RB_Glass>
+					</costList>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>
