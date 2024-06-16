@@ -20,7 +20,7 @@
 		<order>20</order>
 	</ModSettingsFramework.ModOptionCategoryDef>
 	<ModSettingsFramework.ModOptionCategoryDef ParentName="RB_ModOptionsBase">
-		<defName>RB_Integration</defName>
+		<defName>RB_Integrations</defName>
 		<label>Mod Integrations</label>
 		<order>30</order>
 	</ModSettingsFramework.ModOptionCategoryDef>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ================================ Reinforced Glass Wall ====================== -->
+	<ThingDef ParentName="BuildingShipHullBase">
+		<defName>RB_Ship_Beam_Glass</defName>
+		<label>glass ship hull</label>
+		<description>text.todo</description>
+		<graphicData>
+			<texPath>Things/Building/RB_Linked/RB_ReinforcedGlassWall/RB_ReinforcedGlassWall_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<linkType>Basic</linkType>
+			<linkFlags>
+				<li>Wall</li>
+				<li>Rock</li>
+			</linkFlags>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+				<edgeTop>Damage/Edge</edgeTop>
+				<edgeBot>Damage/Edge</edgeBot>
+				<edgeLeft>Damage/Edge</edgeLeft>
+				<edgeRight>Damage/Edge</edgeRight>
+			</damageData>
+		</graphicData>
+		<uiIconPath>Things/Building/RB_Linked/RB_ReinforcedGlassWall_MenuIcon</uiIconPath>
+		<filthLeaving>RB_Filth_BallisticGlassShards</filthLeaving>
+		<statBases>
+			<WorkToBuild>1500</WorkToBuild>
+			<MaxHitPoints>800</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<designationCategory>Ship</designationCategory>
+		<placingDraggableDimensions>1</placingDraggableDimensions>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<blockLight>false</blockLight>
+		<rotatable>false</rotatable>
+		<staticSunShadowHeight>0</staticSunShadowHeight>
+		<specialDisplayRadius>3.9</specialDisplayRadius>
+		<costList>
+			<Steel>7</Steel>
+			<Plasteel>1</Plasteel>
+			<RB_BallisticGlass>5</RB_BallisticGlass>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<researchPrerequisites>
+			<li>ShipBasics</li>
+		</researchPrerequisites>
+		<building>
+			<shipPart>true</shipPart>
+			<blueprintGraphicData>
+				<texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
+			</blueprintGraphicData>
+			<paintable>true</paintable>
+		</building>
+		<comps>
+			<li Class="ReBuildDoorsAndCorners.CompProperties_GlassWall">
+				<naturalLightRadius>3</naturalLightRadius>
+				<needOutdoorsRefillRate>1.6</needOutdoorsRefillRate>
+			</li>
+			<li Class="SaveOurShip2.CompProps_ShipCachePart">
+				<isHull>true</isHull>
+				<hermetic>true</hermetic>
+				<roof>true</roof>
+			</li>
+			<li>
+				<compClass>CompColorable</compClass>
+			</li>
+		</comps>
+		<damageMultipliers Inherit="false">
+			<li>
+				<damageDef>Bomb</damageDef>
+				<multiplier>2</multiplier>
+			</li>
+			<li>
+				<damageDef>Thump</damageDef>
+				<multiplier>2</multiplier>
+			</li>
+		</damageMultipliers>
+		<modExtensions>
+			<li Class="ReBuildDoorsAndCorners.ThingExtension">
+				<soundImpactMeleeOverride>RB_MeleeImpact_Glass</soundImpactMeleeOverride>
+				<soundImpactBulletOverride>RB_BulletImpact_Glass</soundImpactBulletOverride>
+			</li>
+		</modExtensions>
+	</ThingDef>
+</Defs>
