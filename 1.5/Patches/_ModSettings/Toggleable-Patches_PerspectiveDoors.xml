@@ -16,6 +16,12 @@
 					<graphicClass>Graphic_Multi</graphicClass>
 				</value>
 			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="RB_DoubleAutodoor"]/building/upperMoverGraphic/graphicClass</xpath>
+				<value>
+					<graphicClass>Graphic_Multi</graphicClass>
+				</value>
+			</li>
 			<!-- ================ Simple Door Textures to reflect material ================ -->
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="Door"]/graphicData/graphicClass</xpath>

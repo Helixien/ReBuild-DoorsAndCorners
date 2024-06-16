@@ -681,7 +681,7 @@
 		<description>Divides rooms. Powered operation allows people to move through the door without slowing down.</description>
 		<thingClass>ReBuildDoorsAndCorners.Building_MultiTileDoorStuffColor</thingClass>
 		<graphicData>
-			<texPath>Things/Building/Door/RB_DoubleAutodoor_Mover</texPath>
+			<texPath>Things/Building/RB_Door/RB_DoubleAutodoor/RB_DoubleAutodoor_Mover</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(1.05, 1)</drawSize>
 			<damageData>
@@ -689,7 +689,7 @@
 			</damageData>
 		</graphicData>
 		<size>(2, 1)</size>
-		<uiIconPath>Things/Building/Door/RB_DoubleAutodoor_MenuIcon</uiIconPath>
+		<uiIconPath>Things/Building/RB_Door/RB_DoubleAutodoor_MenuIcon</uiIconPath>
 		<useBlueprintGraphicAsGhost>true</useBlueprintGraphicAsGhost>
 		<rotatable>true</rotatable>
 		<statBases>
