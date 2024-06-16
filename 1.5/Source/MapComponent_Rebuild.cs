@@ -16,14 +16,14 @@ namespace ReBuildDoorsAndCorners
 
 
         public bool regenerate;
-
+        public HashSet<IntVec3> cellsToRegenerate = new();
         public override void MapComponentUpdate()
         {
             base.MapComponentUpdate();
             if (regenerate)
             {
                 regenerate = false;
-                foreach (var cell in cellsNearbyGlassWalls)
+                foreach (var cell in cellsToRegenerate)
                 {
                     map.mapDrawer.MapMeshDirty(cell, MapMeshFlagDefOf.Roofs);
                     map.glowGrid.DirtyCache(cell);
@@ -51,6 +51,9 @@ namespace ReBuildDoorsAndCorners
 
             if (cellsNearbyGlassWalls.SetEquals(oldCells) is false)
             {
+                cellsToRegenerate = new HashSet<IntVec3>();
+                cellsToRegenerate.AddRange(cellsNearbyGlassWalls);
+                cellsToRegenerate.AddRange(oldCells);
                 regenerate = true;
             }
         }
