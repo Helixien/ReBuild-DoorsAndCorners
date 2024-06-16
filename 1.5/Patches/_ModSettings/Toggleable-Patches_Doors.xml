@@ -54,9 +54,9 @@
 					<graphicClass>Graphic_Multi</graphicClass>
 				</value>
 			</li>
-			<!-- ================ Simple Door Textures to reflect material ================ -->
+			<!-- ================ Simple Door and Double Door Textures to reflect material ================ -->
 			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName="Door"]/graphicData/graphicClass</xpath>
+				<xpath>Defs/ThingDef[defName="Door" or defName="RB_DoubleDoor"]/graphicData/graphicClass</xpath>
 				<value>
 					<graphicClass>ReBuildDoorsAndCorners.Graphic_AppearancesMulti</graphicClass>
 				</value>
@@ -84,6 +84,33 @@
 						<li>
 							<appearance>Bricks</appearance>
 							<iconPath>Things/Building/RB_Door/DoorSimple_Bricks_MenuIcon</iconPath>
+						</li>
+					</uiIconPathsStuff>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="RB_DoubleDoor"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Things/Building/RB_Door/RB_DoubleDoor</texPath>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="RB_DoubleDoor"]/uiIconPath</xpath>
+				<value>
+					<uiIconPath>Things/Building/RB_Door/RB_DoubleDoor_Smooth_MenuIcon</uiIconPath>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="RB_DoubleDoor"]</xpath>
+				<value>
+					<uiIconPathsStuff>
+						<li>
+							<appearance>Planks</appearance>
+							<iconPath>Things/Building/RB_Door/RB_DoubleDoor_Planks_MenuIcon</iconPath>
+						</li>
+						<li>
+							<appearance>Bricks</appearance>
+							<iconPath>Things/Building/RB_Door/RB_DoubleDoor_Bricks_MenuIcon</iconPath>
 						</li>
 					</uiIconPathsStuff>
 				</value>
