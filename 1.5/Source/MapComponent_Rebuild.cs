@@ -33,6 +33,7 @@ namespace ReBuildDoorsAndCorners
 
         public void BuildCellsCache()
         {
+            var oldCells = cellsNearbyGlassWalls.ToHashSet();
             cellsNearbyGlassWalls = new HashSet<IntVec3>();
             foreach (var wall in glassWalls)
             {
@@ -43,10 +44,14 @@ namespace ReBuildDoorsAndCorners
                         if (cell.InBounds(map) && cell.Roofed(map))
                         {
                             cellsNearbyGlassWalls.Add(cell);
-                            regenerate = true;
                         }
                     }
                 }
+            }
+
+            if (cellsNearbyGlassWalls.SetEquals(oldCells) is false)
+            {
+                regenerate = true;
             }
         }
     }
