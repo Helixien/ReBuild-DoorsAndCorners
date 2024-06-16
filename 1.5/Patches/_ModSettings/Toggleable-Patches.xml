@@ -23,15 +23,6 @@
 			</li>
 		</operations>
 	</Operation>
-	<!-- ================ Door Clearance ================ -->
-	<Operation Class="ModSettingsFramework.PatchOperationModOption">
-		<defaultValue>True</defaultValue>
-		<label>Enable door clearance</label>
-		<tooltip>Toggle this option to prevent colonists from dropping items at door locations and blocking them from being closed (Default: True)</tooltip>
-		<id>RB_ColonistsDontDropItemsAtDoors</id>
-		<category>RB_Doors</category>
-		<order>20</order>
-	</Operation>
 	<!-- ================ Seamless Wall Lamps ================ -->
 	<Operation Class="ModSettingsFramework.PatchOperationModOption">
 		<defaultValue>True</defaultValue>

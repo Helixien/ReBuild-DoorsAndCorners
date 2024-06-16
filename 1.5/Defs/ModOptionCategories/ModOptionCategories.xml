@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<ModSettingsFramework.ModOptionCategoryDef Name="RB_ModOptionsBase" Abstract="True">
-		<modSettingsName>ReBuild</modSettingsName>
+		<modSettingsName>ReBuild: Doors and Corners</modSettingsName>
 		<modPackageSettingsID>ReBuild.COTR.DoorsAndCorners</modPackageSettingsID>
 	</ModSettingsFramework.ModOptionCategoryDef>
 	<ModSettingsFramework.ModOptionCategoryDef ParentName="RB_ModOptionsBase">
