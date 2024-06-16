@@ -4,7 +4,7 @@
 	<ThingDef ParentName="RB_BaseFloorStructure">
 		<defName>RB_ACUnitFloor</defName>
 		<label>floor AC unit</label>
-		<description>text.todo</description>
+		<description>An air-conditioning machine that fits into a floor tile. Emits either cool or warm air in the same direction, depending on the current temperature of the room. Unless unlinked from the network settings, it will aim to achieve the temperature specified in the AC control unit. Needs to be connected to the AC control unit via air ducts.</description>
 		<thingClass>VanillaTemperatureExpanded.Buildings.Building_AcUnit</thingClass>
 		<graphicData>
 			<texPath>Things/Building/Furniture/RB_ACUnitFloor/ACUnitFloor</texPath>

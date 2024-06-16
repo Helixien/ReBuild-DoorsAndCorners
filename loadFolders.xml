@@ -8,7 +8,6 @@
 		<!-- ================ Mod Support (New Content) ================ -->
 		<li IfModActive="VanillaExpanded.Ideo.SophianStyle">1.5/LoadFolders/VanillaIdeologyExpanded-SophianStyle</li>
 		<li IfModActive="VanillaExpanded.Temperature">1.5/LoadFolders/VanillaTemperatureExpanded</li>
-		<li IfModActive="kentington.saveourship2">1.5/LoadFolders/_Support/SaveOurShip2</li>
 		<!-- ================ Mod Support - VES ================ -->
 		<li IfModActive="OskarPotocki.VanillaFactionsExpanded.SettlersModule">1.5/LoadFolders/_Support/VFE-Settlers</li>
 		<li IfModActive="VanillaExpanded.VFEA">1.5/LoadFolders/_Support/VFE-Ancients</li>
