@@ -26,13 +26,13 @@
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="Door"]/graphicData/graphicClass</xpath>
 				<value>
-					<graphicClass>Graphic_Appearances</graphicClass>
+					<graphicClass>ReBuildDoorsAndCorners.Graphic_AppearancesMulti</graphicClass>
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="Door"]/graphicData/texPath</xpath>
 				<value>
-					<texPath>Things/Building/RB_Door/DoorSimple</texPath>
+					<texPath>Things/Building/RB_Door/DoorSimple_Mover</texPath>
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">

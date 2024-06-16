@@ -78,8 +78,10 @@
     <Compile Include="CompProperties_FireplaceOverlay.cs" />
     <Compile Include="GenPlace_PlaceSpotQualityAt_Patch.cs" />
     <Compile Include="GlowGrid_GroundGlowAt_Patch.cs" />
+    <Compile Include="Graphic_AppearancesMulti.cs" />
     <Compile Include="HaulAIUtility_HaulablePlaceValidator_Patch.cs" />
     <Compile Include="ImpactSoundUtility_PlayImpactSound_Patch.cs" />
+    <Compile Include="RoofGrid_SetRoof_Patch.cs" />
     <Compile Include="SectionLayer_LightingOverlay_Regenerate_Patch.cs" />
     <Compile Include="MapComponent_Rebuild.cs" />
     <Compile Include="Need_Outdoors_NeedInterval_Patch.cs" />
