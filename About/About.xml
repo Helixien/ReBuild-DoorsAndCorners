@@ -44,5 +44,6 @@ ReBuild is designed to be as lightweight as possible, adding the minimum of new 
 		<li>tikubonn.DontBlockDoor</li>
 		<li>Owlchemist.DoorClearance</li>
 		<li>Owlchemist.PerspectiveDoors</li>
+		<li>Mlie.SilentDoors</li>
 	</incompatibleWith>
 </ModMetaData>
