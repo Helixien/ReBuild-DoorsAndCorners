@@ -1,28 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-	<!-- ================ New wall atlas texture ================ -->
-	<Operation Class="ModSettingsFramework.PatchOperationModOption">
-		<defaultValue>True</defaultValue>
-		<label>Enable alternative wall textures</label>
-		<tooltip>Enable the new alternative metal textures for vanilla walls. If disables, you will still get HD textures, it just stays true to the vanilla style. (Default: True)</tooltip>
-		<id>RB_NewWallAtlasTextures</id>
-		<category>RB_Walls</category>
-		<order>15</order>
-		<operations>
-			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[@Name="Wall"]/graphicData/texPath</xpath>
-				<value>
-					<texPath>Things/Building/Linked/RB_AlternativeWall</texPath>
-				</value>
-			</li>
-			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[@Name="Wall"]/uiIconPath</xpath>
-				<value>
-					<uiIconPath>Things/Building/Linked/RB_Alternative_WallSmooth_MenuIcon</uiIconPath>
-				</value>
-			</li>
-		</operations>
-	</Operation>
 	<!-- ================ Seamless Wall Lamps ================ -->
 	<Operation Class="ModSettingsFramework.PatchOperationModOption">
 		<defaultValue>True</defaultValue>
@@ -30,7 +7,7 @@
 		<tooltip>Enable seamless wall lamps, making them merge nicer with walls.(Default: True)</tooltip>
 		<id>RB_SeamlessWallLamps</id>
 		<category>RB_Core</category>
-		<order>10</order>
+		<order>5</order>
 		<operations>
 			<!-- ================ Core Patches ================ -->
 			<li Class="PatchOperationAdd">

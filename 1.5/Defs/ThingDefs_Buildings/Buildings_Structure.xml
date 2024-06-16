@@ -239,10 +239,10 @@
 		</uiIconPathsStuff>
 		<filthLeaving>RB_Filth_GlassShards</filthLeaving>
 		<statBases>
-			<MaxHitPoints>250</MaxHitPoints>
-			<WorkToBuild>155</WorkToBuild>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToBuild>135</WorkToBuild>
 			<Flammability>0.8</Flammability>
-			<MeditationFocusStrength>0.22</MeditationFocusStrength>
+			<MeditationFocusStrength>0.05</MeditationFocusStrength>
 		</statBases>
 		<stuffCategories>
 			<li>Metallic</li>
@@ -336,10 +336,10 @@
 		</uiIconPathsStuff>
 		<filthLeaving>RB_Filth_BallisticGlassShards</filthLeaving>
 		<statBases>
-			<MaxHitPoints>250</MaxHitPoints>
-			<WorkToBuild>155</WorkToBuild>
+			<MaxHitPoints>300</MaxHitPoints>
+			<WorkToBuild>175</WorkToBuild>
 			<Flammability>0.8</Flammability>
-			<MeditationFocusStrength>0.22</MeditationFocusStrength>
+			<MeditationFocusStrength>0.05</MeditationFocusStrength>
 		</statBases>
 		<stuffCategories>
 			<li>Metallic</li>
@@ -430,6 +430,7 @@
 		</statBases>
 		<stuffCategories>
 			<li>Metallic</li>
+			<li>Stony</li>
 		</stuffCategories>
 		<costStuffCount>1</costStuffCount>
 		<costList>
@@ -515,6 +516,7 @@
 		</statBases>
 		<stuffCategories>
 			<li>Metallic</li>
+			<li>Stony</li>
 		</stuffCategories>
 		<costStuffCount>1</costStuffCount>
 		<costList>

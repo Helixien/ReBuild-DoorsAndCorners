@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- ================ New wall atlas texture ================ -->
+	<Operation Class="ModSettingsFramework.PatchOperationRadioButtons">
+		<label>Enable alternative wall textures</label>
+		<tooltip>Enable the new alternative metal textures for vanilla walls.</tooltip>
+		<category>RB_Walls</category>
+		<order>5</order>
+		<options>
+			<li Class="ModSettingsFramework.PatchOperationModOption">
+				<defaultValue>true</defaultValue>
+				<label>Immersive version</label>
+				<tooltip>More detailed than vanilla and inspired by Clutter walls.(Default: True)</tooltip>
+				<id>RB_NewWallAtlasTextures_V1</id>
+				<operations>
+					<li Class="PatchOperationReplace">
+						<xpath>/Defs/ThingDef[@Name="Wall"]/graphicData/texPath</xpath>
+						<value>
+							<texPath>Things/Building/RB_Linked/RB_V1_AlternativeWall</texPath>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>/Defs/ThingDef[@Name="Wall"]/uiIconPath</xpath>
+						<value>
+							<uiIconPath>Things/Building/RB_Linked/RB_Alternative_V1_WallSmooth_MenuIcon</uiIconPath>
+						</value>
+					</li>
+				</operations>
+			</li>
+			<li Class="ModSettingsFramework.PatchOperationModOption">
+				<defaultValue>False</defaultValue>
+				<label>Simplistic version</label>
+				<tooltip>Slightly more detailed than vanilla.</tooltip>
+				<id>RB_NewWallAtlasTextures_V2</id>
+				<operations>
+					<li Class="PatchOperationReplace">
+						<xpath>/Defs/ThingDef[@Name="Wall"]/graphicData/texPath</xpath>
+						<value>
+							<texPath>Things/Building/RB_Linked/RB_V2_AlternativeWalll</texPath>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>/Defs/ThingDef[@Name="Wall"]/uiIconPath</xpath>
+						<value>
+							<uiIconPath>Things/Building/RB_Linked/RB_Alternative_V2_WallSmooth_MenuIcon</uiIconPath>
+						</value>
+					</li>
+				</operations>
+			</li>
+			<li Class="ModSettingsFramework.PatchOperationModOption">
+				<defaultValue>False</defaultValue>
+				<label>Vanilla version</label>
+				<tooltip>HD version of the vanilla texture, no other changes.</tooltip>
+				<id>RB_NewWallAtlasTextures_V3</id>
+				<operations>
+					<li Class="PatchOperationReplace">
+						<xpath>/Defs/ThingDef[@Name="Wall"]/graphicData/texPath</xpath>
+						<value>
+							<texPath>Things/Building/Linked/Wall</texPath>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>/Defs/ThingDef[@Name="Wall"]/uiIconPath</xpath>
+						<value>
+							    <uiIconPath>Things/Building/Linked/WallSmooth_MenuIcon</uiIconPath>
+						</value>
+					</li>
+				</operations>
+			</li>
+		</options>
+	</Operation>
+	<!-- ================ Wall Armor Health ================ -->
+	<Operation Class="ModSettingsFramework.PatchOperationSliderFloat">
+		<label>Wall armor health</label>
+		<tooltip>Adjust the base health of the wall armor. Please note that while this can be safely done for an active colony, already built wall armor will keep their old health until taking enough damage or being reconstructed. Default: 500</tooltip>
+		<id>RB_WallArmorHealth</id>
+		<category>RB_Walls</category>
+		<order>10</order>
+		<xpath>Defs/ThingDef[defName="RB_OverwallArmor"]/statBases/MaxHitPoints</xpath>
+		<range>100~1000</range>
+		<defaultValue>500</defaultValue>
+		<roundToDecimalPlaces>0</roundToDecimalPlaces>
+	</Operation>
+</Patch>
