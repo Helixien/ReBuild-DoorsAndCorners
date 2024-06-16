@@ -706,12 +706,12 @@
 			<unpoweredDoorOpenSpeedFactor>5</unpoweredDoorOpenSpeedFactor>
 			<unpoweredDoorCloseSpeedFactor>5</unpoweredDoorCloseSpeedFactor>
 			<upperMoverGraphic>
-				<texPath>Things/Building/Door/RB_DoubleAutodoor_UpperMover</texPath>
+				<texPath>Things/Building/RB_Door/RB_DoubleAutodoor/RB_DoubleAutodoor_UpperMover</texPath>
 				<graphicClass>Graphic_Single</graphicClass>
 			</upperMoverGraphic>
 			<blueprintClass>Blueprint_Build</blueprintClass>
 			<blueprintGraphicData>
-				<texPath>Things/Building/Door/RB_DoubleAutodoor_MenuIcon</texPath>
+				<texPath>Things/Building/RB_Door/RB_DoubleAutodoor_MenuIcon</texPath>
 				<graphicClass>Graphic_Multi</graphicClass>
 				<shaderType>EdgeDetect</shaderType>
 				<drawSize>(2.6, 3.1)</drawSize>
