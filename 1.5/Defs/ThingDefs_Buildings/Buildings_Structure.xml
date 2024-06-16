@@ -680,18 +680,21 @@
 		<label>double door</label>
 		<description>Divides rooms. Simple doors must be manually opened, which slows people down. The amount of slowdown depends on what the door is made of.</description>
 		<thingClass>Building_MultiTileDoor</thingClass>
-		<statBases>
-			<WorkToBuild>1700</WorkToBuild>
-		</statBases>
 		<graphicData>
 			<texPath>Things/Building/RB_Door/RB_DoubleDoor_Mover</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
+			<graphicClass>ReBuildDoorsAndCorners.Graphic_AppearancesMulti</graphicClass>
+			<drawSize>(1.05, 1)</drawSize>
 			<damageData>
-				<!--  no damage marks because they don't move with the door  -->
 				<enabled>false</enabled>
 			</damageData>
 		</graphicData>
+		<size>(2, 1)</size>
 		<uiIconPath>Things/Building/RB_Door/RB_DoubleDoor_VanillaMenuIcon</uiIconPath>
+		<useBlueprintGraphicAsGhost>true</useBlueprintGraphicAsGhost>
+		<rotatable>true</rotatable>
+		<statBases>
+			<WorkToBuild>1700</WorkToBuild>
+		</statBases>
 		<costStuffCount>50</costStuffCount>
 		<building>
 			<blueprintGraphicData>
@@ -701,6 +704,9 @@
 				<drawSize>(2.6, 3.1)</drawSize>
 			</blueprintGraphicData>
 		</building>
+		<placeWorkers>
+			<li>PlaceWorker_MultiCellDoor</li>
+		</placeWorkers>
 	</ThingDef>
 	<!-- ================================ Double Auto Door ====================== -->
 	<ThingDef ParentName="DoorBase">
@@ -1035,6 +1041,9 @@
 		<costList>
 			<Steel>10</Steel>
 		</costList>
+		<researchPrerequisites>
+			<li>Fabrication</li>
+		</researchPrerequisites>
 		<uiOrder>2004</uiOrder>
 		<building Inherit="False">
 			<supportsWallAttachments>false</supportsWallAttachments>
