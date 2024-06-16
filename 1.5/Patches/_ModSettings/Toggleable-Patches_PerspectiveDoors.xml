@@ -4,14 +4,14 @@
 	<Operation Class="ModSettingsFramework.PatchOperationModOption">
 		<defaultValue>True</defaultValue>
 		<label>Enable Perspective Doors 2</label>
-		<tooltip>Enable Perspective Doors 2. Adds a slight depth to door textures and a different east/west view.(Default: True)</tooltip>
+		<tooltip>Enable Perspective Doors 2, our "new" version of the amazing mod by OwlChemist. Adds depth and more detail to doors, while "fixing" some of the issues we had with the original mod. (Default: True)</tooltip>
 		<id>RB_PerspectiveDoors</id>
 		<category>RB_Doors</category>
 		<order>10</order>
 		<operations>
-			<!-- ================ Base Change to graphicClass ================ -->
+			<!-- ================ Base Change to graphicClass for all doors ================ -->
 			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName="Autodoor" or defName="AnimalFlap" or defName="RB_GlassAutodoor" or defName="RB_ReinforcedGlassAutodoor" or defName="RB_DoubleAutodoor"]/graphicData/graphicClass</xpath>
+				<xpath>Defs/ThingDef[defName="Autodoor" or defName="AnimalFlap" or defName="RB_GlassAutodoor" or defName="RB_ReinforcedGlassAutodoor" or defName="RB_DoubleAutodoor" or defName="RB_DoubleDoor"]/graphicData/graphicClass</xpath>
 				<value>
 					<graphicClass>Graphic_Multi</graphicClass>
 				</value>
@@ -54,6 +54,52 @@
 							<iconPath>Things/Building/RB_Door/DoorSimple_Bricks_MenuIcon</iconPath>
 						</li>
 					</uiIconPathsStuff>
+				</value>
+			</li>
+			<!-- ================ Change to Auto Door ================ -->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Autodoor"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Things/Building/RB_Door/Autodoor_Mover</texPath>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Autodoor"]/uiIconPath</xpath>
+				<value>
+					<uiIconPath>Things/Building/RB_Door/Autodoor_MenuIcon</uiIconPath>
+				</value>
+			</li>
+			<!-- ================ Change to Animal Flap ================ -->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="AnimalFlap"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Things/Building/RB_Door/AnimalFlap_Mover</texPath>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="AnimalFlap"]/uiIconPath</xpath>
+				<value>
+					<uiIconPath>Things/Building/RB_Door/AnimalFlap_MenuIcon</uiIconPath>
+				</value>
+			</li>
+			<!-- ================ Change to Glass Doors ================ -->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="RB_GlassAutodoor"]/uiIconPath</xpath>
+				<value>
+					<uiIconPath>Things/Building/RB_Door/RB_GlassAutodoor_MenuIcon</uiIconPath>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="RB_ReinforcedGlassAutodoor"]/uiIconPath</xpath>
+				<value>
+					<uiIconPath>Things/Building/RB_Door/RB_ReinforcedGlassAutodoor_MenuIcon</uiIconPath>
+				</value>
+			</li>
+			<!-- ================ Change to Double Auto Door ================ -->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="RB_DoubleAutodoor"]/uiIconPath</xpath>
+				<value>
+					<uiIconPath>Things/Building/RB_Door/RB_DoubleAutodoor_MenuIcon</uiIconPath>
 				</value>
 			</li>
 			<!-- ================ Ideology ================ -->
