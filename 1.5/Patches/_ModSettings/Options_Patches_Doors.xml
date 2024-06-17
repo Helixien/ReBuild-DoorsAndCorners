@@ -161,6 +161,48 @@
 					<uiIconPath>Things/Building/RB_Door/RB_DoubleAutodoor_MenuIcon</uiIconPath>
 				</value>
 			</li>
+			<!-- ================ Anomaly ================ -->
+			<li Class="PatchOperationConditional" MayRequire="Ludeon.RimWorld.Anomaly">
+				<xpath>/Defs/ThingDef[defName="GrayDoor"]/graphicData/graphicClass</xpath>
+				<match Class="PatchOperationSequence">
+					<operations>
+						<li Class="PatchOperationReplace">
+							<xpath>/Defs/ThingDef[defName="GrayDoor"]/graphicData/graphicClass</xpath>
+							<value>
+								<graphicClass>Graphic_Multi</graphicClass>
+							</value>
+						</li>
+					</operations>
+				</match>
+				<nomatch Class="PatchOperationSequence">
+					<operations>
+						<li Class="PatchOperationAdd">
+							<xpath>/Defs/ThingDef[defName="GrayDoor"]/graphicData</xpath>
+							<value>
+								<graphicClass>Graphic_Multi</graphicClass>
+							</value>
+						</li>
+					</operations>
+				</nomatch>
+			</li>
+			<li Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Anomaly">
+				<xpath>Defs/ThingDef[defName="GrayDoor"]/comps/li[@Class="CompProperties_LabyrinthDoor"]/jammed/graphicClass</xpath>
+				<value>
+					<graphicClass>Graphic_Multi</graphicClass>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Anomaly">
+				<xpath>Defs/ThingDef[defName="GrayDoor"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Things/Building/RB_GrayDoor/GrayDoor_Mover</texPath>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Anomaly">
+				<xpath>Defs/ThingDef[defName="GrayDoor"]/comps/li[@Class="CompProperties_LabyrinthDoor"]/jammed/texPath</xpath>
+				<value>
+					<texPath>Things/Building/RB_GrayDoor/GrayDoor_Jammed</texPath>
+				</value>
+			</li>
 			<!-- ================ Ideology ================ -->
 			<li Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Ideology">
 				<xpath>Defs/ThingStyleDef[defName="Techist_Autodoor"]/graphicData/graphicClass</xpath>
