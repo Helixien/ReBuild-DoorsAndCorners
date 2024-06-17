@@ -3,10 +3,10 @@ using RimWorld;
 using System.Collections.Generic;
 using System.Reflection.Emit;
 using Verse;
+using Verse.Sound;
 
 namespace ReBuildDoorsAndCorners
 {
-
     [HarmonyPatch(typeof(ImpactSoundUtility), "PlayImpactSound")]
     public static class ImpactSoundUtility_PlayImpactSound_Patch
     {

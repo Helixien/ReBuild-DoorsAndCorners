@@ -68,7 +68,7 @@
 		<label>rustic wall</label>
 		<description>A simplistic, weak and impassable wall. Capable of holding up a roof.</description>
 		<graphicData>
-			<texPath>Things/Building/Linked/RB_RusticWall</texPath>
+			<texPath>Things/Building/RB_Linked/RB_RusticWall</texPath>
 			<graphicClass>Graphic_Appearances</graphicClass>
 			<linkType>CornerFiller</linkType>
 			<linkFlags>
@@ -86,15 +86,15 @@
 				<edgeRight>Damage/Edge</edgeRight>
 			</damageData>
 		</graphicData>
-		<uiIconPath>Things/Building/Linked/RB_RusticWall_Smooth_MenuIcon</uiIconPath>
+		<uiIconPath>Things/Building/RB_Linked/RB_RusticWall_Smooth_MenuIcon</uiIconPath>
 		<uiIconPathsStuff>
 			<li>
 				<appearance>Bricks</appearance>
-				<iconPath>Things/Building/Linked/RB_RusticWall_Bricks_MenuIcon</iconPath>
+				<iconPath>Things/Building/RB_Linked/RB_RusticWall_Bricks_MenuIcon</iconPath>
 			</li>
 			<li>
 				<appearance>Planks</appearance>
-				<iconPath>Things/Building/Linked/RB_RusticWall_Planks_MenuIcon</iconPath>
+				<iconPath>Things/Building/RB_Linked/RB_RusticWall_Planks_MenuIcon</iconPath>
 			</li>
 		</uiIconPathsStuff>
 		<statBases>
@@ -112,14 +112,6 @@
 		<uiOrder>1999</uiOrder>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<useStuffTerrainAffordance>true</useStuffTerrainAffordance>
-		<comps>
-			<li Class="CompProperties_MeditationFocus">
-				<statDef>MeditationFocusStrength</statDef>
-				<focusTypes>
-					<li>Minimal</li>
-				</focusTypes>
-			</li>
-		</comps>
 		<damageMultipliers Inherit="false">
 			<li>
 				<damageDef>Bomb</damageDef>
@@ -137,7 +129,7 @@
 		<label>ornate wall</label>
 		<description>An intricate and impassable wall, decorated with gold. Capable of holding up a roof, but more fragile than a normal wall. Dignity-focused psycaster will receive a meditation bonus when meditating near them.</description>
 		<graphicData>
-			<texPath>Things/Building/Linked/RB_OrnateWall</texPath>
+			<texPath>Things/Building/RB_Linked/RB_OrnateWall</texPath>
 			<graphicClass>Graphic_Appearances</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<linkType>CornerFiller</linkType>
@@ -156,15 +148,15 @@
 				<edgeRight>Damage/Edge</edgeRight>
 			</damageData>
 		</graphicData>
-		<uiIconPath>Things/Building/Linked/RB_OrnateWallSmooth_MenuIcon</uiIconPath>
+		<uiIconPath>Things/Building/RB_Linked/RB_OrnateWallSmooth_MenuIcon</uiIconPath>
 		<uiIconPathsStuff>
 			<li>
 				<appearance>Planks</appearance>
-				<iconPath>Things/Building/Linked/RB_OrnateWallPlanks_MenuIcon</iconPath>
+				<iconPath>Things/Building/RB_Linked/RB_OrnateWallPlanks_MenuIcon</iconPath>
 			</li>
 			<li>
 				<appearance>Bricks</appearance>
-				<iconPath>Things/Building/Linked/RB_OrnateWallBricks_MenuIcon</iconPath>
+				<iconPath>Things/Building/RB_Linked/RB_OrnateWallBricks_MenuIcon</iconPath>
 			</li>
 		</uiIconPathsStuff>
 		<statBases>
@@ -215,7 +207,7 @@
 		<label>clerestory wall</label>
 		<description>An impassable half-glass wall. Capable of holding up a roof, but more fragile than a normal wall. Does not block light, providing a growing bonus to plants near them. Slowly refills peoples outdoor need.</description>
 		<graphicData>
-			<texPath>Things/Building/Linked/RB_ClerestoryWall</texPath>
+			<texPath>Things/Building/RB_Linked/RB_ClerestoryWall</texPath>
 			<graphicClass>Graphic_Appearances</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<linkType>CornerFiller</linkType>
@@ -234,24 +226,23 @@
 				<edgeRight>Damage/Edge</edgeRight>
 			</damageData>
 		</graphicData>
-		<uiIconPath>Things/Building/Linked/RB_ClerestoryWall_Smooth_MenuIcon</uiIconPath>
+		<uiIconPath>Things/Building/RB_Linked/RB_ClerestoryWall_Smooth_MenuIcon</uiIconPath>
 		<uiIconPathsStuff>
 			<li>
 				<appearance>Bricks</appearance>
-				<iconPath>Things/Building/Linked/RB_ClerestoryWall_Bricks_MenuIcon</iconPath>
+				<iconPath>Things/Building/RB_Linked/RB_ClerestoryWall_Bricks_MenuIcon</iconPath>
 			</li>
 			<li>
 				<appearance>Planks</appearance>
-				<iconPath>Things/Building/Linked/RB_ClerestoryWall_Planks_MenuIcon</iconPath>
+				<iconPath>Things/Building/RB_Linked/RB_ClerestoryWall_Planks_MenuIcon</iconPath>
 			</li>
 		</uiIconPathsStuff>
 		<filthLeaving>RB_Filth_GlassShards</filthLeaving>
-		<soundImpactDefault>RB_BulletImpact_Glass</soundImpactDefault>
 		<statBases>
-			<MaxHitPoints>250</MaxHitPoints>
-			<WorkToBuild>155</WorkToBuild>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToBuild>135</WorkToBuild>
 			<Flammability>0.8</Flammability>
-			<MeditationFocusStrength>0.22</MeditationFocusStrength>
+			<MeditationFocusStrength>0.05</MeditationFocusStrength>
 		</statBases>
 		<stuffCategories>
 			<li>Metallic</li>
@@ -268,20 +259,28 @@
 		<uiOrder>2002</uiOrder>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<blockLight>false</blockLight>
+		<staticSunShadowHeight>0.5</staticSunShadowHeight>
 		<specialDisplayRadius>2.9</specialDisplayRadius>
 		<building>
 			<isPlaceOverableWall>true</isPlaceOverableWall>
 			<ai_chillDestination>true</ai_chillDestination>
 			<supportsWallAttachments>false</supportsWallAttachments>
 			<blueprintGraphicData>
-				<texPath>Things/Building/Linked/RB_ClerestoryWall/RB_ClerestoryWall_Blueprint_Atlas</texPath>
+				<texPath>Things/Building/RB_Linked/RB_ClerestoryWall/RB_ClerestoryWall_Blueprint_Atlas</texPath>
 			</blueprintGraphicData>
 			<relatedBuildCommands Inherit="False">
 				<li>Door</li>
 				<li>Autodoor</li>
 				<li>RB_GlassAutodoor</li>
 			</relatedBuildCommands>
+			<soundMeleeHitOverride>RB_MeleeImpact_Glass</soundMeleeHitOverride>
 		</building>
+		<comps>
+			<li Class="ReBuildDoorsAndCorners.CompProperties_GlassWall">
+				<naturalLightRadius>2</naturalLightRadius>
+				<needOutdoorsRefillRate>0.5</needOutdoorsRefillRate>
+			</li>
+		</comps>
 		<damageMultipliers Inherit="false">
 			<li>
 				<damageDef>Bomb</damageDef>
@@ -292,6 +291,12 @@
 				<multiplier>3</multiplier>
 			</li>
 		</damageMultipliers>
+		<modExtensions>
+			<li Class="ReBuildDoorsAndCorners.ThingExtension">
+				<soundImpactMeleeOverride>RB_MeleeImpact_Glass</soundImpactMeleeOverride>
+				<soundImpactBulletOverride>RB_BulletImpact_Glass</soundImpactBulletOverride>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<!-- ================================ Reinforced Clerestory Wall ====================== -->
 	<ThingDef ParentName="RB_WallBase">
@@ -299,7 +304,7 @@
 		<label>reinforced clerestory wall</label>
 		<description>An impassable half-glass wall. Capable of holding up a roof. Does not block light, providing a growing bonus to plants near them. Slowly refills peoples outdoor need.</description>
 		<graphicData>
-			<texPath>Things/Building/Linked/RB_ReinforcedClerestoryWall</texPath>
+			<texPath>Things/Building/RB_Linked/RB_ReinforcedClerestoryWall</texPath>
 			<graphicClass>Graphic_Appearances</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<linkType>CornerFiller</linkType>
@@ -318,24 +323,23 @@
 				<edgeRight>Damage/Edge</edgeRight>
 			</damageData>
 		</graphicData>
-		<uiIconPath>Things/Building/Linked/RB_ReinforcedClerestoryWall_Smooth_MenuIcon</uiIconPath>
+		<uiIconPath>Things/Building/RB_Linked/RB_ReinforcedClerestoryWall_Smooth_MenuIcon</uiIconPath>
 		<uiIconPathsStuff>
 			<li>
 				<appearance>Bricks</appearance>
-				<iconPath>Things/Building/Linked/RB_ReinforcedClerestoryWall_Bricks_MenuIcon</iconPath>
+				<iconPath>Things/Building/RB_Linked/RB_ReinforcedClerestoryWall_Bricks_MenuIcon</iconPath>
 			</li>
 			<li>
 				<appearance>Planks</appearance>
-				<iconPath>Things/Building/Linked/RB_ReinforcedClerestoryWall_Planks_MenuIcon</iconPath>
+				<iconPath>Things/Building/RB_Linked/RB_ReinforcedClerestoryWall_Planks_MenuIcon</iconPath>
 			</li>
 		</uiIconPathsStuff>
 		<filthLeaving>RB_Filth_BallisticGlassShards</filthLeaving>
-		<soundImpactDefault>RB_BulletImpact_Glass</soundImpactDefault>
 		<statBases>
-			<MaxHitPoints>250</MaxHitPoints>
-			<WorkToBuild>155</WorkToBuild>
+			<MaxHitPoints>300</MaxHitPoints>
+			<WorkToBuild>175</WorkToBuild>
 			<Flammability>0.8</Flammability>
-			<MeditationFocusStrength>0.22</MeditationFocusStrength>
+			<MeditationFocusStrength>0.05</MeditationFocusStrength>
 		</statBases>
 		<stuffCategories>
 			<li>Metallic</li>
@@ -352,20 +356,28 @@
 		<uiOrder>2002</uiOrder>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<blockLight>false</blockLight>
+		<staticSunShadowHeight>0.5</staticSunShadowHeight>
 		<specialDisplayRadius>2.9</specialDisplayRadius>
 		<building>
 			<isPlaceOverableWall>true</isPlaceOverableWall>
 			<ai_chillDestination>true</ai_chillDestination>
 			<supportsWallAttachments>false</supportsWallAttachments>
 			<blueprintGraphicData>
-				<texPath>Things/Building/Linked/RB_ClerestoryWall/RB_ClerestoryWall_Blueprint_Atlas</texPath>
+				<texPath>Things/Building/RB_Linked/RB_ClerestoryWall/RB_ClerestoryWall_Blueprint_Atlas</texPath>
 			</blueprintGraphicData>
 			<relatedBuildCommands Inherit="False">
 				<li>Door</li>
 				<li>Autodoor</li>
 				<li>RB_GlassAutodoor</li>
 			</relatedBuildCommands>
+			<soundMeleeHitOverride>RB_MeleeImpact_Glass</soundMeleeHitOverride>
 		</building>
+		<comps>
+			<li Class="ReBuildDoorsAndCorners.CompProperties_GlassWall">
+				<naturalLightRadius>2</naturalLightRadius>
+				<needOutdoorsRefillRate>0.5</needOutdoorsRefillRate>
+			</li>
+		</comps>
 		<damageMultipliers Inherit="false">
 			<li>
 				<damageDef>Bomb</damageDef>
@@ -376,6 +388,12 @@
 				<multiplier>3</multiplier>
 			</li>
 		</damageMultipliers>
+		<modExtensions>
+			<li Class="ReBuildDoorsAndCorners.ThingExtension">
+				<soundImpactMeleeOverride>RB_MeleeImpact_Glass</soundImpactMeleeOverride>
+				<soundImpactBulletOverride>RB_BulletImpact_Glass</soundImpactBulletOverride>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<!-- ================================ Glass Wall ====================== -->
 	<ThingDef ParentName="RB_WallBase">
@@ -383,7 +401,7 @@
 		<label>glass wall</label>
 		<description>An impassable glass wall. Capable of holding up a roof, but far more fragile than a normal wall. Does not block light, providing a growing bonus to plants near them. Slowly refills peoples outdoor need.</description>
 		<graphicData>
-			<texPath>Things/Building/Linked/RB_GlassWall/RB_GlassWall_Atlas</texPath>
+			<texPath>Things/Building/RB_Linked/RB_GlassWall/RB_GlassWall_Atlas</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<linkType>CornerFiller</linkType>
@@ -402,9 +420,8 @@
 				<edgeRight>Damage/Edge</edgeRight>
 			</damageData>
 		</graphicData>
-		<uiIconPath>Things/Building/Linked/RB_GlassWall_MenuIcon</uiIconPath>
+		<uiIconPath>Things/Building/RB_Linked/RB_GlassWall_MenuIcon</uiIconPath>
 		<filthLeaving>RB_Filth_GlassShards</filthLeaving>
-		<soundImpactDefault>RB_BulletImpact_Glass</soundImpactDefault>
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
 			<WorkToBuild>135</WorkToBuild>
@@ -413,6 +430,7 @@
 		</statBases>
 		<stuffCategories>
 			<li>Metallic</li>
+			<li>Stony</li>
 		</stuffCategories>
 		<costStuffCount>1</costStuffCount>
 		<costList>
@@ -424,22 +442,27 @@
 		<uiOrder>2003</uiOrder>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<blockLight>false</blockLight>
+		<staticSunShadowHeight>0</staticSunShadowHeight>
 		<specialDisplayRadius>3.9</specialDisplayRadius>
 		<building>
 			<isPlaceOverableWall>true</isPlaceOverableWall>
 			<ai_chillDestination>true</ai_chillDestination>
 			<supportsWallAttachments>false</supportsWallAttachments>
 			<blueprintGraphicData>
-				<texPath>Things/Building/Linked/RB_GlassWall/RB_GlassWall_Blueprint_Atlas</texPath>
+				<texPath>Things/Building/RB_Linked/RB_GlassWall/RB_GlassWall_Blueprint_Atlas</texPath>
 			</blueprintGraphicData>
 			<relatedBuildCommands Inherit="False">
 				<li>Door</li>
 				<li>Autodoor</li>
 				<li>RB_GlassAutodoor</li>
 			</relatedBuildCommands>
+			<soundMeleeHitOverride>RB_MeleeImpact_Glass</soundMeleeHitOverride>
 		</building>
 		<comps>
-			<li Class="ReBuildDoorsAndCorners.CompProperties_GlassWall"/>
+			<li Class="ReBuildDoorsAndCorners.CompProperties_GlassWall">
+				<naturalLightRadius>3</naturalLightRadius>
+				<needOutdoorsRefillRate>1</needOutdoorsRefillRate>
+			</li>
 		</comps>
 		<damageMultipliers Inherit="false">
 			<li>
@@ -453,7 +476,7 @@
 		</damageMultipliers>
 		<modExtensions>
 			<li Class="ReBuildDoorsAndCorners.ThingExtension">
-				<soundImpactMeleeOverride>RB_BulletImpact_Glass</soundImpactMeleeOverride>
+				<soundImpactMeleeOverride>RB_MeleeImpact_Glass</soundImpactMeleeOverride>
 				<soundImpactBulletOverride>RB_BulletImpact_Glass</soundImpactBulletOverride>
 			</li>
 		</modExtensions>
@@ -464,7 +487,7 @@
 		<label>reinforced glass wall</label>
 		<description>An impassable reinforced glass wall. Capable of holding up a roof. Does not block light, providing a growing bonus to plants near them. Slowly refills peoples outdoor need.</description>
 		<graphicData>
-			<texPath>Things/Building/Linked/RB_ReinforcedGlassWall/RB_ReinforcedGlassWall_Atlas</texPath>
+			<texPath>Things/Building/RB_Linked/RB_ReinforcedGlassWall/RB_ReinforcedGlassWall_Atlas</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<linkType>CornerFiller</linkType>
@@ -483,9 +506,8 @@
 				<edgeRight>Damage/Edge</edgeRight>
 			</damageData>
 		</graphicData>
-		<uiIconPath>Things/Building/Linked/RB_ReinforcedGlassWall_MenuIcon</uiIconPath>
+		<uiIconPath>Things/Building/RB_Linked/RB_ReinforcedGlassWall_MenuIcon</uiIconPath>
 		<filthLeaving>RB_Filth_BallisticGlassShards</filthLeaving>
-		<soundImpactDefault>RB_BulletImpact_Glass</soundImpactDefault>
 		<statBases>
 			<MaxHitPoints>300</MaxHitPoints>
 			<WorkToBuild>185</WorkToBuild>
@@ -494,6 +516,7 @@
 		</statBases>
 		<stuffCategories>
 			<li>Metallic</li>
+			<li>Stony</li>
 		</stuffCategories>
 		<costStuffCount>1</costStuffCount>
 		<costList>
@@ -505,12 +528,13 @@
 		<uiOrder>2003</uiOrder>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<blockLight>false</blockLight>
+		<staticSunShadowHeight>0</staticSunShadowHeight>
 		<specialDisplayRadius>3.9</specialDisplayRadius>
 		<building>
 			<isPlaceOverableWall>true</isPlaceOverableWall>
 			<ai_chillDestination>true</ai_chillDestination>
 			<blueprintGraphicData>
-				<texPath>Things/Building/Linked/RB_GlassWall/RB_GlassWall_Blueprint_Atlas</texPath>
+				<texPath>Things/Building/RB_Linked/RB_GlassWall/RB_GlassWall_Blueprint_Atlas</texPath>
 			</blueprintGraphicData>
 			<relatedBuildCommands Inherit="False">
 				<li>Autodoor</li>
@@ -518,9 +542,13 @@
 				<li MayRequire="Ludeon.RimWorld.Anomaly">SecurityDoor</li>
 				<li MayRequire="Ludeon.RimWorld.Anomaly">RB_LargeSecurityDoor</li>
 			</relatedBuildCommands>
+			<soundMeleeHitOverride>RB_MeleeImpact_Glass</soundMeleeHitOverride>
 		</building>
 		<comps>
-			<li Class="ReBuildDoorsAndCorners.CompProperties_GlassWall"/>
+			<li Class="ReBuildDoorsAndCorners.CompProperties_GlassWall">
+				<naturalLightRadius>3</naturalLightRadius>
+				<needOutdoorsRefillRate>1</needOutdoorsRefillRate>
+			</li>
 		</comps>
 		<damageMultipliers Inherit="false">
 			<li>
@@ -532,22 +560,28 @@
 				<multiplier>2</multiplier>
 			</li>
 		</damageMultipliers>
+		<modExtensions>
+			<li Class="ReBuildDoorsAndCorners.ThingExtension">
+				<soundImpactMeleeOverride>RB_MeleeImpact_Glass</soundImpactMeleeOverride>
+				<soundImpactBulletOverride>RB_BulletImpact_Glass</soundImpactBulletOverride>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<!-- ================================ Doors ====================== -->
 	<!-- ================================ Glass Autodoor ====================== -->
 	<ThingDef ParentName="DoorBase">
 		<defName>RB_GlassAutodoor</defName>
 		<label>glass autodoor</label>
-		<description>Divides rooms. Powered operation allows people to move through the door without slowing down. Does not block light.</description>
+		<description>Divides rooms. Powered operation allows people to move through the door without slowing down.</description>
 		<graphicData>
-			<texPath>Things/Building/Door/RB_GlassAutodoor_Mover</texPath>
+			<texPath>Things/Building/RB_Door/RB_GlassAutodoor/RB_GlassAutodoor_Mover</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<damageData>
 				<enabled>false</enabled>
 			</damageData>
 		</graphicData>
-		<uiIconPath>Things/Building/Door/RB_GlassAutodoor_MenuIcon</uiIconPath>
+		<uiIconPath>Things/Building/RB_Door/RB_GlassAutodoor_VanillaMenuIcon</uiIconPath>
 		<useBlueprintGraphicAsGhost>true</useBlueprintGraphicAsGhost>
 		<blockLight>false</blockLight>
 		<statBases>
@@ -564,7 +598,15 @@
 			<RB_Glass>5</RB_Glass>
 			<ComponentIndustrial>2</ComponentIndustrial>
 		</costList>
-		<uiOrder>2012</uiOrder>
+		<uiOrder>2013</uiOrder>
+		<researchPrerequisites>
+			<li>Autodoors</li>
+			<li>Electricity</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		<building>
+			<soundMeleeHitOverride>RB_MeleeImpact_Glass</soundMeleeHitOverride>
+		</building>
 		<comps>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
@@ -573,12 +615,159 @@
 			<li Class="CompProperties_Breakdownable"/>
 			<li Class="CompProperties_Styleable"/>
 		</comps>
-		<designationHotKey>Misc2</designationHotKey>
+		<modExtensions>
+			<li Class="ReBuildDoorsAndCorners.ThingExtension">
+				<soundImpactMeleeOverride>RB_MeleeImpact_Glass</soundImpactMeleeOverride>
+				<soundImpactBulletOverride>RB_BulletImpact_Glass</soundImpactBulletOverride>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<!-- ================================ Reinforced Glass Autodoor ====================== -->
+	<ThingDef ParentName="DoorBase">
+		<defName>RB_ReinforcedGlassAutodoor</defName>
+		<label>reinforced glass autodoor</label>
+		<description>Divides rooms. Powered operation allows people to move through the door without slowing down.</description>
+		<graphicData>
+			<texPath>Things/Building/RB_Door/RB_ReinforcedGlassAutodoor/RB_ReinforcedGlassAutodoor_Mover</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<damageData>
+				<enabled>false</enabled>
+			</damageData>
+		</graphicData>
+		<uiIconPath>Things/Building/RB_Door/RB_ReinforcedGlassAutodoor_VanillaMenuIcon</uiIconPath>
+		<useBlueprintGraphicAsGhost>true</useBlueprintGraphicAsGhost>
+		<blockLight>false</blockLight>
+		<statBases>
+			<MaxHitPoints>160</MaxHitPoints>
+			<WorkToBuild>1100</WorkToBuild>
+		</statBases>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>25</costStuffCount>
+		<costList>
+			<RB_BallisticGlass>5</RB_BallisticGlass>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<uiOrder>2013</uiOrder>
 		<researchPrerequisites>
 			<li>Autodoors</li>
-			<li>Electricity</li>
+			<li>Fabrication</li>
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		<building>
+			<soundMeleeHitOverride>RB_MeleeImpact_Glass</soundMeleeHitOverride>
+		</building>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>50</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Styleable"/>
+		</comps>
+		<modExtensions>
+			<li Class="ReBuildDoorsAndCorners.ThingExtension">
+				<soundImpactMeleeOverride>RB_MeleeImpact_Glass</soundImpactMeleeOverride>
+				<soundImpactBulletOverride>RB_BulletImpact_Glass</soundImpactBulletOverride>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<!-- ================================ Double Door ====================== -->
+	<ThingDef Name="Door" ParentName="DoorBase">
+		<defName>RB_DoubleDoor</defName>
+		<label>double door</label>
+		<description>Divides rooms. Simple doors must be manually opened, which slows people down. The amount of slowdown depends on what the door is made of.</description>
+		<thingClass>Building_MultiTileDoor</thingClass>
+		<graphicData>
+			<texPath>Things/Building/RB_Door/RB_DoubleDoor_Mover</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.05, 1)</drawSize>
+			<damageData>
+				<enabled>false</enabled>
+			</damageData>
+		</graphicData>
+		<size>(2, 1)</size>
+		<uiIconPath>Things/Building/RB_Door/RB_DoubleDoor_VanillaMenuIcon</uiIconPath>
+		<useBlueprintGraphicAsGhost>true</useBlueprintGraphicAsGhost>
+		<rotatable>true</rotatable>
+		<statBases>
+			<WorkToBuild>1700</WorkToBuild>
+		</statBases>
+		<costStuffCount>50</costStuffCount>
+		<building>
+			<blueprintGraphicData>
+				<texPath>Things/Building/RB_Door/RB_DoubleDoor_VanillaMenuIcon</texPath>
+				<graphicClass>Graphic_Multi</graphicClass>
+				<shaderType>EdgeDetect</shaderType>
+				<drawSize>(2, 2)</drawSize>
+			</blueprintGraphicData>
+		</building>
+		<placeWorkers>
+			<li>PlaceWorker_MultiCellDoor</li>
+		</placeWorkers>
+	</ThingDef>
+	<!-- ================================ Double Auto Door ====================== -->
+	<ThingDef ParentName="DoorBase">
+		<defName>RB_DoubleAutodoor</defName>
+		<label>double autodoor</label>
+		<description>Divides rooms. Powered operation allows people to move through the door without slowing down.</description>
+		<thingClass>ReBuildDoorsAndCorners.Building_MultiTileDoorStuffColor</thingClass>
+		<graphicData>
+			<texPath>Things/Building/RB_Door/RB_DoubleAutodoor/RB_DoubleAutodoor_Mover</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.05, 1)</drawSize>
+			<damageData>
+				<enabled>false</enabled>
+			</damageData>
+		</graphicData>
+		<size>(2, 1)</size>
+		<uiIconPath>Things/Building/RB_Door/RB_DoubleAutodoor_VanillaMenuIcon</uiIconPath>
+		<useBlueprintGraphicAsGhost>true</useBlueprintGraphicAsGhost>
+		<rotatable>true</rotatable>
+		<statBases>
+			<WorkToBuild>2200</WorkToBuild>
+		</statBases>
+		<costList>
+			<Steel>80</Steel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+		</costList>
+		<costStuffCount>50</costStuffCount>
+		<uiOrder>2012</uiOrder>
+		<building>
+			<poweredDoorOpenSpeedFactor>3</poweredDoorOpenSpeedFactor>
+			<unpoweredDoorOpenSpeedFactor>5</unpoweredDoorOpenSpeedFactor>
+			<unpoweredDoorCloseSpeedFactor>5</unpoweredDoorCloseSpeedFactor>
+			<upperMoverGraphic>
+				<texPath>Things/Building/RB_Door/RB_DoubleAutodoor/RB_DoubleAutodoor_UpperMover</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+			</upperMoverGraphic>
+			<blueprintClass>Blueprint_Build</blueprintClass>
+			<blueprintGraphicData>
+				<texPath>Things/Building/RB_Door/RB_DoubleAutodoor_MenuIcon</texPath>
+				<graphicClass>Graphic_Multi</graphicClass>
+				<shaderType>EdgeDetect</shaderType>
+				<drawSize>(2, 2)</drawSize>
+			</blueprintGraphicData>
+		</building>
+		<researchPrerequisites>
+			<li>Autodoors</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>7</constructionSkillPrerequisite>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>50</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Styleable"/>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_MultiCellDoor</li>
+		</placeWorkers>
 	</ThingDef>
 	<!-- ================================ Triple wide Ornate Door ====================== -->
 	<ThingDef ParentName="DoorBase">
@@ -615,7 +804,7 @@
 				<texPath>Things/Building/OrnateDoor/OrnateDoor_MenuIcon</texPath>
 				<graphicClass>Graphic_Multi</graphicClass>
 				<shaderType>EdgeDetect</shaderType>
-				<drawSize>(2.6, 3.1)</drawSize>
+				<drawSize>(3.6, 4.1)</drawSize>
 			</blueprintGraphicData>
 			<doorTopGraphic>
 				<texPath>Things/Building/LargeOrnateDoor/LargeOrnateDoor3x1_Top</texPath>
@@ -760,6 +949,9 @@
 			<isEdifice>false</isEdifice>
 			<canPlaceOverWall>true</canPlaceOverWall>
 		</building>
+		<comps>
+			<li Class="VanillaFurnitureExpanded.CompProperties_MountableOnWall"/>
+		</comps>
 		<placeWorkers>
 			<li>VanillaFurnitureExpanded.PlaceWorker_OnWall</li>
 			<li>PlaceWorker_GlowRadius</li>
@@ -810,7 +1002,7 @@
 		<label>wall armor</label>
 		<description>A durable, reinforced armor that seamlessly integrates with existing walls. Provides enhanced protection against external threats while maintaining structural integrity. It will protect the wall under it from damage until destroyed. Must be constructed on an existing wall.</description>
 		<graphicData>
-			<texPath>Things/Building/Linked/RB_OverwallArmor/RB_OverwallArmor</texPath>
+			<texPath>Things/Building/RB_Linked/RB_OverwallArmor/RB_OverwallArmor</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<linkType>CornerFiller</linkType>
 			<linkFlags>
@@ -828,7 +1020,7 @@
 				<edgeRight>Damage/Edge</edgeRight>
 			</damageData>
 		</graphicData>
-		<uiIconPath>Things/Building/Linked/RB_OverwallArmor_MenuIcon</uiIconPath>
+		<uiIconPath>Things/Building/RB_Linked/RB_OverwallArmor_MenuIcon</uiIconPath>
 		<altitudeLayer>BuildingOnTop</altitudeLayer>
 		<holdsRoof>false</holdsRoof>
 		<placingDraggableDimensions>1</placingDraggableDimensions>
@@ -851,15 +1043,18 @@
 		<costList>
 			<Steel>10</Steel>
 		</costList>
+		<researchPrerequisites>
+			<li>Fabrication</li>
+		</researchPrerequisites>
 		<uiOrder>2004</uiOrder>
 		<building Inherit="False">
 			<supportsWallAttachments>false</supportsWallAttachments>
 			<canPlaceOverWall>true</canPlaceOverWall>
 			<isEdifice>false</isEdifice>
-			<paintable>false</paintable>
+			<paintable>true</paintable>
 			<ai_chillDestination>false</ai_chillDestination>
 			<blueprintGraphicData>
-				<texPath>Things/Building/Linked/RB_OverwallArmor/RB_OverwallArmor_Blueprint_Atlas</texPath>
+				<texPath>Things/Building/RB_Linked/RB_OverwallArmor/RB_OverwallArmor_Blueprint_Atlas</texPath>
 			</blueprintGraphicData>
 			<relatedBuildCommands>
 				<li>Wall</li>
@@ -876,11 +1071,11 @@
 		<damageMultipliers>
 			<li>
 				<damageDef>Bomb</damageDef>
-				<multiplier>-1</multiplier>
+				<multiplier>1</multiplier>
 			</li>
 			<li>
 				<damageDef>Thump</damageDef>
-				<multiplier>-1</multiplier>
+				<multiplier>1</multiplier>
 			</li>
 		</damageMultipliers>
 	</ThingDef>

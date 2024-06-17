@@ -7,7 +7,7 @@
 	</supportedVersions>
 	<packageId>ReBuild.COTR.DoorsAndCorners</packageId>
 	<url/>
-	<modVersion IgnoreIfNoMatchingField="True">1.0-Miller-rev2</modVersion>
+	<modVersion IgnoreIfNoMatchingField="True">1.1-Miller-rev2</modVersion>
 	<modIconPath IgnoreIfNoMatchingField="True">UI/RB_ModIcon</modIconPath>
 	<description>ReBuild is another mod in my series of vanilla friendly enhancements for Rimworld, focusing on adding content that should or could have been added by Ludeon themselves. Like always it is my main priority to make sure the content fits vanilla Rimworld, not just in art and design, but also how it is integrated and works hand in hand with vanilla features.
 
@@ -39,10 +39,12 @@ ReBuild is designed to be as lightweight as possible, adding the minimum of new 
 		<li>VanillaExpanded.VFEMedical</li>
 		<li>VanillaExpanded.VFESpacer</li>
 		<li>VanillaExpanded.VTEXVariations</li>
+		<li>kentington.saveourship2</li>
 	</loadAfter>
 	<incompatibleWith>
 		<li>tikubonn.DontBlockDoor</li>
 		<li>Owlchemist.DoorClearance</li>
 		<li>Owlchemist.PerspectiveDoors</li>
+		<li>Mlie.SilentDoors</li>
 	</incompatibleWith>
 </ModMetaData>

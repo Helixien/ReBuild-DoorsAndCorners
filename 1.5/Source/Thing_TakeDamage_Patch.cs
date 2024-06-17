@@ -9,7 +9,8 @@ namespace ReBuildDoorsAndCorners
     {
         public static void Prefix(Thing __instance, ref DamageInfo dinfo)
         {
-            if (__instance.Spawned && __instance.def != RB_DefOf.RB_OverwallArmor)
+            if (__instance.Spawned && __instance.def != RB_DefOf.RB_OverwallArmor 
+                && __instance is Building && __instance.def.IsEdifice())
             {
                 var armor = __instance.Position.GetFirstThing(__instance.Map, RB_DefOf.RB_OverwallArmor);
                 if (armor != null)

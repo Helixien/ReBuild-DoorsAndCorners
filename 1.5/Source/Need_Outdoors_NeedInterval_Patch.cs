@@ -13,13 +13,14 @@ namespace ReBuildDoorsAndCorners
         public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> codeInstructions)
         {
             bool patched = false;
-            var curLevel = AccessTools.Method(typeof(RestUtility), nameof(RestUtility.InBed));
+            var inBed = AccessTools.Method(typeof(RestUtility), nameof(RestUtility.InBed));
             foreach (var instruction in codeInstructions)
             {
                 yield return instruction;
-                if (patched is false && instruction.Calls(curLevel))
+                if (patched is false && instruction.Calls(inBed))
                 {
                     patched = true;
+                    yield return new CodeInstruction(OpCodes.Ldloc_2);
                     yield return new CodeInstruction(OpCodes.Ldloca_S, 1);
                     yield return new CodeInstruction(OpCodes.Ldarg_0);
                     yield return new CodeInstruction(OpCodes.Call,
@@ -28,14 +29,21 @@ namespace ReBuildDoorsAndCorners
             }
         }
 
-        public static bool TryOverrideNeed(bool result, ref float value, Need_Outdoors need)
+        public static bool TryOverrideNeed(bool result, RoofDef roof, ref float value, Need_Outdoors need)
         {
-            if (need.pawn.GetRoom() is Room room && room.UsesOutdoorTemperature is false)
+            if (roof != null && need.pawn.GetRoom() is Room room && room.PsychologicallyOutdoors is false)
             {
                 var comp = need.pawn.Map?.GetComponent<MapComponent_Rebuild>();
-                if (comp != null && room.BorderCells.Any(x => comp.cellsNearbyGlassWalls.Contains(x)))
+                if (comp.glassWalls.Any())
                 {
-                    value = 1.6f;
+                    var roomThings = room.ContainedAndAdjacentThings.ToHashSet();
+                    var wallGlass = comp.glassWalls.Where(x => roomThings.Contains(x.parent)
+                        && x.Props.needOutdoorsRefillRate.HasValue).GroupBy(i => i.parent.def)
+                        .OrderByDescending(g => g.Count()).FirstOrDefault()?.FirstOrDefault();
+                    if (wallGlass != null)
+                    {
+                        value = wallGlass.Props.needOutdoorsRefillRate.Value;
+                    }
                 }
             }
             return result;

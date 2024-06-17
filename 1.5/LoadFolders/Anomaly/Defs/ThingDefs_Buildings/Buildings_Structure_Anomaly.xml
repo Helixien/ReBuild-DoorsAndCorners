@@ -42,7 +42,7 @@
 				<texPath>Things/Building/LargeSecurityDoor/SecurityDoor3x1_MenuIcon_south</texPath>
 				<graphicClass>Graphic_Multi</graphicClass>
 				<shaderType>EdgeDetect</shaderType>
-				<drawSize>(2.6, 3.1)</drawSize>
+				<drawSize>(3.6, 4.1)</drawSize>
 			</blueprintGraphicData>
 			<doorTopGraphic>
 				<texPath>Things/Building/LargeSecurityDoor/SecurityDoor3x1_Top</texPath>

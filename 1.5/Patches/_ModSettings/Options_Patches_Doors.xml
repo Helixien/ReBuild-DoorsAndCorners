@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- ================ Door Clearance ================ -->
+	<Operation Class="ModSettingsFramework.PatchOperationModOption">
+		<defaultValue>True</defaultValue>
+		<label>Enable Door Clearance</label>
+		<tooltip>Toggle this option to prevent colonists from dropping items at door locations and blocking them from being closed (Default: True)</tooltip>
+		<id>RB_ColonistsDontDropItemsAtDoors</id>
+		<category>RB_Doors</category>
+		<order>5</order>
+	</Operation>
+	<!-- ================ Silent Doors ================ -->
+	<Operation Class="ModSettingsFramework.PatchOperationModOption">
+		<defaultValue>False</defaultValue>
+		<label>Enable Silent Doors</label>
+		<tooltip>Removes the sound effect from doors, making them silent. (Default: False)</tooltip>
+		<id>RB_SilentDoors</id>
+		<category>RB_Doors</category>
+		<order>10</order>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/SoundDef[defName="Door_OpenPowered" or defName="Door_ClosePowered" or defName="Door_OpenManual" or defName="Door_CloseManual"]/subSounds/li[*]/volumeRange</xpath>
+				<value>
+					<volumeRange>0</volumeRange>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Anomaly">
+				<xpath>/Defs/SoundDef[defName="SecurityDoor_Open" or defName="SecurityDoor_BeginClosing" or defName="SecurityDoor_EndClosing"]/subSounds/li[*]/volumeRange</xpath>
+				<value>
+					<volumeRange>0</volumeRange>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	<!-- ================ Perspective Doors ================ -->
+	<Operation Class="ModSettingsFramework.PatchOperationModOption">
+		<defaultValue>True</defaultValue>
+		<label>Enable Perspective Doors 2</label>
+		<tooltip>Enable Perspective Doors 2, our "new" version of the amazing mod by OwlChemist. Adds depth and more detail to doors, while "fixing" some of the issues we had with the original mod. (Default: True)</tooltip>
+		<id>RB_PerspectiveDoors</id>
+		<category>RB_Doors</category>
+		<order>99</order>
+		<operations>
+			<!-- ================ Base Change to graphicClass for all doors ================ -->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Autodoor" or defName="AnimalFlap" or defName="RB_GlassAutodoor" or defName="RB_ReinforcedGlassAutodoor" or defName="RB_DoubleAutodoor" or defName="RB_DoubleDoor"]/graphicData/graphicClass</xpath>
+				<value>
+					<graphicClass>Graphic_Multi</graphicClass>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="RB_DoubleAutodoor"]/building/upperMoverGraphic/graphicClass</xpath>
+				<value>
+					<graphicClass>Graphic_Multi</graphicClass>
+				</value>
+			</li>
+			<!-- ================ Simple Door and Double Door Textures to reflect material ================ -->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Door" or defName="RB_DoubleDoor"]/graphicData/graphicClass</xpath>
+				<value>
+					<graphicClass>ReBuildDoorsAndCorners.Graphic_AppearancesMulti</graphicClass>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Door"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Things/Building/RB_Door/DoorSimple_Mover</texPath>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Door"]/uiIconPath</xpath>
+				<value>
+					<uiIconPath>Things/Building/RB_Door/DoorSimple_Smooth_MenuIcon</uiIconPath>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Door"]</xpath>
+				<value>
+					<uiIconPathsStuff>
+						<li>
+							<appearance>Planks</appearance>
+							<iconPath>Things/Building/RB_Door/DoorSimple_Planks_MenuIcon</iconPath>
+						</li>
+						<li>
+							<appearance>Bricks</appearance>
+							<iconPath>Things/Building/RB_Door/DoorSimple_Bricks_MenuIcon</iconPath>
+						</li>
+					</uiIconPathsStuff>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="RB_DoubleDoor"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Things/Building/RB_Door/RB_DoubleDoor</texPath>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="RB_DoubleDoor"]/uiIconPath</xpath>
+				<value>
+					<uiIconPath>Things/Building/RB_Door/RB_DoubleDoor_Smooth_MenuIcon</uiIconPath>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="RB_DoubleDoor"]</xpath>
+				<value>
+					<uiIconPathsStuff>
+						<li>
+							<appearance>Planks</appearance>
+							<iconPath>Things/Building/RB_Door/RB_DoubleDoor_Planks_MenuIcon</iconPath>
+						</li>
+						<li>
+							<appearance>Bricks</appearance>
+							<iconPath>Things/Building/RB_Door/RB_DoubleDoor_Bricks_MenuIcon</iconPath>
+						</li>
+					</uiIconPathsStuff>
+				</value>
+			</li>
+			<!-- ================ Change to Auto Door ================ -->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Autodoor"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Things/Building/RB_Door/Autodoor_Mover</texPath>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Autodoor"]/uiIconPath</xpath>
+				<value>
+					<uiIconPath>Things/Building/RB_Door/Autodoor_MenuIcon</uiIconPath>
+				</value>
+			</li>
+			<!-- ================ Change to Animal Flap ================ -->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="AnimalFlap"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Things/Building/RB_Door/AnimalFlap_Mover</texPath>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="AnimalFlap"]/uiIconPath</xpath>
+				<value>
+					<uiIconPath>Things/Building/RB_Door/AnimalFlap_MenuIcon</uiIconPath>
+				</value>
+			</li>
+			<!-- ================ Change to Glass Doors ================ -->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="RB_GlassAutodoor"]/uiIconPath</xpath>
+				<value>
+					<uiIconPath>Things/Building/RB_Door/RB_GlassAutodoor_MenuIcon</uiIconPath>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="RB_ReinforcedGlassAutodoor"]/uiIconPath</xpath>
+				<value>
+					<uiIconPath>Things/Building/RB_Door/RB_ReinforcedGlassAutodoor_MenuIcon</uiIconPath>
+				</value>
+			</li>
+			<!-- ================ Change to Double Auto Door ================ -->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="RB_DoubleAutodoor"]/uiIconPath</xpath>
+				<value>
+					<uiIconPath>Things/Building/RB_Door/RB_DoubleAutodoor_MenuIcon</uiIconPath>
+				</value>
+			</li>
+			<!-- ================ Anomaly ================ -->
+			<li Class="PatchOperationConditional" MayRequire="Ludeon.RimWorld.Anomaly">
+				<xpath>/Defs/ThingDef[defName="GrayDoor"]/graphicData/graphicClass</xpath>
+				<match Class="PatchOperationSequence">
+					<operations>
+						<li Class="PatchOperationReplace">
+							<xpath>/Defs/ThingDef[defName="GrayDoor"]/graphicData/graphicClass</xpath>
+							<value>
+								<graphicClass>Graphic_Multi</graphicClass>
+							</value>
+						</li>
+					</operations>
+				</match>
+				<nomatch Class="PatchOperationSequence">
+					<operations>
+						<li Class="PatchOperationAdd">
+							<xpath>/Defs/ThingDef[defName="GrayDoor"]/graphicData</xpath>
+							<value>
+								<graphicClass>Graphic_Multi</graphicClass>
+							</value>
+						</li>
+					</operations>
+				</nomatch>
+			</li>
+			<li Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Anomaly">
+				<xpath>Defs/ThingDef[defName="GrayDoor"]/comps/li[@Class="CompProperties_LabyrinthDoor"]/jammed/graphicClass</xpath>
+				<value>
+					<graphicClass>Graphic_Multi</graphicClass>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Anomaly">
+				<xpath>Defs/ThingDef[defName="GrayDoor"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Things/Building/RB_GrayDoor/GrayDoor_Mover</texPath>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Anomaly">
+				<xpath>Defs/ThingDef[defName="GrayDoor"]/comps/li[@Class="CompProperties_LabyrinthDoor"]/jammed/texPath</xpath>
+				<value>
+					<texPath>Things/Building/RB_GrayDoor/GrayDoor_Jammed</texPath>
+				</value>
+			</li>
+			<!-- ================ Ideology ================ -->
+			<li Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Ideology">
+				<xpath>Defs/ThingStyleDef[defName="Techist_Autodoor"]/graphicData/graphicClass</xpath>
+				<value>
+					<graphicClass>Graphic_Multi</graphicClass>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace" MayRequire="NanoCE.GlassLights">
+				<xpath>Defs/ThingDef[defName="DoorGlass" or defName="AutoDoorGlass"]/graphicData/graphicClass</xpath>
+				<value>
+					<graphicClass>Graphic_Multi</graphicClass>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace" MayRequire="VanillaExpanded.VFEA">
+				<xpath>Defs/ThingDef[defName="VFEA_VaultDoor"]/graphicData/graphicClass</xpath>
+				<value>
+					<graphicClass>Graphic_Multi</graphicClass>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace" MayRequire="VanillaExpanded.VFEArchitect">
+				<xpath>Defs/ThingDef[defName="VFEArch_SingleDoor" or defName="VFEArch_SingleDoor_Flipped" or defName="VFEArch_ArmoredDoor"]/graphicData/graphicClass</xpath>
+				<value>
+					<graphicClass>Graphic_Multi</graphicClass>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace" MayRequireAnyOf="RimEffect.Core,RimEffectReborn.Core">
+				<xpath>Defs/ThingDef[defName="RE_PrefabAutodoor"]/graphicData/graphicClass</xpath>
+				<value>
+					<graphicClass>Graphic_Multi</graphicClass>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace" MayRequireAnyOf="RimEffect.ExtendedCut,RimEffectReborn.ExtendedCut">
+				<xpath>Defs/ThingDef[defName="RE_PrefabDoorColonial" or defName="RE_PrefabAutoDoorIndustrial"]/graphicData/graphicClass</xpath>
+				<value>
+					<graphicClass>Graphic_Multi</graphicClass>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace" MayRequire="Sarg.AlphaMemes">
+				<xpath>Defs/ThingStyleDef[defName="AM_SteampunkRevival_Autodoor"]/graphicData/graphicClass</xpath>
+				<value>
+					<graphicClass>Graphic_Multi</graphicClass>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Anomaly,Sarg.AlphaMemes">
+				<xpath>Defs/ThingStyleDef[defName="AM_HoraxianDoor" or defName="AM_HoraxianAutodoor" or defName="AM_CubicDoor" or defName="AM_CubicAutodoor"]/graphicData/graphicClass</xpath>
+				<value>
+					<graphicClass>Graphic_Multi</graphicClass>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace" MayRequire="GT.Sam.BasicDoubleDoors">
+				<xpath>Defs/ThingDef[defName="BDD_DoubleDoor" or defName="BDD_AutoDoor"]/graphicData/graphicClass</xpath>
+				<value>
+					<graphicClass>Graphic_Multi</graphicClass>
+				</value>
+			</li>
+			<!-- ================ Original OwlChemist Perspective Doors Supported Mods (Not updated with new textures) ================ -->
+			<li Class="PatchOperationReplace" MayRequire="aoba.fortress.neolithic">
+				<xpath>Defs/ThingDef[defName="FT_PalisadeDoor"]/graphicData/graphicClass</xpath>
+				<value>
+					<graphicClass>Graphic_Multi</graphicClass>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace" MayRequire="cp.uncle.boris.used.furniture">
+				<xpath>Defs/ThingDef[defName="RH_Armored_Door" or defName="RH2_CamoNettingFlap" or defName="RH_ChainlinkFence_Door"]/graphicData/graphicClass</xpath>
+				<value>
+					<graphicClass>Graphic_Multi</graphicClass>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace" MayRequire="dankpyon.medieval.overhaul">
+				<xpath>Defs/ThingDef[defName="DankPyon_RusticDoor" or defName="DankPyon_Gate"]/graphicData/graphicClass</xpath>
+				<value>
+					<graphicClass>Graphic_Multi</graphicClass>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace" MayRequire="dubwise.dubsbadhygiene">
+				<xpath>Defs/ThingDef[defName="ToiletStallDoor"]/graphicData/graphicClass</xpath>
+				<value>
+					<graphicClass>Graphic_Multi</graphicClass>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace" MayRequire="dubwise.dubsbadhygiene.lite">
+				<xpath>Defs/ThingDef[defName="ToiletStallDoor"]/graphicData/graphicClass</xpath>
+				<value>
+					<graphicClass>Graphic_Multi</graphicClass>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace" MayRequire="erin.japanesefurniture">
+				<xpath>Defs/ThingDef[defName="Erin_Fusuma"]/graphicData/graphicClass</xpath>
+				<value>
+					<graphicClass>Graphic_Multi</graphicClass>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace" MayRequire="japanstyle.velcroboy333">
+				<xpath>Defs/ThingDef[defName="VBY_FusumaBase"]/graphicData/graphicClass</xpath>
+				<value>
+					<graphicClass>Graphic_Multi</graphicClass>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace" MayRequire="jecrell.doorsexpanded">
+				<xpath>Defs/ThingDef[defName="PH_DoorDouble" or defName="PH_DoorTriple" or defName="PH_AutodoorDouble" or defName="PH_AutodoorTriple" or defName="HeronCurtainTribal" or defName="HeronCurtainTribalDouble" or defName="HeronCurtainTribalTriple" or defName="PH_DoorJail"]/graphicData/graphicClass</xpath>
+				<value>
+					<graphicClass>Graphic_Multi</graphicClass>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace" MayRequire="kentington.saveourship2">
+				<xpath>Defs/ThingDef[defName="ShipAirlock" or defName="ShipAirlockMech" or defName="ShipAirlockWrecked" or defName="ShipAirlockArchotech"]/graphicData/graphicClass</xpath>
+				<value>
+					<graphicClass>Graphic_Multi</graphicClass>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace" MayRequire="mlie.concrete">
+				<xpath>Defs/ThingDef[@Name="RFC_DoorBase"]/graphicData/graphicClass</xpath>
+				<value>
+					<graphicClass>Graphic_Multi</graphicClass>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace" MayRequire="qx.astramilitarum">
+				<xpath>Defs/ThingDef[defName="ImperiumDoor" or defName="ImperiumAutodoor"]/graphicData/graphicClass</xpath>
+				<value>
+					<graphicClass>Graphic_Multi</graphicClass>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace" MayRequire="rd.earlytimes">
+				<xpath>Defs/ThingDef[defName="MedTimes_Gate"]/graphicData/graphicClass</xpath>
+				<value>
+					<graphicClass>Graphic_Multi</graphicClass>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace" MayRequire="solaris.furniturebase">
+				<xpath>Defs/ThingDef[defName="RGK_DoorOld"]/graphicData/graphicClass</xpath>
+				<value>
+					<graphicClass>Graphic_Multi</graphicClass>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace" MayRequire="wemd.reinforceddoors">
+				<xpath>Defs/ThingDef[defName="WDReinforcedDoor" or defName="WDReinforcedAutodoor"]/graphicData/graphicClass</xpath>
+				<value>
+					<graphicClass>Graphic_Multi</graphicClass>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>
