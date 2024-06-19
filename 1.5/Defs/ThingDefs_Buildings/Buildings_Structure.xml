@@ -1068,15 +1068,5 @@
 		<comps Inherit="False">
 			<li Class="VanillaFurnitureExpanded.CompProperties_MountableOnWall"/>
 		</comps>
-		<damageMultipliers>
-			<li>
-				<damageDef>Bomb</damageDef>
-				<multiplier>1</multiplier>
-			</li>
-			<li>
-				<damageDef>Thump</damageDef>
-				<multiplier>1</multiplier>
-			</li>
-		</damageMultipliers>
 	</ThingDef>
 </Defs>
