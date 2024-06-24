@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="BuildingShipHullBase">
+		<defName>RB_Ship_Beam_Glass</defName>
+		<label>ship hull (glass)</label>
+		<designatorDropdown>Ship_Beams</designatorDropdown>
+		<thingClass>Building</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Linked/ShipBeam/ShipBeam_Glass_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<linkType>CornerFiller</linkType>
+			<linkFlags>
+				<li>Wall</li>
+				<li>Rock</li>
+			</linkFlags>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+				<edgeTop>Damage/Edge</edgeTop>
+				<edgeBot>Damage/Edge</edgeBot>
+				<edgeLeft>Damage/Edge</edgeLeft>
+				<edgeRight>Damage/Edge</edgeRight>
+			</damageData>
+		</graphicData>
+		<uiIconPath>Things/Building/Linked/ShipBeam/ShipBeam_Glass_MenuIcon</uiIconPath>
+		<statBases>
+			<WorkToBuild>1500</WorkToBuild>
+			<MaxHitPoints>1000</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<description>The outer structural elements of a ship's hull. Does not include conduits for power or coolant.</description>
+		<designationCategory>Ship</designationCategory>
+		<placingDraggableDimensions>1</placingDraggableDimensions>
+		<comps>
+			<li Class="SaveOurShip2.CompProps_ShipCachePart">
+				<isHull>true</isHull>
+				<hermetic>true</hermetic>
+				<roof>true</roof>
+			</li>
+			<li>
+				<compClass>CompColorable</compClass>
+			</li>
+			<li Class="ReBuildDoorsAndCorners.CompProperties_GlassWall">
+				<naturalLightRadius>2</naturalLightRadius>
+				<needOutdoorsRefillRate>0.5</needOutdoorsRefillRate>
+			</li>
+		</comps>
+		<rotatable>false</rotatable>
+		<building>
+			<shipPart>true</shipPart>
+			<blueprintGraphicData>
+				<texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
+			</blueprintGraphicData>
+			<paintable>true</paintable>
+			<soundMeleeHitOverride>RB_MeleeImpact_Glass</soundMeleeHitOverride>
+		</building>
+		<costList>
+			<Steel>14</Steel>
+			<Plasteel>3</Plasteel>
+			<RB_Glass>2</RB_Glass>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<researchPrerequisites>
+			<li>ShipBasics</li>
+		</researchPrerequisites>
+		<designationHotKey>Misc1</designationHotKey>
+		<modExtensions>
+			<li Class="ReBuildDoorsAndCorners.ThingExtension">
+				<soundImpactMeleeOverride>RB_MeleeImpact_Glass</soundImpactMeleeOverride>
+				<soundImpactBulletOverride>RB_BulletImpact_Glass</soundImpactBulletOverride>
+			</li>
+		</modExtensions>
+		<blockLight>false</blockLight>
+		<staticSunShadowHeight>0.5</staticSunShadowHeight>
+		<specialDisplayRadius>2.9</specialDisplayRadius>
+		<filthLeaving>RB_Filth_GlassShards</filthLeaving>
+	</ThingDef>
+	
+	<ThingDef ParentName="BuildingShipHullBase">
+		<defName>RB_Ship_Beam_Viewport</defName>
+		<label>ship hull (viewport)</label>
+		<designatorDropdown>Ship_Beams</designatorDropdown>
+		<thingClass>Building</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Linked/ShipBeam/ShipBeam_Viewport_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<linkType>CornerFiller</linkType>
+			<linkFlags>
+				<li>Wall</li>
+				<li>Rock</li>
+			</linkFlags>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+				<edgeTop>Damage/Edge</edgeTop>
+				<edgeBot>Damage/Edge</edgeBot>
+				<edgeLeft>Damage/Edge</edgeLeft>
+				<edgeRight>Damage/Edge</edgeRight>
+			</damageData>
+		</graphicData>
+		<uiIconPath>Things/Building/Linked/ShipBeam/ShipBeam_Viewport_MenuIcon</uiIconPath>
+		<statBases>
+			<WorkToBuild>1500</WorkToBuild>
+			<MaxHitPoints>1000</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<description>The outer structural elements of a ship's hull. Does not include conduits for power or coolant.</description>
+		<designationCategory>Ship</designationCategory>
+		<placingDraggableDimensions>1</placingDraggableDimensions>
+		<comps>
+			<li Class="SaveOurShip2.CompProps_ShipCachePart">
+				<isHull>true</isHull>
+				<hermetic>true</hermetic>
+				<roof>true</roof>
+			</li>
+			<li>
+				<compClass>CompColorable</compClass>
+			</li>
+			<li Class="ReBuildDoorsAndCorners.CompProperties_GlassWall">
+				<naturalLightRadius>2</naturalLightRadius>
+				<needOutdoorsRefillRate>0.5</needOutdoorsRefillRate>
+			</li>
+		</comps>
+		<rotatable>false</rotatable>
+		<building>
+			<shipPart>true</shipPart>
+			<blueprintGraphicData>
+				<texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
+			</blueprintGraphicData>
+			<paintable>true</paintable>
+			<soundMeleeHitOverride>RB_MeleeImpact_Glass</soundMeleeHitOverride>
+		</building>
+		<costList>
+			<Steel>14</Steel>
+			<Plasteel>3</Plasteel>
+			<RB_Glass>2</RB_Glass>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<researchPrerequisites>
+			<li>ShipBasics</li>
+		</researchPrerequisites>
+		<designationHotKey>Misc1</designationHotKey>
+		<modExtensions>
+			<li Class="ReBuildDoorsAndCorners.ThingExtension">
+				<soundImpactMeleeOverride>RB_MeleeImpact_Glass</soundImpactMeleeOverride>
+				<soundImpactBulletOverride>RB_BulletImpact_Glass</soundImpactBulletOverride>
+			</li>
+		</modExtensions>
+		<blockLight>false</blockLight>
+		<staticSunShadowHeight>0.5</staticSunShadowHeight>
+		<specialDisplayRadius>2.9</specialDisplayRadius>
+		<filthLeaving>RB_Filth_GlassShards</filthLeaving>
+	</ThingDef>	
+</Defs>

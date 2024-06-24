@@ -41,6 +41,7 @@ ReBuild is designed to be as lightweight as possible, adding the minimum of new 
 		<li>VanillaExpanded.VTEXVariations</li>
 		<li>kentington.saveourship2</li>
 		<li>GT.Sam.BasicDoubleDoors</li>
+		<li>VanillaExpanded.VTEXE.SOS2</li>
 	</loadAfter>
 	<incompatibleWith>
 		<li>tikubonn.DontBlockDoor</li>
