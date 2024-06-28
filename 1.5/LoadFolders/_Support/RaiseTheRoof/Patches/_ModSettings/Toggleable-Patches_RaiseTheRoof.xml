@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- ================ Integrations ================ -->
+	<!-- ================ Raise The Roof ================ -->
+	<Operation Class="ModSettingsFramework.PatchOperationModOption">
+		<defaultValue>True</defaultValue>
+		<label>Raise The Roof</label>
+		<tooltip>Replaces Raise The Roof synthread cost with ReBuilds glass.(Default: True)</tooltip>
+		<id>RB_DaC_RaiseTheRoof</id>
+		<category>RB_Integration</category>
+		<order>31</order>
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="RTR_TransparentRoof"]/costList/Synthread</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="RTR_TransparentRoof"]/costList</xpath>
+				<value>
+					<costList>
+						<RB_Glass>2</RB_Glass>
+					</costList>
+				</value>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="RTR_TransparentSolarRoof"]/costList/Synthread</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="RTR_TransparentSolarRoof"]/costList</xpath>
+				<value>
+					<costList>
+						<RB_Glass>2</RB_Glass>
+					</costList>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>
