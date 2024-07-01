@@ -677,7 +677,7 @@
 		</modExtensions>
 	</ThingDef>
 	<!-- ================================ Double Door ====================== -->
-	<ThingDef Name="Door" ParentName="DoorBase">
+	<ThingDef ParentName="DoorBase">
 		<defName>RB_DoubleDoor</defName>
 		<label>double door</label>
 		<description>Divides rooms. Simple doors must be manually opened, which slows people down. The amount of slowdown depends on what the door is made of.</description>
