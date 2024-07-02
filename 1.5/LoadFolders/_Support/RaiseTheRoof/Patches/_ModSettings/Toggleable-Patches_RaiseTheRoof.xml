@@ -10,25 +10,22 @@
 		<category>RB_Integration</category>
 		<order>31</order>
 		<operations>
-			<li Class="PatchOperationRemove">
-				<xpath>Defs/RoofDef[defName="RTR_TransparentRoof"]/costList/Synthread</xpath>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/RoofDef[defName="RTR_TransparentRoof"]/costList</xpath>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="RTR_TransparentRoof"]/costList</xpath>
 				<value>
 					<costList>
-						<RB_Glass>2</RB_Glass>
+						<Steel>50</Steel>
+						<RB_Glass>5</RB_Glass>
 					</costList>
 				</value>
 			</li>
-			<li Class="PatchOperationRemove">
-				<xpath>Defs/RoofDef[defName="RTR_TransparentSolarRoof"]/costList/Synthread</xpath>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/RoofDef[defName="RTR_TransparentSolarRoof"]/costList</xpath>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="RTR_TransparentSolarRoof"]/costList</xpath>
 				<value>
 					<costList>
-						<RB_Glass>2</RB_Glass>
+						<Steel>50</Steel>
+						<RB_Glass>5</RB_Glass>
+						<ComponentIndustrial>1</ComponentIndustrial>
 					</costList>
 				</value>
 			</li>
