@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- ================ Grate Floor Speed ================ -->
+	<Operation Class="ModSettingsFramework.PatchOperationSliderFloat">
+		<label>Grate tile Speed penalty</label>
+		<tooltip>Adjust the speed penalty grate tiles have. For comparison the normal tile floor has a path cost of 0. The higher the value, the slower a pawn will move. Setting it to 0 will remove the speed penalty. Default: 500</tooltip>
+		<id>RB_GrateFloorSpeed</id>
+		<category>RB_Floors</category>
+		<order>10</order>
+		<xpath>Defs/ThingDef[@Name="RB_TileGrateMetalBase" or defName="RB_SterileGrateTile"]/pathCost</xpath>
+		<range>0~100</range>
+		<defaultValue>15</defaultValue>
+		<roundToDecimalPlaces>0</roundToDecimalPlaces>
+	</Operation>
+</Patch>

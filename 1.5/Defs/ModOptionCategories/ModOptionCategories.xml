@@ -15,6 +15,11 @@
 		<order>10</order>
 	</ModSettingsFramework.ModOptionCategoryDef>
 	<ModSettingsFramework.ModOptionCategoryDef ParentName="RB_ModOptionsBase">
+		<defName>RB_Floors</defName>
+		<label>Floors</label>
+		<order>15</order>
+	</ModSettingsFramework.ModOptionCategoryDef>
+	<ModSettingsFramework.ModOptionCategoryDef ParentName="RB_ModOptionsBase">
 		<defName>RB_Doors</defName>
 		<label>Doors</label>
 		<order>20</order>

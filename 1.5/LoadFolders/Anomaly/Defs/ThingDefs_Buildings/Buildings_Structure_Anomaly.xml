@@ -8,7 +8,7 @@
 		<thingClass>Building_MultiTileDoor</thingClass>
 		<statBases>
 			<WorkToBuild>8000</WorkToBuild>
-			<MaxHitPoints>1000</MaxHitPoints>
+			<MaxHitPoints>1200</MaxHitPoints>
 			<Flammability>0</Flammability>
 		</statBases>
 		<size>(3, 1)</size>
