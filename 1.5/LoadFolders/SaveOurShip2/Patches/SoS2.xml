@@ -173,13 +173,13 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>/Defs/ThingDef[defName="Ship_BeamArchotech_Unpowered"]/graphicData/texPath</xpath>
 		<value>
-			<texPath>Things/Building/Linked/ShipBeam/ShipBeam_Unpowered_Atlas</texPath>
+			<texPath>Things/Building/Linked/ShipBeam/ShipBeam_Archotech_Unpowered_Atlas</texPath>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
 		<xpath>/Defs/ThingDef[defName="Ship_BeamArchotech_Unpowered"]/uiIconPath</xpath>
 		<value>
-			<uiIconPath>Things/Building/Linked/ShipBeam/ShipBeam_Unpowered_MenuIcon</uiIconPath>
+			<uiIconPath>Things/Building/Linked/ShipBeam/ShipBeam_Archotech_Unpowered_MenuIcon</uiIconPath>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
