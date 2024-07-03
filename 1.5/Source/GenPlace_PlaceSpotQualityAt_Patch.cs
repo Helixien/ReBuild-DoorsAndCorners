@@ -11,7 +11,7 @@ namespace ReBuildDoorsAndCorners
     {
         public static bool Prefix(IntVec3 c, Map map, ref PlaceSpotQuality __result)
         {
-            if (ReBuildDoorsAndCornersMod.modInstance.GetModOptionState(ReBuildDoorsAndCornersMod.RB_ColonistsDontDropItemsAtDoors))
+            if (c.InBounds(map) && ReBuildDoorsAndCornersMod.modInstance.GetModOptionState(ReBuildDoorsAndCornersMod.RB_ColonistsDontDropItemsAtDoors))
             {
                 if (c.GetFirstThing<Building_Door>(map) != null)
                 {

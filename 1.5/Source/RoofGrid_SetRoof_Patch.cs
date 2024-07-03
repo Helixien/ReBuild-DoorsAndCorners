@@ -9,7 +9,10 @@ namespace ReBuildDoorsAndCorners
         public static void Postfix(RoofGrid __instance, IntVec3 c, RoofDef def, Map ___map)
         {
             var comp = ___map.GetComponent<MapComponent_Rebuild>();
-            comp.BuildCellsCache();
+            if (comp != null)
+            {
+                comp.BuildCellsCache();
+            }
         }
     }
 }
