@@ -6,7 +6,7 @@
 		<designatorDropdown>RB_Floor_Tile_GrateMetal</designatorDropdown>
 		<constructEffect>ConstructMetal</constructEffect>
 		<isPaintable>true</isPaintable>
-		<pathCost>15</pathCost>
+		<pathCost>10</pathCost>
 		<researchPrerequisites>
 			<li>Smithing</li>
 		</researchPrerequisites>
@@ -157,7 +157,7 @@
 		</costList>
 		<constructEffect>ConstructMetal</constructEffect>
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
-		<pathCost>15</pathCost>
+		<pathCost>10</pathCost>
 		<researchPrerequisites>
 			<li>SterileMaterials</li>
 		</researchPrerequisites>
