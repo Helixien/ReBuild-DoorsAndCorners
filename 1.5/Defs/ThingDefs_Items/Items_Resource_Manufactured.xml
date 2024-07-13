@@ -11,7 +11,8 @@
 		<thingCategories>
 			<li>Manufactured</li>
 		</thingCategories>
-		<allowedArchonexusCount>70</allowedArchonexusCount>
+		<thingSetMakerTags/>
+		<allowedArchonexusCount>55</allowedArchonexusCount>
 	</ThingDef>
 	<!-- ================================ Glass ====================== -->
 	<ThingDef ParentName="RB_GlassBase">
