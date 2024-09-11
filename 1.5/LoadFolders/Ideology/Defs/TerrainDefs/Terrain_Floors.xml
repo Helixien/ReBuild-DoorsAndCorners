@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<TerrainDef ParentName="FloorBase">
+		<defName>RB_PavedTile_Transhumanist</defName>
+		<label>paved hex tile</label>
+		<renderPrecedence>230</renderPrecedence>
+		<description>Concrete tiles with a hexagonal pattern for that ultra-technological look. Cheap, but neutral in terms of looks and slow to build.</description>
+		<texturePath>Terrain/Surfaces/HexPaved</texturePath>
+		<color>(140,140,140)</color>
+		<isPaintable>true</isPaintable>
+		<statBases>
+			<WorkToBuild>300</WorkToBuild>
+			<StyleDominance>1</StyleDominance>
+			<CleaningTimeFactor>0.8</CleaningTimeFactor>
+		</statBases>
+		<costList>
+			<Steel>2</Steel>
+		</costList>
+		<designationHotKey>Misc8</designationHotKey>
+		<researchPrerequisites>
+			<li>Stonecutting</li>
+		</researchPrerequisites>
+		<uiOrder>2054</uiOrder>
+		<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+		<dominantStyleCategory>Techist</dominantStyleCategory>
+	</TerrainDef>
+	<TerrainDef ParentName="FloorBase">
+		<defName>RB_WoodPlankFloor_Transhumanist</defName>
+		<label>wood hex floor</label>
+		<renderPrecedence>250</renderPrecedence>
+		<description>Wood plank flooring with a hexagonal pattern for that ultra-technological look. While it is quick to lay, it is also very flammable.</description>
+		<texturePath>Terrain/Surfaces/HexWood</texturePath>
+		<burnedDef>BurnedWoodPlankFloor</burnedDef>
+		<color>(108,78,55)</color>
+		<pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughSoftLight</pollutionShaderType>
+		<pollutionOverlayTexturePath>Terrain/Surfaces/PollutionFloorSmooth</pollutionOverlayTexturePath>
+		<isPaintable>true</isPaintable>
+		<statBases>
+			<WorkToBuild>85</WorkToBuild>
+			<StyleDominance>1</StyleDominance>
+			<Flammability>0.22</Flammability>
+		</statBases>
+		<costList>
+			<WoodLog>3</WoodLog>
+		</costList>
+		<constructEffect>ConstructWood</constructEffect>
+		<uiOrder>2056</uiOrder>
+		<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+		<dominantStyleCategory>Techist</dominantStyleCategory>
+	</TerrainDef>
+</Defs>
