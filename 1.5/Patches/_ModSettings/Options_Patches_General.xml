@@ -138,4 +138,21 @@
 			</li>
 		</operations>
 	</Operation>
+	<!-- ================ Alternative Power Cable ================ -->
+	<Operation Class="ModSettingsFramework.PatchOperationModOption">
+		<defaultValue>True</defaultValue>
+		<label>Enable Alternative Power Conduit</label>
+		<tooltip>Enables the alternative power conduit texture that makes them look more realistic. (Default: True)</tooltip>
+		<id>RB_AlternativePowerCables</id>
+		<category>RB_Core</category>
+		<order>10</order>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="PowerConduit"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Things/Building/RB_Linked/RB_PowerConduit_Atlas</texPath>
+				</value>
+			</li>
+		</operations>
+	</Operation>
 </Patch>
