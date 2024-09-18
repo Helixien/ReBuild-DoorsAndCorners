@@ -93,6 +93,7 @@
     <Compile Include="ReBuildDoorsAndCornersMod.cs" />
     <Compile Include="LordJob_Ritual_Constructor_Patch.cs" />
     <Compile Include="StatWorker_ContainmentStrength_CalculateValues_Patch.cs" />
+    <Compile Include="ThingDef_CoexistsWithFloors_Patch.cs" />
     <Compile Include="ThingExtension.cs" />
     <Compile Include="Thing_TakeDamage_Patch.cs" />
   </ItemGroup>
