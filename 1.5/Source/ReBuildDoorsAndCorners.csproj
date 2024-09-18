@@ -70,6 +70,7 @@
     <Publicize Include="Assembly-CSharp" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BuildDesignatorUtility_TryDrawPowerGridAndAnticipatedConnection_Patch.cs" />
     <Compile Include="Building_Door_PawnCanOpen_Patch.cs" />
     <Compile Include="Building_MultiTileDoorStuffColor.cs" />
     <Compile Include="Building_MultiTileDoor_DrawAt_Patch.cs" />
@@ -81,6 +82,7 @@
     <Compile Include="Graphic_AppearancesMulti.cs" />
     <Compile Include="HaulAIUtility_HaulablePlaceValidator_Patch.cs" />
     <Compile Include="ImpactSoundUtility_PlayImpactSound_Patch.cs" />
+    <Compile Include="PowerNetGraphics_PrintWirePieceConnecting_Patch.cs" />
     <Compile Include="RoofGrid_SetRoof_Patch.cs" />
     <Compile Include="SectionLayer_LightingOverlay_Regenerate_Patch.cs" />
     <Compile Include="MapComponent_Rebuild.cs" />
