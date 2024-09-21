@@ -1097,7 +1097,7 @@
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>Impassable</passability>
 		<blockWind>true</blockWind>
-		<fillPercent>0.5</fillPercent>
+		<fillPercent>1</fillPercent>
 		<blockLight>false</blockLight>
 		<canOverlapZones>false</canOverlapZones>
 		<statBases>
@@ -1114,7 +1114,7 @@
 		<uiOrder>2005</uiOrder>
 		<building Inherit="False">
 			<supportsWallAttachments>false</supportsWallAttachments>
-			<isEdifice>false</isEdifice>
+			<isEdifice>true</isEdifice>
 			<relatedBuildCommands Inherit="False"/>
 		</building>
 		<comps>
@@ -1133,8 +1133,8 @@
 				<multiplier>4</multiplier>
 			</li>
 		</damageMultipliers>
-		<modExtensions MayRequire="VanillaExpanded.VFEArchitect">
-			<li Class="VFEArchitect.BuildingExtension_PrisonerProof"/>
+		<modExtensions>
+			<li MayRequire="VanillaExpanded.VFEArchitect" Class="VFEArchitect.BuildingExtension_PrisonerProof"/>
 		</modExtensions>
 	</ThingDef>
 </Defs>
