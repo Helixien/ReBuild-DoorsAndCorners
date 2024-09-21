@@ -20,7 +20,7 @@
 		<researchPrerequisites>
 			<li>Stonecutting</li>
 		</researchPrerequisites>
-		<uiOrder>2054</uiOrder>
+		<uiOrder>2020</uiOrder>
 		<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
 		<dominantStyleCategory>Techist</dominantStyleCategory>
 	</TerrainDef>
@@ -44,7 +44,7 @@
 			<WoodLog>3</WoodLog>
 		</costList>
 		<constructEffect>ConstructWood</constructEffect>
-		<uiOrder>2056</uiOrder>
+		<uiOrder>2001</uiOrder>
 		<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
 		<dominantStyleCategory>Techist</dominantStyleCategory>
 	</TerrainDef>

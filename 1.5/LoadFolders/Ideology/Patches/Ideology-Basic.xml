@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<!-- ================================ Transhumanist Addition Patch ====================== -->
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/MemeDef[defName="Transhumanist"]/addDesignators</xpath>
+				<value>
+					<li>RB_PavedTile_Transhumanist</li>
+					<li>RB_WoodPlankFloor_Transhumanist</li>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/TerrainDef[defName="Tile_Transhumanist"]/uiOrder</xpath>
+				<value>
+					<uiOrder>2040</uiOrder>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>
