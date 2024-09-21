@@ -1098,6 +1098,7 @@
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>Impassable</passability>
 		<blockWind>true</blockWind>
+		<staticSunShadowHeight>0</staticSunShadowHeight>
 		<fillPercent>1</fillPercent>
 		<blockLight>false</blockLight>
 		<canOverlapZones>false</canOverlapZones>
@@ -1121,7 +1122,6 @@
 		<comps>
 			<li Class="ReBuildDoorsAndCorners.CompProperties_GlassWall">
 				<naturalLightRadius>3</naturalLightRadius>
-				<needOutdoorsRefillRate>1</needOutdoorsRefillRate>
 			</li>
 		</comps>
 		<damageMultipliers Inherit="False">
