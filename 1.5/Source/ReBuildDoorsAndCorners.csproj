@@ -71,6 +71,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BuildDesignatorUtility_TryDrawPowerGridAndAnticipatedConnection_Patch.cs" />
+    <Compile Include="Building_CellWall.cs" />
     <Compile Include="Building_Door_PawnCanOpen_Patch.cs" />
     <Compile Include="Building_MultiTileDoorStuffColor.cs" />
     <Compile Include="Building_MultiTileDoor_DrawAt_Patch.cs" />

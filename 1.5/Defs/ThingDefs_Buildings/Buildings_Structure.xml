@@ -1074,6 +1074,7 @@
 		<defName>RB_CellWall</defName>
 		<label>cell wall</label>
 		<description>An impassable wall consisting of metal bars.</description>
+		<thingClass>ReBuildDoorsAndCorners.Building_CellWall</thingClass>
 		<graphicData>
 			<texPath>Things/Building/RB_Linked/RB_CellWall/RB_CellWall_Atlas</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
