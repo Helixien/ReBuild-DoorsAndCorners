@@ -1,11 +1,13 @@
-﻿using Verse;
+﻿using System;
+using System.Collections.Generic;
+using Verse;
 
 namespace ReBuildDoorsAndCorners
 {
     public class Building_CellWall : Building
     {
-        private Graphic topRightGraphic;
-        private Graphic bottomLeftGraphic;
+        private Dictionary<string, Graphic> connectorGraphicsCache;
+
         public override Graphic Graphic
         {
             get
@@ -13,31 +15,49 @@ namespace ReBuildDoorsAndCorners
                 var baseGraphic = base.Graphic;
                 if (Spawned)
                 {
-                    if (HasWall(Rot4.North) || HasWall(Rot4.East))
+                    string connectorKey = DetermineConnectorKey();
+                    if (connectorKey != null)
                     {
-                        if (topRightGraphic is null)
+                        if (connectorGraphicsCache == null)
+                        {
+                            connectorGraphicsCache = new Dictionary<string, Graphic>();
+                        }
+
+                        if (!connectorGraphicsCache.TryGetValue(connectorKey, out Graphic cachedGraphic))
                         {
                             var copy = new GraphicData();
                             copy.CopyFrom(def.graphicData);
-                            copy.texPath += "_TopRightConnector";
-                            topRightGraphic = copy.GraphicColoredFor(this);
+                            copy.texPath += $"_{connectorKey}";
+                            cachedGraphic = copy.GraphicColoredFor(this);
+                            connectorGraphicsCache[connectorKey] = cachedGraphic;
                         }
-                        return topRightGraphic;
-                    }
-                    else if (HasWall(Rot4.South) || HasWall(Rot4.West))
-                    {
-                        if (bottomLeftGraphic is null)
-                        {
-                            var copy = new GraphicData();
-                            copy.CopyFrom(def.graphicData);
-                            copy.texPath += "_BottomLeftConnector";
-                            bottomLeftGraphic = copy.GraphicColoredFor(this);
-                        }
-                        return bottomLeftGraphic;
+                        return connectorGraphicsCache[connectorKey];
                     }
                 }
                 return baseGraphic;
             }
+        }
+
+        private string DetermineConnectorKey()
+        {
+            var hasWallNorth = new Lazy<bool>(() => HasWall(Rot4.North));
+            var hasWallSouth = new Lazy<bool>(() => HasWall(Rot4.South));
+            var hasWallEast = new Lazy<bool>(() => HasWall(Rot4.East));
+            var hasWallWest = new Lazy<bool>(() => HasWall(Rot4.West));
+
+            if ((hasWallNorth.Value && hasWallSouth.Value) || (hasWallWest.Value && hasWallEast.Value))
+            {
+                return "BothSidesConnector";
+            }
+            if (hasWallNorth.Value || hasWallEast.Value)
+            {
+                return "TopRightConnector";
+            }
+            if (hasWallSouth.Value || hasWallWest.Value)
+            {
+                return "BottomLeftConnector";
+            }
+            return null;
         }
 
         private bool HasWall(Rot4 rot)
