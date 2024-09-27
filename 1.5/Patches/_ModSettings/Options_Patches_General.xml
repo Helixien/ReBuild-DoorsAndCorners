@@ -139,7 +139,7 @@
 		</operations>
 	</Operation>
 	<!-- ================ Alternative Power Cable ================ -->
-	<Operation Class="ModSettingsFramework.PatchOperationModOption">
+<!--	<Operation Class="ModSettingsFramework.PatchOperationModOption">
 		<defaultValue>True</defaultValue>
 		<label>Enable Alternative Power Conduit</label>
 		<tooltip>Enables the alternative power conduit texture that makes them look more realistic. (Default: True)</tooltip>
@@ -154,5 +154,5 @@
 				</value>
 			</li>
 		</operations>
-	</Operation>
+	</Operation>-->
 </Patch>
