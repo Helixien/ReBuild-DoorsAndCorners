@@ -1118,6 +1118,9 @@
 			<supportsWallAttachments>false</supportsWallAttachments>
 			<isEdifice>true</isEdifice>
 			<relatedBuildCommands Inherit="False"/>
+			<blueprintGraphicData>
+				<texPath>Things/Building/RB_Linked/RB_CellWall/RB_CellWall_Blueprint_Atlas</texPath>
+			</blueprintGraphicData>
 		</building>
 		<comps>
 			<li Class="ReBuildDoorsAndCorners.CompProperties_GlassWall">
