@@ -7,8 +7,6 @@ namespace ReBuildDoorsAndCorners
     {
         private const int HeatPushInterval = 60;
 
-        public bool enabled = true;
-
         public CompProperties_HeatPusher Props => (CompProperties_HeatPusher)props;
 
         protected CompRefuelable refuelableComp;
@@ -23,9 +21,10 @@ namespace ReBuildDoorsAndCorners
                 }
                 CompProperties_HeatPusher compProperties_HeatPusher = Props;
                 float ambientTemperature = parent.AmbientTemperature;
-                if (enabled && ambientTemperature < compProperties_HeatPusher.heatPushMaxTemperature)
+                if (ambientTemperature < compProperties_HeatPusher.heatPushMaxTemperature)
                 {
-                    return ambientTemperature > compProperties_HeatPusher.heatPushMinTemperature;
+                    var shouldPush = ambientTemperature > compProperties_HeatPusher.heatPushMinTemperature;
+                    return shouldPush;
                 }
                 return false;
             }
@@ -42,7 +41,8 @@ namespace ReBuildDoorsAndCorners
             base.CompTick();
             if (parent.IsHashIntervalTick(60) && ShouldPushHeatNow)
             {
-                GenTemperature.PushHeat(parent.PositionHeld + IntVec3.North.RotatedBy(parent.Rotation), parent.MapHeld, Props.heatPerSecond);
+                var pos = parent.PositionHeld + IntVec3.North.RotatedBy(parent.Rotation);
+                GenTemperature.PushHeat(pos, parent.MapHeld, Props.heatPerSecond);
             }
         }
 
@@ -51,14 +51,9 @@ namespace ReBuildDoorsAndCorners
             base.CompTickRare();
             if (ShouldPushHeatNow)
             {
-                GenTemperature.PushHeat(parent.PositionHeld + IntVec3.North.RotatedBy(parent.Rotation), parent.MapHeld, Props.heatPerSecond * 4.1666665f);
+                var pos = parent.PositionHeld + IntVec3.North.RotatedBy(parent.Rotation);
+                GenTemperature.PushHeat(pos, parent.MapHeld, Props.heatPerSecond * 4.1666665f);
             }
-        }
-
-        public override void PostExposeData()
-        {
-            base.PostExposeData();
-            Scribe_Values.Look(ref enabled, "enabled", defaultValue: true);
         }
     }
 }
