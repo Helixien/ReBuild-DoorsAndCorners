@@ -1114,9 +1114,11 @@
 			<li>Smithing</li>
 		</researchPrerequisites>
 		<uiOrder>2005</uiOrder>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 		<building Inherit="False">
 			<supportsWallAttachments>false</supportsWallAttachments>
 			<isEdifice>true</isEdifice>
+			<paintable>true</paintable>
 			<relatedBuildCommands Inherit="False"/>
 			<blueprintGraphicData>
 				<texPath>Things/Building/RB_Linked/RB_CellWall/RB_CellWall_Blueprint_Atlas</texPath>
