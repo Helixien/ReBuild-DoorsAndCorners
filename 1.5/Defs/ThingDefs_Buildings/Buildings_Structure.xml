@@ -1099,7 +1099,8 @@
 		<passability>Impassable</passability>
 		<blockWind>true</blockWind>
 		<staticSunShadowHeight>0</staticSunShadowHeight>
-		<fillPercent>1</fillPercent>
+		<fillPercent>0.10</fillPercent>
+		<disableImpassableShotOverConfigError>true</disableImpassableShotOverConfigError>
 		<blockLight>false</blockLight>
 		<canOverlapZones>false</canOverlapZones>
 		<statBases>
@@ -1115,8 +1116,10 @@
 		</researchPrerequisites>
 		<uiOrder>2005</uiOrder>
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<useStuffTerrainAffordance>true</useStuffTerrainAffordance>
 		<building Inherit="False">
 			<supportsWallAttachments>false</supportsWallAttachments>
+			<canPlaceOverWall>true</canPlaceOverWall>
 			<isEdifice>true</isEdifice>
 			<paintable>true</paintable>
 			<relatedBuildCommands Inherit="False"/>
