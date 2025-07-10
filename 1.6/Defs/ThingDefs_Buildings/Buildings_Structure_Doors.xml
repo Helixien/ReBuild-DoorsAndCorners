@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ================================ Doors ====================== -->
+	<!-- ================================ Glass Autodoor ====================== -->
+	<ThingDef ParentName="DoorBase">
+		<defName>RB_GlassAutodoor</defName>
+		<label>glass autodoor</label>
+		<description>Divides rooms. Powered operation allows people to move through the door without slowing down.</description>
+		<graphicData>
+			<texPath>Things/Building/RB_Door/RB_GlassAutodoor/RB_GlassAutodoor_Mover</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<damageData>
+				<enabled>false</enabled>
+			</damageData>
+		</graphicData>
+		<uiIconPath>Things/Building/RB_Door/RB_GlassAutodoor_VanillaMenuIcon</uiIconPath>
+		<useBlueprintGraphicAsGhost>true</useBlueprintGraphicAsGhost>
+		<blockLight>false</blockLight>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToBuild>900</WorkToBuild>
+		</statBases>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>25</costStuffCount>
+		<costList>
+			<RB_Glass>5</RB_Glass>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<uiOrder>2013</uiOrder>
+		<researchPrerequisites>
+			<li>Autodoors</li>
+			<li>Electricity</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		<building>
+			<soundMeleeHitOverride>RB_MeleeImpact_Glass</soundMeleeHitOverride>
+		</building>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>50</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Styleable"/>
+			<li Class="ReBuildDoorsAndCorners.CompProperties_AdditionalGraphic">
+				<graphicData>
+					<texPath>Things/Building/RB_Door/RB_GlassAutodoor_VanillaMenuIcon</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+					<drawSize>(3, 3)</drawSize>
+					<drawOffset>(0, -0.1, 0)</drawOffset>
+				</graphicData>
+				<toggleLabel>Toggle graphic</toggleLabel>
+				<toggleDesc>to.do</toggleDesc>
+				<toggleIcon>Things/Building/RB_Door/RB_GlassAutodoor_VanillaMenuIcon</toggleIcon>
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="ReBuildDoorsAndCorners.ThingExtension">
+				<soundImpactMeleeOverride>RB_MeleeImpact_Glass</soundImpactMeleeOverride>
+				<soundImpactBulletOverride>RB_BulletImpact_Glass</soundImpactBulletOverride>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<!-- ================================ Reinforced Glass Autodoor ====================== -->
+	<ThingDef ParentName="DoorBase">
+		<defName>RB_ReinforcedGlassAutodoor</defName>
+		<label>reinforced glass autodoor</label>
+		<description>Divides rooms. Powered operation allows people to move through the door without slowing down.</description>
+		<graphicData>
+			<texPath>Things/Building/RB_Door/RB_ReinforcedGlassAutodoor/RB_ReinforcedGlassAutodoor_Mover</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<damageData>
+				<enabled>false</enabled>
+			</damageData>
+		</graphicData>
+		<uiIconPath>Things/Building/RB_Door/RB_ReinforcedGlassAutodoor_VanillaMenuIcon</uiIconPath>
+		<useBlueprintGraphicAsGhost>true</useBlueprintGraphicAsGhost>
+		<blockLight>false</blockLight>
+		<statBases>
+			<MaxHitPoints>160</MaxHitPoints>
+			<WorkToBuild>1100</WorkToBuild>
+		</statBases>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>25</costStuffCount>
+		<costList>
+			<RB_BallisticGlass>5</RB_BallisticGlass>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<uiOrder>2013</uiOrder>
+		<researchPrerequisites>
+			<li>Autodoors</li>
+			<li>Fabrication</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		<building>
+			<soundMeleeHitOverride>RB_MeleeImpact_Glass</soundMeleeHitOverride>
+		</building>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>50</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Styleable"/>
+		</comps>
+		<modExtensions>
+			<li Class="ReBuildDoorsAndCorners.ThingExtension">
+				<soundImpactMeleeOverride>RB_MeleeImpact_Glass</soundImpactMeleeOverride>
+				<soundImpactBulletOverride>RB_BulletImpact_Glass</soundImpactBulletOverride>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<!-- ================================ Double Door ====================== -->
+	<ThingDef ParentName="DoorBase">
+		<defName>RB_DoubleDoor</defName>
+		<label>double door</label>
+		<description>Divides rooms. Simple doors must be manually opened, which slows people down. The amount of slowdown depends on what the door is made of.</description>
+		<thingClass>Building_MultiTileDoor</thingClass>
+		<graphicData>
+			<texPath>Things/Building/RB_Door/RB_DoubleDoor_Mover</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.05, 1)</drawSize>
+			<damageData>
+				<enabled>false</enabled>
+			</damageData>
+		</graphicData>
+		<size>(2, 1)</size>
+		<uiIconPath>Things/Building/RB_Door/RB_DoubleDoor_VanillaMenuIcon</uiIconPath>
+		<useBlueprintGraphicAsGhost>true</useBlueprintGraphicAsGhost>
+		<rotatable>true</rotatable>
+		<statBases>
+			<WorkToBuild>1700</WorkToBuild>
+		</statBases>
+		<costStuffCount>50</costStuffCount>
+		<building>
+			<blueprintGraphicData>
+				<texPath>Things/Building/RB_Door/RB_DoubleDoor_VanillaMenuIcon</texPath>
+				<graphicClass>Graphic_Multi</graphicClass>
+				<shaderType>EdgeDetect</shaderType>
+				<drawSize>(2, 2)</drawSize>
+			</blueprintGraphicData>
+		</building>
+		<placeWorkers>
+			<li>PlaceWorker_MultiCellDoor</li>
+		</placeWorkers>
+	</ThingDef>
+	<!-- ================================ Double Auto Door ====================== -->
+	<ThingDef ParentName="DoorBase">
+		<defName>RB_DoubleAutodoor</defName>
+		<label>double autodoor</label>
+		<description>Divides rooms. Powered operation allows people to move through the door without slowing down.</description>
+		<thingClass>ReBuildDoorsAndCorners.Building_MultiTileDoorStuffColor</thingClass>
+		<graphicData>
+			<texPath>Things/Building/RB_Door/RB_DoubleAutodoor/RB_DoubleAutodoor_Mover</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.05, 1)</drawSize>
+			<damageData>
+				<enabled>false</enabled>
+			</damageData>
+		</graphicData>
+		<size>(2, 1)</size>
+		<uiIconPath>Things/Building/RB_Door/RB_DoubleAutodoor_VanillaMenuIcon</uiIconPath>
+		<useBlueprintGraphicAsGhost>true</useBlueprintGraphicAsGhost>
+		<rotatable>true</rotatable>
+		<statBases>
+			<WorkToBuild>2200</WorkToBuild>
+		</statBases>
+		<costList>
+			<Steel>80</Steel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+		</costList>
+		<costStuffCount>50</costStuffCount>
+		<uiOrder>2012</uiOrder>
+		<building>
+			<poweredDoorOpenSpeedFactor>1.5</poweredDoorOpenSpeedFactor>
+			<unpoweredDoorOpenSpeedFactor>3</unpoweredDoorOpenSpeedFactor>
+			<unpoweredDoorCloseSpeedFactor>3</unpoweredDoorCloseSpeedFactor>
+			<upperMoverGraphic>
+				<texPath>Things/Building/RB_Door/RB_DoubleAutodoor/RB_DoubleAutodoor_UpperMover</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+			</upperMoverGraphic>
+			<blueprintClass>Blueprint_Build</blueprintClass>
+			<blueprintGraphicData>
+				<texPath>Things/Building/RB_Door/RB_DoubleAutodoor_MenuIcon</texPath>
+				<graphicClass>Graphic_Multi</graphicClass>
+				<shaderType>EdgeDetect</shaderType>
+				<drawSize>(2, 2)</drawSize>
+			</blueprintGraphicData>
+		</building>
+		<researchPrerequisites>
+			<li>Autodoors</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>7</constructionSkillPrerequisite>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>50</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Styleable"/>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_MultiCellDoor</li>
+		</placeWorkers>
+	</ThingDef>
+	<!-- ================================ Triple wide Ornate Door ====================== -->
+	<ThingDef ParentName="DoorBase">
+		<defName>RB_LargeOrnateDoor</defName>
+		<label>large ornate door</label>
+		<description>Divides rooms. An intricately-carved door, decorated with gold. This large, heavy door requires adjacent walls to function.</description>
+		<thingClass>Building_MultiTileDoor</thingClass>
+		<statBases>
+			<WorkToBuild>18000</WorkToBuild>
+			<MaxHitPoints>350</MaxHitPoints>
+			<Beauty>35</Beauty>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Building/LargeOrnateDoor/LargeOrnateDoor3x1_Mover</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<damageData>
+				<enabled>false</enabled>
+			</damageData>
+		</graphicData>
+		<uiIconPath>Things/Building/LargeOrnateDoor/LargeOrnateDoor_MenuIcon</uiIconPath>
+		<useBlueprintGraphicAsGhost>true</useBlueprintGraphicAsGhost>
+		<size>(3, 1)</size>
+		<rotatable>true</rotatable>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		<costStuffCount>100</costStuffCount>
+		<costList>
+			<Gold>75</Gold>
+		</costList>
+		<uiOrder>2014</uiOrder>
+		<building>
+			<blueprintClass>Blueprint_Build</blueprintClass>
+			<blueprintGraphicData>
+				<texPath>Things/Building/OrnateDoor/OrnateDoor_MenuIcon</texPath>
+				<graphicClass>Graphic_Multi</graphicClass>
+				<shaderType>EdgeDetect</shaderType>
+				<drawSize>(3.6, 4.1)</drawSize>
+			</blueprintGraphicData>
+			<doorTopGraphic>
+				<texPath>Things/Building/LargeOrnateDoor/LargeOrnateDoor3x1_Top</texPath>
+				<graphicClass>Graphic_Multi</graphicClass>
+				<drawSize>(4,2)</drawSize>
+			</doorTopGraphic>
+			<doorSupportGraphic>
+				<texPath>Things/Building/LargeOrnateDoor/LargeOrnateDoor3x1_Support</texPath>
+				<graphicClass>Graphic_Multi</graphicClass>
+				<drawSize>(4,2)</drawSize>
+			</doorSupportGraphic>
+		</building>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+			<li MayRequire="VanillaExpanded.VFECore">MF_RoyalFurniture</li>
+		</researchPrerequisites>
+		<placeWorkers>
+			<li>PlaceWorker_MultiCellDoor</li>
+		</placeWorkers>
+		<comps>
+			<li Class="CompProperties_MeditationFocus">
+				<statDef>MeditationFocusStrength</statDef>
+				<focusTypes>
+					<li>Minimal</li>
+					<li MayRequire="VanillaExpanded.VPsycastsE">VPE_Wealth</li>
+				</focusTypes>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ================================ Cell Door ====================== -->
+	<ThingDef ParentName="DoorBase">
+		<defName>RB_CellDoor</defName>
+		<label>cell door</label>
+		<description>A slow moving door that separates two rooms.</description>
+		<graphicData>
+			<texPath>Things/Building/RB_Door/RB_DoorCell/DoorCell_Mover</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<damageData>
+				<enabled>false</enabled>
+			</damageData>
+		</graphicData>
+		<statBases>
+			<WorkToBuild>850</WorkToBuild>
+			<MaxHitPoints>80</MaxHitPoints>
+			<DoorOpenSpeed>0.8</DoorOpenSpeed>
+		</statBases>
+		<uiIconPath>DoorCell/DoorCell_MenuIcon</uiIconPath>
+		<building>
+			<blueprintGraphicData>
+				<texPath>DoorCell/DoorCell_Blueprint</texPath>
+			</blueprintGraphicData>
+			<paintable>true</paintable>
+		</building>
+		<stuffCategories Inherit="False">
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>25</costStuffCount>
+		<damageMultipliers>
+			<li>
+				<damageDef>Bomb</damageDef>
+				<multiplier>2</multiplier>
+			</li>
+		</damageMultipliers>
+		<researchPrerequisites>
+			<li>Smithing</li>
+		</researchPrerequisites>
+		<modExtensions>
+			<li MayRequire="VanillaExpanded.VFEArchitect" Class="VFEArchitect.BuildingExtension_PrisonerProof"/>
+			<li Class="ReBuildDoorsAndCorners.ThingExtension">
+				<closesRooms>True</closesRooms>
+			</li>
+		</modExtensions>
+	</ThingDef>
+</Defs>
