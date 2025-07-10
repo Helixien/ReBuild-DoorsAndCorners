@@ -568,6 +568,50 @@
 		</modExtensions>
 	</ThingDef>
 	<!-- ================================ Doors ====================== -->
+	<!-- ================================ Cell Door ====================== -->
+	<ThingDef ParentName="DoorBase">
+		<defName>RB_CellDoor</defName>
+		<label>cell door</label>
+		<description>A slow moving door that separates two rooms.</description>
+		<graphicData>
+			<texPath>Things/Building/RB_Door/RB_DoorCell/DoorCell_Mover</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<damageData>
+				<enabled>false</enabled>
+			</damageData>
+		</graphicData>
+		<statBases>
+			<WorkToBuild>850</WorkToBuild>
+			<MaxHitPoints>80</MaxHitPoints>
+			<DoorOpenSpeed>0.8</DoorOpenSpeed>
+		</statBases>
+		<uiIconPath>DoorCell/DoorCell_MenuIcon</uiIconPath>
+		<building>
+			<blueprintGraphicData>
+				<texPath>DoorCell/DoorCell_Blueprint</texPath>
+			</blueprintGraphicData>
+			<paintable>true</paintable>
+		</building>
+		<stuffCategories Inherit="False">
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>25</costStuffCount>
+		<damageMultipliers>
+			<li>
+				<damageDef>Bomb</damageDef>
+				<multiplier>2</multiplier>
+			</li>
+		</damageMultipliers>
+		<researchPrerequisites>
+			<li>Smithing</li>
+		</researchPrerequisites>
+		<modExtensions>
+			<li MayRequire="VanillaExpanded.VFEArchitect" Class="VFEArchitect.BuildingExtension_PrisonerProof"/>
+			<li Class="ReBuildDoorsAndCorners.ThingExtension">
+				<closesRooms>True</closesRooms>
+			</li>
+		</modExtensions>
+	</ThingDef>
 	<!-- ================================ Glass Autodoor ====================== -->
 	<ThingDef ParentName="DoorBase">
 		<defName>RB_GlassAutodoor</defName>
@@ -612,8 +656,8 @@
 				<compClass>CompPowerTrader</compClass>
 				<basePowerConsumption>50</basePowerConsumption>
 			</li>
-			<li Class="CompProperties_Breakdownable" />
-			<li Class="CompProperties_Styleable" />
+			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Styleable"/>
 			<li Class="ReBuildDoorsAndCorners.CompProperties_AdditionalGraphic">
 				<graphicData>
 					<texPath>Things/Building/RB_Door/RB_GlassAutodoor_VanillaMenuIcon</texPath>
@@ -677,8 +721,8 @@
 				<compClass>CompPowerTrader</compClass>
 				<basePowerConsumption>50</basePowerConsumption>
 			</li>
-			<li Class="CompProperties_Breakdownable" />
-			<li Class="CompProperties_Styleable" />
+			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Styleable"/>
 		</comps>
 		<modExtensions>
 			<li Class="ReBuildDoorsAndCorners.ThingExtension">
@@ -773,8 +817,8 @@
 				<compClass>CompPowerTrader</compClass>
 				<basePowerConsumption>50</basePowerConsumption>
 			</li>
-			<li Class="CompProperties_Breakdownable" />
-			<li Class="CompProperties_Styleable" />
+			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Styleable"/>
 		</comps>
 		<placeWorkers>
 			<li>PlaceWorker_MultiCellDoor</li>
@@ -954,14 +998,14 @@
 		<fillPercent>0.75</fillPercent>
 		<castEdgeShadows>false</castEdgeShadows>
 		<costStuffCount>25</costStuffCount>
-		<terrainAffordanceNeeded IsNull="True" />
+		<terrainAffordanceNeeded IsNull="True"/>
 		<building>
 			<isInert>true</isInert>
 			<isEdifice>false</isEdifice>
 			<canPlaceOverWall>true</canPlaceOverWall>
 		</building>
 		<comps>
-			<li Class="VEF.Buildings.CompProperties_MountableOnWall" />
+			<li Class="VEF.Buildings.CompProperties_MountableOnWall"/>
 		</comps>
 		<placeWorkers>
 			<li>VEF.Buildings.PlaceWorker_OnWall</li>
@@ -994,7 +1038,7 @@
 		<castEdgeShadows>true</castEdgeShadows>
 		<holdsRoof>true</holdsRoof>
 		<costStuffCount>65</costStuffCount>
-		<terrainAffordanceNeeded IsNull="True" />
+		<terrainAffordanceNeeded IsNull="True"/>
 		<specialDisplayRadius>6.9</specialDisplayRadius>
 		<!-- must be kept in sync with roof hold-up radius -->
 		<building>
@@ -1077,7 +1121,7 @@
 			<li>ReBuildDoorsAndCorners.PlaceWorker_OnWall</li>
 		</placeWorkers>
 		<comps Inherit="False">
-			<li Class="VEF.Buildings.CompProperties_MountableOnWall" />
+			<li Class="VEF.Buildings.CompProperties_MountableOnWall"/>
 		</comps>
 	</ThingDef>
 	<!-- ================================ Cell Wall ====================== -->
@@ -1135,7 +1179,7 @@
 			<canPlaceOverWall>true</canPlaceOverWall>
 			<isEdifice>true</isEdifice>
 			<paintable>true</paintable>
-			<relatedBuildCommands Inherit="False" />
+			<relatedBuildCommands Inherit="False"/>
 			<blueprintGraphicData>
 				<texPath>Things/Building/RB_Linked/RB_CellWall/RB_CellWall_Blueprint_Atlas</texPath>
 			</blueprintGraphicData>
@@ -1156,7 +1200,7 @@
 			</li>
 		</damageMultipliers>
 		<modExtensions>
-			<li MayRequire="VanillaExpanded.VFEArchitect" Class="VFEArchitect.BuildingExtension_PrisonerProof" />
+			<li MayRequire="VanillaExpanded.VFEArchitect" Class="VFEArchitect.BuildingExtension_PrisonerProof"/>
 			<li Class="ReBuildDoorsAndCorners.ThingExtension">
 				<closesRooms>True</closesRooms>
 			</li>
@@ -1216,7 +1260,7 @@
 			<canPlaceOverWall>false</canPlaceOverWall>
 			<isEdifice>true</isEdifice>
 			<paintable>true</paintable>
-			<relatedBuildCommands Inherit="False" />
+			<relatedBuildCommands Inherit="False"/>
 			<blueprintGraphicData>
 				<texPath>Things/Building/RB_Linked/RB_BarriersWall/RB_BarriersWall_Blueprint_Atlas</texPath>
 			</blueprintGraphicData>
@@ -1232,7 +1276,7 @@
 			</li>
 		</damageMultipliers>
 		<modExtensions>
-			<li MayRequire="VanillaExpanded.VFEArchitect" Class="VFEArchitect.BuildingExtension_PrisonerProof" />
+			<li MayRequire="VanillaExpanded.VFEArchitect" Class="VFEArchitect.BuildingExtension_PrisonerProof"/>
 			<li Class="ReBuildDoorsAndCorners.ThingExtension">
 				<closesRooms>True</closesRooms>
 			</li>

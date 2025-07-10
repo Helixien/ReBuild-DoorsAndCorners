@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<!-- ================================ Remove Cell Wall ====================== -->
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[defName="VFEArch_CellWall"]/</xpath>
+			</li>
+			<!-- ================================ Remove Cell Door ====================== -->
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[defName="VFEArch_CellDoor"]/</xpath>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

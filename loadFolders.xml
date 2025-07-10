@@ -49,14 +49,13 @@
 		<!-- ================ Mod Support (New Content) ================ -->
 		<li IfModActive="VanillaExpanded.Ideo.SophianStyle">1.6/LoadFolders/VanillaIdeologyExpanded-SophianStyle</li>
 		<li IfModActive="VanillaExpanded.Temperature">1.6/LoadFolders/VanillaTemperatureExpanded</li>
-		<li IfModActive="kentington.saveourship2">1.6/LoadFolders/SaveOurShip2</li>
 		<!-- ================ Mod Support - VES ================ -->
+		<li IfModActive="VanillaExpanded.VFEArchitect">1.6/LoadFolders/_Support/VanillaFurnitureExpanded-Architect</li>
 		<li IfModActive="OskarPotocki.VanillaFactionsExpanded.SettlersModule">1.6/LoadFolders/_Support/VFE-Settlers</li>
 		<li IfModActive="VanillaExpanded.VFEA">1.6/LoadFolders/_Support/VFE-Ancients</li>
 		<li IfModActive="VanillaExpanded.VFESpacer">1.6/LoadFolders/_Support/VFUE-Spacer</li>
 		<li IfModActive="VanillaExpanded.VFEMedical">1.6/LoadFolders/_Support/VFUE-Medical</li>
 		<li IfModActive="VanillaExpanded.VFEArt">1.6/LoadFolders/_Support/VFUE-Art</li>
-		<li IfModActive="VanillaExpanded.VFEArchitect">1.6/LoadFolders/_Support/VFUE-Architect</li>
 		<li IfModActive="VanillaExpanded.VTEXVariations">1.6/LoadFolders/_Support/VTEX-Variations</li>
 		<li IfModActive="VanillaExpanded.VGeneticsE">1.6/LoadFolders/_Support/VE-Genetics</li>
 		<!-- ================ Mod Support ================ -->
