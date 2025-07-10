@@ -62,7 +62,7 @@
 					<li Class="PatchOperationReplace">
 						<xpath>/Defs/ThingDef[@Name="Wall"]/uiIconPath</xpath>
 						<value>
-							    <uiIconPath>Things/Building/Linked/WallSmooth_MenuIcon</uiIconPath>
+							<uiIconPath>Things/Building/Linked/WallSmooth_MenuIcon</uiIconPath>
 						</value>
 					</li>
 				</operations>
@@ -80,5 +80,22 @@
 		<range>100~1000</range>
 		<defaultValue>500</defaultValue>
 		<roundToDecimalPlaces>0</roundToDecimalPlaces>
+	</Operation>
+	<!-- ================ Wall Barrier Deep Water ================ -->
+	<Operation Class="ModSettingsFramework.PatchOperationModOption">
+		<label>Barrier walls can be build in deep water</label>
+		<tooltip>When enabled, barrier walls can also be build in deep water. Default: Disabled</tooltip>
+		<id>RB_BarrierWallsDeepWater</id>
+		<category>RB_Walls</category>
+		<order>20</order>
+		<defaultValue>False</defaultValue>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/TerrainDef[@Name="WaterDeepBase"]/affordances</xpath>
+				<value>
+					<li>RB_AnyWater</li>
+				</value>
+			</li>
+		</operations>
 	</Operation>
 </Patch>

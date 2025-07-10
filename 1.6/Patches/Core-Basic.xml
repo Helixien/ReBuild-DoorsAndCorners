@@ -188,11 +188,9 @@
 			</li>
 			<!-- ================================ Add Terrain Affordance to Terrains Patch ====================== -->
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/TerrainDef[@Name="WaterBase"]</xpath>
+				<xpath>/Defs/TerrainDef[@Name="WaterChestDeepBase" or @Name="WaterShallowBase"]/affordances</xpath>
 				<value>
-					<affordances>
-						<li>RB_AnyWater</li>
-					</affordances>
+					<li>RB_AnyWater</li>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
