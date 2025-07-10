@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- ================ Seamless Wall Lamps ================ -->
+	<Operation Class="ModSettingsFramework.PatchOperationModOption">
+		<defaultValue>True</defaultValue>
+		<label>Enable seamless wall lamps</label>
+		<tooltip>Enable seamless wall lamps, making them merge nicer with walls.(Default: True)</tooltip>
+		<id>RB_SeamlessWallLamps</id>
+		<category>RB_Core</category>
+		<order>5</order>
+		<operations>
+			<!-- ================ Core Patches ================ -->
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="WallLamp"]/graphicData</xpath>
+				<value>
+					<shaderType>CutoutComplex</shaderType>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="WallLamp"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Things/Building/Furniture/RB_WallLamp/WallLamp</texPath>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="WallLamp"]/uiIconPath</xpath>
+				<value>
+					<uiIconPath>Things/Building/Furniture/RB_WallLamp/WallLamp_MenuIcon</uiIconPath>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="WallLamp"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Metallic</li>
+						<li>Woody</li>
+						<li>Stony</li>
+					</stuffCategories>
+					<costStuffCount>5</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="WallLamp"]/costList</xpath>
+				<value>
+					<costList>
+						<Steel>10</Steel>
+					</costList>
+				</value>
+			</li>
+			<!-- ================ Ideology Patches ================ -->
+			<li Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Ideology">
+				<xpath>/Defs/ThingStyleDef[@Name="WallLampStyleBase"]/graphicData</xpath>
+				<value>
+					<shaderType>CutoutComplex</shaderType>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Ideology">
+				<xpath>Defs/ThingStyleDef[defName="Morbid_WallLamp"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Things/Building/BuildingStyles/RB_Morbid/WallLamp/WallLampMorbid</texPath>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Ideology">
+				<xpath>Defs/ThingStyleDef[defName="Morbid_WallLamp"]/uiIconPath</xpath>
+				<value>
+					<uiIconPath>Things/Building/BuildingStyles/RB_Morbid/WallLamp/WallLampMorbid_MenuIcon</uiIconPath>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Ideology">
+				<xpath>Defs/ThingStyleDef[defName="Totemic_WallLamp"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Things/Building/BuildingStyles/RB_Totemic/WallLamp/WallLampTotemic</texPath>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Ideology">
+				<xpath>Defs/ThingStyleDef[defName="Totemic_WallLamp"]/uiIconPath</xpath>
+				<value>
+					<uiIconPath>Things/Building/BuildingStyles/RB_Totemic/WallLamp/WallLampTotemic_MenuIcon</uiIconPath>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Ideology">
+				<xpath>Defs/ThingStyleDef[defName="Spikecore_WallLamp"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Things/Building/BuildingStyles/RB_Spikecore/WallLamp/WallLampSpikecore</texPath>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Ideology">
+				<xpath>Defs/ThingStyleDef[defName="Spikecore_WallLamp"]/uiIconPath</xpath>
+				<value>
+					<uiIconPath>Things/Building/BuildingStyles/RB_Spikecore/WallLamp/WallLampSpikecore_MenuIcon</uiIconPath>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Ideology">
+				<xpath>Defs/ThingStyleDef[defName="Rustic_WallLamp"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Things/Building/BuildingStyles/RB_Rustic/WallLamp/WallLampRustic</texPath>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Ideology">
+				<xpath>Defs/ThingStyleDef[defName="Rustic_WallLamp"]/uiIconPath</xpath>
+				<value>
+					<uiIconPath>Things/Building/BuildingStyles/RB_Rustic/WallLamp/WallLampRustic_MenuIcon</uiIconPath>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Ideology">
+				<xpath>Defs/ThingStyleDef[defName="Techist_WallLamp"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Things/Building/BuildingStyles/RB_Techist/WallLamp/WallLampTechist</texPath>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Ideology">
+				<xpath>Defs/ThingStyleDef[defName="Techist_WallLamp"]/uiIconPath</xpath>
+				<value>
+					<uiIconPath>Things/Building/BuildingStyles/RB_Techist/WallLamp/WallLampTechist_MenuIcon</uiIconPath>
+				</value>
+			</li>
+			<!-- ================ Sophian Wall light patches ================ -->
+			<li Class="PatchOperationAdd" MayRequire="VanillaExpanded.Ideo.SophianStyle">
+				<xpath>Defs</xpath>
+				<value>
+					<ThingStyleDef ParentName="WallLampStyleBase">
+						<defName>RB_Sophian_WallLamp</defName>
+						<graphicData>
+							<texPath>Things/Building/BuildingStyles/Sophian/WallLamp/WallLampSophian</texPath>
+						</graphicData>
+						<uiIconPath>Things/Building/BuildingStyles/Sophian/WallLamp/WallLampSophian_MenuIcon</uiIconPath>
+					</ThingStyleDef>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd" MayRequire="VanillaExpanded.Ideo.SophianStyle">
+				<xpath>/Defs/StyleCategoryDef[defName="VIES_Sophian"]/thingDefStyles</xpath>
+				<value>
+					<li>
+						<thingDef>WallLamp</thingDef>
+						<styleDef>RB_Sophian_WallLamp</styleDef>
+					</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	<!-- ================ Alternative Power Cable ================ -->
+<!--	<Operation Class="ModSettingsFramework.PatchOperationModOption">
+		<defaultValue>True</defaultValue>
+		<label>Enable Alternative Power Conduit</label>
+		<tooltip>Enables the alternative power conduit texture that makes them look more realistic. (Default: True)</tooltip>
+		<id>RB_AlternativePowerCables</id>
+		<category>RB_Core</category>
+		<order>10</order>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="PowerConduit"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Things/Building/RB_Linked/RB_PowerConduit_Atlas</texPath>
+				</value>
+			</li>
+		</operations>
+	</Operation>-->
+</Patch>

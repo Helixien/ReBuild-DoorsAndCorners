@@ -31,7 +31,6 @@
 		<li IfModActive="aoba.fortress.neolithic">1.5/LoadFolders/_Support/PD-OriginalSupport/Fortifications-Neolithic</li>
 		<li IfModActive="cp.uncle.boris.used.furniture">1.5/LoadFolders/_Support/PD-OriginalSupport/UB-UsedFurniture</li>
 		<li IfModActive="dankpyon.medieval.overhaul">1.5/LoadFolders/_Support/PD-OriginalSupport/MedievalOverhaul</li>
-		<li IfModActive="dubwise.dubsbadhygiene,dubwise.dubsbadhygiene.lite">1.5/LoadFolders/_Support/PD-OriginalSupport/DubsBadHygiene</li>
 		<li IfModActive="erin.japanesefurniture">1.5/LoadFolders/_Support/PD-OriginalSupport/ErinsJapanese Furniture</li>
 		<li IfModActive="heis.edo.themed.expansion">1.5/LoadFolders/_Support/PD-OriginalSupport/EdoThemedExpansion</li>
 		<li IfModActive="japanstyle.velcroboy333">1.5/LoadFolders/_Support/PD-OriginalSupport/V-JapaneseRevival</li>
@@ -40,4 +39,44 @@
 		<li IfModActive="qx.astramilitarum">1.5/LoadFolders/_Support/PD-OriginalSupport/AstraMilitarum</li>
 		<li IfModActive="wemd.reinforceddoors">1.5/LoadFolders/_Support/PD-OriginalSupport/ReinforcedDoors</li>
 	</v1.5>
+	<v1.6>
+		<li>/</li>
+		<li>1.6</li>
+		<!-- ================ DLCs ================ -->
+		<li IfModActive="Ludeon.RimWorld.Anomaly">1.6/LoadFolders/Anomaly</li>
+		<li IfModActive="Ludeon.RimWorld.Ideology">1.6/LoadFolders/Ideology</li>
+		<!-- ================ Mod Support (New Content) ================ -->
+		<li IfModActive="VanillaExpanded.Ideo.SophianStyle">1.6/LoadFolders/VanillaIdeologyExpanded-SophianStyle</li>
+		<li IfModActive="VanillaExpanded.Temperature">1.6/LoadFolders/VanillaTemperatureExpanded</li>
+		<li IfModActive="kentington.saveourship2">1.6/LoadFolders/SaveOurShip2</li>
+		<!-- ================ Mod Support - VES ================ -->
+		<li IfModActive="OskarPotocki.VanillaFactionsExpanded.SettlersModule">1.6/LoadFolders/_Support/VFE-Settlers</li>
+		<li IfModActive="VanillaExpanded.VFEA">1.6/LoadFolders/_Support/VFE-Ancients</li>
+		<li IfModActive="VanillaExpanded.VFESpacer">1.6/LoadFolders/_Support/VFUE-Spacer</li>
+		<li IfModActive="VanillaExpanded.VFEMedical">1.6/LoadFolders/_Support/VFUE-Medical</li>
+		<li IfModActive="VanillaExpanded.VFEArt">1.6/LoadFolders/_Support/VFUE-Art</li>
+		<li IfModActive="VanillaExpanded.VFEArchitect">1.6/LoadFolders/_Support/VFUE-Architect</li>
+		<li IfModActive="VanillaExpanded.VTEXVariations">1.6/LoadFolders/_Support/VTEX-Variations</li>
+		<li IfModActive="VanillaExpanded.VGeneticsE">1.6/LoadFolders/_Support/VE-Genetics</li>
+		<!-- ================ Mod Support ================ -->
+		<li IfModActive="RimEffect.Core,RimEffectReborn.Core">1.6/LoadFolders/_Support/RimEffect-Core</li>
+		<li IfModActive="Neronix17.Outland.Core">1.6/LoadFolders/_Support/Outland-Core</li>
+		<li IfModActive="NanoCE.GlassLights">1.6/LoadFolders/_Support/Glass-Lights</li>
+		<li IfModActive="Sarg.AlphaMemes">1.6/LoadFolders/_Support/AlphaMemes</li>
+		<li IfModActive="Aoba.Fortress.Industrial">1.6/LoadFolders/_Support/Fortress-Industrial</li>
+		<li IfModActive="GT.Sam.BasicDoubleDoors">1.6/LoadFolders/_Support/BasicDoubleDoors</li>
+		<li IfModActive="Dubwise.DubsSkylights">1.6/LoadFolders/_Support/DubsSkylights</li>
+		<li IfModActive="greysuki.rtr">1.6/LoadFolders/_Support/RaiseTheRoof</li>
+		<!-- ================ Original OwlChemist Perspective Doors Supported Mods (Not updated with new textures) ================ -->
+		<li IfModActive="aoba.fortress.neolithic">1.6/LoadFolders/_Support/PD-OriginalSupport/Fortifications-Neolithic</li>
+		<li IfModActive="cp.uncle.boris.used.furniture">1.6/LoadFolders/_Support/PD-OriginalSupport/UB-UsedFurniture</li>
+		<li IfModActive="dankpyon.medieval.overhaul">1.6/LoadFolders/_Support/PD-OriginalSupport/MedievalOverhaul</li>
+		<li IfModActive="erin.japanesefurniture">1.6/LoadFolders/_Support/PD-OriginalSupport/ErinsJapanese Furniture</li>
+		<li IfModActive="heis.edo.themed.expansion">1.6/LoadFolders/_Support/PD-OriginalSupport/EdoThemedExpansion</li>
+		<li IfModActive="japanstyle.velcroboy333">1.6/LoadFolders/_Support/PD-OriginalSupport/V-JapaneseRevival</li>
+		<li IfModActive="jecrell.doorsexpanded">1.6/LoadFolders/_Support/PD-OriginalSupport/DoorsExpanded</li>
+		<li IfModActive="mlie.concrete">1.6/LoadFolders/_Support/PD-OriginalSupport/ConcreteC</li>
+		<li IfModActive="qx.astramilitarum">1.6/LoadFolders/_Support/PD-OriginalSupport/AstraMilitarum</li>
+		<li IfModActive="wemd.reinforceddoors">1.6/LoadFolders/_Support/PD-OriginalSupport/ReinforcedDoors</li>
+	</v1.6>
 </loadFolders>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Bridge can be built here -->
+	<TerrainAffordanceDef>
+		<defName>RB_AnyWater</defName>
+		<label>water</label>
+		<order>2500</order>
+	</TerrainAffordanceDef>
+</Defs>
