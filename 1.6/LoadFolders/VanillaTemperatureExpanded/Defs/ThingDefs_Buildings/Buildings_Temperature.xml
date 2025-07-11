@@ -60,10 +60,5 @@
 				<idleConsumptionPerTick>1</idleConsumptionPerTick>
 			</li>
 		</comps>
-		<modExtensions>
-			<li Class="VanillaTemperatureExpanded.AcUnitPositionModExtension">
-				<offsetNorth>(0, 0, 0)</offsetNorth>
-			</li>
-		</modExtensions>
 	</ThingDef>
 </Defs>

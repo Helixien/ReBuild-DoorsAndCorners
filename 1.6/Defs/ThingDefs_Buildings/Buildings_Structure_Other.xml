@@ -10,6 +10,7 @@
 		<blockLight>false</blockLight>
 		<defaultPlacingRot>South</defaultPlacingRot>
 		<designationCategory>Temperature</designationCategory>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
 		<researchPrerequisites>
 			<li>Stonecutting</li>
 		</researchPrerequisites>
@@ -73,16 +74,6 @@
 					</li>
 				</offsets>
 			</li>
-			<li Class="ReBuildDoorsAndCorners.CompProperties_FireplaceOverlay">
-				<graphicData>
-					<texPath>Things/Building/Misc/OverwallFireplace/OverwallFireplaceBurning</texPath>
-					<graphicClass>Graphic_Multi</graphicClass>
-					<drawSize>(3,3)</drawSize>
-					<damageData>
-						<enabled>false</enabled>
-					</damageData>
-				</graphicData>
-			</li>
 		</comps>
 	</ThingDef>
 	<!-- ================================ Fireplace - Wall Mounted ====================== -->
@@ -117,6 +108,16 @@
 		</building>
 		<comps>
 			<li Class="VEF.Buildings.CompProperties_MountableOnWall"/>
+			<li Class="ReBuildDoorsAndCorners.CompProperties_FireplaceOverlay">
+				<graphicData>
+					<texPath>Things/Building/Misc/OverwallFireplace/OverwallFireplaceBurning</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(3,3)</drawSize>
+					<damageData>
+						<enabled>false</enabled>
+					</damageData>
+				</graphicData>
+			</li>
 		</comps>
 		<placeWorkers>
 			<li>VEF.Buildings.PlaceWorker_OnWall</li>
@@ -161,6 +162,18 @@
 			<li>PlaceWorker_GlowRadius</li>
 			<li>PlaceWorker_Heater</li>
 		</placeWorkers>
+		<comps>
+			<li Class="ReBuildDoorsAndCorners.CompProperties_FireplaceOverlay">
+				<graphicData>
+					<texPath>Things/Building/Misc/Fireplace/FireplaceBurning</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(3,3)</drawSize>
+					<damageData>
+						<enabled>false</enabled>
+					</damageData>
+				</graphicData>
+			</li>
+		</comps>
 	</ThingDef>
 	<!-- ================================ Wall Armour ====================== -->
 	<ThingDef ParentName="BuildingBase">

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RimWorld;
+using System;
 using System.Collections.Generic;
 using Verse;
 
@@ -44,6 +45,12 @@ namespace ReBuildDoorsAndCorners
             }
         }
 
+        public override void Notify_ColorChanged()
+        {
+            base.Notify_ColorChanged();
+            connectorGraphicsCache = null;
+        }
+
         private string DetermineConnectorKey()
         {
             var diffWallNorth = new Lazy<bool>(() => HasDifferentWall(Rot4.North));
@@ -51,12 +58,26 @@ namespace ReBuildDoorsAndCorners
             var diffWallEast = new Lazy<bool>(() => HasDifferentWall(Rot4.East));
             var diffWallWest = new Lazy<bool>(() => HasDifferentWall(Rot4.West));
 
+            var doorNorth = new Lazy<bool>(() => HasDoor(Rot4.North));
+            var doorSouth = new Lazy<bool>(() => HasDoor(Rot4.South));
+            var doorEast = new Lazy<bool>(() => HasDoor(Rot4.East));
+            var doorWest = new Lazy<bool>(() => HasDoor(Rot4.West));
+
             var sameWallNorth = new Lazy<bool>(() => HasSameWall(Rot4.North));
             var sameWallSouth = new Lazy<bool>(() => HasSameWall(Rot4.South));
             var sameWallEast = new Lazy<bool>(() => HasSameWall(Rot4.East));
             var sameWallWest = new Lazy<bool>(() => HasSameWall(Rot4.West));
 
-            if ((diffWallNorth.Value && diffWallSouth.Value) || (diffWallWest.Value && diffWallEast.Value))
+            if ((sameWallEast.Value && (doorWest.Value || doorNorth.Value || doorSouth.Value))
+                || (sameWallWest.Value && (doorEast.Value || doorNorth.Value || doorSouth.Value))
+                || (sameWallNorth.Value && (doorEast.Value || doorWest.Value || doorSouth.Value))
+                || (sameWallSouth.Value && (doorEast.Value || doorWest.Value || doorNorth.Value)))
+            {
+                return null;
+            }
+
+            if ((diffWallNorth.Value && diffWallSouth.Value)
+                || (diffWallWest.Value && diffWallEast.Value))
             {
                 return "BothSidesConnector";
             }
@@ -96,6 +117,12 @@ namespace ReBuildDoorsAndCorners
                 return false;
             }
             return edifice.def.Fillage == FillCategory.Full;
+        }
+
+        private bool HasDoor(Rot4 rot)
+        {
+            var door = (rot.FacingCell + Position).GetFirstThing<Building_Door>(Map);
+            return door != null;
         }
 
         private bool HasSameWall(Rot4 rot)
