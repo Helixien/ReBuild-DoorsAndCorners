@@ -319,6 +319,7 @@
 			<li MayRequire="VanillaExpanded.VFEArchitect" Class="VFEArchitect.BuildingExtension_PrisonerProof"/>
 			<li Class="ReBuildDoorsAndCorners.ThingExtension">
 				<closesRooms>True</closesRooms>
+				<prisonersCannotOpenIt>True</prisonersCannotOpenIt>
 			</li>
 		</modExtensions>
 	</ThingDef>

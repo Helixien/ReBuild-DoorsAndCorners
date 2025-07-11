@@ -8,5 +8,6 @@ namespace ReBuildDoorsAndCorners
 
 		public bool closesRooms;
 
+		public bool prisonersCannotOpenIt;
 	}
 }
