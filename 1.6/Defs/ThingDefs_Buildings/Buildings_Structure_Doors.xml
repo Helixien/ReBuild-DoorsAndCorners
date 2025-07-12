@@ -303,7 +303,7 @@
 		<statBases>
 			<WorkToBuild>850</WorkToBuild>
 			<MaxHitPoints>80</MaxHitPoints>
-			<DoorOpenSpeed>0.8</DoorOpenSpeed>
+			<DoorOpenSpeed>0.5</DoorOpenSpeed>
 		</statBases>
 		<uiIconPath>Things/Building/RB_Door/RB_DoorCell_MenuIcon</uiIconPath>
 		<building>
