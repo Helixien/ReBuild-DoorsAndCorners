@@ -130,6 +130,74 @@
 					</operations>
 				</nomatch>
 			</li>
+			<!-- ================================ Perspective Door Patches ====================== -->
+			<!-- ================ Base Change to graphicClass for all doors ================ -->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Autodoor" or defName="AnimalFlap"]/graphicData/graphicClass</xpath>
+				<value>
+					<graphicClass>Graphic_Multi</graphicClass>
+				</value>
+			</li>
+			<!-- ================ Simple Door and Double Door Textures to reflect material ================ -->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Door"]/graphicData/graphicClass</xpath>
+				<value>
+					<graphicClass>ReBuildDoorsAndCorners.Graphic_AppearancesMulti</graphicClass>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Door"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Things/Building/RB_Door/DoorSimple_Mover</texPath>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Door"]/uiIconPath</xpath>
+				<value>
+					<uiIconPath>Things/Building/RB_Door/DoorSimple_Smooth_MenuIcon</uiIconPath>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Door"]</xpath>
+				<value>
+					<uiIconPathsStuff>
+						<li>
+							<appearance>Planks</appearance>
+							<iconPath>Things/Building/RB_Door/DoorSimple_Planks_MenuIcon</iconPath>
+						</li>
+						<li>
+							<appearance>Bricks</appearance>
+							<iconPath>Things/Building/RB_Door/DoorSimple_Bricks_MenuIcon</iconPath>
+						</li>
+					</uiIconPathsStuff>
+				</value>
+			</li>
+			<!-- ================ Change to Auto Door ================ -->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Autodoor"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Things/Building/RB_Door/Autodoor_Mover</texPath>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Autodoor"]/uiIconPath</xpath>
+				<value>
+					<uiIconPath>Things/Building/RB_Door/Autodoor_MenuIcon</uiIconPath>
+				</value>
+			</li>
+			<!-- ================ Change to Animal Flap ================ -->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="AnimalFlap"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Things/Building/RB_Door/AnimalFlap_Mover</texPath>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="AnimalFlap"]/uiIconPath</xpath>
+				<value>
+					<uiIconPath>Things/Building/RB_Door/AnimalFlap_MenuIcon</uiIconPath>
+				</value>
+			</li>
 			<!-- ================================ Wall Patches ====================== -->
 			<li Class="PatchOperationInsert">
 				<xpath>/Defs/ThingDef[defName="Wall"]/building/relatedBuildCommands/li[4]</xpath>

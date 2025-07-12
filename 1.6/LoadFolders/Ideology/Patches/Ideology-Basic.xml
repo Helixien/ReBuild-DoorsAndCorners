@@ -16,6 +16,13 @@
 					<uiOrder>2040</uiOrder>
 				</value>
 			</li>
+			<!-- ================ Ideology ================ -->
+			<li Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Ideology">
+				<xpath>Defs/ThingStyleDef[defName="Techist_Autodoor"]/graphicData/graphicClass</xpath>
+				<value>
+					<graphicClass>Graphic_Multi</graphicClass>
+				</value>
+			</li>
 		</operations>
 	</Operation>
 </Patch>
