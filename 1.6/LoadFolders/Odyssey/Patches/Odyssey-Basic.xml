@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<!-- ================================ Wall Lamp Patches ====================== -->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="GravshipHull"]/uiIconPath</xpath>
+				<value>
+					<uiIconPath>Things/Building/RB_Linked/GravshipHull_MenuIcon</uiIconPath>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="GravshipHull"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Things/Building/RB_Linked/GravshipHull_Atlas</texPath>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>
