@@ -125,7 +125,7 @@
 		<defName>RB_DoubleDoor</defName>
 		<label>double door</label>
 		<description>Divides rooms. Simple doors must be manually opened, which slows people down. The amount of slowdown depends on what the door is made of.</description>
-		<thingClass>ReBuildDoorsAndCorners.Graphic_AppearancesMulti</thingClass>
+		<thingClass>Graphic_Multi</thingClass>
 		<graphicData>
 			<texPath>Things/Building/RB_Door/RB_DoubleDoor</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
