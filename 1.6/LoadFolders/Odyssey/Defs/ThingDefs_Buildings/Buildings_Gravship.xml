@@ -4,22 +4,29 @@
 		<defName>RB_GravshipGlassHull</defName>
 		<label>gravship glasshull</label>
 		<description>A strong airtight wall that prevents oxygen leaks in the vacuum of space. The wall connects directly into the underlying substructure, meaning it can only be built on a gravship.</description>
+		<graphicData>
+			<texPath>Things/Building/RB_Linked/RB_ReinforcedGlassGraveshipWall/RB_ReinforcedGlassGraveshipWall_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
 		<designationCategory>Odyssey</designationCategory>
 		<uiOrder>1801</uiOrder>
-		<uiIconPath>Things/Building/Linked/GravshipHull/GravshipHull_MenuIcon</uiIconPath>
-		<graphicData>
-			<texPath>Things/Building/Linked/GravshipHull/GravshipHull_Atlas</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<researchPrerequisites>
-			<li>BasicGravtech</li>
-		</researchPrerequisites>
+		<uiIconPath>Things/Building/RB_Linked/RB_ReinforcedGlassGraveshipWall_MenuIcon</uiIconPath>
 		<statBases>
 			<MaxHitPoints>420</MaxHitPoints>
 			<WorkToBuild>300</WorkToBuild>
 			<Flammability>0</Flammability>
 		</statBases>
 		<costStuffCount>7</costStuffCount>
+		<blockLight>false</blockLight>
+		<staticSunShadowHeight>0</staticSunShadowHeight>
+		
+		
+		<researchPrerequisites>
+			<li>BasicGravtech</li>
+			<li>Electricity</li>
+		</researchPrerequisites>
+
 		<building>
 			<isAirtight>true</isAirtight>
 		</building>
@@ -27,11 +34,10 @@
 			<li>Metallic</li>
 		</stuffCategories>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-		<comps Inherit="False"/>
 		<placeWorkers>
 			<li>PlaceWorker_OnSubstructure</li>
 		</placeWorkers>
-		<comps>
+		<comps Inherit="False">
 			<li Class="ReBuildDoorsAndCorners.CompProperties_GlassWall">
 				<naturalLightRadius>3</naturalLightRadius>
 				<needOutdoorsRefillRate>1</needOutdoorsRefillRate>
