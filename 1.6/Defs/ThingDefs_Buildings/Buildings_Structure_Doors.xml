@@ -154,7 +154,7 @@
 		<costStuffCount>50</costStuffCount>
 		<building>
 			<blueprintGraphicData>
-				<texPath>Things/Building/RB_Door/RB_DoubleDoor_VanillaMenuIcon</texPath>
+				<texPath>Things/Building/RB_Door/RB_DoubleDoor_Smooth_MenuIcon</texPath>
 				<graphicClass>Graphic_Multi</graphicClass>
 				<shaderType>EdgeDetect</shaderType>
 				<drawSize>(2, 2)</drawSize>
@@ -179,7 +179,7 @@
 			</damageData>
 		</graphicData>
 		<size>(2, 1)</size>
-					<uiIconPath>Things/Building/RB_Door/RB_DoubleAutodoor_MenuIcon</uiIconPath>
+		<uiIconPath>Things/Building/RB_Door/RB_DoubleAutodoor_MenuIcon</uiIconPath>
 		<useBlueprintGraphicAsGhost>true</useBlueprintGraphicAsGhost>
 		<rotatable>true</rotatable>
 		<statBases>

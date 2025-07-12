@@ -148,7 +148,7 @@
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="Door"]/graphicData/texPath</xpath>
 				<value>
-					<texPath>Things/Building/RB_Door/DoorSimple_Mover</texPath>
+					<texPath>Things/Building/RB_Door/DoorSimple</texPath>
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
