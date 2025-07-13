@@ -38,6 +38,7 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 		<building>
+			<isStuffableAirtight>true</isStuffableAirtight>
 			<soundMeleeHitOverride>RB_MeleeImpact_Glass</soundMeleeHitOverride>
 		</building>
 		<comps>
@@ -103,6 +104,7 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 		<building>
+			<isStuffableAirtight>true</isStuffableAirtight>
 			<soundMeleeHitOverride>RB_MeleeImpact_Glass</soundMeleeHitOverride>
 		</building>
 		<comps>
@@ -125,10 +127,10 @@
 		<defName>RB_DoubleDoor</defName>
 		<label>double door</label>
 		<description>Divides rooms. Simple doors must be manually opened, which slows people down. The amount of slowdown depends on what the door is made of.</description>
-		<thingClass>Graphic_Multi</thingClass>
+		<thingClass>Building_MultiTileDoor</thingClass>
 		<graphicData>
 			<texPath>Things/Building/RB_Door/RB_DoubleDoor</texPath>
-			<graphicClass>Graphic_Multi</graphicClass>
+			<graphicClass>ReBuildDoorsAndCorners.Graphic_AppearancesMulti</graphicClass>
 			<drawSize>(1.05, 1)</drawSize>
 			<damageData>
 				<enabled>false</enabled>
@@ -153,6 +155,8 @@
 		</statBases>
 		<costStuffCount>50</costStuffCount>
 		<building>
+			<blueprintClass>Blueprint_Build</blueprintClass>
+			<isStuffableAirtight>true</isStuffableAirtight>
 			<blueprintGraphicData>
 				<texPath>Things/Building/RB_Door/RB_DoubleDoor_Smooth_MenuIcon</texPath>
 				<graphicClass>Graphic_Multi</graphicClass>
@@ -192,6 +196,7 @@
 		<costStuffCount>50</costStuffCount>
 		<uiOrder>2012</uiOrder>
 		<building>
+			<isStuffableAirtight>true</isStuffableAirtight>
 			<poweredDoorOpenSpeedFactor>1.5</poweredDoorOpenSpeedFactor>
 			<unpoweredDoorOpenSpeedFactor>3</unpoweredDoorOpenSpeedFactor>
 			<unpoweredDoorCloseSpeedFactor>3</unpoweredDoorCloseSpeedFactor>
