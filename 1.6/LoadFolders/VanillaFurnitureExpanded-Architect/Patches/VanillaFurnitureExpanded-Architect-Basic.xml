@@ -4,7 +4,7 @@
 		<operations>
 			<!-- ================================ Remove Cell Wall ====================== -->
 			<li Class="PatchOperationRemove">
-				<xpath>/Defs/ThingDef[defName="VFEArch_CellWall"]/</xpath>
+				<xpath>/Defs/ThingDef[defName="VFEArch_CellWall"]</xpath>
 			</li>
 			<!-- ================================ Remove Cell Door ====================== -->
 			<li Class="PatchOperationRemove">

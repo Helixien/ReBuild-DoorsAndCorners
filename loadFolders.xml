@@ -50,9 +50,8 @@
 		<li IfModActive="VanillaExpanded.Ideo.SophianStyle">1.6/LoadFolders/VanillaIdeologyExpanded-SophianStyle</li>
 		<li IfModActive="VanillaExpanded.Temperature">1.6/LoadFolders/VanillaTemperatureExpanded</li>
 		<!-- ================ Mod Support - VES ================ -->
-		<li IfModActive="VanillaExpanded.VFEArchitect">1.6/LoadFolders/_Support/VanillaFurnitureExpanded-Architect</li>
+		<li IfModActive="VanillaExpanded.VFEArchitect">1.6/LoadFolders/VanillaFurnitureExpanded-Architect</li>
 		<li IfModActive="OskarPotocki.VanillaFactionsExpanded.SettlersModule">1.6/LoadFolders/_Support/VFE-Settlers</li>
-		<li IfModActive="VanillaExpanded.VFEA">1.6/LoadFolders/_Support/VFE-Ancients</li>
 		<li IfModActive="VanillaExpanded.VFESpacer">1.6/LoadFolders/_Support/VFUE-Spacer</li>
 		<li IfModActive="VanillaExpanded.VFEMedical">1.6/LoadFolders/_Support/VFUE-Medical</li>
 		<li IfModActive="VanillaExpanded.VFEArt">1.6/LoadFolders/_Support/VFUE-Art</li>
