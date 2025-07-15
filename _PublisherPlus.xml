@@ -3,6 +3,7 @@
   <Excluded>
     <exclude>.git</exclude>
     <exclude>.vscode</exclude>
+    <exclude>1.5\Source</exclude>
     <exclude>1.6\Source</exclude>
   </Excluded>
 </Configuration>
