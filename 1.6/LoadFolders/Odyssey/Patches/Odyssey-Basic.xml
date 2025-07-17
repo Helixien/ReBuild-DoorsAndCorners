@@ -15,6 +15,17 @@
 					<texPath>Things/Building/RB_Linked/GravshipHull/GravshipHull_Atlas</texPath>
 				</value>
 			</li>
+			<li Class="PatchOperationAddModExtension">
+				<xpath>/Defs/ThingDef[defName="GravshipHull"]</xpath>
+				<value>
+					<li Class="ReBuildDoorsAndCorners.ThingExtension">
+						<gravshipHullReplacement>
+							<replace>/Linked/</replace>
+							<with>/RB_Linked/</with>
+						</gravshipHullReplacement>
+					</li>
+				</value>
+			</li>
 		</operations>
 	</Operation>
 </Patch>
