@@ -199,7 +199,7 @@
 				<edgeRight>Damage/Edge</edgeRight>
 			</damageData>
 		</graphicData>
-		<uiIconPath>Things/Building/RB_Linked/OverwallArmor_MenuIcon</uiIconPath>
+		<uiIconPath>Things/Building/RB_Linked/OverwallArmor/OverwallArmor_MenuIcon</uiIconPath>
 		<altitudeLayer>BuildingOnTop</altitudeLayer>
 		<holdsRoof>false</holdsRoof>
 		<drawStyleCategory>Walls</drawStyleCategory>
