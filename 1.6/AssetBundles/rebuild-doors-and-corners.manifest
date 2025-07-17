@@ -1,24 +1,27 @@
 ManifestFileVersion: 0
-CRC: 1802833062
+CRC: 1768701595
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: fba59d34f12d70298f9f049760d3427c
+    Hash: 47b5c3c46e63cf0a4751db6fdb567f14
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 2612ac43db082a73502ee80f2eceb73f
+    Hash: ce3b6d18a872ca8039cd5eb3c4fb7ef5
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: fba59d34f12d70298f9f049760d3427c
+    Hash: 47b5c3c46e63cf0a4751db6fdb567f14
 HashAppended: 0
 ClassTypes:
 - Class: 28
+  Script: {instanceID: 0}
+- Class: 83
   Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers: []
 Assets:
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Door/DoorSimple_Smooth_MenuIcon.png
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/BuildingStyles/RB_Totemic/WallLamp/WallLampTotemic_north.psd
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/Linked/WallPlanks_MenuIcon.png
+- Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Item/Resource/RB_BallisticGlass/RB_BallisticGlass_a.png
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Door/AnimalFlap_Mover_east.png
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/OrnateDoor/OrnateDoor2x1_Mover_m.png
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/LargeOrnateDoor/LargeOrnateDoor3x1_Mover.png
@@ -51,6 +54,7 @@ Assets:
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/BuildingStyles/RB_Morbid/WallLamp/WallLampMorbid_south.psd
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Door/DoorSimple/DoorSimple_Mover_Bricks_east.png
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/OrnateWall/OrnateWall_Atlas_Smooth_m.png
+- Assets/Data/ReBuild.COTR.DoorsAndCorners/Sounds/Impact/Bullet_Glass/Bullet_GlassB.ogg
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/OrnateWall/OrnateWallPlanks_MenuIcon.png
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/BuildingStyles/RB_Rustic/WallLamp/WallLampRustic_MenuIcon.psd
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/Linked/Wall_Blueprint_Atlas.png
@@ -79,6 +83,7 @@ Assets:
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/ReinforcedClerestoryWall/ReinforcedClerestoryWall_Atlas_Smooth.png
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/Furniture/RB_WallLamp/WallLamp_MenuIcon.psd
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/BarriersWall/BarriersWall_Atlas_BothSidesConnector.png
+- Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Item/Resource/RB_BallisticGlass/RB_BallisticGlass_b.png
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/OrnateDoor/OrnateDoor2x1_Top_south.png
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Door/DoubleAutodoor/DoubleAutodoor_Mover_east.png
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/OrnateDoor/OrnateDoor_MenuIcon_south.png
@@ -108,10 +113,11 @@ Assets:
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/GlassWall/GlassWall_Blueprint_Atlas.png
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Door/Autodoor_Mover_north.png
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/CellWall/CellWall_Atlas.png
-- Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/BuildingStyles/RB_Totemic/WallLamp/WallLampTotemic_east.psd
+- Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Item/Resource/RB_BallisticGlass/RB_BallisticGlass_c.png
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/BarriersWall/BarriersWall_Atlas.png
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Door/DoubleDoor/DoubleDoor_Mover_Smooth_east.png
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Door/DoubleDoor_Planks_MenuIcon.png
+- Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/BuildingStyles/RB_Totemic/WallLamp/WallLampTotemic_east.psd
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Door/DoorSimple_Bricks_MenuIcon.png
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/Misc/Fireplace/FireplaceBurning_north.png
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Door/DoubleAutodoor/DoubleAutodoor_UpperMover_north.png
@@ -121,6 +127,7 @@ Assets:
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/V1_AlternativeWall/Wall_Atlas_Smooth.png
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/LargeOrnateDoor/LargeOrnateDoor_MenuIcon.png
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/ReinforcedClerestoryWall/ReinforcedClerestoryWall_Planks_MenuIcon.png
+- Assets/Data/ReBuild.COTR.DoorsAndCorners/Sounds/Impact/Melee_Glass/Melee_GlassC.ogg
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Door/ReinforcedGlassAutodoor_MenuIcon.png
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Filth/RB_BallisticBrokenGlass/RB_BallisticBrokenGlassA.png
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/LargeOrnateDoor/LargeOrnateDoor3x1_Support_east.png
@@ -133,6 +140,7 @@ Assets:
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/Misc/Fireplace/FireplaceBurning_eastm.png
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/Misc/OverwallFireplace/OverwallFireplaceBurning_northm.png
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/BuildingStyles/RB_Totemic/WallLamp/WallLampTotemic_eastm.psd
+- Assets/Data/ReBuild.COTR.DoorsAndCorners/Sounds/Impact/Melee_Glass/Melee_GlassA.ogg
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/BuildingStyles/Sophian/WallLamp/WallLampSophian_south.psd
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/GlassWall/GlassWall_MenuIcon.png
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/OrnateDoor/OrnateDoor2x1_Top_east.png
@@ -196,14 +204,16 @@ Assets:
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/OrnateDoor/OrnateDoor2x1_Support_east.png
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/BuildingStyles/RB_Morbid/WallLamp/WallLampMorbid_north.psd
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/Linked/RockSmooth_Atlas.png
-- Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/Furniture/RB_WallLamp/WallLamp_east.png
+- Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Item/Resource/RB_Glass/RB_Glass_c.png
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/RusticWall/RusticWall_Smooth_MenuIcon.png
+- Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/Furniture/RB_WallLamp/WallLamp_east.png
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/BuildingStyles/RB_Totemic/WallLamp/WallLampTotemic_MenuIcon.psd
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/Misc/OverwallFireplace/OverwallFireplace_south.png
-- Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/CellWall/CellWall_Atlas_BottomLeftConnector.png
+- Assets/Data/ReBuild.COTR.DoorsAndCorners/Sounds/Impact/Melee_Glass/Melee_GlassB.ogg
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Door/DoorCell_Mover_north.png
-- Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/BarriersWall/BarriersWall_Atlas_BottomLeftConnector.png
+- Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/CellWall/CellWall_Atlas_BottomLeftConnector.png
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/BuildingStyles/RB_Techist/WallLamp/WallLampTechist_east.psd
+- Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/BarriersWall/BarriersWall_Atlas_BottomLeftConnector.png
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/RusticWall/RusticWall_Atlas_Bricks.png
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/ClerestoryWall/ClerestoryWall_Atlas_Planks_m.png
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/BuildingStyles/RB_Rustic/WallLamp/WallLampRustic_east.psd
@@ -213,6 +223,7 @@ Assets:
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/ReinforcedClerestoryWall/ReinforcedClerestoryWall_Atlas_Planks_m.png
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/BuildingStyles/RB_Techist/WallLamp/WallLampTechist_eastm.psd
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/ClerestoryWall/ClerestoryWall_Blueprint_Atlas.png
+- Assets/Data/ReBuild.COTR.DoorsAndCorners/Sounds/Impact/Bullet_Glass/Bullet_GlassC.ogg
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/BuildingStyles/RB_Totemic/WallLamp/WallLampTotemic_northm.psd
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/OrnateWall/OrnateWall_Atlas_Bricks_m.png
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/Furniture/RB_WallLamp/WallLamp_east.psd
@@ -220,18 +231,21 @@ Assets:
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/Furniture/RB_WallLamp/WallLamp_north.png
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/BuildingStyles/RB_Techist/WallLamp/WallLampTechist_southm.psd
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Door/DoorSimple/DoorSimple_Mover_Planks_north.png
+- Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Item/Resource/RB_Glass/RB_Glass_a.png
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/BuildingStyles/RB_Morbid/WallLamp/WallLampMorbid_MenuIcon.psd
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/BuildingStyles/Sophian/WallLamp/WallLampSophian_MenuIcon.psd
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Door/DoorCell_MenuIcon.png
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Door/DoubleDoor/DoubleDoor_Mover_Bricks_north.png
-- Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/ClerestoryWall/ClerestoryWall_Atlas_Smooth_m.png
+- Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Item/Resource/RB_Glass/RB_Glass_b.png
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Door/DoorSimple/DoorSimple_Mover_Planks_east.png
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/Misc/OverwallFireplace/OverwallFireplace_MenuIcon.png
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Filth/RB_BrokenGlass/RB_BrokenGlassB.png
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/BuildingStyles/RB_Morbid/WallLamp/WallLampMorbid_southm.psd
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/Misc/Fireplace/FireplaceBurning_east.png
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/OrnateWall/OrnateWall_Atlas_Bricks.png
+- Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/ClerestoryWall/ClerestoryWall_Atlas_Smooth_m.png
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Door/ReinforcedGlassAutodoor/ReinforcedGlassAutodoor_Mover_east.png
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/BuildingStyles/RB_Totemic/WallLamp/WallLampTotemic_southm.psd
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/OverwallArmor/OverwallArmor_MenuIcon.png
+- Assets/Data/ReBuild.COTR.DoorsAndCorners/Sounds/Impact/Bullet_Glass/Bullet_GlassA.ogg
 Dependencies: []
