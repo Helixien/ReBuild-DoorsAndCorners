@@ -6,9 +6,9 @@
 		<description>A weaker airtight wall that prevents oxygen leaks in the vacuum of space. The wall connects directly into the underlying substructure, meaning it can only be built on a gravship.</description>
 		<designationCategory>Odyssey</designationCategory>
 		<uiOrder>1800</uiOrder>
-		<uiIconPath>Things/Building/RB_Linked/GravshipHullSmooth_MenuIcon</uiIconPath>
+		<uiIconPath>Things/Building/RB_Linked/GravshipSmoothHull/GravshipSmoothHull_MenuIcon</uiIconPath>
 		<graphicData>
-			<texPath>Things/Building/RB_Linked/GravshipHullSmooth_Atlas</texPath>
+			<texPath>Things/Building/RB_Linked/GravshipSmoothHull/GravshipSmoothHull_Atlas</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<researchPrerequisites>
@@ -33,17 +33,17 @@
 		</placeWorkers>
 	</ThingDef>
 	<ThingDef ParentName="Wall">
-		<defName>RB_GravshipGlassHull</defName>
+		<defName>RB_GravshipWindowHull</defName>
 		<label>gravship glasshull</label>
 		<description>A strong airtight wall that prevents oxygen leaks in the vacuum of space. The wall connects directly into the underlying substructure, meaning it can only be built on a gravship.</description>
 		<graphicData>
-			<texPath>Things/Building/RB_Linked/RB_ReinforcedGlassGraveshipWall_Atlas</texPath>
+			<texPath>Things/Building/RB_Linked/GravshipWindowHull/GravshipWindowHull_Atlas</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<designationCategory>Odyssey</designationCategory>
 		<uiOrder>1801</uiOrder>
-		<uiIconPath>Things/Building/RB_Linked/RB_ReinforcedGlassGraveshipWall_MenuIcon</uiIconPath>
+		<uiIconPath>Things/Building/RB_Linked/GravshipWindowHull/GravshipWindowHull_MenuIcon</uiIconPath>
 		<statBases>
 			<MaxHitPoints>420</MaxHitPoints>
 			<WorkToBuild>300</WorkToBuild>
