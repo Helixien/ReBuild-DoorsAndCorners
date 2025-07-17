@@ -1,15 +1,15 @@
 ManifestFileVersion: 0
-CRC: 1167769327
+CRC: 3631272193
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: afa952065e5b5324fd6b8340f9230ea2
+    Hash: 6de12c12f3a309bb2d5e26fd95eff794
   TypeTreeHash:
     serializedVersion: 2
     Hash: 2612ac43db082a73502ee80f2eceb73f
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: afa952065e5b5324fd6b8340f9230ea2
+    Hash: 6de12c12f3a309bb2d5e26fd95eff794
 HashAppended: 0
 ClassTypes:
 - Class: 28
@@ -24,11 +24,13 @@ Assets:
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/GravshipPanoramaHull/GravshipPanoramaHull_MenuIcon.png
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/GravshipSmoothHull/GravshipSmoothHull_MenuIcon.png
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/GravshipHull/AngledGravshipHull_Partial_southeast.psd
+- Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/GravshipPanoramaHull/SpaceGravshipPanoramaHull_Atlas_m.png
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/GravshipHull/AngledGravshipHull_Partial_northwest.psd
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/GravshipPanoramaHull/GravshipPanoramaHull_Atlas.png
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/GravshipPanoramaHull/GravshipPanoramaHull_Atlas_m.png
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/GravshipHull/GravshipHull_Atlas.png
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/GravshipHull/AngledGravshipHull_Partial_northeast.psd
+- Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/GravshipWindowHull/SpaceGravshipWindowHull_Atlas_m.png
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/GravshipHull/GravshipHull_MenuIcon.png
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/GravshipPanoramaHull/SpaceGravshipPanoramaHull_Atlas.png
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/GravshipWindowHull/GravshipWindowHull_MenuIcon.png
