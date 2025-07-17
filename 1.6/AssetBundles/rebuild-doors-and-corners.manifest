@@ -1,15 +1,15 @@
 ManifestFileVersion: 0
-CRC: 1768701595
+CRC: 4052757632
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 47b5c3c46e63cf0a4751db6fdb567f14
+    Hash: cd61f5b24dd7c303ad142541cb5a31cf
   TypeTreeHash:
     serializedVersion: 2
     Hash: ce3b6d18a872ca8039cd5eb3c4fb7ef5
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: 47b5c3c46e63cf0a4751db6fdb567f14
+    Hash: cd61f5b24dd7c303ad142541cb5a31cf
 HashAppended: 0
 ClassTypes:
 - Class: 28
@@ -45,6 +45,7 @@ Assets:
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/BuildingStyles/RB_Rustic/WallLamp/WallLampRustic_northm.psd
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/BarriersWall/BarriersWall_Blueprint_Atlas.png
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/Furniture/RB_WallLamp/WallLamp_northm.psd
+- Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/GravshipHull/AngledGravshipHull_southwest.psd
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Door/DoubleAutodoor/DoubleAutodoor_Mover_north.png
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/OrnateWall/OrnateWall_Atlas_Planks_m.png
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/OverwallArmor/OverwallArmor_Atlas.png
@@ -120,6 +121,7 @@ Assets:
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/BuildingStyles/RB_Totemic/WallLamp/WallLampTotemic_east.psd
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Door/DoorSimple_Bricks_MenuIcon.png
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/Misc/Fireplace/FireplaceBurning_north.png
+- Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/GravshipHull/AngledGravshipHull_northwest.psd
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Door/DoubleAutodoor/DoubleAutodoor_UpperMover_north.png
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Terrain/Surfaces/TileWoodFine.png
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/BarriersWall/BarriersWall_MenuIcon.png
@@ -190,6 +192,7 @@ Assets:
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/Misc/Fireplace/FireplaceBurning_southm.png
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/BuildingStyles/RB_Techist/WallLamp/WallLampTechist_MenuIcon.psd
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/GlassWall/GlassWall_Atlas_m.png
+- Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/GravshipHull/AngledGravshipHull_northeast.psd
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/BuildingStyles/RB_Totemic/WallLamp/WallLampTotemic_south.psd
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Terrain/Surfaces/HexWood.png
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/BuildingStyles/RB_Spikecore/WallLamp/WallLampSpikecore_south.psd
@@ -211,9 +214,10 @@ Assets:
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/Misc/OverwallFireplace/OverwallFireplace_south.png
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Sounds/Impact/Melee_Glass/Melee_GlassB.ogg
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Door/DoorCell_Mover_north.png
-- Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/CellWall/CellWall_Atlas_BottomLeftConnector.png
+- Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/GravshipHull/AngledGravshipHull_southeast.psd
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/BuildingStyles/RB_Techist/WallLamp/WallLampTechist_east.psd
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/BarriersWall/BarriersWall_Atlas_BottomLeftConnector.png
+- Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/CellWall/CellWall_Atlas_BottomLeftConnector.png
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/RusticWall/RusticWall_Atlas_Bricks.png
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/ClerestoryWall/ClerestoryWall_Atlas_Planks_m.png
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/BuildingStyles/RB_Rustic/WallLamp/WallLampRustic_east.psd
