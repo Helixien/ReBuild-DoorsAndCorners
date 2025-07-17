@@ -27,7 +27,7 @@
 			<li>Metallic</li>
 		</stuffCategories>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-		<comps Inherit="False" />
+		<comps Inherit="False"/>
 		<placeWorkers>
 			<li>PlaceWorker_OnSubstructure</li>
 		</placeWorkers>
@@ -69,8 +69,8 @@
 		</placeWorkers>
 		<comps Inherit="False">
 			<li Class="ReBuildDoorsAndCorners.CompProperties_GlassWall">
-				<naturalLightRadius>3</naturalLightRadius>
-				<needOutdoorsRefillRate>1</needOutdoorsRefillRate>
+				<naturalLightRadius>2</naturalLightRadius>
+				<needOutdoorsRefillRate>0.5</needOutdoorsRefillRate>
 			</li>
 		</comps>
 		<damageMultipliers Inherit="false">
