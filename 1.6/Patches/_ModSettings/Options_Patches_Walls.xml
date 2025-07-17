@@ -16,13 +16,13 @@
 					<li Class="PatchOperationReplace">
 						<xpath>/Defs/ThingDef[@Name="Wall"]/graphicData/texPath</xpath>
 						<value>
-							<texPath>Things/Building/RB_Linked/RB_V1_AlternativeWall</texPath>
+							<texPath>Things/Building/RB_Linked/V1_AlternativeWall</texPath>
 						</value>
 					</li>
 					<li Class="PatchOperationReplace">
 						<xpath>/Defs/ThingDef[@Name="Wall"]/uiIconPath</xpath>
 						<value>
-							<uiIconPath>Things/Building/RB_Linked/RB_Alternative_V1_WallSmooth_MenuIcon</uiIconPath>
+							<uiIconPath>Things/Building/RB_Linked/V1_AlternativeWall/WallSmooth_MenuIcon</uiIconPath>
 						</value>
 					</li>
 				</operations>
@@ -36,13 +36,33 @@
 					<li Class="PatchOperationReplace">
 						<xpath>/Defs/ThingDef[@Name="Wall"]/graphicData/texPath</xpath>
 						<value>
-							<texPath>Things/Building/RB_Linked/RB_V2_AlternativeWalll</texPath>
+							<texPath>Things/Building/RB_Linked/V2_AlternativeWall</texPath>
 						</value>
 					</li>
 					<li Class="PatchOperationReplace">
 						<xpath>/Defs/ThingDef[@Name="Wall"]/uiIconPath</xpath>
 						<value>
-							<uiIconPath>Things/Building/RB_Linked/RB_Alternative_V2_WallSmooth_MenuIcon</uiIconPath>
+							<uiIconPath>Things/Building/RB_Linked/V2_AlternativeWall/WallSmooth_MenuIcon</uiIconPath>
+						</value>
+					</li>
+				</operations>
+			</li>
+			<li Class="ModSettingsFramework.PatchOperationModOption">
+				<defaultValue>False</defaultValue>
+				<label>Modern version</label>
+				<tooltip>Much more detailed than vanilla.</tooltip>
+				<id>RB_NewWallAtlasTextures_V3</id>
+				<operations>
+					<li Class="PatchOperationReplace">
+						<xpath>/Defs/ThingDef[@Name="Wall"]/graphicData/texPath</xpath>
+						<value>
+							<texPath>Things/Building/RB_Linked/V3_AlternativeWall</texPath>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>/Defs/ThingDef[@Name="Wall"]/uiIconPath</xpath>
+						<value>
+							<uiIconPath>Things/Building/RB_Linked/V3_AlternativeWall/WallSmooth_MenuIcon</uiIconPath>
 						</value>
 					</li>
 				</operations>
@@ -51,7 +71,7 @@
 				<defaultValue>False</defaultValue>
 				<label>Vanilla version</label>
 				<tooltip>HD version of the vanilla texture, no other changes.</tooltip>
-				<id>RB_NewWallAtlasTextures_V3</id>
+				<id>RB_NewWallAtlasTextures_V4</id>
 				<operations>
 					<li Class="PatchOperationReplace">
 						<xpath>/Defs/ThingDef[@Name="Wall"]/graphicData/texPath</xpath>
