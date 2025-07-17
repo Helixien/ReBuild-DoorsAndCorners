@@ -202,7 +202,7 @@
 			<unpoweredDoorCloseSpeedFactor>3</unpoweredDoorCloseSpeedFactor>
 			<upperMoverGraphic>
 				<texPath>Things/Building/RB_Door/DoubleAutodoor/DoubleAutodoor_UpperMover</texPath>
-				<graphicClass>Graphic_Single</graphicClass>
+				<graphicClass>Graphic_Multi</graphicClass>
 			</upperMoverGraphic>
 			<blueprintClass>Blueprint_Build</blueprintClass>
 			<blueprintGraphicData>
