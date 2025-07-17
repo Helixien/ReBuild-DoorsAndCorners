@@ -7,14 +7,14 @@
 		<label>glass autodoor</label>
 		<description>Divides rooms. Powered operation allows people to move through the door without slowing down.</description>
 		<graphicData>
-			<texPath>Things/Building/RB_Door/RB_GlassAutodoor/RB_GlassAutodoor_Mover</texPath>
+			<texPath>Things/Building/RB_Door/GlassAutodoor/GlassAutodoor_Mover</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<damageData>
 				<enabled>false</enabled>
 			</damageData>
 		</graphicData>
-		<uiIconPath>Things/Building/RB_Door/RB_GlassAutodoor_MenuIcon</uiIconPath>
+		<uiIconPath>Things/Building/RB_Door/GlassAutodoor_MenuIcon</uiIconPath>
 		<useBlueprintGraphicAsGhost>true</useBlueprintGraphicAsGhost>
 		<blockLight>false</blockLight>
 		<statBases>
@@ -50,14 +50,14 @@
 			<li Class="CompProperties_Styleable"/>
 			<li Class="ReBuildDoorsAndCorners.CompProperties_AdditionalGraphic">
 				<graphicData>
-					<texPath>Things/Building/RB_Door/RB_GlassAutodoor_VanillaMenuIcon</texPath>
+					<texPath>Things/Building/RB_Door/GlassAutodoor_VanillaMenuIcon</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>(3, 3)</drawSize>
 					<drawOffset>(0, -0.1, 0)</drawOffset>
 				</graphicData>
 				<toggleLabel>Toggle graphic</toggleLabel>
 				<toggleDesc>to.do</toggleDesc>
-				<toggleIcon>Things/Building/RB_Door/RB_GlassAutodoor_VanillaMenuIcon</toggleIcon>
+				<toggleIcon>Things/Building/RB_Door/GlassAutodoor_VanillaMenuIcon</toggleIcon>
 			</li>
 		</comps>
 		<modExtensions>
@@ -73,14 +73,14 @@
 		<label>reinforced glass autodoor</label>
 		<description>Divides rooms. Powered operation allows people to move through the door without slowing down.</description>
 		<graphicData>
-			<texPath>Things/Building/RB_Door/RB_ReinforcedGlassAutodoor/RB_ReinforcedGlassAutodoor_Mover</texPath>
+			<texPath>Things/Building/RB_Door/ReinforcedGlassAutodoor/ReinforcedGlassAutodoor_Mover</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<damageData>
 				<enabled>false</enabled>
 			</damageData>
 		</graphicData>
-		<uiIconPath>Things/Building/RB_Door/RB_ReinforcedGlassAutodoor_MenuIcon</uiIconPath>
+		<uiIconPath>Things/Building/RB_Door/ReinforcedGlassAutodoor_MenuIcon</uiIconPath>
 		<useBlueprintGraphicAsGhost>true</useBlueprintGraphicAsGhost>
 		<blockLight>false</blockLight>
 		<statBases>
@@ -129,7 +129,7 @@
 		<description>Divides rooms. Simple doors must be manually opened, which slows people down. The amount of slowdown depends on what the door is made of.</description>
 		<thingClass>Building_MultiTileDoor</thingClass>
 		<graphicData>
-			<texPath>Things/Building/RB_Door/RB_DoubleDoor</texPath>
+			<texPath>Things/Building/RB_Door/DoubleDoor</texPath>
 			<graphicClass>ReBuildDoorsAndCorners.Graphic_AppearancesMulti</graphicClass>
 			<drawSize>(1.05, 1)</drawSize>
 			<damageData>
@@ -137,15 +137,15 @@
 			</damageData>
 		</graphicData>
 		<size>(2, 1)</size>
-		<uiIconPath>Things/Building/RB_Door/RB_DoubleDoor_Smooth_MenuIcon</uiIconPath>
+		<uiIconPath>Things/Building/RB_Door/DoubleDoor_Smooth_MenuIcon</uiIconPath>
 		<uiIconPathsStuff>
 			<li>
 				<appearance>Planks</appearance>
-				<iconPath>Things/Building/RB_Door/RB_DoubleDoor_Planks_MenuIcon</iconPath>
+				<iconPath>Things/Building/RB_Door/DoubleDoor_Planks_MenuIcon</iconPath>
 			</li>
 			<li>
 				<appearance>Bricks</appearance>
-				<iconPath>Things/Building/RB_Door/RB_DoubleDoor_Bricks_MenuIcon</iconPath>
+				<iconPath>Things/Building/RB_Door/DoubleDoor_Bricks_MenuIcon</iconPath>
 			</li>
 		</uiIconPathsStuff>
 		<useBlueprintGraphicAsGhost>true</useBlueprintGraphicAsGhost>
@@ -158,7 +158,7 @@
 			<blueprintClass>Blueprint_Build</blueprintClass>
 			<isStuffableAirtight>true</isStuffableAirtight>
 			<blueprintGraphicData>
-				<texPath>Things/Building/RB_Door/RB_DoubleDoor_Smooth_MenuIcon</texPath>
+				<texPath>Things/Building/RB_Door/DoubleDoor_Smooth_MenuIcon</texPath>
 				<graphicClass>Graphic_Multi</graphicClass>
 				<shaderType>EdgeDetect</shaderType>
 				<drawSize>(2, 2)</drawSize>
@@ -175,7 +175,7 @@
 		<description>Divides rooms. Powered operation allows people to move through the door without slowing down.</description>
 		<thingClass>ReBuildDoorsAndCorners.Building_MultiTileDoorStuffColor</thingClass>
 		<graphicData>
-			<texPath>Things/Building/RB_Door/RB_DoubleAutodoor/RB_DoubleAutodoor_Mover</texPath>
+			<texPath>Things/Building/RB_Door/DoubleAutodoor/DoubleAutodoor_Mover</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(1.05, 1)</drawSize>
 			<damageData>
@@ -183,7 +183,7 @@
 			</damageData>
 		</graphicData>
 		<size>(2, 1)</size>
-		<uiIconPath>Things/Building/RB_Door/RB_DoubleAutodoor_MenuIcon</uiIconPath>
+		<uiIconPath>Things/Building/RB_Door/DoubleAutodoor_MenuIcon</uiIconPath>
 		<useBlueprintGraphicAsGhost>true</useBlueprintGraphicAsGhost>
 		<rotatable>true</rotatable>
 		<statBases>
@@ -201,12 +201,12 @@
 			<unpoweredDoorOpenSpeedFactor>3</unpoweredDoorOpenSpeedFactor>
 			<unpoweredDoorCloseSpeedFactor>3</unpoweredDoorCloseSpeedFactor>
 			<upperMoverGraphic>
-				<texPath>Things/Building/RB_Door/RB_DoubleAutodoor/RB_DoubleAutodoor_UpperMover</texPath>
+				<texPath>Things/Building/RB_Door/DoubleAutodoor/DoubleAutodoor_UpperMover</texPath>
 				<graphicClass>Graphic_Single</graphicClass>
 			</upperMoverGraphic>
 			<blueprintClass>Blueprint_Build</blueprintClass>
 			<blueprintGraphicData>
-				<texPath>Things/Building/RB_Door/RB_DoubleAutodoor_MenuIcon</texPath>
+				<texPath>Things/Building/RB_Door/DoubleAutodoor_MenuIcon</texPath>
 				<graphicClass>Graphic_Multi</graphicClass>
 				<shaderType>EdgeDetect</shaderType>
 				<drawSize>(2, 2)</drawSize>
@@ -299,7 +299,7 @@
 		<label>cell door</label>
 		<description>A slow moving door that separates two rooms.</description>
 		<graphicData>
-			<texPath>Things/Building/RB_Door/RB_DoorCell_Mover</texPath>
+			<texPath>Things/Building/RB_Door/DoorCell_Mover</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<damageData>
 				<enabled>false</enabled>
@@ -310,7 +310,7 @@
 			<MaxHitPoints>80</MaxHitPoints>
 			<DoorOpenSpeed>0.5</DoorOpenSpeed>
 		</statBases>
-		<uiIconPath>Things/Building/RB_Door/RB_DoorCell_MenuIcon</uiIconPath>
+		<uiIconPath>Things/Building/RB_Door/DoorCell_MenuIcon</uiIconPath>
 		<building>
 			<paintable>true</paintable>
 			<isStuffableAirtight>false</isStuffableAirtight>

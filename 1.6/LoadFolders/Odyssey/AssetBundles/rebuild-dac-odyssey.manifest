@@ -1,37 +1,39 @@
 ManifestFileVersion: 0
-CRC: 2070990594
+CRC: 2428821565
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: c1feb77e156e61de1116461ad3473d6f
+    Hash: 84d58a50031837c0060a37d170d06825
   TypeTreeHash:
     serializedVersion: 2
     Hash: 2612ac43db082a73502ee80f2eceb73f
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: c1feb77e156e61de1116461ad3473d6f
+    Hash: 84d58a50031837c0060a37d170d06825
 HashAppended: 0
 ClassTypes:
 - Class: 28
   Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers: []
 Assets:
-- Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/GravshipPanoramaHull/GravshipPanoramaHull_Atlas.psd
+- Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/GravshipPanoramaHull/SpaceGravshipPanoramaHull_Atlas_.png
+- Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/GravshipWindowHull/SpaceGravshipWindowHull_Atlas.png
+- Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/GravshipSmoothHull/GravshipSmoothHull_Atlas.png
+- Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/GravshipWindowHull/GravshipWindowHull_Atlas.png
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/GravshipHull/AngledGravshipHull_Partial_southwest.psd
-- Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/GravshipWindowHull/GravshipWindowHull_MenuIcon.psd
-- Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/GravshipSmoothHull/GravshipSmoothHull_Atlas.psd
-- Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/GravshipWindowHull/GravshipWindowHull_Atlas.psd
+- Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/GravshipWindowHull/GravshipWindowHull_Atlas_m.png
+- Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/GravshipPanoramaHull/GravshipPanoramaHull_MenuIcon.png
+- Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/GravshipSmoothHull/GravshipSmoothHull_MenuIcon.png
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/GravshipHull/AngledGravshipHull_Partial_southeast.psd
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/GravshipHull/AngledGravshipHull_Partial_northwest.psd
-- Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/GravshipHull/GravshipHull_MenuIcon.psd
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/GravshipHull/AngledGravshipHull_northeast.psd
-- Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/GravshipHull/GravshipHull_Atlas.psd
+- Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/GravshipPanoramaHull/GravshipPanoramaHull_Atlas.png
+- Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/GravshipPanoramaHull/GravshipPanoramaHull_Atlas_m.png
+- Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/GravshipHull/GravshipHull_Atlas.png
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/GravshipHull/AngledGravshipHull_Partial_northeast.psd
-- Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/GravshipSmoothHull/GravshipSmoothHull_MenuIcon.psd
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/GravshipHull/AngledGravshipHull_northwest.psd
-- Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/GravshipPanoramaHull/GravshipPanoramaHull_MenuIcon.psd
-- Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/GravshipWindowHull/GravshipWindowHull_Atlas_m.psd
+- Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/GravshipHull/GravshipHull_MenuIcon.png
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/GravshipHull/AngledGravshipHull_southwest.psd
+- Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/GravshipWindowHull/GravshipWindowHull_MenuIcon.png
 - Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/GravshipHull/AngledGravshipHull_southeast.psd
-- Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/GravshipPanoramaHull/GravshipPanoramaHull_Atlas_m.psd
 Dependencies: []
