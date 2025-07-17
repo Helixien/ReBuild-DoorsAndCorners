@@ -56,6 +56,7 @@
 			<li>BasicGravtech</li>
 			<li>Electricity</li>
 		</researchPrerequisites>
+		<specialDisplayRadius>3.9</specialDisplayRadius>
 		<building>
 			<isAirtight>true</isAirtight>
 		</building>

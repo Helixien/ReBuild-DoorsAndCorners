@@ -1,12 +1,15 @@
-﻿using HarmonyLib;
+using HarmonyLib;
+using RimWorld;
+using System;
 using System.Collections.Generic;
 using System.Reflection.Emit;
 using Verse;
+using Verse.AI;
 
 namespace ReBuildDoorsAndCorners
 {
-    [HarmonyPatch(typeof(SectionLayer_LightingOverlay), nameof(SectionLayer_LightingOverlay.Regenerate))]
-    public static class SectionLayer_LightingOverlay_Regenerate_Patch
+    [HarmonyPatch(typeof(SectionLayer_LightingOverlay), nameof(SectionLayer_LightingOverlay.GenerateLightingOverlay))]
+    public static class SectionLayer_LightingOverlay_GenerateLightingOverlay_Patch
     {
         public static Map curMap;
         public static MapComponent_Rebuild curComp;
@@ -21,26 +24,26 @@ namespace ReBuildDoorsAndCorners
                 if (codeInstruction.Calls(roofAt))
                 {
                     yield return new CodeInstruction(OpCodes.Ldarg_0);
-                    yield return new CodeInstruction(OpCodes.Ldloc_S, 28);
+                    yield return new CodeInstruction(OpCodes.Ldloc_S, 26);
                     yield return new CodeInstruction(OpCodes.Call,
-                        AccessTools.Method(typeof(SectionLayer_LightingOverlay_Regenerate_Patch), "TryInterceptRoof"));
+                        AccessTools.Method(typeof(SectionLayer_LightingOverlay_GenerateLightingOverlay_Patch), "TryInterceptRoof"));
                 }
                 else if (codeInstruction.Calls(roofed))
                 {
                     yield return new CodeInstruction(OpCodes.Ldarg_0);
-                    yield return new CodeInstruction(OpCodes.Ldloc_S, 34);
+                    yield return new CodeInstruction(OpCodes.Ldloc_S, 32);
                     yield return new CodeInstruction(OpCodes.Call,
-                        AccessTools.Method(typeof(SectionLayer_LightingOverlay_Regenerate_Patch), "TryInterceptRoofed"));
+                        AccessTools.Method(typeof(SectionLayer_LightingOverlay_GenerateLightingOverlay_Patch), "TryInterceptRoofed"));
                 }
             }
         }
 
-        public static RoofDef TryInterceptRoof(RoofDef roof, SectionLayer_LightingOverlay __instance, int index)
+        public static RoofDef TryInterceptRoof(RoofDef roof, Map map, int index)
         {
-            if (curMap != __instance.Map)
+            if (curMap != map)
             {
-                curMap = __instance.Map;
-                curComp = __instance.Map.GetComponent<MapComponent_Rebuild>();
+                curMap = map;
+                curComp = map.GetComponent<MapComponent_Rebuild>();
             }
             if (curMap != null)
             {
@@ -53,12 +56,12 @@ namespace ReBuildDoorsAndCorners
             return roof;
         }
 
-        public static bool TryInterceptRoofed(bool roofed, SectionLayer_LightingOverlay __instance, int index)
+        public static bool TryInterceptRoofed(bool roofed, Map map, int index)
         {
-            if (curMap != __instance.Map)
+            if (curMap != map)
             {
-                curMap = __instance.Map;
-                curComp = __instance.Map.GetComponent<MapComponent_Rebuild>();
+                curMap = map;
+                curComp = map.GetComponent<MapComponent_Rebuild>();
             }
             if (curMap != null)
             {
