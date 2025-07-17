@@ -47,10 +47,10 @@ namespace ReBuildDoorsAndCorners
 				SectionLayer_GravshipHull.mat_Diagonal_NE = new CachedMaterial(extension.gravshipHullReplacement.Replace("Things/Building/Linked/GravshipHull/AngledGravshipHull_Partial_northeast"), SectionLayer_GravshipHull.WallShader);
 				SectionLayer_GravshipHull.mat_Diagonal_SW = new CachedMaterial(extension.gravshipHullReplacement.Replace("Things/Building/Linked/GravshipHull/AngledGravshipHull_Partial_southwest"), SectionLayer_GravshipHull.WallShader);
 				SectionLayer_GravshipHull.mat_Diagonal_SE = new CachedMaterial(extension.gravshipHullReplacement.Replace("Things/Building/Linked/GravshipHull/AngledGravshipHull_Partial_southeast"), SectionLayer_GravshipHull.WallShader);
-				SectionLayer_GravshipHull.mat_SubStructure_W = new CachedMaterial(extension.gravshipHullReplacement.Replace("Things/Building/Linked/GravshipHull/SubstructureCorner_Full_west"), SectionLayer_GravshipHull.SubstructureShader);
-				SectionLayer_GravshipHull.mat_SubStructure_E = new CachedMaterial(extension.gravshipHullReplacement.Replace("Things/Building/Linked/GravshipHull/SubstructureCorner_Full_east"), SectionLayer_GravshipHull.SubstructureShader);
-				SectionLayer_GravshipHull.mat_SubStructureExtra_W = new CachedMaterial(extension.gravshipHullReplacement.Replace("Things/Building/Linked/GravshipHull/SubstructureCorner_Tip_west"), SectionLayer_GravshipHull.SubstructureShader);
-				SectionLayer_GravshipHull.mat_SubStructureExtra_E = new CachedMaterial(extension.gravshipHullReplacement.Replace("Things/Building/Linked/GravshipHull/SubstructureCorner_Tip_east"), SectionLayer_GravshipHull.SubstructureShader);
+				SectionLayer_GravshipHull.mat_SubStructure_W = new CachedMaterial("Things/Building/Linked/GravshipHull/SubstructureCorner_Full_west", SectionLayer_GravshipHull.SubstructureShader);
+				SectionLayer_GravshipHull.mat_SubStructure_E = new CachedMaterial("Things/Building/Linked/GravshipHull/SubstructureCorner_Full_east", SectionLayer_GravshipHull.SubstructureShader);
+				SectionLayer_GravshipHull.mat_SubStructureExtra_W = new CachedMaterial("Things/Building/Linked/GravshipHull/SubstructureCorner_Tip_west", SectionLayer_GravshipHull.SubstructureShader);
+				SectionLayer_GravshipHull.mat_SubStructureExtra_E = new CachedMaterial("Things/Building/Linked/GravshipHull/SubstructureCorner_Tip_east", SectionLayer_GravshipHull.SubstructureShader);
 			}
 			return false;
 	    }
