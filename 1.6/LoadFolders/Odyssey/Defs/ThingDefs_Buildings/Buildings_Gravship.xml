@@ -27,7 +27,7 @@
 			<li>Metallic</li>
 		</stuffCategories>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-		<comps Inherit="False"/>
+		<comps Inherit="False" />
 		<placeWorkers>
 			<li>PlaceWorker_OnSubstructure</li>
 		</placeWorkers>
@@ -86,6 +86,7 @@
 			<li Class="ReBuildDoorsAndCorners.ThingExtension">
 				<soundImpactMeleeOverride>RB_MeleeImpact_Glass</soundImpactMeleeOverride>
 				<soundImpactBulletOverride>RB_BulletImpact_Glass</soundImpactBulletOverride>
+				<spaceGraphicPath>Things/Building/RB_Linked/GravshipWindowHull/SpaceGravshipWindowHull_Atlas</spaceGraphicPath>
 			</li>
 		</modExtensions>
 	</ThingDef>

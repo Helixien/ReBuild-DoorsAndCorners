@@ -122,7 +122,7 @@
 				<multiplier>4</multiplier>
 			</li>
 		</damageMultipliers>
-<!--		<modExtensions>
+		<!--		<modExtensions>
 			<li Class="ReBuildDoorsAndCorners.WallDiagonalExtension">
 				<texPath_Corner_NW>Things/Building/Linked/GravshipHull/AngledGravshipHull_northwest</texPath_Corner_NW>
 				<texPath_Corner_NE>Things/Building/Linked/GravshipHull/AngledGravshipHull_northeast</texPath_Corner_NE>
@@ -640,7 +640,7 @@
 			<canPlaceOverWall>true</canPlaceOverWall>
 			<isEdifice>true</isEdifice>
 			<paintable>true</paintable>
-			<relatedBuildCommands Inherit="False"/>
+			<relatedBuildCommands Inherit="False" />
 			<isStuffableAirtight>false</isStuffableAirtight>
 			<blueprintGraphicData>
 				<texPath>Things/Building/RB_Linked/CellWall/CellWall_Blueprint_Atlas</texPath>
@@ -662,7 +662,7 @@
 			</li>
 		</damageMultipliers>
 		<modExtensions>
-			<li MayRequire="VanillaExpanded.VFEArchitect" Class="VFEArchitect.BuildingExtension_PrisonerProof"/>
+			<li MayRequire="VanillaExpanded.VFEArchitect" Class="VFEArchitect.BuildingExtension_PrisonerProof" />
 			<li Class="ReBuildDoorsAndCorners.ThingExtension">
 				<closesRooms>True</closesRooms>
 			</li>
@@ -722,7 +722,7 @@
 			<canPlaceOverWall>false</canPlaceOverWall>
 			<isEdifice>true</isEdifice>
 			<paintable>true</paintable>
-			<relatedBuildCommands Inherit="False"/>
+			<relatedBuildCommands Inherit="False" />
 			<isStuffableAirtight>false</isStuffableAirtight>
 			<blueprintGraphicData>
 				<texPath>Things/Building/RB_Linked/BarriersWall/BarriersWall_Blueprint_Atlas</texPath>
@@ -739,7 +739,7 @@
 			</li>
 		</damageMultipliers>
 		<modExtensions>
-			<li MayRequire="VanillaExpanded.VFEArchitect" Class="VFEArchitect.BuildingExtension_PrisonerProof"/>
+			<li MayRequire="VanillaExpanded.VFEArchitect" Class="VFEArchitect.BuildingExtension_PrisonerProof" />
 			<li Class="ReBuildDoorsAndCorners.ThingExtension">
 				<closesRooms>True</closesRooms>
 			</li>

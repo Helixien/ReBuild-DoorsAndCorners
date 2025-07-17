@@ -22,5 +22,7 @@ namespace ReBuildDoorsAndCorners
 		public bool prisonersCannotOpenIt;
 
 		public ReplaceTo gravshipHullReplacement;
+
+		public string spaceGraphicPath;
 	}
 }

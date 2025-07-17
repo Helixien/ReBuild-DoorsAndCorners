@@ -4,6 +4,7 @@ using Verse;
 
 namespace ReBuildDoorsAndCorners
 {
+
     [HarmonyPatch(typeof(SectionLayer_GravshipHull), "EnsureInitialized")]
     public static class SectionLayer_GravshipHull_EnsureInitialized_Patch
     {
