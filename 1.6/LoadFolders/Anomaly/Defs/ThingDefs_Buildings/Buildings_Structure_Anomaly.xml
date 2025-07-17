@@ -37,6 +37,7 @@
 			<poweredDoorOpenSpeedFactor>4</poweredDoorOpenSpeedFactor>
 			<unpoweredDoorOpenSpeedFactor>2</unpoweredDoorOpenSpeedFactor>
 			<unpoweredDoorCloseSpeedFactor>2</unpoweredDoorCloseSpeedFactor>
+			<isAirtight>true</isAirtight>
 			<blueprintClass>Blueprint_Build</blueprintClass>
 			<blueprintGraphicData>
 				<texPath>Things/Building/LargeSecurityDoor/SecurityDoor3x1_MenuIcon_south</texPath>

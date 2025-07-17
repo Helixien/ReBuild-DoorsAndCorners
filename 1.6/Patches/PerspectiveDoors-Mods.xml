@@ -15,15 +15,9 @@
 				</value>
 			</li>
 			<li Class="PatchOperationReplace" MayRequire="VanillaExpanded.VFEArchitect">
-				<xpath>Defs/ThingDef[defName="VFEArch_SingleDoor" or defName="VFEArch_SingleDoor_Flipped" or defName="VFEArch_ArmoredDoor" or defName="VFEArch_CellDoor"]/graphicData/graphicClass</xpath>
+				<xpath>Defs/ThingDef[defName="VFEArch_SingleDoor" or defName="VFEArch_SingleDoor_Flipped" or defName="VFEArch_ArmoredDoor"]/graphicData/graphicClass</xpath>
 				<value>
 					<graphicClass>Graphic_Multi</graphicClass>
-				</value>
-			</li>
-			<li Class="PatchOperationAdd" MayRequire="VanillaExpanded.VFEArchitect">
-				<xpath>Defs/ThingDef[defName="VFEArch_CellDoor"]</xpath>
-				<value>
-					<thingClass>VFEArchitect.Building_DoorSingle</thingClass>
 				</value>
 			</li>
 			<li Class="PatchOperationReplace" MayRequireAnyOf="RimEffect.Core,RimEffectReborn.Core">

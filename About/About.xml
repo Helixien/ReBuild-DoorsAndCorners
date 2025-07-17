@@ -8,7 +8,7 @@
     </supportedVersions>
 	<packageId>ReBuild.COTR.DoorsAndCorners</packageId>
 	<url/>
-	<modVersion IgnoreIfNoMatchingField="True">1.4-Miller-rev3</modVersion>
+	<modVersion IgnoreIfNoMatchingField="True">1.4-Miller-rev5</modVersion>
 	<modIconPath IgnoreIfNoMatchingField="True">UI/RB_ModIcon</modIconPath>
 	<description>ReBuild is another mod in my series of vanilla friendly enhancements for Rimworld, focusing on adding content that should or could have been added by Ludeon themselves. Like always it is my main priority to make sure the content fits vanilla Rimworld, not just in art and design, but also how it is integrated and works hand in hand with vanilla features. Doors and Corners, the name being a reference to The Expanse, is the first module focusing on expanding the options you have for building your base. From new walls, to door, floors, retextures and overhauls. ReBuild is designed to be as lightweight as possible, adding the minimum of new code required for its additions to work.</description>
 	<modDependencies>

@@ -181,6 +181,9 @@
 		<uiOrder>2001</uiOrder>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<useStuffTerrainAffordance>true</useStuffTerrainAffordance>
+		<building>
+			<isStuffableAirtight>true</isStuffableAirtight>
+		</building>
 		<comps Inherit="false">
 			<li Class="CompProperties_MeditationFocus">
 				<statDef>MeditationFocusStrength</statDef>
@@ -362,6 +365,7 @@
 			<isPlaceOverableWall>true</isPlaceOverableWall>
 			<ai_chillDestination>true</ai_chillDestination>
 			<supportsWallAttachments>false</supportsWallAttachments>
+			<isStuffableAirtight>true</isStuffableAirtight>
 			<blueprintGraphicData>
 				<texPath>Things/Building/RB_Linked/RB_ClerestoryWall/RB_ClerestoryWall_Blueprint_Atlas</texPath>
 			</blueprintGraphicData>
@@ -533,6 +537,7 @@
 		<building>
 			<isPlaceOverableWall>true</isPlaceOverableWall>
 			<ai_chillDestination>true</ai_chillDestination>
+			<isStuffableAirtight>true</isStuffableAirtight>
 			<blueprintGraphicData>
 				<texPath>Things/Building/RB_Linked/RB_GlassWall/RB_GlassWall_Blueprint_Atlas</texPath>
 			</blueprintGraphicData>
@@ -623,6 +628,7 @@
 			<isEdifice>true</isEdifice>
 			<paintable>true</paintable>
 			<relatedBuildCommands Inherit="False"/>
+			<isStuffableAirtight>false</isStuffableAirtight>
 			<blueprintGraphicData>
 				<texPath>Things/Building/RB_Linked/RB_CellWall/RB_CellWall_Blueprint_Atlas</texPath>
 			</blueprintGraphicData>
@@ -704,6 +710,7 @@
 			<isEdifice>true</isEdifice>
 			<paintable>true</paintable>
 			<relatedBuildCommands Inherit="False"/>
+			<isStuffableAirtight>false</isStuffableAirtight>
 			<blueprintGraphicData>
 				<texPath>Things/Building/RB_Linked/RB_BarriersWall/RB_BarriersWall_Blueprint_Atlas</texPath>
 			</blueprintGraphicData>

@@ -12,7 +12,7 @@
 			<li Class="PatchOperationReplace">
 				<xpath>/Defs/ThingDef[defName="GravshipHull"]/graphicData/texPath</xpath>
 				<value>
-					<texPath>Things/Building/RB_Linked/GravshipHull_Atlas</texPath>
+					<texPath>Things/Building/RB_Linked/GravshipHull/GravshipHull_Atlas</texPath>
 				</value>
 			</li>
 		</operations>

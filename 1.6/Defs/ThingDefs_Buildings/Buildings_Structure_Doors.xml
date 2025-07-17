@@ -14,7 +14,7 @@
 				<enabled>false</enabled>
 			</damageData>
 		</graphicData>
-					<uiIconPath>Things/Building/RB_Door/RB_GlassAutodoor_MenuIcon</uiIconPath>
+		<uiIconPath>Things/Building/RB_Door/RB_GlassAutodoor_MenuIcon</uiIconPath>
 		<useBlueprintGraphicAsGhost>true</useBlueprintGraphicAsGhost>
 		<blockLight>false</blockLight>
 		<statBases>
@@ -80,7 +80,7 @@
 				<enabled>false</enabled>
 			</damageData>
 		</graphicData>
-					<uiIconPath>Things/Building/RB_Door/RB_ReinforcedGlassAutodoor_MenuIcon</uiIconPath>
+		<uiIconPath>Things/Building/RB_Door/RB_ReinforcedGlassAutodoor_MenuIcon</uiIconPath>
 		<useBlueprintGraphicAsGhost>true</useBlueprintGraphicAsGhost>
 		<blockLight>false</blockLight>
 		<statBases>
@@ -313,6 +313,7 @@
 		<uiIconPath>Things/Building/RB_Door/RB_DoorCell_MenuIcon</uiIconPath>
 		<building>
 			<paintable>true</paintable>
+			<isStuffableAirtight>false</isStuffableAirtight>
 		</building>
 		<stuffCategories Inherit="False">
 			<li>Metallic</li>
