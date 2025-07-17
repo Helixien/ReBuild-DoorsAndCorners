@@ -68,7 +68,7 @@
 		<label>rustic wall</label>
 		<description>A simplistic, weak and impassable wall. Capable of holding up a roof.</description>
 		<graphicData>
-			<texPath>Things/Building/RB_Linked/RB_RusticWall</texPath>
+			<texPath>Things/Building/RB_Linked/RusticWall</texPath>
 			<graphicClass>Graphic_Appearances</graphicClass>
 			<linkType>CornerFiller</linkType>
 			<linkFlags>
@@ -86,15 +86,15 @@
 				<edgeRight>Damage/Edge</edgeRight>
 			</damageData>
 		</graphicData>
-		<uiIconPath>Things/Building/RB_Linked/RB_RusticWall_Smooth_MenuIcon</uiIconPath>
+		<uiIconPath>Things/Building/RB_Linked/RusticWall/RusticWall_Smooth_MenuIcon</uiIconPath>
 		<uiIconPathsStuff>
 			<li>
 				<appearance>Bricks</appearance>
-				<iconPath>Things/Building/RB_Linked/RB_RusticWall_Bricks_MenuIcon</iconPath>
+				<iconPath>Things/Building/RB_Linked/RusticWall/RusticWall_Bricks_MenuIcon</iconPath>
 			</li>
 			<li>
 				<appearance>Planks</appearance>
-				<iconPath>Things/Building/RB_Linked/RB_RusticWall_Planks_MenuIcon</iconPath>
+				<iconPath>Things/Building/RB_Linked/RusticWall/RusticWall_Planks_MenuIcon</iconPath>
 			</li>
 		</uiIconPathsStuff>
 		<statBases>
@@ -122,7 +122,7 @@
 				<multiplier>4</multiplier>
 			</li>
 		</damageMultipliers>
-		<modExtensions>
+<!--		<modExtensions>
 			<li Class="ReBuildDoorsAndCorners.WallDiagonalExtension">
 				<texPath_Corner_NW>Things/Building/Linked/GravshipHull/AngledGravshipHull_northwest</texPath_Corner_NW>
 				<texPath_Corner_NE>Things/Building/Linked/GravshipHull/AngledGravshipHull_northeast</texPath_Corner_NE>
@@ -134,7 +134,7 @@
 				<texPath_Diagonal_SE>Things/Building/Linked/GravshipHull/AngledGravshipHull_Partial_southeast</texPath_Diagonal_SE>
 				<cornerScale>2.0</cornerScale>
 			</li>
-		</modExtensions>
+		</modExtensions>-->
 	</ThingDef>
 	<!-- ================================ Ornate Wall ====================== -->
 	<ThingDef ParentName="RB_WallBase">
@@ -142,7 +142,7 @@
 		<label>ornate wall</label>
 		<description>An intricate and impassable wall, decorated with gold. Capable of holding up a roof, but more fragile than a normal wall. Dignity-focused psycaster will receive a meditation bonus when meditating near them.</description>
 		<graphicData>
-			<texPath>Things/Building/RB_Linked/RB_OrnateWall</texPath>
+			<texPath>Things/Building/RB_Linked/OrnateWall</texPath>
 			<graphicClass>Graphic_Appearances</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<linkType>CornerFiller</linkType>
@@ -161,15 +161,15 @@
 				<edgeRight>Damage/Edge</edgeRight>
 			</damageData>
 		</graphicData>
-		<uiIconPath>Things/Building/RB_Linked/RB_OrnateWallSmooth_MenuIcon</uiIconPath>
+		<uiIconPath>Things/Building/RB_Linked/OrnateWall/OrnateWallSmooth_MenuIcon</uiIconPath>
 		<uiIconPathsStuff>
 			<li>
 				<appearance>Planks</appearance>
-				<iconPath>Things/Building/RB_Linked/RB_OrnateWallPlanks_MenuIcon</iconPath>
+				<iconPath>Things/Building/RB_Linked/OrnateWall/OrnateWallPlanks_MenuIcon</iconPath>
 			</li>
 			<li>
 				<appearance>Bricks</appearance>
-				<iconPath>Things/Building/RB_Linked/RB_OrnateWallBricks_MenuIcon</iconPath>
+				<iconPath>Things/Building/RB_Linked/OrnateWall/OrnateWallBricks_MenuIcon</iconPath>
 			</li>
 		</uiIconPathsStuff>
 		<statBases>
@@ -223,7 +223,7 @@
 		<label>clerestory wall</label>
 		<description>An impassable half-glass wall. Capable of holding up a roof, but more fragile than a normal wall. Does not block light, providing a growing bonus to plants near them. Slowly refills peoples outdoor need.</description>
 		<graphicData>
-			<texPath>Things/Building/RB_Linked/RB_ClerestoryWall</texPath>
+			<texPath>Things/Building/RB_Linked/ClerestoryWall</texPath>
 			<graphicClass>Graphic_Appearances</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<linkType>CornerFiller</linkType>
@@ -242,15 +242,15 @@
 				<edgeRight>Damage/Edge</edgeRight>
 			</damageData>
 		</graphicData>
-		<uiIconPath>Things/Building/RB_Linked/RB_ClerestoryWall_Smooth_MenuIcon</uiIconPath>
+		<uiIconPath>Things/Building/RB_Linked/ClerestoryWall/ClerestoryWall_Smooth_MenuIcon</uiIconPath>
 		<uiIconPathsStuff>
 			<li>
 				<appearance>Bricks</appearance>
-				<iconPath>Things/Building/RB_Linked/RB_ClerestoryWall_Bricks_MenuIcon</iconPath>
+				<iconPath>Things/Building/RB_Linked/ClerestoryWall/ClerestoryWall_Bricks_MenuIcon</iconPath>
 			</li>
 			<li>
 				<appearance>Planks</appearance>
-				<iconPath>Things/Building/RB_Linked/RB_ClerestoryWall_Planks_MenuIcon</iconPath>
+				<iconPath>Things/Building/RB_Linked/ClerestoryWall/ClerestoryWall_Planks_MenuIcon</iconPath>
 			</li>
 		</uiIconPathsStuff>
 		<filthLeaving>RB_Filth_GlassShards</filthLeaving>
@@ -282,7 +282,7 @@
 			<ai_chillDestination>true</ai_chillDestination>
 			<supportsWallAttachments>false</supportsWallAttachments>
 			<blueprintGraphicData>
-				<texPath>Things/Building/RB_Linked/RB_ClerestoryWall/RB_ClerestoryWall_Blueprint_Atlas</texPath>
+				<texPath>Things/Building/RB_Linked/ClerestoryWall/ClerestoryWall_Blueprint_Atlas</texPath>
 			</blueprintGraphicData>
 			<relatedBuildCommands Inherit="False">
 				<li>Door</li>
@@ -320,7 +320,7 @@
 		<label>reinforced clerestory wall</label>
 		<description>An impassable half-glass wall. Capable of holding up a roof. Does not block light, providing a growing bonus to plants near them. Slowly refills peoples outdoor need.</description>
 		<graphicData>
-			<texPath>Things/Building/RB_Linked/RB_ReinforcedClerestoryWall</texPath>
+			<texPath>Things/Building/RB_Linked/ReinforcedClerestoryWall</texPath>
 			<graphicClass>Graphic_Appearances</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<linkType>CornerFiller</linkType>
@@ -339,15 +339,15 @@
 				<edgeRight>Damage/Edge</edgeRight>
 			</damageData>
 		</graphicData>
-		<uiIconPath>Things/Building/RB_Linked/RB_ReinforcedClerestoryWall_Smooth_MenuIcon</uiIconPath>
+		<uiIconPath>Things/Building/RB_Linked/ReinforcedClerestoryWall/ReinforcedClerestoryWall_Smooth_MenuIcon</uiIconPath>
 		<uiIconPathsStuff>
 			<li>
 				<appearance>Bricks</appearance>
-				<iconPath>Things/Building/RB_Linked/RB_ReinforcedClerestoryWall_Bricks_MenuIcon</iconPath>
+				<iconPath>Things/Building/RB_Linked/ReinforcedClerestoryWall/ReinforcedClerestoryWall_Bricks_MenuIcon</iconPath>
 			</li>
 			<li>
 				<appearance>Planks</appearance>
-				<iconPath>Things/Building/RB_Linked/RB_ReinforcedClerestoryWall_Planks_MenuIcon</iconPath>
+				<iconPath>Things/Building/RB_Linked/ReinforcedClerestoryWall/ReinforcedClerestoryWall_Planks_MenuIcon</iconPath>
 			</li>
 		</uiIconPathsStuff>
 		<filthLeaving>RB_Filth_BallisticGlassShards</filthLeaving>
@@ -380,7 +380,7 @@
 			<supportsWallAttachments>false</supportsWallAttachments>
 			<isStuffableAirtight>true</isStuffableAirtight>
 			<blueprintGraphicData>
-				<texPath>Things/Building/RB_Linked/RB_ClerestoryWall/RB_ClerestoryWall_Blueprint_Atlas</texPath>
+				<texPath>Things/Building/RB_Linked/ClerestoryWall/ClerestoryWall_Blueprint_Atlas</texPath>
 			</blueprintGraphicData>
 			<relatedBuildCommands Inherit="False">
 				<li>Door</li>
@@ -418,7 +418,7 @@
 		<label>glass wall</label>
 		<description>An impassable glass wall. Capable of holding up a roof, but far more fragile than a normal wall. Does not block light, providing a growing bonus to plants near them. Slowly refills peoples outdoor need.</description>
 		<graphicData>
-			<texPath>Things/Building/RB_Linked/RB_GlassWall/RB_GlassWall_Atlas</texPath>
+			<texPath>Things/Building/RB_Linked/GlassWall/GlassWall_Atlas</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<linkType>CornerFiller</linkType>
@@ -437,7 +437,7 @@
 				<edgeRight>Damage/Edge</edgeRight>
 			</damageData>
 		</graphicData>
-		<uiIconPath>Things/Building/RB_Linked/RB_GlassWall_MenuIcon</uiIconPath>
+		<uiIconPath>Things/Building/RB_Linked/GlassWall/GlassWall_MenuIcon</uiIconPath>
 		<filthLeaving>RB_Filth_GlassShards</filthLeaving>
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
@@ -466,7 +466,7 @@
 			<ai_chillDestination>true</ai_chillDestination>
 			<supportsWallAttachments>false</supportsWallAttachments>
 			<blueprintGraphicData>
-				<texPath>Things/Building/RB_Linked/RB_GlassWall/RB_GlassWall_Blueprint_Atlas</texPath>
+				<texPath>Things/Building/RB_Linked/GlassWall/GlassWall_Blueprint_Atlas</texPath>
 			</blueprintGraphicData>
 			<relatedBuildCommands Inherit="False">
 				<li>Door</li>
@@ -504,7 +504,7 @@
 		<label>reinforced glass wall</label>
 		<description>An impassable reinforced glass wall. Capable of holding up a roof. Does not block light, providing a growing bonus to plants near them. Slowly refills peoples outdoor need.</description>
 		<graphicData>
-			<texPath>Things/Building/RB_Linked/RB_ReinforcedGlassWall/RB_ReinforcedGlassWall_Atlas</texPath>
+			<texPath>Things/Building/RB_Linked/ReinforcedGlassWall/ReinforcedGlassWall_Atlas</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<linkType>CornerFiller</linkType>
@@ -523,7 +523,7 @@
 				<edgeRight>Damage/Edge</edgeRight>
 			</damageData>
 		</graphicData>
-		<uiIconPath>Things/Building/RB_Linked/RB_ReinforcedGlassWall_MenuIcon</uiIconPath>
+		<uiIconPath>Things/Building/RB_Linked/ReinforcedGlassWall/ReinforcedGlassWall_MenuIcon</uiIconPath>
 		<filthLeaving>RB_Filth_BallisticGlassShards</filthLeaving>
 		<statBases>
 			<MaxHitPoints>300</MaxHitPoints>
@@ -552,7 +552,7 @@
 			<ai_chillDestination>true</ai_chillDestination>
 			<isStuffableAirtight>true</isStuffableAirtight>
 			<blueprintGraphicData>
-				<texPath>Things/Building/RB_Linked/RB_GlassWall/RB_GlassWall_Blueprint_Atlas</texPath>
+				<texPath>Things/Building/RB_Linked/GlassWall/GlassWall_Blueprint_Atlas</texPath>
 			</blueprintGraphicData>
 			<relatedBuildCommands Inherit="False">
 				<li>Autodoor</li>
@@ -643,7 +643,7 @@
 			<relatedBuildCommands Inherit="False"/>
 			<isStuffableAirtight>false</isStuffableAirtight>
 			<blueprintGraphicData>
-				<texPath>Things/Building/RB_Linked/RB_CellWall/RB_CellWall_Blueprint_Atlas</texPath>
+				<texPath>Things/Building/RB_Linked/CellWall/CellWall_Blueprint_Atlas</texPath>
 			</blueprintGraphicData>
 		</building>
 		<comps>
@@ -725,7 +725,7 @@
 			<relatedBuildCommands Inherit="False"/>
 			<isStuffableAirtight>false</isStuffableAirtight>
 			<blueprintGraphicData>
-				<texPath>Things/Building/RB_Linked/RB_BarriersWall/RB_BarriersWall_Blueprint_Atlas</texPath>
+				<texPath>Things/Building/RB_Linked/BarriersWall/BarriersWall_Blueprint_Atlas</texPath>
 			</blueprintGraphicData>
 		</building>
 		<damageMultipliers Inherit="False">

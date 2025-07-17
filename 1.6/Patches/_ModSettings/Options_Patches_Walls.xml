@@ -29,49 +29,9 @@
 			</li>
 			<li Class="ModSettingsFramework.PatchOperationModOption">
 				<defaultValue>False</defaultValue>
-				<label>Simplistic version</label>
-				<tooltip>Slightly more detailed than vanilla.</tooltip>
-				<id>RB_NewWallAtlasTextures_V2</id>
-				<operations>
-					<li Class="PatchOperationReplace">
-						<xpath>/Defs/ThingDef[@Name="Wall"]/graphicData/texPath</xpath>
-						<value>
-							<texPath>Things/Building/RB_Linked/V2_AlternativeWall</texPath>
-						</value>
-					</li>
-					<li Class="PatchOperationReplace">
-						<xpath>/Defs/ThingDef[@Name="Wall"]/uiIconPath</xpath>
-						<value>
-							<uiIconPath>Things/Building/RB_Linked/V2_AlternativeWall/WallSmooth_MenuIcon</uiIconPath>
-						</value>
-					</li>
-				</operations>
-			</li>
-			<li Class="ModSettingsFramework.PatchOperationModOption">
-				<defaultValue>False</defaultValue>
-				<label>Modern version</label>
-				<tooltip>Much more detailed than vanilla.</tooltip>
-				<id>RB_NewWallAtlasTextures_V3</id>
-				<operations>
-					<li Class="PatchOperationReplace">
-						<xpath>/Defs/ThingDef[@Name="Wall"]/graphicData/texPath</xpath>
-						<value>
-							<texPath>Things/Building/RB_Linked/V3_AlternativeWall</texPath>
-						</value>
-					</li>
-					<li Class="PatchOperationReplace">
-						<xpath>/Defs/ThingDef[@Name="Wall"]/uiIconPath</xpath>
-						<value>
-							<uiIconPath>Things/Building/RB_Linked/V3_AlternativeWall/WallSmooth_MenuIcon</uiIconPath>
-						</value>
-					</li>
-				</operations>
-			</li>
-			<li Class="ModSettingsFramework.PatchOperationModOption">
-				<defaultValue>False</defaultValue>
 				<label>Vanilla version</label>
 				<tooltip>HD version of the vanilla texture, no other changes.</tooltip>
-				<id>RB_NewWallAtlasTextures_V4</id>
+				<id>RB_NewWallAtlasTextures_V2</id>
 				<operations>
 					<li Class="PatchOperationReplace">
 						<xpath>/Defs/ThingDef[@Name="Wall"]/graphicData/texPath</xpath>
