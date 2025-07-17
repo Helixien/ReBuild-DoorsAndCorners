@@ -122,6 +122,19 @@
 				<multiplier>4</multiplier>
 			</li>
 		</damageMultipliers>
+		<modExtensions>
+			<li Class="ReBuildDoorsAndCorners.WallDiagonalExtension">
+				<texPath_Corner_NW>Things/Building/Linked/GravshipHull/AngledGravshipHull_northwest</texPath_Corner_NW>
+				<texPath_Corner_NE>Things/Building/Linked/GravshipHull/AngledGravshipHull_northeast</texPath_Corner_NE>
+				<texPath_Corner_SW>Things/Building/Linked/GravshipHull/AngledGravshipHull_southwest</texPath_Corner_SW>
+				<texPath_Corner_SE>Things/Building/Linked/GravshipHull/AngledGravshipHull_southeast</texPath_Corner_SE>
+				<texPath_Diagonal_NW>Things/Building/Linked/GravshipHull/AngledGravshipHull_Partial_northwest</texPath_Diagonal_NW>
+				<texPath_Diagonal_NE>Things/Building/Linked/GravshipHull/AngledGravshipHull_Partial_northeast</texPath_Diagonal_NE>
+				<texPath_Diagonal_SW>Things/Building/Linked/GravshipHull/AngledGravshipHull_Partial_southwest</texPath_Diagonal_SW>
+				<texPath_Diagonal_SE>Things/Building/Linked/GravshipHull/AngledGravshipHull_Partial_southeast</texPath_Diagonal_SE>
+				<cornerScale>2.0</cornerScale>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<!-- ================================ Ornate Wall ====================== -->
 	<ThingDef ParentName="RB_WallBase">
