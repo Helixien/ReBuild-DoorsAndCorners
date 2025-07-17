@@ -6,7 +6,7 @@
 			<li Class="PatchOperationReplace">
 				<xpath>/Defs/ThingDef[defName="GravshipHull"]/uiIconPath</xpath>
 				<value>
-					<uiIconPath>Things/Building/RB_Linked/GravshipHull_MenuIcon</uiIconPath>
+					<uiIconPath>Things/Building/RB_Linked/GravshipHull/GravshipHull_MenuIcon</uiIconPath>
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
