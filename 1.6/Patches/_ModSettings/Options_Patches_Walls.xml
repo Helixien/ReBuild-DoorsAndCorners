@@ -78,4 +78,12 @@
 			</li>
 		</operations>
 	</Operation>
+	
+	<!-- ================ Diagonal Wall Toggles ================ -->
+	<Operation Class="ReBuildDoorsAndCorners.ReBuild_DiagonalWallToggles">
+		<id>RB_ReBuild_DiagonalWallToggles</id>
+		<category>RB_Walls</category>
+		<order>999</order>
+	</Operation>
+	
 </Patch>

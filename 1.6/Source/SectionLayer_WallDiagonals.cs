@@ -1,14 +1,91 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
+using ModSettingsFramework;
 using RimWorld;
 using UnityEngine;
 using Verse;
 
 namespace ReBuildDoorsAndCorners
 {
+    public class ReBuild_DiagonalWallToggles : PatchOperationWorker
+    {
+        public Dictionary<string, bool> diagonalWallToggles = new Dictionary<string, bool>();
+        public override void ExposeData()
+        {
+            Scribe_Collections.Look(ref diagonalWallToggles, "diagonalWallToggles", LookMode.Value, LookMode.Value);
+            if (Scribe.mode == LoadSaveMode.PostLoadInit)
+            {
+                diagonalWallToggles ??= new Dictionary<string, bool>();
+            }
+        }
+
+        public override void CopyFrom(PatchOperationWorker savedWorker)
+        {
+            var copy = savedWorker as ReBuild_DiagonalWallToggles;
+            diagonalWallToggles = copy.diagonalWallToggles;
+        }
+        public override void ApplySettings()
+        {
+            base.ApplySettings();
+            foreach (var thingDef in DefDatabase<ThingDef>.AllDefs.ToList())
+            {
+                if (thingDef.HasModExtension<WallDiagonalExtension>() || ThingDefOf.GravshipHull == thingDef)
+                {
+                    if (!diagonalWallToggles.TryGetValue(thingDef.defName, out var state))
+                    {
+                        diagonalWallToggles[thingDef.defName] = state = true;
+                    }
+                }
+            }
+        }
+        public override void DoSettings(ModSettingsContainer container, Listing_Standard list)
+        {
+            foreach (var diagonalWallState in diagonalWallToggles.ToList())
+            {
+                var diagonalWall = DefDatabase<ThingDef>.GetNamedSilentFail(diagonalWallState.Key);
+                if (diagonalWall != null)
+                {
+                    var value = diagonalWallState.Value;
+                    CheckboxLabeled(list, "RE.EnableDiagonal".Translate(diagonalWall.label), ref value);
+                    diagonalWallToggles[diagonalWallState.Key] = value;
+                    list.Gap(5);
+                }
+            }
+        }
+
+        public override int SettingsHeight()
+        {
+            var scrollHeight = 0;
+            foreach (var diagonalWallState in diagonalWallToggles.ToList())
+            {
+                var diagonalWall = DefDatabase<ThingDef>.GetNamedSilentFail(diagonalWallState.Key);
+                if (diagonalWall != null && diagonalWall.HasModExtension<WallDiagonalExtension>() || ThingDefOf.GravshipHull == diagonalWall)
+                {
+                    scrollHeight += 29;
+                }
+            }
+            return scrollHeight;
+        }
+
+        public override void Reset()
+        {
+            foreach (var thingDef in DefDatabase<ThingDef>.AllDefs.ToList())
+            {
+                if (thingDef.HasModExtension<WallDiagonalExtension>() || ThingDefOf.GravshipHull == thingDef)
+                {
+                    diagonalWallToggles[thingDef.defName] = true;
+                }
+            }
+        }
+    }
+    
     [StaticConstructorOnStartup]
     public class SectionLayer_WallDiagonals : SectionLayer
     {
+        private static ReBuild_DiagonalWallToggles _diagonalWallsPatchWorker;
+        public static ReBuild_DiagonalWallToggles DiagonalWallPatchWorker => _diagonalWallsPatchWorker ??= ReBuildDoorsAndCornersMod.modInstance
+            .Patches.OfType<ReBuild_DiagonalWallToggles>().FirstOrDefault();
         public enum CornerType
         {
             None,
@@ -72,6 +149,10 @@ namespace ReBuildDoorsAndCorners
                 Thing thing = (pos + Directions[i]).GetEdificeSafe(map);
                 if (thing != null && thing.def.HasModExtension<WallDiagonalExtension>())
                 {
+                    if (!DiagonalWallPatchWorker.diagonalWallToggles.TryGetValue(thing.def.defName, out var state) || !state)
+                    {
+                        continue;
+                    }
                     definingThing = thing;
                     break;
                 }
