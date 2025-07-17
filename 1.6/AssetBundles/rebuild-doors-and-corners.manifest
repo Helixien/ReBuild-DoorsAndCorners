@@ -1,0 +1,41 @@
+ManifestFileVersion: 0
+CRC: 3409399165
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 2c1c15be31347a93ddc21f5a7d730a4e
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2612ac43db082a73502ee80f2eceb73f
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 2c1c15be31347a93ddc21f5a7d730a4e
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/CellWall/CellWall_Atlas_BothSidesConnector.psd
+- Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/BarriersWall/BarriersWall_Atlas_TopRightConnector.psd
+- Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/CellWall/CellWall_MenuIcon.psd
+- Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/BarriersWall/BarriersWall_Atlas.psd
+- Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/CellWall/CellWall_Atlas_TopRightConnector.psd
+- Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/V2_AlternativeWall/Wall_Atlas_Bricks.psd
+- Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/V3_AlternativeWall/Wall_Atlas_Bricks.psd
+- Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/BarriersWall/BarriersWall_MenuIcon.psd
+- Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/V2_AlternativeWall/WallSmooth_MenuIcon.psd
+- Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/V2_AlternativeWall/Wall_Atlas_Smooth.psd
+- Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/V1_AlternativeWall/WallSmooth_MenuIcon.psd
+- Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/CellWall/CellWall_Blueprint_Atlas.psd
+- Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/V2_AlternativeWall/Wall_Atlas_Planks.psd
+- Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/V3_AlternativeWall/WallSmooth_MenuIcon.psd
+- Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/CellWall/CellWall_Atlas.psd
+- Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/V3_AlternativeWall/Wall_Atlas_Planks.psd
+- Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/BarriersWall/BarriersWall_Atlas_BothSidesConnector.psd
+- Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/V3_AlternativeWall/Wall_Atlas_Smooth.psd
+- Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/V1_AlternativeWall/Wall_Atlas_Smooth.psd
+- Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/CellWall/CellWall_Atlas_BottomLeftConnector.psd
+- Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/BarriersWall/BarriersWall_Atlas_BottomLeftConnector.psd
+- Assets/Data/ReBuild.COTR.DoorsAndCorners/Textures/Things/Building/RB_Linked/BarriersWall/BarriersWall_Blueprint_Atlas.psd
+Dependencies: []

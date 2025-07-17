@@ -592,7 +592,7 @@
 		<description>An impassable wall consisting of metal bars.</description>
 		<thingClass>ReBuildDoorsAndCorners.Building_CellWall</thingClass>
 		<graphicData>
-			<texPath>Things/Building/RB_Linked/RB_CellWall/RB_CellWall_Atlas</texPath>
+			<texPath>Things/Building/RB_Linked/CellWall/CellWall_Atlas</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<linkType>CornerFiller</linkType>
 			<linkFlags>
@@ -610,7 +610,7 @@
 				<edgeRight>Damage/Edge</edgeRight>
 			</damageData>
 		</graphicData>
-		<uiIconPath>Things/Building/RB_Linked/RB_CellWall_MenuIcon</uiIconPath>
+		<uiIconPath>Things/Building/RB_Linked/CellWall/CellWall_MenuIcon</uiIconPath>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>Impassable</passability>
 		<blockWind>false</blockWind>
@@ -675,7 +675,7 @@
 		<description>An impassable wall consisting of metal bars that allow water to pass through. Must be constructed in water.</description>
 		<thingClass>ReBuildDoorsAndCorners.Building_CellWall</thingClass>
 		<graphicData>
-			<texPath>Things/Building/RB_Linked/RB_BarriersWall/RB_BarriersWall_Atlas</texPath>
+			<texPath>Things/Building/RB_Linked/BarriersWall/BarriersWall_Atlas</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<linkType>CornerFiller</linkType>
 			<linkFlags>
@@ -693,7 +693,7 @@
 				<edgeRight>Damage/Edge</edgeRight>
 			</damageData>
 		</graphicData>
-		<uiIconPath>Things/Building/RB_Linked/RB_BarriersWall_MenuIcon</uiIconPath>
+		<uiIconPath>Things/Building/RB_Linked/BarriersWall/BarriersWall_MenuIcon</uiIconPath>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>Impassable</passability>
 		<blockWind>false</blockWind>
