@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	<!-- ================================ Smooth Hull ====================== -->
 	<ThingDef ParentName="Wall">
 		<defName>RB_SmoothGravshipHull</defName>
 		<label>gravship hull</label>
@@ -32,6 +33,7 @@
 			<li>PlaceWorker_OnSubstructure</li>
 		</placeWorkers>
 	</ThingDef>
+	<!-- ================================ Hull with Windows (Star Wars inspired) ====================== -->
 	<ThingDef ParentName="Wall">
 		<defName>RB_GravshipWindowHull</defName>
 		<label>gravship glasshull</label>
@@ -91,6 +93,7 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
+	<!-- ================================ Panorama Hull ====================== -->
 	<ThingDef ParentName="Wall">
 		<defName>RB_GravshipPanoramaHull</defName>
 		<label>gravship panorama hull</label>
