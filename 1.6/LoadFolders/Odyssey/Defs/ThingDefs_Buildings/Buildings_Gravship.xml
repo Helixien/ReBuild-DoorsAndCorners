@@ -13,7 +13,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<researchPrerequisites>
-			<li>BasicGravtech</li>
+			<li>StandardGravtech</li>
 		</researchPrerequisites>
 		<statBases>
 			<MaxHitPoints>340</MaxHitPoints>
@@ -51,11 +51,14 @@
 			<WorkToBuild>300</WorkToBuild>
 			<Flammability>0</Flammability>
 		</statBases>
-		<costStuffCount>7</costStuffCount>
+		<costStuffCount>3</costStuffCount>
+		<costList>
+			<RB_Glass>3</RB_Glass>
+		</costList>
 		<blockLight>false</blockLight>
 		<staticSunShadowHeight>0</staticSunShadowHeight>
 		<researchPrerequisites>
-			<li>BasicGravtech</li>
+			<li>StandardGravtech</li>
 			<li>Electricity</li>
 		</researchPrerequisites>
 		<specialDisplayRadius>3.9</specialDisplayRadius>
@@ -111,11 +114,14 @@
 			<WorkToBuild>300</WorkToBuild>
 			<Flammability>0</Flammability>
 		</statBases>
-		<costStuffCount>7</costStuffCount>
+		<costStuffCount>2</costStuffCount>
+		<costList>
+			<RB_Glass>6</RB_Glass>
+		</costList>
 		<blockLight>false</blockLight>
 		<staticSunShadowHeight>0</staticSunShadowHeight>
 		<researchPrerequisites>
-			<li>BasicGravtech</li>
+			<li>AdvancedGravtech</li>
 			<li>Electricity</li>
 		</researchPrerequisites>
 		<building>
