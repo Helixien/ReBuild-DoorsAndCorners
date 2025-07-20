@@ -1,5 +1,6 @@
 using HarmonyLib;
 using RimWorld;
+using Verse;
 
 namespace ReBuildDoorsAndCorners
 {
@@ -8,7 +9,8 @@ namespace ReBuildDoorsAndCorners
     {
         public static bool Prefix()
         {
-            if (SectionLayer_WallDiagonals.DiagonalWallPatchWorker.diagonalWallToggles.TryGetValue(ThingDefOf.GravshipHull.defName, out var toggle) && toggle is false)
+            if (ModsConfig.OdysseyActive &&
+            SectionLayer_WallDiagonals.DiagonalWallPatchWorker?.diagonalWallToggles != null && SectionLayer_WallDiagonals.DiagonalWallPatchWorker.diagonalWallToggles.TryGetValue(ThingDefOf.GravshipHull.defName, out var toggle) && toggle is false)
             {
                 return false;
             }
