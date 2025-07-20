@@ -37,7 +37,7 @@
 	<ThingDef ParentName="Wall">
 		<defName>RB_GravshipWindowHull</defName>
 		<label>gravship glasshull</label>
-		<description>A strong airtight wall that prevents oxygen leaks in the vacuum of space. The wall connects directly into the underlying substructure, meaning it can only be built on a gravship.</description>
+		<description>An airtight wall embedded with pressure-resistant viewing windows. Designed for safe stargazing, this hall integrates directly into the gravship’s structural framework. Can only be constructed on a gravship.</description>
 		<graphicData>
 			<texPath>Things/Building/RB_Linked/GravshipWindowHull/GravshipWindowHull_Atlas</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -100,7 +100,7 @@
 	<ThingDef ParentName="Wall">
 		<defName>RB_GravshipPanoramaHull</defName>
 		<label>gravship panorama hull</label>
-		<description>A strong airtight wall that prevents oxygen leaks in the vacuum of space. The wall connects directly into the underlying substructure, meaning it can only be built on a gravship.</description>
+		<description>A massive glass facade offers an uninterrupted view of space. Built as part of the gravship’s substructure, this airtight hall combines structural integrity with breathtaking visibility. Only constructible on a gravship.</description>
 		<graphicData>
 			<texPath>Things/Building/RB_Linked/GravshipPanoramaHull/GravshipPanoramaHull_Atlas</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
