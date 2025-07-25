@@ -299,7 +299,7 @@
 		<label>cell door</label>
 		<description>A slow moving door that separates two rooms.</description>
 		<graphicData>
-			<texPath>Things/Building/RB_Door/DoorCell_Mover</texPath>
+			<texPath>Things/Building/RB_Door/CellDoor/DoorCell_Mover</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<damageData>
 				<enabled>false</enabled>
@@ -310,10 +310,15 @@
 			<MaxHitPoints>80</MaxHitPoints>
 			<DoorOpenSpeed>0.5</DoorOpenSpeed>
 		</statBases>
-		<uiIconPath>Things/Building/RB_Door/DoorCell_MenuIcon</uiIconPath>
+		<uiIconPath>Things/Building/RB_Door/CellDoor/DoorCell_MenuIcon</uiIconPath>
 		<building>
 			<paintable>true</paintable>
 			<isStuffableAirtight>false</isStuffableAirtight>
+			<doorTopGraphic>
+				<texPath>Things/Building/RB_Door/CellDoor/DoorCell_Top</texPath>
+				<graphicClass>Graphic_Multi</graphicClass>
+				<drawSize>(2,2.2)</drawSize>
+			</doorTopGraphic>
 		</building>
 		<stuffCategories Inherit="False">
 			<li>Metallic</li>
