@@ -645,6 +645,9 @@
 			<blueprintGraphicData>
 				<texPath>Things/Building/RB_Linked/CellWall/CellWall_Blueprint_Atlas</texPath>
 			</blueprintGraphicData>
+			<relatedBuildCommands>
+				<li>RB_CellDoor</li>
+			</relatedBuildCommands>
 		</building>
 		<comps>
 			<li Class="ReBuildDoorsAndCorners.CompProperties_GlassWall">

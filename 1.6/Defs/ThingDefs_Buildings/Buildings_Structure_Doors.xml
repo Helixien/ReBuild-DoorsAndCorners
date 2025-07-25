@@ -298,6 +298,7 @@
 		<defName>RB_CellDoor</defName>
 		<label>cell door</label>
 		<description>A slow moving door that separates two rooms.</description>
+		<thingClass>Building_SupportedDoor</thingClass>
 		<graphicData>
 			<texPath>Things/Building/RB_Door/CellDoor/DoorCell_Mover</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -317,8 +318,11 @@
 			<doorTopGraphic>
 				<texPath>Things/Building/RB_Door/CellDoor/DoorCell_Top</texPath>
 				<graphicClass>Graphic_Multi</graphicClass>
-				<drawSize>(2.2)</drawSize>
+				<drawSize>(2,2)</drawSize>
 			</doorTopGraphic>
+			<relatedBuildCommands>
+				<li>RB_CellWall</li>
+			</relatedBuildCommands>
 		</building>
 		<stuffCategories Inherit="False">
 			<li>Metallic</li>
