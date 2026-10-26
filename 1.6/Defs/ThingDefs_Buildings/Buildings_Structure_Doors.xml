@@ -56,7 +56,7 @@
 					<drawOffset>(0, -0.1, 0)</drawOffset>
 				</graphicData>
 				<toggleLabel>Toggle graphic</toggleLabel>
-				<toggleDesc>to.do</toggleDesc>
+				<toggleDesc>Show or hide the additional door graphic.</toggleDesc>
 				<toggleIcon>Things/Building/RB_Door/GlassAutodoor_VanillaMenuIcon</toggleIcon>
 			</li>
 		</comps>
@@ -232,7 +232,7 @@
 	<ThingDef ParentName="DoorBase">
 		<defName>RB_LargeOrnateDoor</defName>
 		<label>large ornate door</label>
-		<description>Divides rooms. An intricately-carved door, decorated with gold. This large, heavy door requires adjacent walls to function.</description>
+		<description>Divides rooms. An intricately carved door, decorated with gold. This large, heavy door requires adjacent walls to function.</description>
 		<thingClass>Building_MultiTileDoor</thingClass>
 		<statBases>
 			<WorkToBuild>18000</WorkToBuild>
@@ -297,7 +297,7 @@
 	<ThingDef ParentName="DoorBase">
 		<defName>RB_CellDoor</defName>
 		<label>cell door</label>
-		<description>A slow moving door that separates two rooms.</description>
+		<description>A slow-moving door that separates two rooms.</description>
 		<thingClass>Building_SupportedDoor</thingClass>
 		<graphicData>
 			<texPath>Things/Building/RB_Door/CellDoor/DoorCell_Mover</texPath>

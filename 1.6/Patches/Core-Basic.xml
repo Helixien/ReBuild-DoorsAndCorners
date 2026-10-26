@@ -238,7 +238,7 @@
 			<li Class="PatchOperationReplace">
 				<xpath>/Defs/ThingDef[defName="ElectricSmelter"]/description</xpath>
 				<value>
-					<description>Extracts usable metal from slag chunks and other mixed metal items, as well as refines stone chunks into glass. Consumes a lot of power.</description>
+					<description>Extracts usable metal from slag chunks and other mixed metal items and refines stone chunks into glass. Consumes a lot of power.</description>
 				</value>
 			</li>
 			<li Class="PatchOperationInsert">

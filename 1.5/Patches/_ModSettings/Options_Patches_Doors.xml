@@ -4,7 +4,7 @@
 	<Operation Class="ModSettingsFramework.PatchOperationModOption">
 		<defaultValue>True</defaultValue>
 		<label>Enable Door Clearance</label>
-		<tooltip>Toggle this option to prevent colonists from dropping items at door locations and blocking them from being closed (Default: True)</tooltip>
+		<tooltip>Toggle this option to prevent colonists from dropping items at door locations and blocking them from being closed. (Default: True)</tooltip>
 		<id>RB_ColonistsDontDropItemsAtDoors</id>
 		<category>RB_Doors</category>
 		<order>5</order>

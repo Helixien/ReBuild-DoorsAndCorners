@@ -5,7 +5,7 @@
 	<Operation Class="ModSettingsFramework.PatchOperationModOption">
 		<defaultValue>True</defaultValue>
 		<label>Raise The Roof</label>
-		<tooltip>Replaces Raise The Roof synthread cost with ReBuilds glass.(Default: True)</tooltip>
+		<tooltip>Replaces the synthread cost of Raise The Roof's transparent roofs with ReBuild's glass. (Default: True)</tooltip>
 		<id>RB_DaC_RaiseTheRoof</id>
 		<category>RB_Integration</category>
 		<order>31</order>

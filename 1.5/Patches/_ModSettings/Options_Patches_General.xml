@@ -4,7 +4,7 @@
 	<Operation Class="ModSettingsFramework.PatchOperationModOption">
 		<defaultValue>True</defaultValue>
 		<label>Enable seamless wall lamps</label>
-		<tooltip>Enable seamless wall lamps, making them merge nicer with walls.(Default: True)</tooltip>
+		<tooltip>Enable seamless wall lamps, making them blend more naturally with walls. (Default: True)</tooltip>
 		<id>RB_SeamlessWallLamps</id>
 		<category>RB_Core</category>
 		<order>5</order>
@@ -142,7 +142,7 @@
 <!--	<Operation Class="ModSettingsFramework.PatchOperationModOption">
 		<defaultValue>True</defaultValue>
 		<label>Enable Alternative Power Conduit</label>
-		<tooltip>Enables the alternative power conduit texture that makes them look more realistic. (Default: True)</tooltip>
+		<tooltip>Enables an alternative texture that makes power conduits look more realistic. (Default: True)</tooltip>
 		<id>RB_AlternativePowerCables</id>
 		<category>RB_Core</category>
 		<order>10</order>

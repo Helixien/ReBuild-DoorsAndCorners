@@ -5,7 +5,7 @@
 	<Operation Class="ModSettingsFramework.PatchOperationModOption">
 		<defaultValue>True</defaultValue>
 		<label>Dubs Skylights</label>
-		<tooltip>Replaces Dubs Skylights glass with ReBuilds, removes unneeded recipes.(Default: True)</tooltip>
+		<tooltip>Replaces glass from Dubs Skylights with ReBuild's glass and removes unneeded recipes. (Default: True)</tooltip>
 		<id>RB_DaC_DubsSkylights</id>
 		<category>RB_Integration</category>
 		<order>30</order>
