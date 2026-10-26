@@ -111,7 +111,12 @@ namespace ReBuildDoorsAndCorners
 
         private bool HasDifferentWall(Rot4 rot)
         {
-            var edifice = (rot.FacingCell + Position).GetEdifice(Map);
+            var cell = rot.FacingCell + Position;
+            if (!cell.InBounds(Map))
+            {
+                return false;
+            }
+            var edifice = cell.GetEdifice(Map);
             if (edifice is null || edifice.def == this.def)
             {
                 return false;
@@ -121,13 +126,23 @@ namespace ReBuildDoorsAndCorners
 
         private bool HasDoor(Rot4 rot)
         {
-            var door = (rot.FacingCell + Position).GetFirstThing<Building_Door>(Map);
+            var cell = rot.FacingCell + Position;
+            if (!cell.InBounds(Map))
+            {
+                return false;
+            }
+            var door = cell.GetFirstThing<Building_Door>(Map);
             return door != null;
         }
 
         private bool HasSameWall(Rot4 rot)
         {
-            var edifice = (rot.FacingCell + Position).GetEdifice(Map);
+            var cell = rot.FacingCell + Position;
+            if (!cell.InBounds(Map))
+            {
+                return false;
+            }
+            var edifice = cell.GetEdifice(Map);
             if (edifice is null || edifice.def != this.def)
             {
                 return false;

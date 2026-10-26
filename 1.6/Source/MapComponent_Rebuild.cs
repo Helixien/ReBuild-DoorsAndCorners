@@ -28,6 +28,7 @@ namespace ReBuildDoorsAndCorners
                     map.mapDrawer.MapMeshDirty(cell, MapMeshFlagDefOf.Roofs);
                     map.glowGrid.DirtyCell(cell);
                 }
+                cellsToRegenerate.Clear();
             }
         }
 
@@ -37,7 +38,7 @@ namespace ReBuildDoorsAndCorners
             cellsNearbyGlassWalls = new HashSet<IntVec3>();
             foreach (var wall in glassWalls)
             {
-                if (wall.Props.naturalLightRadius.HasValue && wall.parent.OccupiedRect().ExpandedBy(1).EdgeCells.Any(x => x.Roofed(map) is false))
+                if (wall.Props.naturalLightRadius.HasValue && wall.parent.OccupiedRect().ExpandedBy(1).EdgeCells.Any(x => x.InBounds(map) is false || x.Roofed(map) is false))
                 {
                     foreach (var cell in GenRadial.RadialCellsAround(wall.parent.Position, wall.Props.naturalLightRadius.Value, true))
                     {
@@ -51,9 +52,8 @@ namespace ReBuildDoorsAndCorners
 
             if (cellsNearbyGlassWalls.SetEquals(oldCells) is false)
             {
-                cellsToRegenerate = new HashSet<IntVec3>();
-                cellsToRegenerate.AddRange(cellsNearbyGlassWalls);
-                cellsToRegenerate.AddRange(oldCells);
+                cellsToRegenerate.UnionWith(cellsNearbyGlassWalls);
+                cellsToRegenerate.UnionWith(oldCells);
                 regenerate = true;
             }
         }

@@ -48,7 +48,14 @@ namespace ReBuildDoorsAndCorners
                 {
                     var value = diagonalWallState.Value;
                     CheckboxLabeled(list, "RE.EnableDiagonal".Translate(diagonalWall.label), ref value);
-                    diagonalWallToggles[diagonalWallState.Key] = value;
+                    if (value != diagonalWallState.Value)
+                    {
+                        diagonalWallToggles[diagonalWallState.Key] = value;
+                        foreach (var map in Find.Maps)
+                        {
+                            map.mapDrawer.RegenerateEverythingNow();
+                        }
+                    }
                     list.Gap(5);
                 }
             }

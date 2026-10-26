@@ -23,5 +23,11 @@ namespace ReBuildDoorsAndCorners
                 return upperMoverGraphic;
             }
         }
+
+        public override void Notify_ColorChanged()
+        {
+            base.Notify_ColorChanged();
+            upperMoverGraphic = null;
+        }
     }
 }
