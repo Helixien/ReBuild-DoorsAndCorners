@@ -10,6 +10,13 @@
 					<li>RB_WoodPlankFloor_Transhumanist</li>
 				</value>
 			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/StyleCategoryDef[defName="Techist"]/addDesignators</xpath>
+				<value>
+					<li>RB_PavedTile_Transhumanist</li>
+					<li>RB_WoodPlankFloor_Transhumanist</li>
+				</value>
+			</li>
 			<li Class="PatchOperationReplace">
 				<xpath>/Defs/TerrainDef[defName="Tile_Transhumanist"]/uiOrder</xpath>
 				<value>
