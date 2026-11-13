@@ -94,5 +94,6 @@
 		<li IfModActive="GT.Sam.BasicDoubleDoors">1.6/LoadFolders/_Support/BasicDoubleDoors</li>
 		<li IfModActive="Dubwise.DubsSkylights">1.6/LoadFolders/_Support/DubsSkylights</li>
 		<li IfModActive="greysuki.rtr">1.6/LoadFolders/_Support/RaiseTheRoof</li>
+		<li IfModActive="Aelanna.PouredConcrete">1.6/LoadFolders/_Support/PouredConcrete</li>
 	</v1.7>
 </loadFolders>
